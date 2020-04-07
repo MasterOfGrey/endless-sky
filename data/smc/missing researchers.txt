@@ -29,7 +29,7 @@ mission "Hai Rescue: Yeertle Family"
 	on offer
 		"Hai Rescue: Yeertle Family (offer count)" ++
 		conversation
-			`You look ahead a few dozen meters and you see a short man with a strange necklace. As he walks past a power transfer unit, the man shimmers and you see faintly-visible, squirrel-like, features. It seems the necklace is a projector of a human hologram conceiling a Hai. He is sticking to the shadows, trying to avoid being seen.`
+			`You look ahead a few dozen meters and you see a short man with a strange necklace. As he walks past a power transfer unit, the man shimmers and you see faintly-visible, squirrel-like, features. It seems the necklace is a projector of a human hologram concealing a Hai. He is sticking to the shadows, trying to avoid being seen.`
 			`	Do you want to talk to him?`
 			choice
 				`	(Talk to him.)`
@@ -65,7 +65,7 @@ mission "Hai Rescue: Yeertle Family"
 			`	You walk down a corridor to a stairway that leads to a brick wall. Duniip walks through the wall; apparently this is another of his holograms. You pass through and see a triad of energetic Hai children eating dinner with their mother.`
 			`	Duniip turns off his hologram and addresses his family, "I found us a pilot! He's going to take us all the way home." This was followed by four cheering family members and one baby's gurgle.`
 			`	The family was already packed to leave. Duniip explains they move regularly so they're not found. It takes them under two minutes to finish preparations and don their holoprojectors.`
-			`	Your walk back to the ship is largely uneventful until some men with strange scanners detect the Yeertle family. One man throws a small grenade with a green light on top. You recognize it as a low-level EMP device. All five holograms turn off, along with all of the computers within 20 meters. Fortunately, your ship is outside that range.`
+			`	Your walk back to the ship is largely uneventful until some men with strange scanners detect the Yeertle family. One man throws a small grenade with a green light on top. You recognize it as a low-level EMP device. All five holograms turn off, along with all computers within twenty meters. Fortunately, your ship is outside that range.`
 			`	The six of you run to your ship as quickly as possible. You look back and see the men were not following you; they were running to their own ships.`
 				launch
 	on complete
@@ -168,7 +168,7 @@ mission "Hai Rescue: Ooonem"
 			choice
 				`	"I was wondering why a Hai is on a pirate planet."`
 					goto hai
-				`	"Not one of who?"`
+				`	"Not one of whom?"`
 					goto who
 				`	"Sorry to bother you. I'll leave you to your business."`
 					goto decline
@@ -179,7 +179,7 @@ mission "Hai Rescue: Ooonem"
 			`	"There are some men looking for me. I've managed to escape them so far; they're not as quick as a Hai. I think they're friends of the merchant who locked me up.`
 				goto "more questions"
 			label pay
-			`	"I don't know. I have no money but my family on <planet> can pay."`
+			`	"I have no money but my family on <planet> can pay."`
 				goto "more questions"
 			label "more questions"
 			`	Can you take me back to <destination>? My family can pay for my return.`
@@ -189,7 +189,7 @@ mission "Hai Rescue: Ooonem"
 					goto pay
 				`	"Why are you on a pirate planet?"`
 					goto hai
-				`	"I'm not one of who?"`
+				`	"I'm not one of whom?"`
 					goto who
 				`	"Sorry, but you'll have to find another ride."`
 					goto decline
@@ -200,7 +200,7 @@ mission "Hai Rescue: Ooonem"
 					decline
 			`	"Okay. I guess I should have introduced myself... it's easy to forget social niceties in a place like this. My name is Ooonem, and I'm a researcher from <planet>. Thank you for agreeing to take me home."`
 			`	You notice several men nearby looking intently at Ooonem. The two of you run towards your ship and make it to cover before the men start shooting. Ooonem pulls a grenade out of her cloak and throws it at the men. Gas explodes outward and the men drop dead in seconds.`
-			`	"I had better leave these behind," she says, dropping a few gas grenades on the ground. "I took them off of the pirates a few days ago. They're quite illegal." You notice a label on the grenades "tabun gas: 20 meter radius." This was a nerve gas grenade, using one of the older varieties of the gas. Cheap and plentiful in pirate space.`
+			`	"I had better leave these behind," she says, dropping a few gas grenades on the ground. "I took them off of the pirates a few days ago. They're quite illegal." You notice a label on the grenades "tabun gas: twenty-meter radius." This was a nerve gas grenade, using one of the older varieties of the gas. Cheap and plentiful in pirate space.`
 			`	You run into your ship and immediately take off.`
 				launch
 			label decline
@@ -434,7 +434,7 @@ mission "Hai Rescue [A02] Nanotransceiver Identification"
 			`	Teeneep looks at you as if you were daft, "The kidnappings happen on Hai and human worlds. The kidnappers have no reason to search an uninhabited planet for kidnapping victims. This gives us a safe place to hide any critical people or information."`
 				goto questions
 			label nanotransceivers
-			`	A Hai in a medical uniform explains, "The victims each have have thousands of nanoscale transmitter-receivers in their body, each the size of a single blood cell. We call them nanotransceivers. They act together as one big transmitter and receiver, sending and receiving directional messages over great distances.`
+			`	A Hai in a medical uniform explains, "The victims have thousands of nanoscale transmitter-receivers in their bodies, each the size of a single blood cell. We call them nanotransceivers. They act together as one big transmitter and receiver, sending and receiving directional messages over great distances.`
 			`	"This technology is clearly not of human or Hai origin. Its construction is well beyond our science and some materials involved have properties unlike anything we've ever seen. This technology comes from another race. A race that has mastered nanotechnology.`
 			`	"What is most troubling is that we don't know how to detect the signals beyond about thirty meters. We can tell they send messages over much longer distances through hyperspace, but they use a method we don't understand.`
 				goto questions
@@ -588,14 +588,14 @@ mission "Hai Rescue [A04] Tarazed Analysis"
 		has "Hai Rescue [A05] Boarded Smuggler: offered"
 	on offer
 		event "devil-run smugglers visible"
-		log "People" "Goraz Zoltof" `Goraz is a communications researcher from Tarazed Shipyards. His wife went missing some time ago and he hopes his research will help you find her.`
+		log "People" "Goraz Zoltof" `Goraz is a communications researcher from Tarazed Shipyards. His wife went missing some time ago, and he hopes his research will help you find her.`
 		log "Factions" "Smugglers" `Some pirate or merchant ships (identified by the computer as "Smuggler") carry slaves with special nanotransceivers. They are probably carrying human or Hai researchers.`
 		log `Goraz Zoltof used the galactic network of television transmitters to scan for evidence of smuggling ships carrying kidnapping victims with nanotransceivers. He detected hints of transmissions in the uninhabited space between the Far North and the Syndicate, and also near pirate systems.`
 		conversation
 			`You read Teeneep's contact information for Tarazed Shipyards, and it talks about a man named, "Goraz Zoltof," a widower in their communications research laboratory. There's an address and detailed information about the man.`
 			`	After a series of shuttles and trains, you reach his house and knock on the door.`
 			`	He's a little groggy, but manages to ask, "Yes?"`
-			`	You explain about the nanotransceivers, the Quarg, and the kidnappings. You avoid mentioning that some of the people are Hai, just in case he's never heard of them.`
+			`	You explain about the nanotransceivers, the Quarg, and the kidnappings. You avoid mentioning that some were Hai, just in case he's never heard of the Hai.`
 			`	He seems to awaken immediately, "You found a lead on my wife's disappearance? Yes, I can help you modify your ship's communicator to detect these signals. Let's go to my laboratory at once."`
 			choice
 				`	(Head to the laboratory.)`
@@ -703,7 +703,7 @@ mission "Hai Rescue [A07] Logo Identification"
 				`	(Enter the building.)`
 			`	You're ushered to an elevator and given a room number: 3017A19, the 301st floor, section 7A, room 19. It's amazing how large Earth's megabuildings have become. Some planets have lower population than one of these buildings.`
 			`	Giti is even more excited in-person than she was by holocommunicator. She's already researched the symbol that is similar to the circle-A anarchist symbol, but needed more detail about the demonic one. You also show her the information about the nanotransceivers.`
-			`	"This modified anarchist symbol was used by a militia group that was born on the Freedom anarchist colony over a century ago. They called themselves the, "Mind Hunters" and were known for stealing technology and kidnapping researchers. Some of the the stolen goods were found, but many disappeared in Syndicate space.`
+			`	"This modified anarchist symbol was used by a militia group that was born on the Freedom anarchist colony over a century ago. They called themselves the "Mind Hunters" and were known for stealing technology and kidnapping researchers. Some goods and researchers were found, but many disappeared in Syndicate space.`
 			`	"Fifty years ago, Syndicate Internal Affairs tracked down and killed most of the members they found in Syndicate space, but their leaders escaped. Internal Affairs suspects Syndicate space was just used as a staging point for transfers elsewhere. From the description of the event, I believe the leader escaped using a Jump Drive in a Hai vessel.`
 			`	"For the demonic symbol, we'll have to go to another library in room 4196A21."`
 			choice
@@ -781,7 +781,7 @@ mission "Hai Rescue [A09] Slaver Ships"
 		conversation
 			`The Earth authorities give you an unusual landing vector that leads to a secret docking bay below ground in Argentina. You land and a Navy cadet meets you at your ship with an urgent message, "Republic Intelligence and a Navy Marshal want to see you as soon as possible. They have news about your nanotransceiver transmissions. Please follow me."`
 			`	Giti adds, "I'll take the scanners and data to some researchers and let you know when I have more information. Please go with the cadet. It sounds like you'll finally get some answers."`
-			`	The cadet takes you to an elevator just outside your ship, down more than three hundred floors to a large meeting room. Within, you see two men and a woman in formal dress. One man has a Republic Intelligence uniform with the name, Agent Kopkow. Another wears a navy full dress uniform that you don't immediately recognize. After a moment of thought, you realize he is Marshal, the second-highest rank in the Navy, answering only to the Grand Marshal. His uniform is is labeled, Adurath Kaine. The woman is a Navy captain wearing the prominent Parliamentary Medal of Valor. Her name label says, "Captain Anna Wallace."`
+			`	The cadet takes you to an elevator just outside your ship, down more than three hundred floors to a large meeting room. Within, you see two men and a woman in formal dress. One man has a Republic Intelligence uniform with the name, Agent Kopkow. Another wears a navy full dress uniform that you don't immediately recognize. After a moment of thought, you realize he is Marshal, the second-highest rank in the Navy, answering only to the Grand Marshal. His uniform is labeled "Adurath Kaine." The woman is a Navy captain wearing the prominent Parliamentary Medal of Valor. Her name label says, "Captain Anna Wallace."`
 			choice
 				`	(Speak to the agent and marshal.)`
 					goto join
@@ -797,7 +797,7 @@ mission "Hai Rescue [A09] Slaver Ships"
 			`	Agent Kopkow speaks his piece next, "Sometimes the runners do carry slaves, and we have found humans or Hai in crashed slaver ships. We returned the Hai to their homes, as you did, but they didn't know Republic Intelligence helped them. Several merchants have done the same. About one in seven we rescued were researchers, an extremely disproportionate amount when you consider the number of researchers in human and Hai space. Clearly they're being targeted."`
 			`	Kaine continues, "That, unfortunately, is where we have some bad news. Parliament has a strict policy on pirates and slaver ships: destroy on sight. This is a tradition that goes back long before the era of space travel. Raiding pirate ships is a deadly affair; numerous navy or police will be killed. While it may seem heroic, the casualty rate is unsustainable. The only effective way to discourage piracy is to destroy the ships. If you don't believe me, try catching some yourself and count your dead."`
 			`	Captain Wallace concludes, "That means many slaves are killed, including some Hai researchers."`
-			`	Kaine says, "We informed the Hai government while you were away and they've responded by moving fleets towards the wormhole; we're doing the same. By the time you arrive, there will be large fleets on both sides of the wormhole. This could quickly lead to war. Please take the message back to Teeneep and the Hai victims with our condolences. Captain, please see <first> <last> back to the <ship>."`
+			`	Kaine says, "We informed the Hai government while you were away, and they've responded by moving fleets towards the wormhole; we're doing the same. By the time you arrive, there will be large fleets on both sides of the wormhole. This could quickly lead to war. Please take the message back to Teeneep and the Hai victims with our condolences. Captain, please see <first> <last> back to the <ship>."`
 			choice
 				`	(Return to your ship.)`
 			`	Along the way, Captain Wallace tells you stories of Navy heroism and brutality towards slaver vessels. Apparently many officers like her disagree with the Navy's policy. They want to rescue slaves whenever possible, regardless of risk or orders.`
@@ -1306,7 +1306,7 @@ mission "Hai Rescue [B05] Plant a Spy"
 			`	Teeneep is here, "This is Tutitot, the brave Hai that will be our spy. I will stay behind to prepare for our next steps."`
 			`	Tutitot tells you, "I'm supposed to put the worm in my ear. It's just so... weird and gross." He lifts it up and brings it near his head. The worm immediately jumps out of his hand and vanishes into his ear.`
 			`	The Hai glows black for a few seconds and returns to normal. "I can... feel your mind. I can see the orb in my mind. It's like the whole world is in my mind! This is amazing!"`
-			`	Tutitot tells you, "I'm ready. Please deliver the orb to <stopovers> and then take me to <destination>. The Drak say when I'm at the Philosopher's Paradise, they'll... touch your mind? It will probably two or three weeks after you place the orb. Then you will return to Devil-Eye to contact me."`
+			`	Tutitot tells you, "I'm ready. Please deliver the orb to <stopovers> and then take me to <destination>. The Drak say when I'm at the Philosopher's Paradise, they'll... touch your mind? It will probably be two or three weeks after you place the orb. Then you will return to Devil-Eye to contact me."`
 			`	Tutitot walks towards your ship as if in a trance. You prepare to leave.`
 			`	"You will be paid well upon your return," says Teeneep. "Please hurry."`
 				accept
@@ -1408,7 +1408,7 @@ mission "Hai Rescue [B08] Re-Plan"
 		conversation
 			`You approach the coordinates the authorities provided and a hidden hangar opens. It was covered by a hologram of trees. Once within, Teeneep and Stephen Moray meet you at your ship.`
 			`	Teeneep tells you, "We've made progress. I have been working with the Free Worlds, Syndicate, Republic, and the Deep. They are all eager to help the Hai rescue our people. You've sparked a long-needed discussion between diplomats in our governments. This will go a long way towards establishing peace."`
-			`	She continues, "We've outfitted a Dreadnought and a Carrier with the best technology in Hai and human space. We've destroyed the three staging facilities and we're ready to attack Philosopher's Paradise."`
+			`	She continues, "We've outfitted a Dreadnought and a Carrier with the best technology in Hai and human space. We've destroyed the three staging facilities, and we're ready to attack Philosopher's Paradise."`
 			`	You tell her about Tutitot's findings on Philosopher's Paradise and Stephen Moray speaks, "There aren't enough Jump Drives in all of human space for a fleet that could defeat that many pirates. If the Quarg, Korath, and Drak won't help us, I don't know what we'll do."`
 			`	Teeneep sighs. "Captain <last>, I need you to escort me to <destination>." Stephen looks worried at that suggestion. "The Unfettered Hai have plenty of Jump Drives and troops. They could liberate our people. I know their ways, and I can convince them to help, if my ship survives the journey. I'll pay you double this time: <payment>.`
 				accept
@@ -1457,7 +1457,7 @@ mission "Hai Rescue [C01] Bloody Love Blooms"
 				`	(Walk in and join Teeneep.)`
 				`	(Stand in the room's entrance and watch.)`
 					goto watch
-			`	As you enter the room, a pair of Unfettered grab you and pin you to the wall. Teeneep pulls out a throwing knife and says, "Let him go now." The Unfettered let go immediately and she puts her knife away. As you walk towards her, she signals for you to stay where you are.`
+			`	As you enter the room, a pair of Unfettered grab you and pin you to the wall. Teeneep pulls out a throwing knife and says, "Let him go now." The Unfettered let go immediately, and she puts her knife away. As you walk towards her, she signals for you to stay where you are.`
 			label watch
 			`	Teeneep explains to the leader, "Twenty thousand Hai have been kidnapped and enslaved by human pirates. They're concealed in a subterranean base that can only be reached with a Jump Drive and a Quantum Keystone. Dozens of human capital ships and thousands of human pirates guard the Hai. We haven't enough Jump Drives to rescue them.`
 			# Note: Teeneep is using hyperbole; she knows most of the 20,000
@@ -1471,9 +1471,9 @@ mission "Hai Rescue [C01] Bloody Love Blooms"
 			`	She re-sheaths her swords and calls you over, "I have brought with me one of the greatest war heroes of the humans."`
 			choice
 				`	(Walk to her.)`
-			`	"Captain <first> <last> led great fleets during a civil war of the humans. I have seen his valor in battle as he's escorted my ship through pirate space. We will have the honor of fighting along side him."`
+			`	"Captain <first> <last> led great fleets during a civil war of the humans. I have seen his valor in battle as he's escorted my ship through pirate space. We will have the honor of fighting alongside him."`
 			`	The Unfettered leader turns to you and says, "I look forward to seeing you fight. We cannot spare a large fleet though, so I will need your people to upgrade ten Shield Beetles to our specifications. We'll return your outfits after the battle." He motions to another officer who hands him a data card, "These are the instructions."`
-			`	Teeneep smiles at you, "Return to Hai-home and inform the Elders that an Unfettered fleet will arrive. Then go to Prime and tell them to prepare to outfit our ships. When you have finished, land at Allhome and we will rejoin you."`
+			`	Teeneep smiles at you, "Return to Hai-home and inform the Elders that an Unfettered fleet will arrive. Then go to Prime and tell them to prepare to outfit our ships. When you have finished, land at Allhome, and we will rejoin you."`
 			`	You return to your ship and prepare to leave.`
 				accept
 	on complete
@@ -1527,9 +1527,6 @@ mission "Hai Rescue [C03] Unfettered Escort"
 		personality escort heroic staying opportunistic
 		system Betelgeuse
 		fleet "Human Wormhole Guards" 20
-
-# Special outfitting for the Philsopher's Paradise battle.
-
 
 mission "Hai Rescue [C04] Foundry"
 	landing
@@ -1712,7 +1709,7 @@ mission "Hai Rescue [C06] Freedom"
 			`	The Korath leader continues, "I must ask you hold secret the presence of Korath here. If the other Exiles hear of this place, they may attack to retrieve us, or simply to pillage. We will remain here in hiding until Korath space is safe."`
 				goto questions
 			label "translation services"
-			`	The Korath leader looks worried, "No, we cannot. Few among us Korath know your language and we must remain here in secret. Perhaps in time there will be a way, but not yet."`
+			`	The Korath leader looks worried, "No, we cannot. Few among us Korath know your language, and we must remain here in secret. Perhaps in time there will be a way, but not yet."`
 				goto questions
 			label home
 			`	The three leaders laugh. The Hai answers, "We are home. This is a place of learning where three races join as one to seek knowledge. Some recent kidnapping victims wish to leave. We will help you find them and send them home."`
@@ -1720,9 +1717,9 @@ mission "Hai Rescue [C06] Freedom"
 			`	The human leader says, "Most of the humans in this city have been here for several generations. This has always been home to us."`
 				goto questions
 			label place
-			`	"We understand you have heard most of the story from your spy. This place was founded over a hundred twenty years ago by anarchists from the colony of Freedom. They began kidnapping researchers and engineers, forcing them to devise new weapons or medicines. This place also has manufacturing facilities, creating goods the pirates cannot easily build in human space where their facilities are destroyed regularly.`
+			`	"We understand you have heard most of the story from your spy. This place was founded over a hundred twenty years ago by anarchists from the colony of Freedom. They began kidnapping researchers and engineers, forcing them to devise new weapons or medicines. Our city also has manufacturing facilities where we created goods the pirates could not easily build in human space where their facilities are destroyed regularly.`
 			`	"There have been many attempts to take the city by force or by money. Several Alpha groups, the Syndicate, and various illegal organizations, have all tried. Some used chemical or biological weapons. Others sent ships. Many offered money or favors. Philosopher's Paradise has always been an independent country, and always will be.`
-			`	"Now that the pirates are gone, the civilians will rule without fear. As you have already destroyed the upper region of the city, we have little to fear from attack by space creatures. Soon we'll have our shipyards at full capacity so we may defend ourselves.`
+			`	"Now that the pirates are gone, the civilians will rule without fear. As you have already destroyed the upper region of the city, we have little to fear from attack by space creatures. Soon we'll have our shipyards at full capacity, so we may defend ourselves.`
 			`	"Our research and manufacturing facilities are damaged now, but as repair them we will make them available to you.`
 			# (That refers to advanced ships and outfits available after quests.)
 				goto questions
