@@ -440,7 +440,7 @@ mission "Hai Rescue [A02] Nanotransceiver Identification"
 				goto questions
 			label patterns
 			`	Teeneep explains, "I head a large civil rights activist organization; we have some resources of our own. We've combed police records for the past few decades and noticed patterns in disappearances.`
-			`	"There are violent crimes and kidnappings in Hai space, though not nearly as frequently as in human space. Murder, assault, estranged parents kidnapping their children, all of that happens here. Many of those crimes are solved: the victim is found dead or alive. Some of them are not solved.`
+			`	"There are violent crimes and kidnappings in Hai space, though much less frequently than in human space. Murder, assault, estranged parents kidnapping their children, all of that happens here. Many of those crimes are solved: the victim is found dead or alive. Some of them are not solved.`
 			`	"A disproportionate number are from the intelligentsia: doctors, scientists, engineers, architects. In particular, they are gifted researchers in their field, but not prominent enough for the field to be crippled by their absence.`
 			`	"The same is happening in human space. In research institutions, people are occasionally disappearing. The patterns are exactly the same.`
 			`	"We believe someone is collecting researchers.`
@@ -450,7 +450,7 @@ mission "Hai Rescue [A02] Nanotransceiver Identification"
 			`	"From the rate at which the disappearances have happened, possibly as many as five thousand Hai have vanished this way. The number may be less; some of those cases may be undiscovered murders, secret changes of identity, or defections to the Unfettered. Maybe five times that number of humans.`
 				goto questions
 			label know
-			`	Teeneep explains, "My civil rights organization has contacts with sympathetic individuals and organizations throughout Hai space. We have enough funding to hire a few hundred full-time employees of our own. Most of them are lawyers, social workers, or administrative employees. A few are investigative journalists or various types of researchers.`
+			`	Teeneep explains, "The civil rights organization I lead has contacts with sympathetic individuals and organizations throughout Hai space. We have enough funding to hire a few hundred full-time employees of our own. Most of them are lawyers, social workers, or administrative employees. A few are investigative journalists or various types of researchers.`
 			`	"We've spent the last two years researching this problem, but it helped a lot to meet the people who have been rescued.`
 				goto questions
 			label anyone
@@ -482,7 +482,7 @@ mission "ZZ Hai Rescue [A03] Nanotransceiver Identification"
 		conversation
 			`After you land, a hovering gray platform lowers to the entrance of your ship. You step on, and it raises you to a higher level of the ringworld where many Quarg and a few Korath are present. You find the first Quarg who will talk to you and show it the vial of nanotransceivers.`
 			`	The Quarg makes a series of wheezing sounds which approximate a laugh. "I am merely a pilot. I know nothing of nanotransceivers. That is the technology of the Korath, and I will take you to one who is knowledgeable."`
-			`	You pass through another two grey platform transports and reach a warm cave-like structure with a group of Korath and Quarg. From the holograms and equipment, it appears they're discussing science. One hologram looks like a blood cells attached to a tiny machine; this may be a nanoscale medicine laboratory.`
+			`	You pass through another two grey platform transports and reach a warm cave-like structure with a group of Korath and Quarg. From the holograms and equipment, it appears they're discussing science. One hologram looks like a blood cell attached to a tiny machine; this may be a nanoscale medicine laboratory.`
 			`	The Quarg and Korath discuss your nanotransceivers for a few minutes, placing them in various instruments.`
 			`	Finally you have your answer. A Quarg scientist tells you, "These are Korath in origin, but makeshift and primitive. Even the Korath Exiles are more advanced. Those who made these have little resources and simple machinery. This will tell you how to detect these nanotransceivers," it hands you a standard data card compatible with human computers.`
 			`	"Take this to Tarazed Shipyards."`
@@ -702,7 +702,7 @@ mission "Hai Rescue [A07] Logo Identification"
 			choice
 				`	(Enter the building.)`
 			`	You're ushered to an elevator and given a room number: 3017A19, the 301st floor, section 7A, room 19. It's amazing how large Earth's megabuildings have become. Some planets have lower population than one of these buildings.`
-			`	Giti is even more excited in-person than she was by holocommunicator. She's already researched the symbol that is similar to the circle-A anarchist symbol, but needed more detail about the demonic one. You also show her the information about the nanotransceivers.`
+			`	Giti is even more excited in-person than she was by holocommunicator. She's already researched the modified anarchist symbol, but needed more detail about the demonic one. You also show her the information about the nanotransceivers.`
 			`	"This modified anarchist symbol was used by a militia group that was born on the Freedom anarchist colony over a century ago. They called themselves the "Mind Hunters" and were known for stealing technology and kidnapping researchers. Some goods and researchers were found, but many disappeared in Syndicate space.`
 			`	"Fifty years ago, Syndicate Internal Affairs tracked down and killed most of the members they found in Syndicate space, but their leaders escaped. Internal Affairs suspects Syndicate space was just used as a staging point for transfers elsewhere. From the description of the event, I believe the leader escaped using a Jump Drive in a Hai vessel.`
 			`	"For the demonic symbol, we'll have to go to another library in room 4196A21."`
@@ -1165,7 +1165,7 @@ mission "Hai Rescue [B03] Diplomacy: Syndicate Internal Affairs"
 		log `People` `Stephen Moray` `Deputy Director Moray works for Syndicate Internal Affairs dealing with pirate-related matters. In addition to enforcing the law, he also smuggles slaves from pirate worlds into freedom in Syndicate space. He has promised to find out who is responsible for the kidnappings.`
 		conversation
 			`Deputy Director Stephen Moray meets you at the entrance of your ship. "I work for Syndicate Internal Affairs. We're the internal police of the Syndicate; when an employee of any rank does misdeeds, we track them down. Janitor or executive; it doesn't matter. My part of Internal Affairs works on piracy-related matters.`
-			`	"I know what your people are going through," he says. "When I was a teenager, pirates kidnapped my brother and father, and forced them to serve on pirate vessels, calling them 'indentured servants.' My father watched helplessly as my brother's disabled ship was destroyed by a Navy Frigate just as it exited hyperspace. My father eventually escaped. He is serving his seventeenth year of a twenty-five-year sentence for piracy, even though his deeds were against his will.`
+			`	"I know what your people are going through," he says. "When I was a teenager, pirates kidnapped my brother and father, and forced them to serve on pirate vessels, calling them 'indentured servants.' My father watched helplessly as my brother's disabled ship was destroyed by a Navy Frigate just as it exited hyperspace. My father eventually escaped. He is serving his seventeenth year of a twenty-five-year sentence for piracy, even though his deeds were against his will. Unfortunately, that is how our laws are written.`
 			`	"You see the hails of the Navy: loyalty, honor, bravery. Half-truths at best. We see the Navy as heroes because they are the only large organization capable of self-sacrifice. Yes, they do many good deeds. Those deeds blind us to their brutality and immorality.`
 			`	"Not all humans are like that - many members of the Navy disagree with the barbaric rules about slavery. Some of us in the Syndicate, Free Worlds, and elsewhere, are trying to solve this problem."`
 			`	You reach the meeting room, and he says, "Please come in."`
@@ -1590,17 +1590,21 @@ mission "Hai Rescue [C05] Devil-Hide Battle"
 	blocked "You need room for all <bunks> operatives."
 	to offer
 		has "Hai Rescue [C04] Foundry: done"
-	# on enter "Devil-Hide"
-	# 	conversation
-	# 		`Teeneep reminds you that the operatives and General Choot'k's Shield Beetle must survive. His Shield Beetle has red engine flares; the others have blue. She says you'll need to Dominate the planet before you can land.`
-	# 		`	(NOTE: You need to Dominate this planet to finish the battle. To do that, talk to the planet and demand tribute. The planet will send defense fleets over and over until they run out. Demand tribute again, and they'll agree. Then land to finish the mission.)`
-	# 		`	(WARNING: The Unfettered will not help you fight the defense fleets sent in response to your tribute demands. They want to see you prove yourself in battle. The Unfettered will fight the other pirate ships though. The defense fleets will show up as blinking lights in the mini-map.)`
+	on enter "Devil-Hide"
+		conversation
+			# The alternative to Domination is to provide clearance but
+			# automatically launch when you land on an "on visit." That
+			# repairs your ship every time you land though, so it isn't
+			# an option. 
+			`Teeneep reminds you that the operatives and General Choot'k's Shield Beetle must survive. His Shield Beetle has red engine flares; the others have blue. She says you'll need to Dominate the planet before you can land.`
+			`	(NOTE: You need to Dominate this planet to finish the battle. To do that, talk to the planet and demand tribute. The planet will send defense fleets over and over until they run out. Demand tribute again, and they'll agree. Then land to finish the mission.)`
+			`	(WARNING: The Unfettered will not help you fight the defense fleets sent in response to your tribute demands. They want to see you prove yourself in battle. The Unfettered will fight the other pirate ships though.)`
 	on visit
 		conversation
-			`To finish this mission, you must defeat all defending pirate vessels, and land with the Unfettered Flagship, all 200 operatives, and their 70 tons of cargo.`
+			`To finish this mission, you must destroy all defending pirate vessels, and land with the Unfettered Flagship, all 200 operatives, and their 70 tons of cargo.`
 				launch
-#	on accept
-#		event "Philosopher's Paradise can be dominated"
+	on accept
+		event "Philosopher's Paradise can be dominated"
 	on offer
 		conversation
 			`The 200 operatives and all Unfettered Hai shield beetles are ready to go.`
@@ -1625,22 +1629,26 @@ mission "Hai Rescue [C05] Devil-Hide Battle"
 				"Shield Beetle (Plasma Blaster Jump)"
 	on complete
 		event "Liberated Philosopher's Paradise"
-	npc
+	npc kill
 		government "Pirate (Devil-Run Gang)"
-		personality heroic staying
+		personality heroic target
 		system "Devil-Hide"
-		fleet "Devil-Run Warships" 18
+		fleet "Devil-Run Warships" 15
+	npc kill
+		government "Pirate (Devil-Run Gang)"
+		personality heroic staying target
+		system "Devil-Hide"
 		fleet
 			names "pirate"
 			variant
 				"Korath Raider"
 	# Note: a second Korath Raider may already be in orbit from mission B04Z
 
-# event "Philosopher's Paradise can be dominated"
-# 	planet "Philosopher's Paradise"
-# 		tribute 7000
-# 			threshold 3000
-# 			fleet "Devil-Run Warships" 5
+event "Philosopher's Paradise can be dominated"
+	planet "Philosopher's Paradise"
+		tribute 7000
+			threshold 3000
+			fleet "Devil-Run Warships" 5
 
 mission "Hai Rescue [C06] Freedom"
 	landing
@@ -1655,9 +1663,7 @@ mission "Hai Rescue [C06] Freedom"
 	on offer
 		fail "Hai Rescue [B04Z] Guard"
 		log `Factions` `Philosopher's Paradise` `Formerly a pirate stronghold, this city of scientists is a hundred twenty years old now. Korath, Hai, and humans live peacefully, working side-by-side, and most have no desire to leave. They value their independence and have refused Republic membership. This city orbits a strange world that defies analysis in a region of space that has never been touched by civilization. Quarg refuse to go here, and Drak consider it outside their domain.`
-		# The below log has to be written in the first person since it refers to the
-		# people of a planet specifically promising assistance to the player.
-		log `Liberated Philosopher's Paradise, which now pays me daily tribute and is extremely grateful for my help. They said they have inventions that may be of use to me, but their facilities are damaged. As they repair the facilities, they'll make new technologies available.`
+		log `Liberated Philosopher's Paradise. They said they have inventions that may be of use to me, but their facilities are damaged. As they repair the facilities, they'll make new technologies available.`
 		conversation
 			`General Choot'k cuts open the doors of a large hangar and your ships land. Two hundred operatives pour out. They're wearing exoskeletons with built-in shields. As they storm through the complex, you follow some of them.`
 			`	Their guns are able to literally melt away meter-thick walls in seconds. They have a gas bombs that release an extremely powerful stun gas which knocks people out for hours. The pirates outnumber the Republic operatives twenty-five to one, but this huge technological advantage gives the operatives a fighting chance.`
