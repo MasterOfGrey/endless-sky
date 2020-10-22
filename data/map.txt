@@ -8,8 +8,6 @@
 # WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
 # PARTICULAR PURPOSE.  See the GNU General Public License for more details.
 
-# System attribute reference: "TAGhuman" "TAGcore" "TAGnearearth" "TAGparadise" "TAGnorth" "TAGdeep" "TAGdirtbelt" "TAGsouth" "TAGrim" "TAGcoalition" "TAGarach" "TAGkimek" "TAGsaryd" "TAGkorath" "TAGautomata" "TAGefreti" "TAGexiles" "TAGhai" "TAGwanderer" "TAGemberwaste" "TAGgraveyard" "TAGisolated" "TAGfringe" "TAGringworld" "TAGwormhole" "TAGnova" "TAGwolf-rayet" "TAGblackhole" "TAGstellarphenomena" "TAGwarzone" "TAGarchon" "TAGpleiades"
-
 galaxy "Milky Way"
 	pos 0 0
 	sprite ui/galaxy
@@ -77,7 +75,6 @@ galaxy "label graveyard"
 system "1 Axis"
 	pos -1274.63 267.214
 	government Coalition
-	attributes "TAGkimek" "TAGcoalition"
 	habitable 745.92
 	belt 1112
 	link "Sol Kimek"
@@ -155,7 +152,6 @@ system "1 Axis"
 system "10 Pole"
 	pos -1356.63 19.2137
 	government Coalition
-	attributes "TAGkimek" "TAGcoalition"
 	habitable 486.68
 	belt 1765
 	haze _menu/haze-67
@@ -227,7 +223,6 @@ system "10 Pole"
 system "11 Autumn Above"
 	pos -1278.63 148.214
 	government Coalition
-	attributes "TAGkimek" "TAGcoalition"
 	habitable 1566.68
 	belt 1099
 	haze _menu/haze-133
@@ -309,7 +304,6 @@ system "11 Autumn Above"
 system "11 Spring Below"
 	pos -1272.63 380.214
 	government Coalition
-	attributes "TAGkimek" "TAGcoalition"
 	habitable 912.6
 	belt 1932
 	link "4 Spring Rising"
@@ -389,7 +383,6 @@ system "11 Spring Below"
 system "12 Autumn Above"
 	pos -1276.63 -19.7863
 	government Coalition
-	attributes "TAGkimek" "TAGcoalition"
 	habitable 1050.92
 	belt 1283
 	link "14 Pole"
@@ -483,7 +476,6 @@ system "12 Autumn Above"
 system "14 Pole"
 	pos -1343.63 -119.786
 	government Coalition
-	attributes "TAGkimek" "TAGcoalition"
 	habitable 625
 	belt 1881
 	haze _menu/haze-67
@@ -544,7 +536,6 @@ system "14 Pole"
 system "14 Summer Above"
 	pos -1436.63 182.214
 	government Coalition
-	attributes "TAGkimek" "TAGcoalition"
 	habitable 1400
 	belt 1093
 	haze _menu/haze-67
@@ -610,7 +601,6 @@ system "14 Summer Above"
 system "14 Winter Below"
 	pos -1143.63 341.214
 	government Coalition
-	attributes "TAGkimek" "TAGcoalition"
 	habitable 1111.68
 	belt 1173
 	link "8 Winter Below"
@@ -686,7 +676,6 @@ system "14 Winter Below"
 system "16 Autumn Rising"
 	pos -1305.63 74.2137
 	government Coalition
-	attributes "TAGkimek" "TAGcoalition"
 	habitable 1715
 	belt 1424
 	link "12 Autumn Above"
@@ -756,7 +745,6 @@ system "16 Autumn Rising"
 system "3 Axis"
 	pos -1235.63 299.214
 	government Coalition
-	attributes "TAGkimek" "TAGcoalition"
 	habitable 2372.76
 	belt 1202
 	link "1 Axis"
@@ -824,7 +812,6 @@ system "3 Axis"
 system "3 Pole"
 	pos -1344.63 162.214
 	government Coalition
-	attributes "TAGkimek" "TAGcoalition"
 	habitable 625
 	belt 1617
 	link "16 Autumn Rising"
@@ -884,7 +871,6 @@ system "3 Pole"
 system "3 Spring Rising"
 	pos -1414.63 356.214
 	government Coalition
-	attributes "TAGkimek" "TAGcoalition"
 	habitable 1080
 	belt 1613
 	haze _menu/haze-33
@@ -957,7 +943,6 @@ system "3 Spring Rising"
 system "4 Axis"
 	pos -1169.63 365.214
 	government Coalition
-	attributes "TAGkimek" "TAGcoalition"
 	habitable 425.92
 	belt 1838
 	link "14 Winter Below"
@@ -1020,7 +1005,6 @@ system "4 Axis"
 system "4 Spring Rising"
 	pos -1309.63 321.214
 	government Coalition
-	attributes "TAGkimek" "TAGcoalition"
 	habitable 320
 	belt 1801
 	link "1 Axis"
@@ -1085,7 +1069,6 @@ system "4 Spring Rising"
 system "4 Summer Rising"
 	pos -1377.63 207.214
 	government Coalition
-	attributes "TAGkimek" "TAGcoalition"
 	habitable 320
 	belt 1860
 	link "3 Pole"
@@ -1145,7 +1128,6 @@ system "4 Summer Rising"
 system "4 Winter Rising"
 	pos -1259.63 248.214
 	government Coalition
-	attributes "TAGkimek" "TAGcoalition"
 	habitable 135
 	belt 1345
 	link "Sol Kimek"
@@ -1220,7 +1202,6 @@ system "4 Winter Rising"
 system "5 Axis"
 	pos -1142.63 394.214
 	government Coalition
-	attributes "TAGkimek" "TAGcoalition"
 	habitable 233.28
 	belt 1775
 	link "4 Axis"
@@ -1293,7 +1274,6 @@ system "5 Axis"
 system "5 Spring Below"
 	pos -1213.63 415.214
 	government Coalition
-	attributes "TAGkimek" "TAGcoalition"
 	habitable 1313.28
 	belt 1104
 	link "4 Axis"
@@ -1365,7 +1345,6 @@ system "5 Spring Below"
 system "5 Summer Above"
 	pos -1387.63 118.214
 	government Coalition
-	attributes "TAGkimek" "TAGcoalition"
 	habitable 425.92
 	belt 1133
 	haze _menu/haze-133
@@ -1432,7 +1411,6 @@ system "5 Summer Above"
 system "5 Winter Above"
 	pos -1216.63 208.214
 	government Coalition
-	attributes "TAGkimek" "TAGcoalition"
 	habitable 320
 	belt 1414
 	link "4 Winter Rising"
@@ -1496,7 +1474,6 @@ system "5 Winter Above"
 system "7 Autumn Rising"
 	pos -1235.63 177.214
 	government Coalition
-	attributes "TAGkimek" "TAGcoalition"
 	habitable 425.92
 	belt 1289
 	link "11 Autumn Above"
@@ -1562,7 +1539,6 @@ system "7 Autumn Rising"
 system "8 Winter Below"
 	pos -1179.63 284.214
 	government Coalition
-	attributes "TAGkimek" "TAGcoalition"
 	habitable 486.68
 	belt 1285
 	link "3 Axis"
@@ -1627,7 +1603,6 @@ system "8 Winter Below"
 system "9 Spring Above"
 	pos -1377.63 281.214
 	government Coalition
-	attributes "TAGkimek" "TAGcoalition"
 	habitable 1050.92
 	belt 1397
 	haze _menu/haze-67
@@ -1702,7 +1677,6 @@ system "9 Spring Above"
 system Ablodab
 	pos -854.587 592.051
 	government Coalition
-	attributes "TAGarach" "TAGcoalition"
 	habitable 425.92
 	belt 1368
 	link Debrugt
@@ -1777,7 +1751,6 @@ system Ablodab
 system Ablub
 	pos -581.587 637.051
 	government Coalition
-	attributes "TAGarach" "TAGcoalition"
 	habitable 233.28
 	belt 1641
 	haze _menu/haze-133
@@ -1831,7 +1804,6 @@ system Ablub
 system Acamar
 	pos -284 -3
 	government Syndicate
-	attributes "TAGhuman" "TAGcore"
 	habitable 1080
 	belt 1013
 	link Diphda
@@ -1890,7 +1862,6 @@ system Acamar
 system Achernar
 	pos -93 154
 	government Syndicate
-	attributes "TAGhuman" "TAGcore"
 	habitable 625
 	belt 1963
 	haze _menu/haze-133
@@ -1962,7 +1933,6 @@ system Achernar
 system Acrux
 	pos -808 192
 	government Republic
-	attributes "TAGhuman" "TAGrim"
 	habitable 590.625
 	belt 1407
 	haze _menu/haze-67
@@ -2042,7 +2012,6 @@ system Acrux
 system Adhara
 	pos -669 -200
 	government Republic
-	attributes "TAGhuman" "TAGdeep"
 	habitable 670
 	belt 1014
 	link "Epsilon Leonis"
@@ -2107,7 +2076,7 @@ system Adhara
 system Aescolanus
 	pos -15 340
 	government Uninhabited
-	attributes "TAGemberwaste" "TAGwormhole" "TAGstellarphenomena"
+	attributes "ember waste" "wormhole"
 	habitable 233.28
 	belt 1323
 	haze _menu/haze-red
@@ -2148,7 +2117,7 @@ system Aescolanus
 system "Aki'il"
 	pos -83 722
 	government Uninhabited
-	attributes "TAGemberwaste" "TAGgraveyard" "TAGisolated"
+	attributes "ember waste" "graveyard"
 	habitable 1505.92
 	asteroids "large metal" 47 5
 	asteroids "large rock" 2 10
@@ -2204,7 +2173,6 @@ system "Aki'il"
 system "Al Dhanab"
 	pos -177 207
 	government Syndicate
-	attributes "TAGhuman" "TAGcore"
 	habitable 1080
 	belt 1432
 	haze _menu/haze-133
@@ -2274,7 +2242,6 @@ system "Al Dhanab"
 system Albaldah
 	pos -350 484
 	government Republic
-	attributes "TAGhuman" "TAGsouth"
 	habitable 534.375
 	belt 1622
 	haze _menu/haze-133
@@ -2349,7 +2316,6 @@ system Albaldah
 system Albireo
 	pos -270 503
 	government Republic
-	attributes "TAGhuman" "TAGsouth"
 	habitable 760
 	belt 1030
 	link Tarazed
@@ -2407,7 +2373,6 @@ system Albireo
 system Alcyone
 	pos -80 -144
 	government Pirate
-	attributes "TAGhuman" "TAGcore"
 	habitable 270
 	belt 1438
 	haze _menu/haze-133
@@ -2474,7 +2439,6 @@ system Alcyone
 system Aldebaran
 	pos -356 -26
 	government Republic
-	attributes "TAGhuman" "TAGparadise"
 	habitable 625
 	belt 1296
 	link Capella
@@ -2520,7 +2484,6 @@ system Aldebaran
 system Alderamin
 	pos -272 258
 	government Syndicate
-	attributes "TAGhuman" "TAGcore"
 	habitable 1705
 	belt 1908
 	haze _menu/haze-133
@@ -2585,7 +2548,6 @@ system Alderamin
 system Aldhibain
 	pos -659 451
 	government Republic
-	attributes "TAGhuman" "TAGsouth"
 	habitable 455.625
 	belt 1840
 	link Kornephoros
@@ -2643,7 +2605,6 @@ system Aldhibain
 			period 13.622
 
 system Algenib
-	attributes "TAGhuman" "TAGcore" "TAGfringe"
 	pos -118 341
 	government Pirate
 	habitable 455.625
@@ -2700,7 +2661,6 @@ system Algenib
 			period 42.6838
 
 system Algieba
-	attributes "TAGhuman" "TAGdeep"
 	pos -691 -52
 	government Republic
 	habitable 2695
@@ -2772,7 +2732,6 @@ system Algieba
 system Algol
 	pos -210 17
 	government Syndicate
-	attributes "TAGhuman" "TAGcore"
 	habitable 534.375
 	belt 1839
 	haze _menu/haze-133
@@ -2834,7 +2793,6 @@ system Algol
 system Algorel
 	pos -631 145
 	government Republic
-	attributes "TAGhuman" "TAGdirtbelt"
 	habitable 320
 	belt 1993
 	haze _menu/haze-67
@@ -2899,7 +2857,6 @@ system Algorel
 system Alheka
 	pos -350 -271
 	government Republic
-	attributes "TAGhuman" "TAGnorth"
 	habitable 1080
 	belt 1380
 	haze _menu/haze-67
@@ -2958,7 +2915,6 @@ system Alheka
 system Alhena
 	pos -430 -80
 	government Republic
-	attributes "TAGhuman" "TAGparadise"
 	habitable 945
 	belt 1078
 	haze _menu/haze-67
@@ -3028,7 +2984,6 @@ system Alhena
 system Alioth
 	pos -620 315
 	government Republic
-	attributes "TAGhuman" "TAGdirtbelt"
 	habitable 455.625
 	belt 1889
 	link Wei
@@ -3081,7 +3036,6 @@ system Alioth
 system Alkaid
 	pos -825 318
 	government Republic
-	attributes "TAGhuman" "TAGrim"
 	habitable 1080
 	belt 1142
 	haze _menu/haze-67
@@ -3149,7 +3103,6 @@ system Alkaid
 system Almaaz
 	pos -349 -538
 	government Pirate
-	attributes "TAGhuman" "TAGnorth" "TAGfringe"
 	habitable 1080
 	belt 1873
 	haze _menu/haze-33
@@ -3196,7 +3149,6 @@ system Almaaz
 system Almach
 	pos -7 232
 	government Pirate
-	attributes "TAGhuman" "TAGcore" "TAGfringe"
 	habitable 320
 	belt 1914
 	haze _menu/haze-133
@@ -3259,7 +3211,6 @@ system Almach
 system Alnair
 	pos -272 314
 	government Syndicate
-	attributes "TAGhuman" "TAGcore"
 	habitable 135
 	belt 1969
 	haze _menu/haze-133
@@ -3328,7 +3279,6 @@ system Alnair
 system Alnasl
 	pos -553 380
 	government Republic
-	attributes "TAGhuman" "TAGdirtbelt"
 	habitable 640
 	belt 1412
 	haze _menu/haze-133
@@ -3391,7 +3341,6 @@ system Alnasl
 system Alnilam
 	pos -487 -513
 	government Pirate
-	attributes "TAGhuman" "TAGnorth" "TAGfringe"
 	habitable 1715
 	belt 1099
 	haze _menu/haze-33
@@ -3469,7 +3418,6 @@ system Alnilam
 system Alnitak
 	pos -331 -412
 	government Republic
-	attributes "TAGhuman" "TAGnorth"
 	habitable 349.375
 	belt 1907
 	haze _menu/haze-67
@@ -3526,7 +3474,6 @@ system Alnitak
 system Alniyat
 	pos -691 501
 	government Republic
-	attributes "TAGhuman" "TAGsouth"
 	habitable 534.375
 	belt 1760
 	link Pherkad
@@ -3599,7 +3546,6 @@ system Alniyat
 system "Alpha Arae"
 	pos -481 394
 	government Republic
-	attributes "TAGhuman" "TAGdirtbelt"
 	habitable 945
 	belt 1405
 	link "Delta Sagittarii"
@@ -3670,7 +3616,6 @@ system "Alpha Arae"
 system "Alpha Centauri"
 	pos -429 125
 	government Republic
-	attributes "TAGhuman" "TAGnearearth"
 	habitable 320
 	belt 1116
 	haze _menu/haze-67
@@ -3733,7 +3678,6 @@ system "Alpha Centauri"
 system "Alpha Hydri"
 	pos -97 98
 	government Syndicate
-	attributes "TAGhuman" "TAGcore"
 	habitable 1400
 	belt 1839
 	haze _menu/haze-133
@@ -3787,7 +3731,6 @@ system "Alpha Hydri"
 system Alphard
 	pos -588 -47
 	government Republic
-	attributes "TAGhuman" "TAGparadise"
 	habitable 1080.62
 	belt 1101
 	link Algieba
@@ -3854,7 +3797,6 @@ system Alphard
 system Alphecca
 	pos -546 308
 	government Republic
-	attributes "TAGhuman" "TAGdirtbelt"
 	habitable 1400
 	belt 1101
 	link Alioth
@@ -3904,7 +3846,6 @@ system Alphecca
 system Alpheratz
 	pos -176 125
 	government Syndicate
-	attributes "TAGhuman" "TAGcore"
 	habitable 1080.62
 	belt 1645
 	haze _menu/haze-133
@@ -3972,7 +3913,6 @@ system Alpheratz
 system Altair
 	pos -357 161
 	government Republic
-	attributes "TAGhuman" "TAGnearearth"
 	habitable 945
 	belt 1830
 	link Vega
@@ -4035,7 +3975,6 @@ system Altair
 system Aludra
 	pos -606 -374
 	government Republic
-	attributes "TAGhuman" "TAGdeep"
 	habitable 455.625
 	belt 1511
 	haze _menu/haze-33
@@ -4099,7 +4038,6 @@ system Aludra
 system "Ancient Hope"
 	pos -1159.59 702.051
 	government Coalition
-	attributes "TAGcoalition" "TAGsaryd"
 	habitable 455
 	belt 1439
 	haze _menu/haze-67
@@ -4169,7 +4107,6 @@ system "Ancient Hope"
 system Ankaa
 	pos -230 100
 	government Syndicate
-	attributes "TAGhuman" "TAGcore"
 	habitable 625
 	belt 1003
 	haze _menu/haze-133
@@ -4224,7 +4161,6 @@ system Ankaa
 system Answer
 	pos -1086.59 631.051
 	government Coalition
-	attributes "TAGcoalition" "TAGsaryd"
 	habitable 425.92
 	belt 1636
 	haze _menu/haze-none
@@ -4289,7 +4225,6 @@ system Answer
 system Antares
 	pos -711 541
 	government Pirate
-	attributes "TAGhuman" "TAGsouth"
 	habitable 455.625
 	belt 1778
 	haze _menu/haze-67
@@ -4351,7 +4286,7 @@ system Antares
 system Antevorta
 	pos -36.1297 446.242
 	government Uninhabited
-	attributes "TAGemberwaste"
+	attributes "ember waste"
 	habitable 320
 	belt 1994
 	haze _menu/haze-red
@@ -4415,7 +4350,6 @@ system Antevorta
 system Ap'arak
 	pos -164.62 -781.858
 	government Wanderer
-	attributes "TAGwanderer"
 	habitable 1080
 	belt 1385
 	haze _menu/haze-none
@@ -4471,7 +4405,6 @@ system Ap'arak
 system Arcturus
 	pos -589 226
 	government Republic
-	attributes "TAGhuman" "TAGdirtbelt"
 	habitable 320
 	belt 1422
 	link Mizar
@@ -4535,7 +4468,7 @@ system Arcturus
 system Arculus
 	pos 308.87 393.242
 	government Remnant
-	attributes "TAGemberwaste"
+	attributes "ember waste"
 	habitable 625
 	belt 1536
 	haze _menu/haze-red
@@ -4606,7 +4539,6 @@ system Arculus
 system Arneb
 	pos -523 -580
 	government Pirate
-	attributes "TAGhuman" "TAGnorth"
 	habitable 1715
 	belt 1947
 	haze _menu/haze-none
@@ -4655,7 +4587,6 @@ system Arneb
 system Ascella
 	pos -376 328
 	government Republic
-	attributes "TAGhuman" "TAGdirtbelt"
 	habitable 640
 	belt 1971
 	haze _menu/haze-133
@@ -4721,7 +4652,6 @@ system Ascella
 system Asikafarnut
 	pos 253.431 -584.812
 	government "Kor Sestor"
-	attributes "TAGkorath" "TAGautomata"
 	habitable 320
 	belt 1342
 	link Silikatakfar
@@ -4786,7 +4716,6 @@ system Asikafarnut
 system Aspidiske
 	pos -690 -282
 	government Republic
-	attributes "TAGhuman" "TAGdeep"
 	habitable 135
 	belt 1885
 	link Avior
@@ -4843,7 +4772,6 @@ system Aspidiske
 system Atria
 	pos -551 532
 	government Republic
-	attributes "TAGhuman" "TAGsouth"
 	habitable 214.375
 	belt 1340
 	link Han
@@ -4909,7 +4837,6 @@ system Atria
 system Avior
 	pos -658 -317
 	government Republic
-	attributes "TAGhuman" "TAGdeep"
 	habitable 1215
 	belt 1097
 	link Aspidiske
@@ -4979,7 +4906,6 @@ system Avior
 system Aya'k'k
 	pos -434.245 -616.57
 	government Wanderer
-	attributes "TAGwanderer"
 	habitable 486.68
 	belt 1586
 	haze _menu/haze-67
@@ -5039,7 +4965,6 @@ system Aya'k'k
 system Beginning
 	pos -912.587 694.051
 	government Coalition
-	attributes "TAGcoalition" "TAGsaryd"
 	habitable 425.92
 	belt 1833
 	link Belonging
@@ -5102,7 +5027,6 @@ system Beginning
 system Bellatrix
 	pos -225 -82
 	government Syndicate
-	attributes "TAGhuman" "TAGcore"
 	habitable 670
 	belt 1564
 	link Menkar
@@ -5162,7 +5086,6 @@ system Bellatrix
 system Belonging
 	pos -1007.59 658.051
 	government Coalition
-	attributes "TAGcoalition" "TAGsaryd"
 	habitable 625
 	belt 1407
 	link "Bright Void"
@@ -5222,7 +5145,6 @@ system Belonging
 system Belug
 	pos -1024.59 388.051
 	government Coalition
-	attributes "TAGcoalition" "TAGarach"
 	habitable 486.68
 	belt 1170
 	link Ekuarik
@@ -5292,7 +5214,6 @@ system Belug
 system Belugt
 	pos -838.587 668.051
 	government Coalition
-	attributes "TAGcoalition" "TAGarach"
 	habitable 486.68
 	belt 1517
 	link Gupta
@@ -5367,7 +5288,6 @@ system Belugt
 system "Beta Lupi"
 	pos -851 417
 	government Republic
-	attributes "TAGhuman" "TAGsouth"
 	habitable 625
 	belt 1261
 	haze _menu/haze-33
@@ -5426,7 +5346,6 @@ system "Beta Lupi"
 system Betelgeuse
 	pos -384 -322
 	government Republic
-	attributes "TAGhuman" "TAGnorth"
 	habitable 1080
 	belt 1641
 	haze _menu/haze-67
@@ -5501,7 +5420,6 @@ system Betelgeuse
 system Bloptab
 	pos -813.587 727.051
 	government Coalition
-	attributes "TAGcoalition" "TAGarach"
 	habitable 1080
 	belt 1061
 	link Blugtad
@@ -5562,7 +5480,6 @@ system Bloptab
 system Blubipad
 	pos -650.587 594.051
 	government Coalition
-	attributes "TAGcoalition" "TAGarach"
 	habitable 1080
 	belt 1567
 	haze _menu/haze-133
@@ -5619,7 +5536,6 @@ system Blubipad
 system Blugtad
 	pos -771.587 680.051
 	government Coalition
-	attributes "TAGcoalition" "TAGarach"
 	habitable 625
 	belt 1841
 	haze _menu/haze-133
@@ -5692,7 +5608,6 @@ system Blugtad
 system Boral
 	pos -502 331
 	government Republic
-	attributes "TAGhuman" "TAGdirtbelt" "TAGfringe"
 	habitable 214.375
 	belt 1867
 	link Alphecca
@@ -5757,7 +5672,6 @@ system Boral
 system "Bore Fah"
 	pos 71.7761 -592.536
 	government Hai
-	attributes "hai"
 	habitable 625
 	belt 1823
 	link "Wah Ki"
@@ -5817,7 +5731,6 @@ system "Bore Fah"
 system "Bote Asu"
 	pos 8.87418 -572.768
 	government Hai
-	attributes "hai"
 	habitable 2859.44
 	belt 1613
 	link "Wah Ki"
@@ -5908,7 +5821,6 @@ system "Bote Asu"
 system "Bright Void"
 	pos -1059.59 605.051
 	government Coalition
-	attributes "TAGcoalition" "TAGsaryd"
 	habitable 2795
 	belt 1385
 	haze _menu/haze-67
@@ -5989,7 +5901,6 @@ system "Bright Void"
 system "Broken Bowl"
 	pos -956.587 566.051
 	government Coalition
-	attributes "TAGcoalition" "TAGsaryd"
 	habitable 1080
 	belt 1648
 	haze _menu/haze-67
@@ -6049,7 +5960,7 @@ system "Broken Bowl"
 system Caeculus
 	pos 162.87 343.242
 	government Uninhabited
-	attributes "TAGemberwaste"
+	attributes "ember waste"
 	habitable 320
 	belt 1797
 	haze _menu/haze-red
@@ -6117,7 +6028,6 @@ system Caeculus
 system Canopus
 	pos -421 -225
 	government Republic
-	attributes "TAGhuman" "TAGnorth"
 	habitable 214.375
 	belt 1530
 	haze _menu/haze-67
@@ -6164,7 +6074,6 @@ system Canopus
 system Capella
 	pos -378 -13
 	government Republic
-	attributes "TAGhuman" "TAGparadise"
 	habitable 455.625
 	belt 1722
 	haze _menu/haze-67
@@ -6235,7 +6144,6 @@ system Capella
 system Caph
 	pos -295 77
 	government Syndicate
-	attributes "TAGhuman" "TAGnearearth"
 	habitable 670
 	belt 1173
 	link Sol
@@ -6299,7 +6207,6 @@ system Caph
 system Cardax
 	pos -211 -215
 	government Republic
-	attributes "TAGhuman" "TAGnorth"
 	habitable 1705
 	belt 1228
 	link Moktar
@@ -6362,7 +6269,7 @@ system Cardax
 system Cardea
 	pos -89.1297 417.242
 	government Uninhabited
-	attributes "TAGemberwaste" "TAGwormhole" "TAGstellarphenomena"
+	attributes "ember waste" "wormhole"
 	habitable 851.84
 	belt 1725
 	haze _menu/haze-red
@@ -6427,7 +6334,6 @@ system Cardea
 system Castor
 	pos -452 -17
 	government Republic
-	attributes "TAGhuman" "TAGparadise"
 	habitable 1715
 	belt 1675
 	haze _menu/haze-67
@@ -6512,7 +6418,6 @@ system Castor
 system Cebalrai
 	pos -461 282
 	government Republic
-	attributes "TAGhuman" "TAGdirtbelt"
 	habitable 625
 	belt 1955
 	link Rutilicus
@@ -6573,7 +6478,6 @@ system Cebalrai
 system Celeborim
 	pos 181.431 -633.812
 	government "Kor Sestor"
-	attributes "TAGkorath" "TAGautomata" "TAGfringe"
 	habitable 320
 	belt 1296
 	link Asikafarnut
@@ -6632,7 +6536,6 @@ system Celeborim
 system Chikatip
 	pos -77.5695 -307.812
 	government Uninhabited
-	attributes "TAGkorath" "TAGfringe"
 	habitable 425.92
 	belt 1929
 	link Furmeliki
@@ -6688,7 +6591,6 @@ system Chikatip
 system Chimitarp
 	pos 150.431 -287.812
 	government "Kor Mereti"
-	attributes "TAGkorath" "TAGautomata"
 	habitable 912.6
 	belt 1932
 	haze _menu/haze-133
@@ -6761,7 +6663,6 @@ system Chimitarp
 system Chirr'ay'akai
 	pos -102.761 -749.614
 	government Wanderer
-	attributes "TAGwanderer"
 	habitable 486.68
 	belt 1425
 	haze _menu/haze-33
@@ -6811,7 +6712,6 @@ system Chirr'ay'akai
 system Chornifath
 	pos 40.4305 -214.812
 	government Uninhabited
-	attributes "TAGkorath" "TAGfringe"
 	habitable 486.68
 	belt 1434
 	haze _menu/haze-133
@@ -6872,7 +6772,6 @@ system Chornifath
 system Chy'chra
 	pos 85.5308 -829.667
 	government Wanderer
-	attributes "TAGwanderer"
 	habitable 625
 	belt 1120
 	haze _menu/haze-33
@@ -6937,7 +6836,7 @@ system Chy'chra
 system Cinxia
 	pos 265.87 415.242
 	government Remnant
-	attributes "TAGemberwaste"
+	attributes "ember waste"
 	habitable 425.92
 	belt 1713
 	haze _menu/haze-red
@@ -6991,7 +6890,7 @@ system Cinxia
 system Coluber
 	pos 149.504 197.389
 	government Uninhabited
-	attributes "TAGemberwaste" "TAGwormhole" "TAGstellarphenomena"
+	attributes "ember waste" "wormhole"
 	habitable 659.2
 	belt 1590
 	haze _menu/haze-red
@@ -7109,7 +7008,7 @@ system Companion
 system Convector
 	pos -14.1297 379.242
 	government Uninhabited
-	attributes "TAGemberwaste"
+	attributes "ember waste"
 	habitable 4131.68
 	belt 1961
 	haze _menu/haze-red
@@ -7171,7 +7070,6 @@ system Convector
 system "Cor Caroli"
 	pos -682 201
 	government Republic
-	attributes "TAGhuman" "TAGdirtbelt"
 	habitable 1080
 	belt 1474
 	link Vindemiatrix
@@ -7230,7 +7128,6 @@ system "Cor Caroli"
 system "Da Ent"
 	pos -6.22391 -462.536
 	government Hai
-	attributes "TAGhai"
 	habitable 233.28
 	belt 1161
 	link "Ya Hai"
@@ -7291,7 +7188,6 @@ system "Da Ent"
 system "Da Lest"
 	pos -23.2239 -413.536
 	government Hai
-	attributes "TAGhai"
 	habitable 320
 	belt 1108
 	link "Lom Tahr"
@@ -7346,7 +7242,6 @@ system "Da Lest"
 system Dabih
 	pos -253 427
 	government Republic
-	attributes "TAGhuman" "TAGdirtbelt"
 	habitable 670
 	belt 1088
 	haze _menu/haze-133
@@ -7406,7 +7301,6 @@ system Dabih
 system Danoa
 	pos -239 -321
 	government Republic
-	attributes "TAGhuman" "TAGnorth" "TAGfringe"
 	habitable 135
 	belt 1689
 	haze _menu/haze-67
@@ -7475,7 +7369,6 @@ system Danoa
 system "Dark Hills"
 	pos -926.587 619.051
 	government Coalition
-	attributes "TAGcoalition" "TAGsaryd"
 	habitable 1080
 	belt 1367
 	link Beginning
@@ -7542,7 +7435,6 @@ system "Dark Hills"
 system Debrugt
 	pos -869.587 513.051
 	government Coalition
-	attributes "TAGcoalition" "TAGarach"
 	habitable 640
 	belt 1224
 	link Torbab
@@ -7612,7 +7504,7 @@ system Debrugt
 system Delia
 	pos -41 757
 	government Uninhabited
-	attributes "TAGemberwaste" "TAGgraveyard"
+	attributes "ember waste" "graveyard"
 	haze _menu/haze-red
 	habitable 486.68
 	link Dixere
@@ -7691,7 +7583,6 @@ system Delia
 system "Delta Capricorni"
 	pos -285 202
 	government Syndicate
-	attributes "TAGhuman" "TAGcore"
 	habitable 839.375
 	belt 1329
 	haze _menu/haze-133
@@ -7754,7 +7645,6 @@ system "Delta Capricorni"
 system "Delta Sagittarii"
 	pos -414 416
 	government Republic
-	attributes "TAGhuman" "TAGdirtbelt"
 	habitable 320
 	belt 1414
 	haze _menu/haze-133
@@ -7821,7 +7711,6 @@ system "Delta Sagittarii"
 system "Delta Velorum"
 	pos -740 90
 	government Republic
-	attributes "TAGhuman" "TAGdirtbelt"
 	habitable 1080
 	belt 1221
 	haze _menu/haze-67
@@ -7880,7 +7769,6 @@ system "Delta Velorum"
 system Deneb
 	pos -348 225
 	government Pug
-	attributes "TAGhuman" "TAGisolated"
 	habitable 625
 	belt 1890
 	haze _menu/haze-133
@@ -7936,7 +7824,6 @@ system Deneb
 system Denebola
 	pos -478 70
 	government Republic
-	attributes "TAGhuman" "TAGnearearth"
 	habitable 534.375
 	belt 1050
 	haze _menu/haze-67
@@ -8007,7 +7894,6 @@ system Diespiter
 	asteroids "small metal" 74 2
 	asteroids "small rock" 65 3
 	government Uninhabited
-	attributes "TAGemberwaste"
 	haze _menu/haze-red
 	link Statina
 	minables iron 22 3
@@ -8037,7 +7923,6 @@ system Diespiter
 system Diphda
 	pos -262 61
 	government Syndicate
-	attributes "TAGhuman" "TAGnearearth"
 	habitable 590.625
 	belt 1559
 	haze _menu/haze-133
@@ -8095,7 +7980,7 @@ system Diphda
 system Dixere
 	pos 33 708
 	government Uninhabited
-	attributes "TAGemberwaste" "TAGgraveyard"
+	attributes "ember waste" "graveyard"
 	haze _menu/haze-red
 	habitable 851.84
 	link Delia
@@ -8170,7 +8055,6 @@ system Dixere
 system Dokdobaru
 	pos -21.5695 -241.812
 	government Quarg
-	attributes "TAGkorath" "TAGefreti" "TAGringworld"
 	habitable 700
 	belt 1935
 	haze _menu/haze-133
@@ -8275,7 +8159,6 @@ system Dokdobaru
 system Dschubba
 	pos -598 501
 	government Republic
-	attributes "TAGhuman" "TAGsouth"
 	habitable 398.125
 	belt 1429
 	link Atria
@@ -8349,7 +8232,6 @@ system Dschubba
 system Dubhe
 	pos -577 -103
 	government Republic
-	attributes "TAGhuman" "TAGdeep"
 	habitable 349.375
 	belt 1120
 	link Zosma
@@ -8406,7 +8288,6 @@ system Dubhe
 system "Due Yoot"
 	pos -167.547 -426.683
 	government Hai
-	attributes "TAGhai"
 	habitable 233.28
 	belt 1854
 	link "Wah Oh"
@@ -8471,7 +8352,6 @@ system "Due Yoot"
 system Durax
 	pos -59 -90
 	government Pirate
-	attributes "TAGhuman" "TAGcore" "TAGfringe"
 	habitable 1080
 	belt 1287
 	haze _menu/haze-133
@@ -8536,7 +8416,6 @@ system Durax
 system Eber
 	pos -532 406
 	government Republic
-	attributes "TAGhuman" "TAGdirtbelt"
 	habitable 320
 	belt 1199
 	link Alnasl
@@ -8600,7 +8479,6 @@ system Eber
 system Eblumab
 	pos -767.587 703.051
 	government Coalition
-	attributes "TAGcoalition" "TAGarach"
 	habitable 425.92
 	belt 1804
 	haze _menu/haze-133
@@ -8666,7 +8544,7 @@ system Eblumab
 system Edusa
 	pos 273.87 347.242
 	government Uninhabited
-	attributes "TAGemberwaste" "TAGwormhole" "TAGstellarphenomena"
+	attributes "ember waste" "wormhole"
 	habitable 2372.76
 	belt 1167
 	haze _menu/haze-red
@@ -8721,7 +8599,6 @@ system Egeria
 	asteroids "medium rock" 20 5
 	asteroids "small rock" 1 8
 	government Uninhabited
-	attributes "TAGemberwaste"
 	haze _menu/haze-red
 	link Vaticanus
 	link Statina
@@ -8753,7 +8630,6 @@ system Egeria
 system "Ehma Ti"
 	pos 39.1085 -749.244
 	government "Hai (Unfettered)"
-	attributes "TAGhai"
 	habitable 486.68
 	belt 1094
 	link "Wah Yoot"
@@ -8821,7 +8697,6 @@ system "Ehma Ti"
 system Ek'kek'ru
 	pos -287.517 -727.738
 	government Wanderer
-	attributes "TAGwanderer"
 	habitable 320
 	belt 1517
 	haze _menu/haze-none
@@ -8881,7 +8756,6 @@ system Ek'kek'ru
 system Ekuarik
 	pos -1029.63 426.214
 	government Heliarch
-	attributes "TAGcoalition"
 	habitable 700
 	belt 1711
 	link "Ki War Ek"
@@ -9064,7 +8938,6 @@ system Ekuarik
 system Elnath
 	pos -288 -77
 	government Republic
-	attributes "TAGhuman" "TAGnorth"
 	habitable 1715
 	belt 1462
 	link Acamar
@@ -9129,7 +9002,6 @@ system Elnath
 system Eltanin
 	pos -328 433
 	government Republic
-	attributes "TAGhuman" "TAGdirtbelt"
 	habitable 455.625
 	belt 1859
 	haze _menu/haze-133
@@ -9189,7 +9061,6 @@ system Eltanin
 system Eneremprukt
 	pos 311.431 -448.812
 	government "Kor Sestor"
-	attributes "TAGkorath" "TAGautomata"
 	habitable 486.68
 	belt 1421
 	link Silikatakfar
@@ -9245,7 +9116,6 @@ system Eneremprukt
 system Enif
 	pos -177 498
 	government Quarg
-	attributes "TAGhuman" "TAGsouth" "TAGringworld"
 	habitable 700
 	belt 1974
 	link Sadalmelik
@@ -9334,7 +9204,6 @@ system Enif
 system "Epsilon Leonis"
 	pos -619 -229
 	government Republic
-	attributes "TAGhuman" "TAGdeep"
 	habitable 1400
 	belt 1527
 	link Gomeisa
@@ -9409,7 +9278,6 @@ system "Epsilon Leonis"
 system Es'sprak'ai
 	pos -469.044 -733.375
 	government Wanderer
-	attributes "TAGwanderer"
 	habitable 486.68
 	belt 1928
 	haze _menu/haze-none
@@ -9470,7 +9338,6 @@ system Es'sprak'ai
 system Eshkoshtar
 	pos 156.431 -381.812
 	government "Kor Mereti"
-	attributes "TAGkorath" "TAGautomata"
 	habitable 806.68
 	belt 1105
 	link Mekislepti
@@ -9544,7 +9411,7 @@ system Eshkoshtar
 system Esix
 	pos 142 532
 	government Uninhabited
-	attributes "TAGemberwaste" "TAGgraveyard" "TAGwormhole" "TAGstellarphenomena"
+	attributes "ember waste" "graveyard" "wormhole"
 	haze _menu/haze-red
 	habitable 8640
 	link Gerenus
@@ -9604,7 +9471,6 @@ system Esix
 system Eteron
 	pos -330 33
 	government Republic
-	attributes "TAGhuman" "TAGnearearth"
 	habitable 135
 	belt 1479
 	link Sirius
@@ -9669,7 +9535,6 @@ system Eteron
 system "Fah Root"
 	pos -264.065 -400.135
 	government Hai
-	attributes "TAGhai" "TAGfringe"
 	habitable 486.68
 	belt 1057
 	haze _menu/haze-67
@@ -9738,7 +9603,6 @@ system "Fah Root"
 system "Fah Soom"
 	pos -179.891 -335.011
 	government Hai
-	attributes "TAGhai"
 	habitable 425.92
 	belt 1185
 	haze _menu/haze-67
@@ -9799,7 +9663,6 @@ system "Fah Soom"
 system Fala
 	pos -690 64
 	government Republic
-	attributes "TAGhuman" "TAGdirtbelt"
 	habitable 625
 	belt 1264
 	link "Tania Australis"
@@ -9860,7 +9723,6 @@ system Fala
 system "Fallen Leaf"
 	pos -903.587 717.051
 	government Coalition
-	attributes "TAGcoalition" "TAGsaryd"
 	habitable 320
 	belt 1327
 	link Beginning
@@ -9913,7 +9775,6 @@ system "Fallen Leaf"
 system "Far Horizon"
 	pos -1108.59 726.051
 	government Coalition
-	attributes "TAGcoalition" "TAGsaryd"
 	habitable 320
 	belt 1242
 	haze _menu/haze-67
@@ -9969,7 +9830,6 @@ system "Far Horizon"
 system Farbutero
 	pos 93.4305 -251.812
 	government Uninhabited
-	attributes "TAGkorath" "TAGautomata"
 	habitable 625
 	belt 1175
 	haze _menu/haze-133
@@ -10044,7 +9904,7 @@ system Farbutero
 system Farinus
 	pos 202.87 440.242
 	government Uninhabited
-	attributes "TAGemberwaste"
+	attributes "ember waste"
 	habitable 745.92
 	belt 1149
 	haze _menu/haze-red
@@ -10115,7 +9975,6 @@ system Farinus
 system Faronektu
 	pos 292.431 -309.812
 	government "Kor Mereti"
-	attributes "TAGkorath" "TAGautomata"
 	habitable 1080
 	belt 1630
 	haze _menu/haze-133
@@ -10183,7 +10042,7 @@ system Faronektu
 system Fasitopfar
 	pos 92.4305 -105.812
 	government Uninhabited
-	attributes "TAGarchon" "TAGkorath" "TAGisolated" "TAGnova" "TAGstellarphenomena"
+	attributes "archon"
 	habitable 100
 	belt 1670
 	haze _menu/haze-blackbody
@@ -10229,7 +10088,7 @@ system Fasitopfar
 system Fearis
 	pos -16 643
 	government Uninhabited
-	attributes "TAGemberwaste" "TAGgraveyard" "TAGwormhole" "TAGstellarphenomena"
+	attributes "ember waste" "graveyard" "wormhole"
 	haze _menu/haze-red
 	habitable 486.68
 	link Feraticus
@@ -10291,7 +10150,6 @@ system Fearis
 system "Fell Omen"
 	pos -1156.59 475.051
 	government Coalition
-	attributes "TAGcoalition" "TAGsaryd"
 	habitable 425.92
 	belt 1240
 	link "Last Word"
@@ -10366,7 +10224,7 @@ system "Fell Omen"
 system Feraticus
 	pos 58 630
 	government Uninhabited
-	attributes "TAGemberwaste" "TAGgraveyard"
+	attributes "ember waste" "graveyard"
 	haze _menu/haze-red
 	habitable 320
 	link Dixere
@@ -10428,7 +10286,7 @@ system Feraticus
 system Fereti
 	pos -39 600
 	government Uninhabited
-	attributes "TAGemberwaste" "TAGgraveyard"
+	attributes "ember waste" "graveyard"
 	haze _menu/haze-red
 	habitable 486.68
 	link Lire
@@ -10482,7 +10340,6 @@ system Fereti
 system Feroteri
 	pos 149.431 -205.812
 	government Uninhabited
-	attributes "TAGkorath" "TAGautomata"
 	habitable 5425.92
 	belt 1419
 	haze _menu/haze-blackbody
@@ -10566,7 +10423,6 @@ system Feroteri
 system Ferukistek
 	pos 307.431 -515.812
 	government "Kor Sestor"
-	attributes "TAGkorath" "TAGautomata"
 	habitable 486.68
 	belt 1520
 	link Eneremprukt
@@ -10620,7 +10476,6 @@ system Ferukistek
 system Fingol
 	pos -482 113
 	government Republic
-	attributes "TAGhuman" "TAGnearearth" "TAGfringe"
 	habitable 135
 	belt 1976
 	haze _menu/haze-none
@@ -10678,7 +10533,6 @@ system Fingol
 system Flugbu
 	pos -903.587 534.051
 	government Coalition
-	attributes "TAGcoalition" "TAGarach"
 	habitable 425.92
 	belt 1843
 	link Torbab
@@ -10743,7 +10597,6 @@ system Flugbu
 system Fomalhaut
 	pos -314 124
 	government Syndicate
-	attributes "TAGhuman" "TAGnearearth"
 	habitable 455.625
 	belt 1854
 	link Altair
@@ -10806,7 +10659,6 @@ system Fomalhaut
 system Fornarep
 	pos 79.4305 -309.812
 	government Uninhabited
-	attributes "TAGkorath" "TAGautomata"
 	habitable 320
 	belt 1922
 	haze _menu/haze-133
@@ -10873,7 +10725,6 @@ system Fornarep
 system "Four Pillars"
 	pos -1210.59 772.051
 	government Coalition
-	attributes "TAGcoalition" "TAGsaryd"
 	habitable 486.68
 	belt 1061
 	link "Far Horizon"
@@ -10935,7 +10786,6 @@ system "Four Pillars"
 system Furmeliki
 	pos -35.5695 -281.812
 	government Uninhabited
-	attributes "TAGkorath" "TAGefreti"
 	habitable 486.68
 	belt 1577
 	link Dokdobaru
@@ -10997,7 +10847,6 @@ system Furmeliki
 system Gacrux
 	pos -713 184
 	government Republic
-	attributes "TAGhuman" "TAGdirtbelt"
 	habitable 534.375
 	belt 1188
 	link "Cor Caroli"
@@ -11065,7 +10914,6 @@ system Gacrux
 system "Gamma Cassiopeiae"
 	pos -116 293
 	government Syndicate
-	attributes "TAGhuman" "TAGcore" "TAGfringe"
 	habitable 455.625
 	belt 1779
 	haze _menu/haze-133
@@ -11124,7 +10972,6 @@ system "Gamma Cassiopeiae"
 system "Gamma Corvi"
 	pos -906 64
 	government Republic
-	attributes "TAGcoalition" "TAGrim"
 	habitable 1535.62
 	belt 1556
 	haze _menu/haze-none
@@ -11190,7 +11037,7 @@ system "Gamma Corvi"
 system Gerenus
 	pos 197 514
 	government Uninhabited
-	attributes "TAGemberwaste" "TAGgraveyard"
+	attributes "ember waste" "graveyard"
 	haze _menu/haze-red
 	habitable 9065.92
 	link Esix
@@ -11247,7 +11094,6 @@ system Gerenus
 system Gienah
 	pos -176 354
 	government Pirate
-	attributes "TAGhuman" "TAGcore"
 	habitable 534.375
 	belt 1939
 	link Persian
@@ -11311,7 +11157,7 @@ system Gienah
 system Giribea
 	pos -6 674
 	government Uninhabited
-	attributes "TAGemberwaste" "TAGgraveyard"
+	attributes "ember waste" "graveyard"
 	haze _menu/haze-red
 	habitable 1705
 	link Delia
@@ -11382,7 +11228,6 @@ system Giribea
 system Girtab
 	pos -430 481
 	government Republic
-	attributes "TAGhuman" "TAGsouth"
 	habitable 1080
 	belt 1387
 	link Lesath
@@ -11447,7 +11292,6 @@ system Girtab
 system Glubatub
 	pos -650.587 693.051
 	government Coalition
-	attributes "TAGcoalition" "TAGarach"
 	habitable 233.28
 	belt 1093
 	link "Sol Arach"
@@ -11525,7 +11369,6 @@ system Glubatub
 system Gomeisa
 	pos -600 -161
 	government Republic
-	attributes "TAGhuman" "TAGdeep"
 	habitable 911.25
 	belt 1616
 	link Zosma
@@ -11595,7 +11438,6 @@ system Gomeisa
 system "Good Omen"
 	pos -941.587 746.051
 	government Coalition
-	attributes "TAGcoalition" "TAGsaryd"
 	habitable 1715
 	belt 1598
 	haze _menu/haze-67
@@ -11657,7 +11499,6 @@ system "Good Omen"
 system Gorvi
 	pos -250 -483
 	government Republic
-	attributes "TAGhuman" "TAGnorth" "TAGfringe"
 	habitable 670
 	belt 1345
 	haze _menu/haze-133
@@ -11715,7 +11556,6 @@ system Gorvi
 system Graffias
 	pos -784 517
 	government Republic
-	attributes "TAGhuman" "TAGsouth"
 	habitable 911.25
 	belt 1977
 	link Alniyat
@@ -11779,7 +11619,6 @@ system Graffias
 system Gupta
 	pos -808.587 625.051
 	government Coalition
-	attributes "TAGcoalition" "TAGarach"
 	habitable 912.6
 	belt 1771
 	link Ablodab
@@ -11840,7 +11679,6 @@ system Gupta
 system Hadar
 	pos -788 283
 	government Republic
-	attributes "TAGhuman" "TAGrim"
 	habitable 455.625
 	belt 1520
 	link "Zeta Centauri"
@@ -11900,7 +11738,6 @@ system Hadar
 system Hamal
 	pos -129 24
 	government Syndicate
-	attributes "TAGhuman" "TAGcore"
 	habitable 1080
 	belt 1241
 	haze _menu/haze-133
@@ -11955,7 +11792,6 @@ system Hamal
 system Han
 	pos -610 561
 	government Republic
-	attributes "TAGhuman" "TAGsouth"
 	habitable 1080.62
 	belt 1517
 	link Alniyat
@@ -12014,7 +11850,6 @@ system Han
 system Hassaleh
 	pos -291 -287
 	government Republic
-	attributes "TAGhuman" "TAGnorth"
 	habitable 670
 	belt 1924
 	haze _menu/haze-67
@@ -12075,7 +11910,6 @@ system Hassaleh
 system Hatysa
 	pos -474 -542
 	government Pirate
-	attributes "TAGhuman" "TAGnorth"
 	habitable 533.75
 	belt 1163
 	haze _menu/haze-33
@@ -12136,7 +11970,6 @@ system Hatysa
 system "Heia Due"
 	pos -146.177 -481.694
 	government Hai
-	attributes "TAGhai"
 	habitable 1215
 	belt 1079
 	haze _menu/haze-67
@@ -12208,7 +12041,6 @@ system "Heia Due"
 system Hesselpost
 	pos -30.5695 -187.812
 	government Uninhabited
-	attributes "TAGkorath" "TAGefreti" "TAGfringe"
 	habitable 486.68
 	belt 1327
 	haze _menu/haze-133
@@ -12279,7 +12111,6 @@ system Hesselpost
 system "Hevru Hai"
 	pos -189 -310
 	government Quarg
-	attributes "TAGhai" "TAGringworld"
 	habitable 700
 	belt 1245
 	link "Fah Soom"
@@ -12394,7 +12225,6 @@ system "Hevru Hai"
 system "Hi Yahr"
 	pos 82.3672 -641.6
 	government "Hai (Unfettered)"
-	attributes "TAGhai"
 	habitable 625
 	belt 1655
 	link "Wah Yoot"
@@ -12452,7 +12282,6 @@ system "Hi Yahr"
 system Hintar
 	pos -422 311
 	government Republic
-	attributes "TAGhuman" "TAGdirtbelt" "TAGfringe"
 	habitable 625
 	belt 1725
 	haze _menu/haze-133
@@ -12512,7 +12341,6 @@ system Hintar
 system Holeb
 	pos -590 287
 	government Republic
-	attributes "TAGhuman" "TAGdirtbelt"
 	habitable 1715
 	belt 1181
 	link Alioth
@@ -12560,7 +12388,6 @@ system Holeb
 system Homeward
 	pos -1045.59 477.051
 	government Coalition
-	attributes "TAGcoalition" "TAGsaryd"
 	habitable 425.92
 	belt 1499
 	link "Silver Bell"
@@ -12626,7 +12453,6 @@ system Homeward
 system Host
 	pos 384.431 -543.812
 	government Uninhabited
-	attributes "TAGisolated"
 	habitable 486.68
 	belt 1669
 	asteroids "large metal" 1 0.732
@@ -12675,7 +12501,6 @@ system Host
 system Hunter
 	pos -968.587 590.051
 	government Coalition
-	attributes "TAGcoalition" "TAGsaryd"
 	habitable 425.92
 	belt 1498
 	link "Bright Void"
@@ -12737,7 +12562,6 @@ system Hunter
 system Ik'kara'ka
 	pos 56.2159 -888.296
 	government Wanderer
-	attributes "TAGwanderer"
 	habitable 625
 	belt 1497
 	haze _menu/haze-none
@@ -12799,7 +12623,6 @@ system Ik'kara'ka
 system Ildaria
 	pos -702 317
 	government Republic
-	attributes "TAGhuman" "TAGrim" "TAGwolf-rayet" "TAGstellarphenomena" "TAGfringe"
 	habitable 625
 	belt 1132
 	haze _menu/haze-133
@@ -12853,7 +12676,6 @@ system Ildaria
 system "Imo Dep"
 	pos -56.2764 -600.1
 	government Hai
-	attributes "TAGhai"
 	habitable 1715
 	belt 1416
 	haze _menu/haze-67
@@ -12925,7 +12747,7 @@ system "Imo Dep"
 system Insitor
 	pos -28.1296 400.242
 	government Uninhabited
-	attributes "TAGemberwaste" "TAGwormhole" "TAGstellarphenomena"
+	attributes "ember waste" "wormhole"
 	habitable 553.28
 	belt 1170
 	haze _menu/haze-red
@@ -12978,7 +12800,6 @@ system Insitor
 system "Io Lowe"
 	pos -94.7566 -527.728
 	government Hai
-	attributes "TAGhai"
 	habitable 135
 	belt 1552
 	haze _menu/haze-67
@@ -13040,7 +12861,6 @@ system "Io Lowe"
 system "Io Mann"
 	pos -192.955 -447.669
 	government Hai
-	attributes "TAGhai"
 	habitable 973.36
 	belt 1132
 	haze _menu/haze-67
@@ -13115,7 +12935,6 @@ system "Io Mann"
 system Ipsing
 	pos -549 160
 	government Republic
-	attributes "TAGhuman" "TAGdirtbelt" "TAGfringe"
 	habitable 1400
 	belt 1107
 	haze _menu/haze-67
@@ -13182,7 +13001,6 @@ system Ipsing
 system Iyech'yek
 	pos -277.37 -693.913
 	government Wanderer
-	attributes "TAGwanderer"
 	habitable 320
 	belt 1613
 	haze _menu/haze-33
@@ -13236,7 +13054,6 @@ system Iyech'yek
 system Izar
 	pos -784 231
 	government Republic
-	attributes "TAGhuman" "TAGrim"
 	habitable 1294.38
 	belt 1449
 	haze _menu/haze-67
@@ -13301,7 +13118,6 @@ system Izar
 system Ka'ch'chrai
 	pos -240.163 -822.448
 	government Wanderer
-	attributes "TAGwanderer"
 	habitable 425.92
 	belt 1745
 	haze _menu/haze-none
@@ -13359,7 +13175,6 @@ system Ka'ch'chrai
 system Ka'pru
 	pos -76.6756 -994.955
 	government Wanderer
-	attributes "TAGwanderer"
 	habitable 1505.92
 	belt 1808
 	haze _menu/haze-33
@@ -13430,7 +13245,6 @@ system Ka'pru
 system Kaliptari
 	pos 85.4305 -402.812
 	government Uninhabited
-	attributes "TAGkorath" "TAGautomata"
 	habitable 320
 	belt 1089
 	link Skeruto
@@ -13505,7 +13319,6 @@ system Kaliptari
 system "Kappa Centauri"
 	pos -867 480
 	government Republic
-	attributes "TAGhuman" "TAGsouth"
 	habitable 1215
 	belt 1508
 	link Pherkad
@@ -13566,7 +13379,6 @@ system "Kappa Centauri"
 system Kashikt
 	pos -73.5695 -219.812
 	government "Kor Efret"
-	attributes "TAGkorath" "TAGefreti"
 	habitable 1715
 	belt 1013
 	link Dokdobaru
@@ -13634,7 +13446,7 @@ system Kashikt
 system Kasikfar
 	pos 10.4305 -127.812
 	government Uninhabited
-	attributes "TAGarchon" "TAGisolated" "TAGkorath" "TAGnova" "TAGstellarphenomena"
+	attributes "archon"
 	habitable 100
 	belt 1539
 	haze _menu/haze-blackbody
@@ -13675,7 +13487,6 @@ system Kasikfar
 system "Kaus Australis"
 	pos -284 395
 	government Republic
-	attributes "TAGhuman" "TAGdirtbelt"
 	habitable 320
 	belt 1281
 	haze _menu/haze-133
@@ -13727,7 +13538,6 @@ system "Kaus Australis"
 system "Kaus Borealis"
 	pos -456 350
 	government Republic
-	attributes "TAGhuman" "TAGdirtbelt"
 	habitable 590.625
 	belt 1074
 	haze _menu/haze-133
@@ -13790,7 +13600,6 @@ system "Kaus Borealis"
 system "Ki War Ek"
 	pos -1106.63 368.214
 	government Heliarch
-	attributes "TAGcoalition" "TAGringworld"
 	habitable 700
 	belt 1777
 	haze _menu/haze-133
@@ -14009,7 +13818,6 @@ system "Ki War Ek"
 system Kiro'ku
 	pos -131.923 -884.46
 	government Wanderer
-	attributes "TAGwanderer"
 	habitable 1111.68
 	belt 1308
 	haze _menu/haze-none
@@ -14086,7 +13894,6 @@ system Kiro'ku
 system Kiru'kichi
 	pos -195.063 -662.343
 	government Wanderer
-	attributes "TAGwanderer"
 	habitable 2795
 	belt 1465
 	haze _menu/haze-33
@@ -14146,7 +13953,6 @@ system Kiru'kichi
 system Kochab
 	pos -731 279
 	government Republic
-	attributes "TAGhuman" "TAGrim"
 	habitable 320
 	belt 1912
 	haze _menu/haze-67
@@ -14190,7 +13996,6 @@ system Kochab
 system "Kor Ak'Mari"
 	pos 43 42
 	government Korath
-	attributes "TAGkorath" "TAGexiles" "TAGisolated" "TAGwolf-rayet" "TAGstellarphenomena"
 	habitable 625
 	belt 1606
 	haze _menu/haze-full
@@ -14241,7 +14046,6 @@ system "Kor Ak'Mari"
 system "Kor En'lakfar"
 	pos -31 -33
 	government Korath
-	attributes "TAGkorath" "TAGexiles"
 	habitable 1080
 	belt 1115
 	haze _menu/haze-133
@@ -14303,7 +14107,6 @@ system "Kor En'lakfar"
 system "Kor Fel'tar"
 	pos 29 -66
 	government Korath
-	attributes "TAGkorath" "TAGexiles"
 	habitable 455.625
 	belt 1444
 	haze _menu/haze-blackbody
@@ -14369,7 +14172,6 @@ system "Kor Fel'tar"
 system "Kor Men"
 	pos 6 -5
 	government Korath
-	attributes "TAGkorath" "TAGexiles"
 	habitable 2340
 	belt 1260
 	haze _menu/haze-blackbody
@@ -14432,7 +14234,6 @@ system "Kor Men"
 system "Kor Nor'peli"
 	pos 52 160
 	government Korath
-	attributes "TAGkorath" "TAGexiles"
 	habitable 590.625
 	belt 1213
 	haze _menu/haze-blackbody
@@ -14497,7 +14298,6 @@ system "Kor Nor'peli"
 system "Kor Tar'bei"
 	pos 57 106
 	government Korath
-	attributes "TAGkorath" "TAGexiles"
 	habitable 214.375
 	belt 1614
 	haze _menu/haze-blackbody
@@ -14554,7 +14354,6 @@ system "Kor Tar'bei"
 system "Kor Zena'i"
 	pos -2 83
 	government Korath
-	attributes "TAGkorath" "TAGexiles"
 	habitable 703.125
 	belt 1866
 	haze _menu/haze-blackbody
@@ -14607,7 +14406,6 @@ system "Kor Zena'i"
 system Kornephoros
 	pos -612 424
 	government Republic
-	attributes "TAGhuman" "TAGsouth"
 	habitable 911.25
 	belt 1168
 	link Sabik
@@ -14688,7 +14486,6 @@ system Kornephoros
 system Korsmanath
 	pos 97.4305 -185.812
 	government Uninhabited
-	attributes "TAGkorath" "TAGautomata" "TAGfringe"
 	habitable 486.68
 	belt 1775
 	link Feroteri
@@ -14748,7 +14545,6 @@ system Korsmanath
 system Kraz
 	pos -876 204
 	government Republic
-	attributes "TAGhuman" "TAGrim" 
 	habitable 1080
 	belt 1056
 	haze _menu/haze-67
@@ -14815,7 +14611,6 @@ system Kraz
 system Kugel
 	pos -230 -26
 	government Syndicate
-	attributes "TAGhuman" "TAGcore" "TAGfringe"
 	habitable 625
 	belt 1051
 	link Acamar
@@ -14884,7 +14679,6 @@ system Kugel
 system Kursa
 	pos -366 -105
 	government Republic
-	attributes "TAGhuman" "TAGparadise"
 	habitable 455
 	belt 1624
 	haze _menu/haze-67
@@ -15001,7 +14795,6 @@ system "Last Word"
 system Lesath
 	pos -516 485
 	government Republic
-	attributes "TAGhuman" "TAGsouth"
 	habitable 1715
 	belt 1865
 	link Atria
@@ -15066,7 +14859,7 @@ system Lesath
 system Levana
 	pos 203.504 247.389
 	government Uninhabited
-	attributes "TAGemberwaste"
+	attributes "ember waste"
 	habitable 2798.68
 	belt 1202
 	haze _menu/haze-red
@@ -15134,7 +14927,6 @@ system Levana
 system Limen
 	pos -791.99 -12.2491
 	government Republic
-	attributes "TAGhuman" "TAGdirtbelt" "TAGfringe"
 	habitable 1715
 	belt 1463
 	haze _menu/haze-33
@@ -15187,7 +14979,7 @@ system Limen
 system Lire
 	pos -59 676
 	government Uninhabited
-	attributes "TAGemberwaste" "TAGgraveyard"
+	attributes "ember waste" "graveyard"
 	haze _menu/haze-red
 	habitable 1080
 	link Fearis
@@ -15248,7 +15040,6 @@ system Lire
 system Lolami
 	pos -628 -10
 	government Republic
-	attributes "TAGhuman" "TAGdirtbelt" "TAGfringe"
 	habitable 1215
 	belt 1072
 	link "Tania Australis"
@@ -15312,7 +15103,6 @@ system Lolami
 system "Lom Tahr"
 	pos -94.0437 -446.586
 	government Hai
-	attributes "TAGhai"
 	habitable 2372.76
 	belt 1445
 	link "Ya Hai"
@@ -15388,7 +15178,6 @@ system "Lom Tahr"
 system "Lone Cloud"
 	pos -1239.59 747.051
 	government Coalition
-	attributes "TAGcoalition" "TAGsaryd"
 	habitable 233.28
 	belt 1730
 	link "Four Pillars"
@@ -15439,7 +15228,7 @@ system "Lone Cloud"
 system Lucina
 	pos 175.504 176.389
 	government Uninhabited
-	attributes "TAGemberwaste" "TAGfringe"
+	attributes "ember waste"
 	habitable 320
 	belt 1466
 	haze _menu/haze-red
@@ -15495,7 +15284,6 @@ system Lucina
 system Lurata
 	pos -279 463
 	government Republic
-	attributes "TAGhuman" "TAGsouth"
 	habitable 455.625
 	belt 1151
 	haze _menu/haze-133
@@ -15558,7 +15346,6 @@ system Lurata
 system Makferuti
 	pos 288.431 -628.812
 	government "Kor Sestor"
-	attributes "TAGkorath" "TAGautomata"
 	habitable 621.68
 	belt 1782
 	link Asikafarnut
@@ -15634,7 +15421,6 @@ system Makferuti
 system Markab
 	pos -241 168
 	government Syndicate
-	attributes "TAGhuman" "TAGcore"
 	habitable 625
 	belt 1411
 	haze _menu/haze-133
@@ -15717,7 +15503,6 @@ system Markab
 system Markeb
 	pos -602 -305
 	government Republic
-	attributes "TAGhuman" "TAGdeep"
 	habitable 455.625
 	belt 1556
 	haze _menu/haze-33
@@ -15782,7 +15567,6 @@ system Markeb
 system Matar
 	pos -218 272
 	government Syndicate
-	attributes "TAGhuman" "TAGcore"
 	habitable 455.625
 	belt 1308
 	haze _menu/haze-133
@@ -15840,7 +15624,6 @@ system Matar
 system Mebla
 	pos -814.587 555.051
 	government Coalition
-	attributes "TAGcoalition" "TAGarach"
 	habitable 486.68
 	belt 1114
 	link Debrugt
@@ -15898,7 +15681,6 @@ system Mebla
 system Mebsuta
 	pos -482 -394
 	government Republic
-	attributes "TAGhuman" "TAGnorth"
 	habitable 670
 	belt 1740
 	haze _menu/haze-33
@@ -15974,7 +15756,6 @@ system Mebsuta
 system Meftarkata
 	pos 52.4305 -276.812
 	government Uninhabited
-	attributes "TAGkorath"
 	habitable 2201.68
 	belt 1232
 	haze _menu/haze-133
@@ -16036,7 +15817,6 @@ system Meftarkata
 system "Mei Yohn"
 	pos -106.757 -581.698
 	government Hai
-	attributes "TAGhai"
 	habitable 425.92
 	belt 1075
 	haze _menu/haze-67
@@ -16102,7 +15882,6 @@ system "Mei Yohn"
 system Mekislepti
 	pos 137.431 -335.812
 	government "Kor Mereti"
-	attributes "TAGkorath" "TAGautomata"
 	habitable 1705
 	belt 1673
 	haze _menu/haze-133
@@ -16166,7 +15945,6 @@ system Mekislepti
 system Meblumem
 	pos -722.587 616.051
 	government Coalition
-	attributes "TAGcoalition" "TAGarach"
 	habitable 2201.68
 	belt 1794
 	link "Sol Arach"
@@ -16231,7 +16009,6 @@ system Meblumem
 system Men
 	pos -888 361
 	government Pirate
-	attributes "TAGhuman" "TAGsouth"
 	habitable 320
 	belt 1531
 	haze _menu/haze-33
@@ -16297,7 +16074,6 @@ system Men
 system Menkalinan
 	pos -400 -61
 	government Republic
-	attributes "TAGhuman" "TAGparadise"
 	habitable 3430
 	belt 1424
 	haze _menu/haze-67
@@ -16365,7 +16141,6 @@ system Menkalinan
 system Menkar
 	pos -183 -52
 	government Syndicate
-	attributes "TAGhuman" "TAGcore"
 	habitable 455.625
 	belt 1634
 	haze _menu/haze-133
@@ -16428,7 +16203,6 @@ system Menkar
 system Menkent
 	pos -495 218
 	government Republic
-	attributes "TAGhuman" "TAGdirtbelt"
 	habitable 2340
 	belt 1728
 	link Vega
@@ -16499,7 +16273,6 @@ system Menkent
 system Merak
 	pos -553 60
 	government Republic
-	attributes "TAGhuman" "TAGnearearth"
 	habitable 1080.62
 	belt 1769
 	haze _menu/haze-67
@@ -16564,7 +16337,6 @@ system Merak
 system Mesuket
 	pos 220.431 -409.812
 	government Uninhabited
-	attributes "TAGkorath" "TAGautomata" "TAGwarzone"
 	habitable 425.92
 	belt 1189
 	link Eshkoshtar
@@ -16631,7 +16403,6 @@ system Mesuket
 system Miaplacidus
 	pos -524 -69
 	government Republic
-	attributes "TAGhuman" "TAGparadise"
 	habitable 455.625
 	belt 1236
 	link Tejat
@@ -16706,7 +16477,6 @@ system Miaplacidus
 system Miblulub
 	pos -630.587 670.051
 	government Coalition
-	attributes "TAGcoalition" "TAGarach"
 	habitable 1080
 	belt 1757
 	haze _menu/haze-133
@@ -16788,7 +16558,6 @@ system Miblulub
 system Mimosa
 	pos -895 168
 	government Republic
-	attributes "TAGhuman" "TAGrim"
 	habitable 320
 	belt 1484
 	haze _menu/haze-67
@@ -16839,7 +16608,6 @@ system Mimosa
 system Minkar
 	pos -823 138
 	government Republic
-	attributes "TAGhuman" "TAGrim"
 	habitable 670
 	belt 1354
 	haze _menu/haze-67
@@ -16905,7 +16673,6 @@ system Minkar
 system Mintaka
 	pos -304 -462
 	government Republic
-	attributes "TAGhuman" "TAGnorth"
 	habitable 775.625
 	belt 1753
 	haze _menu/haze-67
@@ -16969,7 +16736,6 @@ system Mintaka
 system Mirach
 	pos -166 250
 	government Syndicate
-	attributes "TAGhuman" "TAGcore"
 	habitable 292.5
 	belt 1980
 	haze _menu/haze-133
@@ -17038,7 +16804,6 @@ system Mirach
 system Mirfak
 	pos -187 -128
 	government Syndicate
-	attributes "TAGhuman" "TAGcore"
 	habitable 320
 	belt 1887
 	link Menkar
@@ -17094,7 +16859,6 @@ system Mirfak
 system Mirzam
 	pos -498 -301
 	government Republic
-	attributes "TAGhuman" "TAGnorth"
 	habitable 1080
 	belt 1025
 	haze _menu/haze-67
@@ -17156,7 +16920,6 @@ system Mirzam
 system Mizar
 	pos -579 184
 	government Republic
-	attributes "TAGhuman" "TAGdirtbelt"
 	habitable 1080
 	belt 1876
 	haze _menu/haze-67
@@ -17209,7 +16972,6 @@ system Mizar
 system Moktar
 	pos -169 -170
 	government Syndicate
-	attributes "TAGhuman" "TAGcore"
 	habitable 455
 	belt 1888
 	link Oblate
@@ -17277,7 +17039,6 @@ system Moktar
 system Mora
 	pos -755 23
 	government Republic
-	attributes "TAGhuman" "TAGdirtbelt"
 	habitable 320
 	belt 1176
 	haze _menu/haze-67
@@ -17338,7 +17099,6 @@ system Mora
 system Muhlifain
 	pos -702 242
 	government Republic
-	attributes "TAGhuman" "TAGdirtbelt"
 	habitable 455.625
 	belt 1265
 	haze _menu/haze-67
@@ -17385,7 +17145,6 @@ system Muhlifain
 system Muphrid
 	pos -495 152
 	government Republic
-	attributes "TAGhuman" "TAGnearearth"
 	habitable 839.375
 	belt 1759
 	link Menkent
@@ -17443,7 +17202,6 @@ system Muphrid
 system Naos
 	pos -653 -396
 	government Republic
-	attributes "TAGhuman" "TAGdeep"
 	habitable 625
 	belt 1045
 	haze _menu/haze-67
@@ -17517,7 +17275,6 @@ system Naos
 system Naper
 	pos -416 369
 	government Republic
-	attributes "TAGhuman" "TAGdirtbelt"
 	habitable 1715
 	belt 1445
 	link Ascella
@@ -17579,7 +17336,7 @@ system Naper
 system Nenia
 	pos -39.1297 467.242
 	government Uninhabited
-	attributes "TAGemberwaste" "void sprites" "TAGarchon"
+	attributes "ember waste" "void sprites" "archon"
 	habitable 2340
 	belt 1343
 	haze _menu/haze-red
@@ -17656,7 +17413,6 @@ system Nenia
 system Nihal
 	pos -262 -121
 	government Republic
-	attributes "TAGhuman" "TAGnorth"
 	habitable 534.375
 	belt 1329
 	link Elnath
@@ -17729,7 +17485,6 @@ system Nihal
 system Nocte
 	pos -467 172
 	government Republic
-	attributes "TAGhuman" "TAGnearearth" "TAGfringe"
 	habitable 135
 	belt 1304
 	link Vega
@@ -17796,7 +17551,7 @@ system Nocte
 system Nona
 	pos 166 558
 	government Uninhabited
-	attributes "TAGemberwaste" "TAGgraveyard"
+	attributes "ember waste" "graveyard"
 	haze _menu/haze-red
 	habitable 1080
 	link Esix
@@ -17848,7 +17603,6 @@ system Nona
 system Nunki
 	pos -393 537
 	government Pirate
-	attributes "TAGhuman" "TAGsouth"
 	habitable 214.375
 	belt 1930
 	link Albaldah
@@ -17918,7 +17672,6 @@ system Nunki
 system Oblate
 	pos -124 -119
 	government Pirate
-	attributes "TAGhuman" "TAGcore"
 	habitable 12000
 	belt 1704
 	haze _menu/haze-133
@@ -17977,7 +17730,6 @@ system Oblate
 system Orbona
 	pos -735.99 -97.2491
 	government Republic
-	attributes "TAGhuman" "TAGdirtbelt" "TAGfringe"
 	habitable 2859.44
 	belt 1507
 	haze _menu/haze-67
@@ -18049,7 +17801,6 @@ system Orbona
 system Orvala
 	pos -334 303
 	government Republic
-	attributes "TAGhuman" "TAGdirtbelt"
 	habitable 533.75
 	belt 1431
 	link "Zeta Aquilae"
@@ -18114,7 +17865,7 @@ system Orvala
 system Ossipago
 	pos 6.87033 429.242
 	government Uninhabited
-	attributes "TAGemberwaste" "TAGwormhole" "TAGstellarphenomena"
+	attributes "ember waste" "wormhole"
 	habitable 1948.28
 	belt 1803
 	haze _menu/haze-red
@@ -18180,7 +17931,6 @@ system Ossipago
 system "Over the Rainbow"
 	pos 9904 7176
 	government Uninhabited
-	attributes "pleiades" "TAGwormhole" "TAGstellarphenomena"
 	link "Terra Incognita"
 	habitable 1215
 	haze _menu/haze-blackbody
@@ -18213,7 +17963,7 @@ system "Over the Rainbow"
 system Paeli
 	pos 129 497
 	government Uninhabited
-	attributes "TAGemberwaste" "TAGgraveyard" "TAGwormhole" "TAGstellarphenomena"
+	attributes "ember waste" "graveyard" "wormhole"
 	haze _menu/haze-red
 	habitable 425.92
 	link Esix
@@ -18278,7 +18028,7 @@ system Paeli
 system Pantica
 	pos 303.87 445.242
 	government Remnant
-	attributes "TAGemberwaste"
+	attributes "ember waste"
 	habitable 486.68
 	belt 1203
 	haze _menu/haze-red
@@ -18333,7 +18083,7 @@ system Pantica
 system Parca
 	pos 150.504 151.389
 	government Uninhabited
-	attributes "TAGemberwaste"
+	attributes "ember waste"
 	habitable 760
 	belt 1315
 	haze _menu/haze-red
@@ -18406,7 +18156,6 @@ system Parca
 system Peacock
 	pos -307 350
 	government Republic
-	attributes "TAGhuman" "TAGdirtbelt"
 	habitable 214.375
 	belt 1870
 	haze _menu/haze-133
@@ -18481,7 +18230,6 @@ system Peacock
 system Pelubta
 	pos -757.587 575.051
 	government Coalition
-	attributes "TAGcoalition" "TAGarach"
 	habitable 9265
 	belt 1709
 	link Meblumem
@@ -18561,7 +18309,7 @@ system Pelubta
 system Peragenor
 	pos 86.8703 356.242
 	government Uninhabited
-	attributes "TAGemberwaste"
+	attributes "ember waste"
 	habitable 1080
 	belt 1920
 	haze _menu/haze-red
@@ -18623,7 +18371,7 @@ system Peragenor
 system Peresedersi
 	pos 81.4305 -154.812
 	government Uninhabited
-	attributes "TAGarchon" "TAGkorath" "TAGisolated" "TAGnova" "TAGstellarphenomena"
+	attributes "archon"
 	habitable 100
 	belt 1065
 	haze _menu/haze-blackbody
@@ -18666,7 +18414,7 @@ system Peresedersi
 system Perfica
 	pos 185.87 419.242
 	government Uninhabited
-	attributes "TAGemberwaste"
+	attributes "ember waste"
 	habitable 1080
 	belt 1160
 	haze _menu/haze-red
@@ -18718,7 +18466,6 @@ system Perfica
 system Persian
 	pos -203 331
 	government Syndicate
-	attributes "TAGhuman" "TAGcore"
 	habitable 2170.62
 	belt 1308
 	haze _menu/haze-133
@@ -18786,7 +18533,6 @@ system Persian
 system Persitar
 	pos 297.431 -395.812
 	government Uninhabited
-	attributes "TAGkorath" "TAGisolated" "TAGnova" "TAGstellarphenomena"
 	habitable 100
 	belt 1948
 	haze _menu/haze-blackbody
@@ -18823,7 +18569,6 @@ system Persitar
 system Phact
 	pos -375 -191
 	government Republic
-	attributes "TAGhuman" "TAGnorth"
 	habitable 1080.62
 	belt 1704
 	haze _menu/haze-67
@@ -18896,7 +18641,6 @@ system Phact
 system Phecda
 	pos -607 88
 	government Republic
-	attributes "TAGhuman" "TAGdirtbelt"
 	habitable 320
 	belt 1375
 	link Algorel
@@ -18954,7 +18698,6 @@ system Phecda
 system Pherkad
 	pos -798 451
 	government Republic
-	attributes "TAGhuman" "TAGsouth"
 	habitable 135
 	belt 1924
 	haze _menu/haze-67
@@ -19010,7 +18753,6 @@ system Pherkad
 system Phurad
 	pos -494 -153
 	government Republic
-	attributes "TAGhuman" "TAGparadise"
 	habitable 1080
 	belt 1881
 	link Tejat
@@ -19070,7 +18812,6 @@ system Phurad
 system Pik'ro'iyak
 	pos -378.845 -677.001
 	government Wanderer
-	attributes "TAGwanderer"
 	habitable 233.28
 	belt 1279
 	haze _menu/haze-none
@@ -19119,7 +18860,6 @@ system Pik'ro'iyak
 system Plort
 	pos -708.587 723.051
 	government Coalition
-	attributes "TAGcoalition" "TAGarach"
 	habitable 320
 	belt 1490
 	link "Sol Arach"
@@ -19232,7 +18972,7 @@ system Polaris
 system Polerius
 	pos 88 482
 	government Uninhabited
-	attributes "TAGemberwaste" "TAGgraveyard"
+	attributes "ember waste" "graveyard"
 	haze _menu/haze-red
 	habitable 1505.92
 	link Paeli
@@ -19297,7 +19037,6 @@ system Polerius
 system Pollux
 	pos -465 4
 	government Republic
-	attributes "TAGhuman" "TAGparadise"
 	habitable 1080
 	belt 1161
 	haze _menu/haze-67
@@ -19352,7 +19091,6 @@ system Pollux
 system Porrima
 	pos -556 123
 	government Republic
-	attributes "TAGhuman" "TAGnearearth"
 	habitable 760
 	belt 1636
 	haze _menu/haze-67
@@ -19420,7 +19158,6 @@ system Porrima
 system Postverta
 	pos 15000 15000
 	government Uninhabited
-	attributes "TAGemberwaste"
 	haze _menu/haze-red
 	asteroids "large metal" 9 3
 	asteroids "large rock" 4 3
@@ -19453,7 +19190,6 @@ system Postverta
 system Prakacha'a
 	pos -35.1114 -802.607
 	government Wanderer
-	attributes "TAGwanderer"
 	habitable 1505.92
 	belt 1637
 	haze _menu/haze-33
@@ -19532,7 +19268,6 @@ system Prakacha'a
 system Procyon
 	pos -411 23
 	government Republic
-	attributes "TAGhuman" "TAGnearearth"
 	habitable 455.625
 	belt 1763
 	haze _menu/haze-67
@@ -19594,7 +19329,6 @@ system Prosa
 	asteroids "medium rock" 16 1
 	asteroids "small rock" 4 1
 	government Uninhabited
-	attributes "TAGemberwaste"
 	haze _menu/haze-red
 	link Vaticanus
 	minables copper 5 2
@@ -19631,7 +19365,6 @@ system Prosa
 system "Pug Iyik"
 	pos -361.149 -883.233
 	government "Pug (Wanderer)"
-	attributes "TAGwanderer" "TAGisolated"
 	habitable 625
 	belt 1286
 	haze _menu/haze-blackbody
@@ -19689,7 +19422,6 @@ system "Pug Iyik"
 system Quaru
 	pos -1080.63 448.214
 	government Heliarch
-	attributes "TAGcoalition" "TAGringworld"
 	habitable 700
 	belt 1440
 	haze _menu/haze-133
@@ -19981,7 +19713,7 @@ system Quaru
 system Queri
 	pos 69 518
 	government Uninhabited
-	attributes "TAGemberwaste" "TAGgraveyard"
+	attributes "ember waste" "graveyard"
 	haze _menu/haze-red
 	habitable 135
 	link Esix
@@ -20005,7 +19737,6 @@ system Queri
 system Rajak
 	pos -270 -236
 	government Republic
-	attributes "TAGhuman" "TAGnorth"
 	habitable 78.125
 	belt 1410
 	haze _menu/haze-67
@@ -20073,7 +19804,6 @@ system Rajak
 system Rasalhague
 	pos -413 246
 	government Republic
-	attributes "TAGhuman" "TAGdirtbelt"
 	habitable 455.625
 	belt 1282
 	haze _menu/haze-133
@@ -20134,7 +19864,6 @@ system Rasalhague
 system Rastaban
 	pos -463 446
 	government Republic
-	attributes "TAGhuman" "TAGsouth"
 	habitable 1080
 	belt 1041
 	haze _menu/haze-133
@@ -20195,7 +19924,6 @@ system Rastaban
 system "Rati Cal"
 	pos -116.765 -391.123
 	government Hai
-	attributes "TAGhai"
 	habitable 425.92
 	belt 1538
 	link "Due Yoot"
@@ -20249,7 +19977,6 @@ system "Rati Cal"
 system Regor
 	pos -702 -335
 	government Republic
-	attributes "TAGhuman" "TAGdeep"
 	habitable 455.625
 	belt 1305
 	haze _menu/haze-67
@@ -20312,7 +20039,6 @@ system Regor
 system Regulus
 	pos -544 25
 	government Republic
-	attributes "TAGhuman" "TAGnearearth" "TAGfringe"
 	habitable 8640
 	belt 1605
 	haze _menu/haze-67
@@ -20383,7 +20109,7 @@ system Regulus
 system Relifer
 	pos 19 603
 	government Uninhabited
-	attributes "TAGemberwaste" "TAGgraveyard" "TAGwormhole" "TAGstellarphenomena"
+	attributes "ember waste" "graveyard" "wormhole"
 	haze _menu/haze-red
 	habitable 625
 	link Feraticus
@@ -20465,7 +20191,6 @@ system Relifer
 system Remembrance
 	pos -884.587 641.051
 	government Coalition
-	attributes "TAGcoalition" "TAGsaryd"
 	habitable 486.68
 	belt 1536
 	link Beginning
@@ -20522,7 +20247,6 @@ system Remembrance
 system Rigel
 	pos -324 -363
 	government Republic
-	attributes "TAGhuman" "TAGnorth"
 	habitable 1080
 	belt 1782
 	link Saiph
@@ -20599,7 +20323,7 @@ system Rigel
 system Ritilas
 	pos 11 523
 	government Uninhabited
-	attributes "TAGemberwaste" "TAGgraveyard" "TAGwormhole" "TAGstellarphenomena"
+	attributes "ember waste" "graveyard" "wormhole"
 	haze _menu/haze-red
 	habitable 135
 	link Queri
@@ -20672,7 +20396,6 @@ system Ritilas
 system Ruchbah
 	pos -174 69
 	government Syndicate
-	attributes "TAGhuman" "TAGcore"
 	habitable 2560
 	belt 1598
 	haze _menu/haze-133
@@ -20744,7 +20467,6 @@ system Ruchbah
 system Rutilicus
 	pos -535 273
 	government Republic
-	attributes "TAGhuman" "TAGdirtbelt"
 	habitable 625
 	belt 1771
 	link Arcturus
@@ -20813,7 +20535,6 @@ system Rutilicus
 system Sabik
 	pos -675 379
 	government Republic
-	attributes "TAGhuman" "TAGrim"
 	habitable 625
 	belt 1609
 	link Unukalhai
@@ -20865,7 +20586,6 @@ system Sabik
 system Sabriset
 	pos 151.724 -426.518
 	government Uninhabited
-	attributes "TAGkorath" "TAGfringe"
 	habitable 1566.68
 	belt 1025
 	link Sepriaptu
@@ -20919,7 +20639,6 @@ system Sabriset
 system Sadalmelik
 	pos -145 472
 	government Quarg
-	attributes "TAGhuman" "TAGsouth"
 	habitable 1715
 	belt 1273
 	link Enif
@@ -20975,7 +20694,6 @@ system Sadalmelik
 system Sadalsuud
 	pos -134 508
 	government Quarg
-	attributes "TAGhuman" "TAGsouth"
 	habitable 1400
 	belt 1859
 	link Enif
@@ -21037,7 +20755,6 @@ system Sadalsuud
 system Sadr
 	pos -287 543
 	government Republic
-	attributes "TAGhuman" "TAGsouth" "TAGfringe"
 	habitable 3859.38
 	belt 1388
 	link Albireo
@@ -21102,7 +20819,6 @@ system Sadr
 system "Sagittarius A*"
 	pos 112 22
 	government Uninhabited
-	attributes "TAGblackhole" "TAGstellarphenomena" "TAGisolated"
 	habitable 10000
 	haze _menu/haze-full
 	object
@@ -21115,7 +20831,6 @@ system "Sagittarius A*"
 system Saiph
 	pos -375 -390
 	government Republic
-	attributes "TAGhuman" "TAGnorth"
 	habitable 320
 	belt 1690
 	haze _menu/haze-33
@@ -21169,7 +20884,6 @@ system Saiph
 system Salipastart
 	pos 250.431 -370.812
 	government "Kor Mereti"
-	attributes "TAGkorath" "TAGautomata" "TAGwarzone"
 	habitable 486.68
 	belt 1056
 	haze _menu/haze-133
@@ -21236,7 +20950,6 @@ system Salipastart
 system Saquergen
 	pos -482 561
 	government Uninhabited
-	attributes "TAGisolated" "TAGnova" "TAGstellarphenomena"
 	habitable 100
 	belt 1435
 	asteroids "small rock" 3 3.9105
@@ -21265,7 +20978,6 @@ system Saquergen
 system Sargas
 	pos -542 445
 	government Republic
-	attributes "TAGhuman" "TAGsouth"
 	habitable 911.25
 	belt 1642
 	link Kornephoros
@@ -21316,7 +21028,6 @@ system Sargas
 system Sarin
 	pos -670 293
 	government Republic
-	attributes "TAGhuman" "TAGdirtbelt"
 	habitable 1080
 	belt 1752
 	link Vindemiatrix
@@ -21366,7 +21077,7 @@ system Sarin
 system Sayaiban
 	pos 250.431 -274.812
 	government Drak
-	attributes "TAGarchon" "TAGkorath" "!hazard" "TAGisolated"
+	attributes "archon"
 	habitable 2035
 	belt 1803
 	asteroids "small rock" 13 2.106
@@ -21421,7 +21132,6 @@ system Sayaiban
 system Scheat
 	pos -205 233
 	government Syndicate
-	attributes "TAGhuman" "TAGcore"
 	habitable 625
 	belt 1536
 	haze _menu/haze-133
@@ -21479,7 +21189,6 @@ system Scheat
 system Schedar
 	pos -93 229
 	government Syndicate
-	attributes "TAGhuman" "TAGcore"
 	habitable 1080
 	belt 1903
 	haze _menu/haze-133
@@ -21548,7 +21257,7 @@ system Schedar
 system Segesta
 	pos 111.87 294.242
 	government Uninhabited
-	attributes "TAGemberwaste" "TAGwormhole" "TAGstellarphenomena"
+	attributes "ember waste" "wormhole"
 	habitable 425.92
 	belt 1120
 	haze _menu/haze-red
@@ -21614,7 +21323,6 @@ system Segesta
 system Seginus
 	pos -557 356
 	government Republic
-	attributes "TAGhuman" "TAGdirtbelt"
 	habitable 135
 	belt 1906
 	link Alnasl
@@ -21680,7 +21388,6 @@ system Seginus
 system Seketra
 	pos -24.5695 -356.812
 	government Uninhabited
-	attributes "TAGkorath" "TAGfringe"
 	habitable 425.92
 	belt 1465
 	link Skeruto
@@ -21732,7 +21439,6 @@ system Seketra
 system Sepetrosk
 	pos 192.431 -243.812
 	government "Kor Mereti"
-	attributes "TAGkorath" "TAGautomata"
 	habitable 486.68
 	belt 1286
 	link Chimitarp
@@ -21793,7 +21499,6 @@ system Sepetrosk
 system Sepriaptu
 	pos 139.431 -448.812
 	government Uninhabited
-	attributes "TAGkorath" "TAGfringe"
 	habitable 2035
 	belt 1120
 	link Kaliptari
@@ -21845,7 +21550,6 @@ system Sepriaptu
 system Sevrelect
 	pos -114.569 -239.812
 	government "Kor Efret"
-	attributes "TAGkorath" "TAGefreti"
 	habitable 320
 	belt 1763
 	haze _menu/haze-67
@@ -21896,7 +21600,6 @@ system Sevrelect
 system Shaula
 	pos -460 527
 	government Pirate
-	attributes "TAGhuman" "TAGsouth"
 	habitable 625
 	belt 1814
 	link Lesath
@@ -21964,7 +21667,6 @@ system Shaula
 system Sheratan
 	pos -40 45
 	government Syndicate
-	attributes "TAGhuman" "TAGcore"
 	habitable 2035
 	belt 1183
 	haze _menu/haze-133
@@ -22024,7 +21726,6 @@ system Sheratan
 system Si'yak'ku
 	pos -329.235 -760.435
 	government Wanderer
-	attributes "TAGwanderer"
 	habitable 1313.28
 	belt 1985
 	haze _menu/haze-none
@@ -22105,7 +21806,6 @@ system Si'yak'ku
 system Sich'ka'ara
 	pos -97.1237 -831.921
 	government Wanderer
-	attributes "TAGwanderer"
 	habitable 1715
 	belt 1744
 	haze _menu/haze-none
@@ -22158,7 +21858,6 @@ system Sich'ka'ara
 system Silikatakfar
 	pos 248.431 -481.812
 	government "Kor Sestor"
-	attributes "TAGkorath" "TAGautomata"
 	habitable 425.92
 	belt 1641
 	link Mesuket
@@ -22212,7 +21911,6 @@ system Silikatakfar
 system "Silver Bell"
 	pos -1045.59 541.051
 	government Coalition
-	attributes "TAGcoalition" "TAGsaryd"
 	habitable 1080
 	belt 1406
 	link "Bright Void"
@@ -22280,7 +21978,6 @@ system "Silver Bell"
 system "Silver String"
 	pos -1022.59 517.051
 	government Coalition
-	attributes "TAGcoalition" "TAGsaryd"
 	habitable 1080
 	belt 1986
 	link "Silver Bell"
@@ -22345,7 +22042,6 @@ system "Silver String"
 system Similisti
 	pos 210.431 -313.812
 	government "Kor Mereti"
-	attributes "TAGkorath" "TAGautomata"
 	habitable 1080
 	belt 1349
 	haze _menu/haze-133
@@ -22413,7 +22109,6 @@ system Similisti
 system Sirius
 	pos -378 44
 	government Republic
-	attributes "TAGhuman" "TAGnearearth"
 	habitable 1800
 	belt 1407
 	link Sol
@@ -22477,7 +22172,6 @@ system Sirius
 system Skeruto
 	pos 28.4305 -339.812
 	government Uninhabited
-	attributes "TAGkorath"
 	habitable 320
 	belt 1198
 	link Furmeliki
@@ -22528,7 +22222,6 @@ system Skeruto
 system Sko'karak
 	pos -304.43 -930.688
 	government Wanderer
-	attributes "TAGwanderer"
 	habitable 320
 	belt 1805
 	haze _menu/haze-none
@@ -22581,7 +22274,6 @@ system Sko'karak
 system Sobarati
 	pos 277.431 -557.812
 	government "Kor Sestor"
-	attributes "TAGkorath" "TAGautomata"
 	habitable 3780
 	belt 1314
 	link Asikafarnut
@@ -22643,7 +22335,6 @@ system Sobarati
 system Sol
 	pos -400 100
 	government Republic
-	attributes "TAGhuman" "TAGnearearth"
 	habitable 1080
 	belt 1529
 	haze _menu/haze-67
@@ -22723,7 +22414,6 @@ system Sol
 system "Sol Arach"
 	pos -711.587 649.051
 	government Coalition
-	attributes "TAGcoalition" "TAGarach"
 	habitable 486.68
 	belt 1147
 	haze _menu/haze-133
@@ -22795,7 +22485,6 @@ system "Sol Arach"
 system "Sol Kimek"
 	pos -1310.63 227.214
 	government Coalition
-	attributes "TAGcoalition" "TAGkimek"
 	habitable 425.92
 	belt 1490
 	link "3 Pole"
@@ -22870,7 +22559,6 @@ system "Sol Kimek"
 system "Sol Saryd"
 	pos -1037.59 675.051
 	government Coalition
-	attributes "TAGcoalition" "TAGsaryd"
 	habitable 1313.28
 	belt 1720
 	link Belonging
@@ -22953,7 +22641,6 @@ system "Sol Saryd"
 system Solifar
 	pos 47.4305 -435.812
 	government Uninhabited
-	attributes "TAGkorath"
 	habitable 320
 	belt 1517
 	haze _menu/haze-67
@@ -23009,7 +22696,6 @@ system Solifar
 system Sospi
 	pos -317 -161
 	government Republic
-	attributes "TAGhuman" "TAGnorth" "TAGfringe"
 	habitable 1715
 	belt 1715
 	haze _menu/haze-133
@@ -23075,7 +22761,6 @@ system Sospi
 system Speloog
 	pos -967.587 445.051
 	government Coalition
-	attributes "TAGcoalition" "TAGarach"
 	habitable 625
 	belt 1159
 	link Belug
@@ -23142,7 +22827,6 @@ system Speloog
 system Spica
 	pos -906 120
 	government Republic
-	attributes "TAGhuman" "TAGrim"
 	habitable 625
 	belt 1940
 	haze _menu/haze-33
@@ -23206,7 +22890,6 @@ system Statina
 	asteroids "medium metal" 72 3
 	asteroids "small metal" 39 3
 	government Uninhabited
-	attributes "TAGemberwaste" "TAGwormhole" "TAGstellarphenomena"
 	haze _menu/haze-red
 	link Diespiter
 	link Egeria
@@ -23245,7 +22928,6 @@ system Statina
 system "Steep Roof"
 	pos -1113.59 570.051
 	government Coalition
-	attributes "TAGcoalition" "TAGsaryd"
 	habitable 1080
 	belt 1100
 	haze _menu/haze-67
@@ -23318,7 +23000,7 @@ system "Steep Roof"
 system Stercutus
 	pos 140.87 320.242
 	government Uninhabited
-	attributes "TAGemberwaste" "TAGwormhole" "TAGstellarphenomena"
+	attributes "ember waste" "wormhole"
 	habitable 945
 	belt 1492
 	haze _menu/haze-red
@@ -23381,7 +23063,6 @@ system Stercutus
 system Suhail
 	pos -774 -338
 	government Republic
-	attributes "TAGhuman" "TAGdeep"
 	habitable 1715
 	belt 1715
 	haze _menu/haze-33
@@ -23442,7 +23123,6 @@ system Suhail
 system Sumar
 	pos -236 -273
 	government Republic
-	attributes "TAGhuman" "TAGnorth"
 	habitable 2560
 	belt 1778
 	link Cardax
@@ -23502,7 +23182,6 @@ system Sumar
 system Sumprast
 	pos -101.569 -262.812
 	government "Kor Efret"
-	attributes "TAGkorath" "TAGautomata"
 	habitable 486.68
 	belt 1958
 	haze _menu/haze-67
@@ -23568,7 +23247,6 @@ system Sumprast
 system Tais
 	pos -346 381
 	government Republic
-	attributes "TAGhuman" "TAGdirtbelt"
 	habitable 3645
 	belt 1379
 	haze _menu/haze-133
@@ -23626,7 +23304,6 @@ system Tais
 system Talita
 	pos -519 -26
 	government Republic
-	attributes "TAGhuman" "TAGparadise"
 	habitable 1705
 	belt 1403
 	link Miaplacidus
@@ -23692,7 +23369,6 @@ system Talita
 system "Tania Australis"
 	pos -671 7
 	government Republic
-	attributes "TAGhuman" "TAGdirtbelt"
 	habitable 1080
 	belt 1738
 	link Phecda
@@ -23765,7 +23441,6 @@ system "Tania Australis"
 system Tarazed
 	pos -194 448
 	government Republic
-	attributes "TAGhuman" "TAGsouth"
 	habitable 1215
 	belt 1169
 	link Enif
@@ -23828,7 +23503,6 @@ system Tarazed
 system Tebuteb
 	pos -615.587 710.051
 	government Coalition
-	attributes "TAGcoalition" "TAGarach"
 	habitable 553.28
 	belt 1855
 	link Miblulub
@@ -23890,7 +23564,6 @@ system Tebuteb
 system Tejat
 	pos -489 -107
 	government Republic
-	attributes "TAGhuman" "TAGparadise"
 	habitable 1158.12
 	belt 1447
 	link Phurad
@@ -23968,7 +23641,7 @@ system Tejat
 system Terminus
 	pos -727.99 -23.2491
 	government Republic
-	attributes "TAGwormhole" "TAGstellarphenomena" "TAGhuman" "TAGdirtbelt" "TAGfringe"
+	attributes "wormhole"
 	habitable 425.92
 	belt 1221
 	haze _menu/haze-67
@@ -24021,7 +23694,6 @@ system Terminus
 system "Terra Incognita"
 	pos 9921.5 7086.5
 	government Uninhabited
-	attributes "TAGpleiades"
 	link "Over the Rainbow"
 	habitable 455.625
 	haze _menu/haze-blackbody
@@ -24066,7 +23738,6 @@ system "Terra Incognita"
 system Torbab
 	pos -949.587 490.051
 	government Coalition
-	attributes "TAGcoalition" "TAGarach"
 	habitable 1505.92
 	belt 1702
 	link Speloog
@@ -24143,7 +23814,6 @@ system Torbab
 system Tortor
 	pos -255 -424
 	government Republic
-	attributes "TAGhuman" "TAGnorth" "TAGfringe"
 	habitable 455.625
 	belt 1243
 	haze _menu/haze-67
@@ -24210,7 +23880,6 @@ system Tortor
 system Turais
 	pos -691 134
 	government Republic
-	attributes "TAGhuman" "TAGdirtbelt"
 	habitable 320
 	belt 1471
 	link Gacrux
@@ -24267,7 +23936,6 @@ system Turais
 system "Ula Mon"
 	pos -64.1218 -559.868
 	government Hai
-	attributes "TAGhai"
 	habitable 640
 	belt 1574
 	link "Bote Asu"
@@ -24342,7 +24010,7 @@ system "Ula Mon"
 system "Ultima Thule"
 	pos -336 -211
 	government Republic
-	attributes "TAGwormhole" "TAGstellarphenomena" "TAGnorth"
+	attributes "wormhole"
 	habitable 2560
 	belt 1635
 	haze _menu/haze-67
@@ -24396,7 +24064,6 @@ system "Ultima Thule"
 system Umbral
 	pos -164 406
 	government Republic
-	attributes "TAGhuman" "TAGsouth" "TAGfringe"
 	habitable 670
 	belt 1345
 	link Tarazed
@@ -24474,7 +24141,6 @@ system Umbral
 system Unagi
 	pos -306 -578
 	government Pirate
-	attributes "TAGhuman" "TAGnorth" "TAGfringe"
 	habitable 320
 	belt 1960
 	haze _menu/haze-33
@@ -24528,7 +24194,6 @@ system Unagi
 system Unukalhai
 	pos -710 405
 	government Republic
-	attributes "TAGhuman" "TAGrim"
 	habitable 625
 	belt 1968
 	haze _menu/haze-67
@@ -24589,7 +24254,6 @@ system Unukalhai
 system "Uwa Fahn"
 	pos 35.1585 -491.67
 	government Hai
-	attributes "TAGhai"
 	habitable 320
 	belt 1913
 	link "Ya Hai"
@@ -24653,7 +24317,6 @@ system Vaticanus
 	asteroids "small metal" 14 8
 	asteroids "small rock" 3 6
 	government Uninhabited
-	attributes "TAGemberwaste"
 	haze _menu/haze-red
 	link Egeria
 	link Prosa
@@ -24695,7 +24358,6 @@ system Vaticanus
 system Vega
 	pos -402 182
 	government Republic
-	attributes "TAGhuman" "TAGnearearth"
 	habitable 1400
 	belt 1744
 	link Altair
@@ -24759,7 +24421,6 @@ system Vega
 system Vindemiatrix
 	pos -635 257
 	government Republic
-	attributes "TAGhuman" "TAGdirtbelt"
 	habitable 1080
 	belt 1957
 	link Alioth
@@ -24812,7 +24473,6 @@ system Vindemiatrix
 system Volax
 	pos -256 -179
 	government Republic
-	attributes "TAGhuman" "TAGnorth"
 	habitable 1715
 	belt 1424
 	haze _menu/haze-67
@@ -24867,7 +24527,6 @@ system Volax
 system "Wah Ki"
 	pos 14.9925 -612.792
 	government Hai
-	attributes "TAGhai" "TAGwarzone"
 	habitable 425.92
 	belt 1585
 	link "Zuba Zub"
@@ -24936,7 +24595,6 @@ system "Wah Ki"
 system "Wah Oh"
 	pos -205.344 -381.381
 	government Hai
-	attributes "TAGhai"
 	habitable 5000
 	belt 1194
 	haze _menu/haze-67
@@ -25015,7 +24673,6 @@ system "Wah Oh"
 system "Wah Yoot"
 	pos 40.9382 -685.994
 	government "Hai (Unfettered)"
-	attributes "TAGhai"
 	habitable 1080
 	belt 1222
 	link "Wah Ki"
@@ -25080,7 +24737,7 @@ system "Wah Yoot"
 system Waypoint
 	pos -184 -515
 	government Hai
-	attributes "TAGwormhole" "TAGstellarphenomena" "TAGhai"
+	attributes "wormhole"
 	habitable 78.125
 	belt 1610
 	haze _menu/haze-67
@@ -25138,7 +24795,6 @@ system Waypoint
 system Wazn
 	pos -385 -131
 	government Republic
-	attributes "TAGhuman" "TAGparadise"
 	habitable 534.375
 	belt 1414
 	haze _menu/haze-67
@@ -25204,7 +24860,6 @@ system Wazn
 system Wei
 	pos -598 369
 	government Republic
-	attributes "TAGhuman" "TAGdirtbelt"
 	habitable 455.625
 	belt 1927
 	link Seginus
@@ -25262,7 +24917,6 @@ system Wei
 system Wezen
 	pos -664 -433
 	government Republic
-	attributes "TAGhuman" "TAGdeep"
 	habitable 2880
 	belt 1913
 	link Naos
@@ -25344,7 +24998,6 @@ system Wezen
 system "World's End"
 	pos 9966.5 7017.5
 	government Uninhabited
-	attributes "TAGpleiades" "TAGringworld" 
 	habitable 700
 	haze _menu/haze-blackbody
 	object
@@ -25404,7 +25057,6 @@ system "World's End"
 system "Ya Hai"
 	pos -24.9453 -505.571
 	government Hai
-	attributes "TAGhai"
 	habitable 425.92
 	belt 1120
 	link "Ula Mon"
@@ -25479,7 +25131,6 @@ system "Ya Hai"
 system "Yed Prior"
 	pos -810 374
 	government Republic
-	attributes "TAGhuman" "TAGsouth"
 	habitable 455.625
 	belt 1837
 	link Pherkad
@@ -25536,7 +25187,6 @@ system "Yed Prior"
 system Zaurak
 	pos -109 -34
 	government Syndicate
-	attributes "TAGhuman" "TAGcore"
 	habitable 625
 	belt 1130
 	haze _menu/haze-133
@@ -25594,7 +25244,6 @@ system Zaurak
 system "Zeta Aquilae"
 	pos -369 276
 	government Republic
-	attributes "TAGhuman" "TAGdirtbelt"
 	habitable 1400
 	belt 1829
 	haze _menu/haze-133
@@ -25669,7 +25318,6 @@ system "Zeta Aquilae"
 system "Zeta Centauri"
 	pos -835 257
 	government Republic
-	attributes "TAGhuman" "TAGrim"
 	habitable 455.625
 	belt 1488
 	haze _menu/haze-67
@@ -25725,7 +25373,6 @@ system "Zeta Centauri"
 system Zosma
 	pos -640 -123
 	government Republic
-	attributes "TAGhuman" "TAGdeep"
 	habitable 455.625
 	belt 1436
 	link Algieba
@@ -25791,7 +25438,6 @@ system Zosma
 system "Zuba Zub"
 	pos -48.2661 -647.926
 	government Hai
-	attributes "TAGhai"
 	habitable 425.92
 	belt 1911
 	haze _menu/haze-67
@@ -25857,7 +25503,6 @@ system "Zuba Zub"
 system Zubenelgenubi
 	pos -710 353
 	government Republic
-	attributes "TAGhuman" "TAGrim"
 	habitable 945
 	belt 1475
 	link Zubeneschamali
@@ -25923,7 +25568,6 @@ system Zubenelgenubi
 system Zubeneschamali
 	pos -759 338
 	government Republic
-	attributes "TAGhuman" "TAGrim"
 	habitable 1250
 	belt 1543
 	haze _menu/haze-67
