@@ -736,30 +736,37 @@ interface "boarding"
 		from 330 -72
 		align right
 	
-	label "capture odds (attacking):"
+	label "attack rounds:"
 		from 50 -42
 		align left
-	string "attack odds"
+	string "attack rounds"
 		from 330 -42
 		align right
+	
+	label "capture odds (attacking):"
+		from 50 -12
+		align left
+	string "attack odds"
+		from 330 -12
+		align right
 	label "expected casualties:"
-		from 50 -22
+		from 50 -8
 		align left
 	string "attack casualties"
-		from 330 -22
+		from 330 -8
 		align right
 	
 	label "survival odds (defending):"
-		from 50 8
+		from 50 38
 		align left
 	string "defense odds"
-		from 330 8
+		from 330 38
 		align right
 	label "expected casualties:"
-		from 50 28
+		from 50 58
 		align left
 	string "defense casualties"
-		from 330 28
+		from 330 58
 		align right
 	
 	active if "can take"
