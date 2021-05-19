@@ -191,6 +191,9 @@ void BoardingPanel::Draw()
 		// If you haven't initiated capture yet, show the self destruct odds in
 		// the attack odds. It's illogical for you to have access to that info,
 		// but not knowing what your true odds are is annoying.
+		int attackRounds = victim->Attributes().Get("attack rounds");
+		if(rounds < 1)
+			rounds = max(1, attackRounds);
 		double odds = attackOdds.Odds(crew, vCrew);
 		if(!isCapturing)
 			odds *= (1. - victim->Attributes().Get("self destruct"));
@@ -198,6 +201,8 @@ void BoardingPanel::Draw()
 			Round(100. * odds) + "%");
 		info.SetString("attack casualties",
 			Round(attackOdds.AttackerCasualties(crew, vCrew)));
+		info.SetString("attack rounds",
+			Round(rounds));
 		info.SetString("defense odds",
 			Round(100. * (1. - defenseOdds.Odds(vCrew, crew))) + "%");
 		info.SetString("defense casualties",
@@ -335,7 +340,9 @@ bool BoardingPanel::KeyDown(SDL_Keycode key, Uint16 mod, const Command &command,
 			
 			// To speed things up, have multiple rounds of combat each time you
 			// click the button, if you started with a lot of crew.
-			int rounds = max(1, yourStartCrew / 5);
+			rounds = victim->Attributes().Get("attack rounds");
+			if(rounds < 1 || rounds >= you->Crew() || rounds > victim->Crew())
+				rounds = max(1, you->Crew() / 5);
 			for(int round = 0; round < rounds; ++round)
 			{
 				int yourCrew = you->Crew();

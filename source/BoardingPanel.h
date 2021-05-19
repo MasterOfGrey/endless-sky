@@ -113,6 +113,7 @@ private:
 	std::vector<Plunder> plunder;
 	int selected = 0;
 	double scroll = 0.;
+	int rounds = 0;
 	
 	bool playerDied = false;
 	bool isCapturing = false;
