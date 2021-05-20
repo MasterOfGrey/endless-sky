@@ -28451,20 +28451,22 @@ planet "Elek Kartanu"
 
 planet "Ember Graveyard"
 	attributes "requires: quantum keystone"
-	description ``
+	description ""
+	spaceport ""
 
 planet "Ember Reaches"
 	attributes "requires: quantum keystone"
-	description ``
+	description ""
 	spaceport ""
 
 planet "Ember Threshold"
 	attributes "requires: quantum keystone"
-	description ``
+	description ""
+	spaceport ""
 
 planet "Ember Wormhole"
 	attributes "requires: quantum keystone"
-	description ``
+	description ""
 	spaceport ""
 
 planet Eminonu
