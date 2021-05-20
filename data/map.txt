@@ -19063,31 +19063,26 @@ system "Over the Rainbow"
 	asteroids "small metal" 5 2.9887
 	asteroids "medium metal" 11 3.6556
 	asteroids "large metal" 7 2.0007
-	attributes pleiades TAGwormhole TAGstellarphenomena
+	attributes pleiades
 	object "Pug Wormhole"
 		sprite planet/wormhole
-		attributes pleiades TAGwormhole TAGstellarphenomena
 	object
 		sprite star/k5
 		distance 1455.1
 		period 875.481
 		offset 180
-		attributes pleiades TAGwormhole TAGstellarphenomena
 		object
 			sprite star/m4
 			distance 75
 			period 12.18
-			attributes pleiades TAGwormhole TAGstellarphenomena
 	object
 		sprite star/g0
 		distance 544.9
 		period 875.481
-		attributes pleiades TAGwormhole TAGstellarphenomena
 		object
 			sprite star/m4
 			distance 107
 			period 12.7013
-			attributes pleiades TAGwormhole TAGstellarphenomena
 
 system Paeli
 	pos 129 497
