@@ -7,7 +7,6 @@
 # Endless Sky is distributed in the hope that it will be useful, but WITHOUT ANY
 # WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
 # PARTICULAR PURPOSE.  See the GNU General Public License for more details.
-# System attribute reference: "TAGhuman" "TAGcore" "TAGnearearth" "TAGparadise" "TAGnorth" "TAGdeep" "TAGdirtbelt" "TAGsouth" "TAGrim" "TAGcoalition" "TAGarach" "TAGkimek" "TAGsaryd" "TAGkorath" "TAGautomata" "TAGefreti" "TAGexiles" "TAGhai" "TAGwanderer" "TAGemberwaste" "TAGgraveyard" "TAGisolated" "TAGfringe" "TAGringworld" "TAGwormhole" "TAGnova" "TAGwolf-rayet" "TAGblackhole" "TAGstellarphenomena" "TAGwarzone" "TAGarchon" "TAGpleiades"
 
 galaxy "Milky Way"
 	pos 0 0
@@ -108,7 +107,6 @@ system "1 Axis"
 	fleet "Small Saryd" 900
 	fleet "Large Saryd" 1800
 	fleet Heliarch 450
-	attributes TAGkimek TAGcoalition
 	object
 		sprite star/k5
 		distance 49.335
@@ -182,7 +180,6 @@ system "10 Pole"
 	fleet "Small Saryd" 1200
 	fleet "Large Saryd" 5000
 	fleet Heliarch 700
-	attributes TAGkimek TAGcoalition
 	object
 		sprite star/k0
 		period 10
@@ -258,7 +255,6 @@ system "11 Autumn Above"
 	fleet "Small Saryd" 900
 	fleet "Large Saryd" 2000
 	fleet Heliarch 400
-	attributes TAGkimek TAGcoalition
 	object
 		sprite star/g0
 		distance 40.3837
@@ -338,7 +334,6 @@ system "11 Spring Below"
 	fleet "Small Saryd" 1200
 	fleet "Large Saryd" 3000
 	fleet Heliarch 500
-	attributes TAGkimek TAGcoalition
 	object
 		sprite star/k0
 		distance 47.6045
@@ -418,7 +413,6 @@ system "12 Autumn Above"
 	fleet "Small Saryd" 1300
 	fleet "Large Saryd" 7000
 	fleet Heliarch 800
-	attributes TAGkimek TAGcoalition
 	object
 		sprite star/g5
 		distance 49.4445
@@ -511,7 +505,6 @@ system "14 Pole"
 	fleet "Small Saryd" 1600
 	fleet "Large Saryd" 9000
 	fleet Heliarch 1200
-	attributes TAGkimek TAGcoalition
 	object
 		sprite star/g5
 		period 10
@@ -571,7 +564,6 @@ system "14 Summer Above"
 	fleet "Small Saryd" 1300
 	fleet "Large Saryd" 4000
 	fleet Heliarch 1200
-	attributes TAGkimek TAGcoalition
 	object
 		sprite star/g0
 		distance 20.8
@@ -639,7 +631,6 @@ system "14 Winter Below"
 	fleet "Small Saryd" 1000
 	fleet "Large Saryd" 1800
 	fleet Heliarch 200
-	attributes TAGkimek TAGcoalition
 	object
 		sprite star/g5
 		distance 45.0921
@@ -715,7 +706,6 @@ system "16 Autumn Rising"
 	fleet "Small Saryd" 1100
 	fleet "Large Saryd" 4000
 	fleet Heliarch 500
-	attributes TAGkimek TAGcoalition
 	object
 		sprite star/f5
 		period 10
@@ -787,7 +777,6 @@ system "3 Axis"
 	fleet "Small Saryd" 800
 	fleet "Large Saryd" 1600
 	fleet Heliarch 350
-	attributes TAGkimek TAGcoalition
 	object
 		sprite star/f0
 		period 10
@@ -855,7 +844,6 @@ system "3 Pole"
 	fleet "Small Saryd" 1000
 	fleet "Large Saryd" 2000
 	fleet Heliarch 600
-	attributes TAGkimek TAGcoalition
 	object
 		sprite star/g5
 		period 10
@@ -912,7 +900,6 @@ system "3 Spring Rising"
 	fleet "Small Saryd" 1500
 	fleet "Large Saryd" 6000
 	fleet Heliarch 800
-	attributes TAGkimek TAGcoalition
 	object
 		sprite star/g0
 		period 10
@@ -987,7 +974,6 @@ system "4 Axis"
 	fleet "Small Saryd" 900
 	fleet "Large Saryd" 1600
 	fleet Heliarch 300
-	attributes TAGkimek TAGcoalition
 	object
 		sprite star/k5
 		period 10
@@ -1048,7 +1034,6 @@ system "4 Spring Rising"
 	fleet "Small Saryd" 1300
 	fleet "Large Saryd" 4000
 	fleet Heliarch 500
-	attributes TAGkimek TAGcoalition
 	object
 		sprite star/m0
 		period 10
@@ -1112,7 +1097,6 @@ system "4 Summer Rising"
 	fleet "Small Saryd" 1200
 	fleet "Large Saryd" 3000
 	fleet Heliarch 900
-	attributes TAGkimek TAGcoalition
 	object
 		sprite star/m0
 		period 10
@@ -1175,7 +1159,6 @@ system "4 Winter Rising"
 	fleet "Small Saryd" 1000
 	fleet "Large Saryd" 2000
 	fleet Heliarch 400
-	attributes TAGkimek TAGcoalition
 	object
 		sprite star/m8
 		period 10
@@ -1248,7 +1231,6 @@ system "5 Axis"
 	fleet "Small Saryd" 1000
 	fleet "Large Saryd" 1800
 	fleet Heliarch 300
-	attributes TAGkimek TAGcoalition
 	object
 		sprite star/m4
 		period 10
@@ -1322,7 +1304,6 @@ system "5 Spring Below"
 	fleet "Small Saryd" 1000
 	fleet "Large Saryd" 2500
 	fleet Heliarch 500
-	attributes TAGkimek TAGcoalition
 	object
 		sprite star/g0-old
 		distance 19.7171
@@ -1395,7 +1376,6 @@ system "5 Summer Above"
 	fleet "Small Saryd" 1200
 	fleet "Large Saryd" 3000
 	fleet Heliarch 800
-	attributes TAGkimek TAGcoalition
 	object
 		sprite star/k5
 		period 10
@@ -1459,7 +1439,6 @@ system "5 Winter Above"
 	fleet "Small Saryd" 1200
 	fleet "Large Saryd" 4000
 	fleet Heliarch 300
-	attributes TAGkimek TAGcoalition
 	object
 		sprite star/m0
 		period 10
@@ -1521,7 +1500,6 @@ system "7 Autumn Rising"
 	fleet "Small Saryd" 400
 	fleet "Large Saryd" 800
 	fleet Heliarch 350
-	attributes TAGkimek TAGcoalition
 	object
 		sprite star/k5
 		period 10
@@ -1590,7 +1568,6 @@ system "8 Winter Below"
 	fleet "Small Saryd" 1200
 	fleet "Large Saryd" 2000
 	fleet Heliarch 250
-	attributes TAGkimek TAGcoalition
 	object
 		sprite star/k0
 		period 10
@@ -1655,7 +1632,6 @@ system "9 Spring Above"
 	fleet "Small Saryd" 900
 	fleet "Large Saryd" 2400
 	fleet Heliarch 700
-	attributes TAGkimek TAGcoalition
 	object
 		sprite star/g5
 		distance 42.1494
@@ -1728,7 +1704,6 @@ system Ablodab
 	fleet "Small Saryd" 1000
 	fleet "Large Saryd" 2400
 	fleet Heliarch 700
-	attributes TAGarach TAGcoalition
 	object
 		sprite star/k5
 		period 10
@@ -1806,7 +1781,6 @@ system Ablub
 	fleet "Small Saryd" 1600
 	fleet "Large Saryd" 8000
 	fleet Heliarch 200
-	attributes TAGarach TAGcoalition
 	object
 		sprite star/m4
 		period 10
@@ -1857,7 +1831,6 @@ system Acamar
 	fleet "Small Core Merchants" 2000
 	fleet "Small Republic" 3600
 	fleet "Small Syndicate" 3200
-	attributes TAGhuman TAGcore
 	object
 		sprite star/g0
 		period 10
@@ -1917,7 +1890,6 @@ system Achernar
 	fleet "Small Core Merchants" 300
 	fleet "Human Miners" 3000
 	fleet "Republic Logistics" 6000
-	attributes TAGhuman TAGcore
 	object
 		sprite star/g5
 		period 10
@@ -1991,7 +1963,6 @@ system Acrux
 	fleet "Small Southern Pirates" 1000
 	fleet "Large Southern Pirates" 2400
 	fleet "Human Miners" 5000
-	attributes TAGhuman TAGrim
 	object
 		sprite star/k0
 		distance 17.9429
@@ -2068,7 +2039,6 @@ system Adhara
 	fleet "Large Deep Security" 2400
 	fleet "Large Deep Merchants" 900
 	fleet "Small Northern Pirates" 2000
-	attributes TAGhuman TAGdeep
 	object
 		sprite star/k0
 		distance 33.5961
@@ -2119,7 +2089,6 @@ system Aescolanus
 	trade Medical 715
 	trade Metal 410
 	trade Plastic 289
-	attributes TAGemberwaste TAGwormhole TAGstellarphenomena
 	object
 		sprite star/m4
 		period 10
@@ -2164,7 +2133,6 @@ system Aki'il
 	trade Medical 849
 	trade Metal 335
 	trade Plastic 286
-	attributes TAGemberwaste TAGgraveyard TAGisolated
 	object
 		sprite star/g0-old
 		distance 32.2427
@@ -2237,7 +2205,6 @@ system "Al Dhanab"
 	fleet "Small Core Pirates" 2000
 	fleet "Large Core Pirates" 3000
 	fleet "Human Miners" 2000
-	attributes TAGhuman TAGcore
 	object
 		sprite star/g0
 		period 10
@@ -2306,7 +2273,6 @@ system Albaldah
 	fleet "Large Militia" 2400
 	fleet Quarg 3000
 	fleet "Human Miners" 3000
-	attributes TAGhuman TAGsouth
 	object
 		sprite star/k5
 		distance 42.7246
@@ -2376,7 +2342,6 @@ system Albireo
 	fleet "Small Militia" 1800
 	fleet "Large Militia" 3000
 	fleet Quarg 2000
-	attributes TAGhuman TAGsouth
 	object
 		sprite star/g5
 		distance 15.6316
@@ -2431,7 +2396,6 @@ system Alcyone
 	fleet "Small Core Pirates" 400
 	fleet "Large Core Pirates" 600
 	fleet "Large Syndicate" 1200
-	attributes TAGhuman TAGcore
 	object
 		sprite star/m4
 		distance 45.5
@@ -2495,7 +2459,6 @@ system Aldebaran
 	fleet "Paradise Merchants" 1000
 	fleet "Small Republic" 800
 	fleet "Large Republic" 400
-	attributes TAGhuman TAGparadise
 	object
 		sprite star/g5
 		period 10
@@ -2546,7 +2509,6 @@ system Alderamin
 	fleet "Large Syndicate" 800
 	fleet "Small Core Pirates" 1000
 	fleet "Large Core Pirates" 1200
-	attributes TAGhuman TAGcore
 	object
 		sprite star/g0
 		distance 36.6569
@@ -2616,7 +2578,6 @@ system Aldhibain
 	fleet "Small Southern Pirates" 800
 	fleet "Large Southern Pirates" 2000
 	fleet "Human Miners" 3000
-	attributes TAGhuman TAGsouth
 	object
 		sprite star/k0
 		period 10
@@ -2661,7 +2622,6 @@ system Algenib
 	fleet "Small Core Pirates" 300
 	fleet "Large Core Pirates" 500
 	fleet "Large Syndicate" 800
-	attributes TAGhuman TAGcore TAGfringe
 	object
 		sprite star/k0-old
 		period 10
@@ -2729,7 +2689,6 @@ system Algieba
 	fleet "Large Republic" 5000
 	fleet "Small Northern Merchants" 400
 	fleet "Large Northern Merchants" 600
-	attributes TAGhuman TAGdeep
 	object
 		sprite star/f0
 		distance 5.86085
@@ -2791,7 +2750,6 @@ system Algol
 	fleet "Small Core Pirates" 1800
 	fleet "Large Core Pirates" 5000
 	fleet "Small Syndicate" 2400
-	attributes TAGhuman TAGcore
 	object
 		sprite star/k5-old
 		distance 42.7246
@@ -2862,7 +2820,6 @@ system Algorel
 	fleet "Small Republic" 3000
 	fleet "Small Southern Pirates" 1600
 	fleet "Large Southern Pirates" 5000
-	attributes TAGhuman TAGdirtbelt
 	object
 		sprite star/k5
 		period 10
@@ -2929,7 +2886,6 @@ system Alheka
 	fleet "Small Northern Pirates" 2000
 	fleet "Large Northern Pirates" 2000
 	fleet "Human Miners" 3000
-	attributes TAGhuman TAGnorth
 	object
 		sprite star/g0
 		period 10
@@ -2985,7 +2941,6 @@ system Alhena
 	fleet "Small Republic" 1100
 	fleet "Large Republic" 1600
 	fleet "Republic Logistics" 3000
-	attributes TAGhuman TAGparadise
 	object
 		sprite star/g5
 		distance 32.1693
@@ -3052,7 +3007,6 @@ system Alioth
 	fleet "Small Militia" 900
 	fleet "Small Southern Pirates" 1200
 	fleet "Large Southern Pirates" 2400
-	attributes TAGhuman TAGdirtbelt
 	object
 		sprite star/k0
 		period 10
@@ -3104,7 +3058,6 @@ system Alkaid
 	fleet "Small Southern Pirates" 2400
 	fleet "Large Southern Pirates" 5000
 	fleet "Human Miners" 3000
-	attributes TAGhuman TAGrim
 	object
 		sprite star/g0
 		period 10
@@ -3175,7 +3128,6 @@ system Almaaz
 	fleet "Small Northern Pirates" 500
 	fleet "Large Northern Pirates" 600
 	fleet "Large Republic" 4000
-	attributes TAGhuman TAGnorth TAGfringe
 	object
 		sprite star/g0
 		period 10
@@ -3222,7 +3174,6 @@ system Almach
 	fleet "Large Core Pirates" 1400
 	fleet "Large Syndicate" 6000
 	fleet "Korath Raid" 20000
-	attributes TAGhuman TAGcore TAGfringe
 	object
 		sprite star/k5
 		period 10
@@ -3287,7 +3238,6 @@ system Alnair
 	fleet "Small Syndicate" 4000
 	fleet "Large Syndicate" 6000
 	fleet "Human Miners" 2000
-	attributes TAGhuman TAGcore
 	object
 		sprite star/m4
 		period 10
@@ -3356,7 +3306,6 @@ system Alnasl
 	fleet "Small Militia" 3000
 	fleet "Large Militia" 6000
 	fleet "Small Southern Pirates" 4000
-	attributes TAGhuman TAGdirtbelt
 	object
 		sprite star/k5
 		distance 41.5
@@ -3416,7 +3365,6 @@ system Alnilam
 	fleet "Small Northern Pirates" 500
 	fleet "Large Northern Pirates" 700
 	fleet "Large Republic" 10000
-	attributes TAGhuman TAGnorth TAGfringe
 	object
 		sprite star/f5
 		period 10
@@ -3495,7 +3443,6 @@ system Alnitak
 	fleet "Small Republic" 3000
 	fleet "Large Republic" 4000
 	fleet "Republic Logistics" 6000
-	attributes TAGhuman TAGnorth
 	object
 		sprite star/m0
 		distance 31.1055
@@ -3556,7 +3503,6 @@ system Alniyat
 	fleet "Large Southern Pirates" 4000
 	fleet "Small Militia" 800
 	fleet "Large Militia" 3000
-	attributes TAGhuman TAGsouth
 	object
 		sprite star/k5
 		distance 41.9222
@@ -3627,7 +3573,6 @@ system "Alpha Arae"
 	fleet "Large Militia" 9000
 	fleet "Small Southern Pirates" 4000
 	fleet "Large Southern Pirates" 9000
-	attributes TAGhuman TAGdirtbelt
 	object
 		sprite star/g5
 		distance 31.1534
@@ -3694,7 +3639,6 @@ system "Alpha Centauri"
 	fleet "Large Northern Merchants" 1000
 	fleet "Small Republic" 2000
 	fleet "Large Republic" 6000
-	attributes TAGhuman TAGnearearth
 	object
 		sprite star/k5
 		distance 26.7033
@@ -3756,7 +3700,6 @@ system "Alpha Hydri"
 	fleet "Small Syndicate" 4000
 	fleet "Large Syndicate" 9000
 	fleet "Korath Raid" 40000
-	attributes TAGhuman TAGcore
 	object
 		sprite star/g0
 		distance 24.6857
@@ -3819,7 +3762,6 @@ system Alphard
 	fleet "Large Republic" 6000
 	fleet "Republic Logistics" 6000
 	fleet "Human Miners" 2000
-	attributes TAGhuman TAGparadise
 	object
 		sprite star/g5
 		distance 41.5307
@@ -3873,7 +3815,6 @@ system Alphecca
 	fleet "Large Southern Merchants" 3500
 	fleet "Small Southern Pirates" 3000
 	fleet "Small Militia" 5000
-	attributes TAGhuman TAGdirtbelt
 	object
 		sprite star/g0
 		distance 27.8857
@@ -3933,7 +3874,6 @@ system Alpheratz
 	fleet "Large Syndicate" 2000
 	fleet "Small Core Pirates" 1200
 	fleet "Large Core Pirates" 3000
-	attributes TAGhuman TAGcore
 	object
 		sprite star/g5
 		distance 48.2767
@@ -3996,7 +3936,6 @@ system Altair
 	fleet "Large Republic" 6000
 	fleet "Republic Logistics" 6000
 	fleet "Small Syndicate" 9000
-	attributes TAGhuman TAGnearearth
 	object
 		sprite star/g5
 		distance 31.4921
@@ -4062,7 +4001,6 @@ system Aludra
 	fleet "Small Northern Merchants" 500
 	fleet "Large Northern Merchants" 1200
 	fleet "Human Miners" 5000
-	attributes TAGhuman TAGdeep
 	object
 		sprite star/k0
 		period 10
@@ -4126,7 +4064,6 @@ system "Ancient Hope"
 	fleet "Small Saryd" 500
 	fleet "Large Saryd" 1400
 	fleet Heliarch 1500
-	attributes TAGcoalition TAGsaryd
 	object
 		sprite star/m0
 		distance 25.5165
@@ -4195,7 +4132,6 @@ system Ankaa
 	fleet "Large Core Merchants" 700
 	fleet "Small Syndicate" 900
 	fleet "Large Core Pirates" 4000
-	attributes TAGhuman TAGcore
 	object
 		sprite star/g5
 		period 10
@@ -4252,7 +4188,6 @@ system Answer
 	fleet "Small Saryd" 600
 	fleet "Large Saryd" 1200
 	fleet Heliarch 1400
-	attributes TAGcoalition TAGsaryd
 	object
 		sprite star/k5
 		period 10
@@ -4314,7 +4249,6 @@ system Antares
 	fleet "Small Southern Pirates" 1000
 	fleet "Large Southern Pirates" 2000
 	fleet "Large Militia" 5000
-	attributes TAGhuman TAGsouth
 	object
 		sprite star/k0
 		period 10
@@ -4374,7 +4308,6 @@ system Antevorta
 	trade Medical 697
 	trade Metal 338
 	trade Plastic 469
-	attributes TAGemberwaste
 	object
 		sprite star/wr
 		period 10
@@ -4438,7 +4371,6 @@ system Ap'arak
 	fleet "Wanderer Freight" 500
 	fleet "Wanderer Drones" 2000
 	fleet "Wanderer Defense" 3000
-	attributes TAGwanderer
 	object
 		sprite star/g0
 		period 10
@@ -4498,7 +4430,6 @@ system Arcturus
 	fleet "Large Southern Merchants" 3000
 	fleet "Small Militia" 10000
 	fleet "Human Miners" 5000
-	attributes TAGhuman TAGdirtbelt
 	object
 		sprite star/k5
 		period 10
@@ -4557,7 +4488,6 @@ system Arculus
 	fleet "Remnant Transport" 2200
 	fleet "Remnant Home Guard" 2000
 	fleet "Korath Ember Waste Raid" 40000
-	attributes TAGemberwaste
 	object
 		sprite star/g5-old
 		period 10
@@ -4626,7 +4556,6 @@ system Arneb
 	fleet "Small Northern Pirates" 400
 	fleet "Large Northern Pirates" 500
 	fleet "Large Republic" 15000
-	attributes TAGhuman TAGnorth
 	object
 		sprite star/f5
 		period 10
@@ -4686,7 +4615,6 @@ system Ascella
 	fleet "Small Militia" 4000
 	fleet "Small Southern Pirates" 3000
 	fleet "Human Miners" 1600
-	attributes TAGhuman TAGdirtbelt
 	object
 		sprite star/k5
 		distance 43.5
@@ -4745,7 +4673,6 @@ system Asikafarnut
 	fleet "Large Kor Mereti" 3600
 	fleet "Small Kor Sestor" 600
 	fleet "Large Kor Sestor" 3200
-	attributes TAGkorath TAGautomata
 	object
 		sprite star/m0
 		period 10
@@ -4806,7 +4733,6 @@ system Aspidiske
 	fleet "Small Deep Security" 2000
 	fleet "Small Deep Merchants" 1400
 	fleet "Large Deep Merchants" 3000
-	attributes TAGhuman TAGdeep
 	object
 		sprite star/m4
 		period 10
@@ -5029,7 +4955,6 @@ system Atria
 	fleet "Large Southern Pirates" 5000
 	fleet "Small Militia" 8000
 	fleet "Human Miners" 2000
-	attributes TAGhuman TAGsouth
 	object
 		sprite star/m0
 		period 10
@@ -5093,7 +5018,6 @@ system Avior
 	fleet "Small Deep Merchants" 1500
 	fleet "Large Deep Security" 10000
 	fleet "Large Deep Merchants" 4000
-	attributes TAGhuman TAGdeep
 	object
 		sprite star/g0
 		distance 11
@@ -5159,7 +5083,6 @@ system Aya'k'k
 	fleet "Wanderer Freight" 900
 	fleet "Wanderer Drones" 2000
 	fleet "Wanderer Defense" 800
-	attributes TAGwanderer
 	object
 		sprite star/k0
 		period 10
@@ -5226,7 +5149,6 @@ system Beginning
 	fleet "Small Saryd" 500
 	fleet "Large Saryd" 1200
 	fleet Heliarch 1500
-	attributes TAGcoalition TAGsaryd
 	object
 		sprite star/k5
 		period 10
@@ -5284,7 +5206,6 @@ system Bellatrix
 	fleet "Small Syndicate" 1000
 	fleet "Large Syndicate" 2000
 	fleet "Small Core Pirates" 3000
-	attributes TAGhuman TAGcore
 	object
 		sprite star/k0
 		distance 34.556
@@ -5342,7 +5263,6 @@ system Belonging
 	fleet "Small Saryd" 400
 	fleet "Large Saryd" 800
 	fleet Heliarch 700
-	attributes TAGcoalition TAGsaryd
 	object
 		sprite star/g5
 		period 10
@@ -5408,7 +5328,6 @@ system Belug
 	fleet "Small Saryd" 1000
 	fleet "Large Saryd" 2400
 	fleet Heliarch 200
-	attributes TAGcoalition TAGarach
 	object
 		sprite star/k0
 		period 10
@@ -5475,7 +5394,6 @@ system Belugt
 	fleet "Small Saryd" 1200
 	fleet "Large Saryd" 3000
 	fleet Heliarch 1400
-	attributes TAGcoalition TAGarach
 	object
 		sprite star/k0
 		period 10
@@ -5554,7 +5472,6 @@ system "Beta Lupi"
 	fleet "Small Militia" 2000
 	fleet "Large Militia" 5000
 	fleet "Human Miners" 3000
-	attributes TAGhuman TAGsouth
 	object
 		sprite star/g5
 		period 10
@@ -5613,7 +5530,6 @@ system Betelgeuse
 	fleet "Republic Logistics" 6000
 	fleet "Large Northern Pirates" 4000
 	fleet "Human Miners" 3000
-	attributes TAGhuman TAGnorth
 	object
 		sprite star/g0
 		period 10
@@ -5686,7 +5602,6 @@ system Bloptab
 	fleet "Small Saryd" 1600
 	fleet "Large Saryd" 7000
 	fleet Heliarch 1500
-	attributes TAGcoalition TAGarach
 	object
 		sprite star/g0
 		period 10
@@ -5747,7 +5662,6 @@ system Blubipad
 	fleet "Small Saryd" 1300
 	fleet "Large Saryd" 3000
 	fleet Heliarch 300
-	attributes TAGcoalition TAGarach
 	object
 		sprite star/g0
 		period 10
@@ -5808,7 +5722,6 @@ system Blugtad
 	fleet "Small Saryd" 1200
 	fleet "Large Saryd" 3500
 	fleet Heliarch 900
-	attributes TAGcoalition TAGarach
 	object
 		sprite star/g5
 		period 10
@@ -5873,7 +5786,6 @@ system Boral
 	fleet "Small Southern Pirates" 1500
 	fleet "Small Militia" 10000
 	fleet "Human Miners" 2000
-	attributes TAGhuman TAGdirtbelt TAGfringe
 	object
 		sprite star/m0
 		period 10
@@ -6116,7 +6028,6 @@ system "Bright Void"
 	fleet "Small Saryd" 500
 	fleet "Large Saryd" 800
 	fleet Heliarch 500
-	attributes TAGcoalition TAGsaryd
 	object
 		sprite star/f5
 		distance 54.8694
@@ -6194,7 +6105,6 @@ system "Broken Bowl"
 	fleet "Small Saryd" 500
 	fleet "Large Saryd" 1200
 	fleet Heliarch 700
-	attributes TAGcoalition TAGsaryd
 	object
 		sprite star/g0
 		period 10
@@ -6250,7 +6160,6 @@ system Caeculus
 	fleet "Korath Ember Waste Raid" 20000
 	fleet "Small Remnant" 30000
 	fleet "Large Remnant" 30000
-	attributes TAGemberwaste
 	object
 		sprite star/wr
 		period 10
@@ -6317,7 +6226,6 @@ system Canopus
 	fleet "Small Republic" 1100
 	fleet "Large Republic" 2500
 	fleet "Republic Logistics" 4500
-	attributes TAGhuman TAGnorth
 	object
 		sprite star/m0
 		period 10
@@ -6372,7 +6280,6 @@ system Capella
 	fleet "Small Republic" 800
 	fleet "Large Republic" 1400
 	fleet "Human Miners" 2000
-	attributes TAGhuman TAGparadise
 	object
 		sprite star/k0
 		period 10
@@ -6440,7 +6347,6 @@ system Caph
 	fleet "Large Core Merchants" 600
 	fleet "Small Syndicate" 1600
 	fleet "Human Miners" 2000
-	attributes TAGhuman TAGnearearth
 	object
 		sprite star/g0
 		period 10
@@ -6505,7 +6411,6 @@ system Cardax
 	fleet "Small Core Pirates" 3000
 	fleet "Small Republic" 2000
 	fleet "Large Republic" 5000
-	attributes TAGhuman TAGnorth
 	object
 		sprite star/g0
 		distance 45.4545
@@ -6562,7 +6467,6 @@ system Cardea
 	trade Medical 758
 	trade Metal 339
 	trade Plastic 385
-	attributes TAGemberwaste TAGwormhole TAGstellarphenomena
 	object
 		sprite star/k5-old
 		distance 47.5
@@ -6635,7 +6539,6 @@ system Castor
 	fleet "Small Republic" 1000
 	fleet "Large Republic" 500
 	fleet "Republic Logistics" 2000
-	attributes TAGhuman TAGparadise
 	object
 		sprite star/g5
 		distance 52.9147
@@ -6718,7 +6621,6 @@ system Cebalrai
 	fleet "Large Southern Merchants" 2000
 	fleet "Small Militia" 4000
 	fleet "Small Southern Pirates" 4000
-	attributes TAGhuman TAGdirtbelt
 	object
 		sprite star/g5
 		period 10
@@ -6861,7 +6763,6 @@ system Celeborim
 	trade Plastic 298
 	fleet "Small Kor Sestor" 1200
 	fleet "Large Kor Sestor" 6400
-	attributes TAGkorath TAGautomata TAGfringe
 	object
 		sprite star/m0
 		period 10
@@ -6921,7 +6822,6 @@ system Chikatip
 	trade Metal 283
 	trade Plastic 278
 	fleet "Large Quarg" 2000
-	attributes TAGkorath TAGfringe
 	object
 		sprite star/k5
 		period 10
@@ -6980,7 +6880,6 @@ system Chimitarp
 	fleet "Small Kor Mereti" 1000
 	fleet "Large Kor Mereti" 3600
 	fleet "Kor Mereti Miners" 2000
-	attributes TAGkorath TAGautomata
 	object
 		sprite star/k0
 		distance 53.205
@@ -7048,7 +6947,6 @@ system Chirr'ay'akai
 	fleet "Wanderer Freight" 800
 	fleet "Wanderer Drones" 600
 	fleet "Wanderer Defense" 2000
-	attributes TAGwanderer
 	object
 		sprite star/k0
 		period 10
@@ -7097,7 +6995,6 @@ system Chornifath
 	trade Metal 468
 	trade Plastic 373
 	fleet "Large Quarg" 1000
-	attributes TAGkorath TAGfringe
 	object
 		sprite star/k0
 		period 10
@@ -7162,7 +7059,6 @@ system Chy'chra
 	fleet "Wanderer Drones" 1000
 	fleet "Wanderer Defense" 300
 	fleet "Unfettered Raid" 5000
-	attributes TAGwanderer
 	object
 		sprite star/g5
 		period 10
@@ -7224,7 +7120,6 @@ system Cinxia
 	fleet "Remnant Transport" 1800
 	fleet "Remnant Home Guard" 1600
 	fleet "Korath Ember Waste Raid" 30000
-	attributes TAGemberwaste
 	object
 		sprite star/k5-old
 		period 10
@@ -7279,7 +7174,6 @@ system Coluber
 	trade Metal 475
 	trade Plastic 362
 	fleet "Korath Ember Waste Raid" 10000
-	attributes TAGemberwaste TAGwormhole TAGstellarphenomena
 	object
 		sprite star/k5-old
 		distance 40.6966
@@ -7394,7 +7288,6 @@ system Convector
 	trade Medical 691
 	trade Metal 367
 	trade Plastic 485
-	attributes TAGemberwaste
 	object
 		sprite star/giant
 		distance 13.0749
@@ -7467,7 +7360,6 @@ system "Cor Caroli"
 	fleet "Small Republic" 10000
 	fleet "Small Militia" 7000
 	fleet "Human Miners" 3000
-	attributes TAGhuman TAGdirtbelt
 	object
 		sprite star/g0
 		period 10
@@ -7554,7 +7446,6 @@ system "Da Ent"
 	fleet "Small Human Merchants (Hai)" 9000
 	fleet "Large Human Merchants (Hai)" 10000
 	fleet "Hai Surveillance" 3000
-	attributes TAGhai
 	object
 		sprite star/m4
 		period 10
@@ -7617,7 +7508,6 @@ system "Da Lest"
 	fleet "Small Human Merchants (Hai)" 7000
 	fleet "Large Human Merchants (Hai)" 8000
 	fleet "Hai Surveillance" 5000
-	attributes TAGhai
 	object
 		sprite star/m0
 		period 10
@@ -7671,7 +7561,6 @@ system Dabih
 	fleet Quarg 4000
 	fleet "Small Militia" 6000
 	fleet "Large Southern Pirates" 10000
-	attributes TAGhuman TAGdirtbelt
 	object
 		sprite star/k0
 		distance 30.7164
@@ -7734,7 +7623,6 @@ system Danoa
 	fleet "Large Northern Pirates" 16000
 	fleet "Large Republic" 30000
 	fleet "Human Miners" 1600
-	attributes TAGhuman TAGnorth TAGfringe
 	object
 		sprite star/m4
 		period 10
@@ -7805,7 +7693,6 @@ system "Dark Hills"
 	fleet "Small Saryd" 600
 	fleet "Large Saryd" 1400
 	fleet Heliarch 1000
-	attributes TAGcoalition TAGsaryd
 	object
 		sprite star/g0
 		period 10
@@ -7865,7 +7752,6 @@ system Debrugt
 	fleet "Small Saryd" 900
 	fleet "Large Saryd" 2200
 	fleet Heliarch 300
-	attributes TAGcoalition TAGarach
 	object
 		sprite star/m0
 		distance 48.5
@@ -7936,7 +7822,6 @@ system Delia
 	trade Plastic 490
 	fleet Ka'het 3400
 	fleet "Ka'het Aggressive" 10300
-	attributes TAGemberwaste TAGgraveyard
 	object
 		sprite star/k0
 		period 10
@@ -8019,7 +7904,6 @@ system "Delta Capricorni"
 	fleet "Small Syndicate" 2000
 	fleet "Small Core Pirates" 4000
 	fleet "Human Miners" 3000
-	attributes TAGhuman TAGcore
 	object
 		sprite star/g5
 		distance 29.7539
@@ -8084,7 +7968,6 @@ system "Delta Sagittarii"
 	fleet "Small Southern Pirates" 3000
 	fleet "Small Militia" 7000
 	fleet "Human Miners" 3000
-	attributes TAGhuman TAGdirtbelt
 	object
 		sprite star/k5
 		period 10
@@ -8151,7 +8034,6 @@ system "Delta Velorum"
 	fleet "Large Southern Pirates" 5000
 	fleet "Small Republic" 12000
 	fleet "Human Miners" 2000
-	attributes TAGhuman TAGdirtbelt
 	object
 		sprite star/g0
 		period 10
@@ -8203,7 +8085,6 @@ system Deneb
 	trade Plastic 336
 	fleet "Small Pug" 400
 	fleet "Large Pug" 1000
-	attributes TAGhuman TAGisolated
 	object
 		sprite star/g5
 		period 10
@@ -8263,7 +8144,6 @@ system Denebola
 	fleet "Large Northern Merchants" 2000
 	fleet "Small Republic" 1000
 	fleet "Large Republic" 2000
-	attributes TAGhuman TAGnearearth
 	object
 		sprite star/k5
 		distance 41.5211
@@ -8312,7 +8192,6 @@ system Diespiter
 	minables iron 22 3
 	minables silicon 46 3
 	minables tungsten 17 3
-	attributes TAGemberwaste
 	object
 		sprite planet/gas11
 		distance 1600
@@ -8364,7 +8243,6 @@ system Diphda
 	fleet "Small Core Merchants" 2000
 	fleet "Large Core Merchants" 600
 	fleet "Small Syndicate" 3000
-	attributes TAGhuman TAGnearearth
 	object
 		sprite star/k0
 		distance 20.9143
@@ -8419,7 +8297,6 @@ system Dixere
 	trade Plastic 479
 	fleet Ka'het 2760
 	fleet "Ka'het Aggressive" 10400
-	attributes TAGemberwaste TAGgraveyard
 	object
 		sprite star/k0-old
 		distance 43
@@ -8498,7 +8375,6 @@ system Dokdobaru
 	fleet Quarg 600
 	fleet "Large Quarg" 800
 	fleet "Kor Efret Home" 1500
-	attributes TAGkorath TAGefreti TAGringworld
 	object
 		sprite star/g5
 		period 10
@@ -8606,7 +8482,6 @@ system Dschubba
 	fleet "Small Militia" 3000
 	fleet "Large Militia" 5000
 	fleet "Human Miners" 2000
-	attributes TAGhuman TAGsouth
 	object
 		sprite star/k5
 		distance 18.9364
@@ -8724,7 +8599,6 @@ system Dubhe
 	fleet "Large Deep Merchants" 7000
 	fleet "Small Northern Pirates" 12000
 	fleet "Large Northern Pirates" 8000
-	attributes TAGhuman TAGdeep
 	object
 		sprite star/m0
 		distance 42.6977
@@ -8783,7 +8657,6 @@ system "Due Yoot"
 	fleet "Large Human Merchants (Hai)" 6000
 	fleet "Hai Surveillance" 5000
 	fleet Quarg 2000
-	attributes TAGhai
 	object
 		sprite star/m4
 		period 10
@@ -8846,7 +8719,6 @@ system Durax
 	fleet "Large Core Pirates" 900
 	fleet "Large Syndicate" 2500
 	fleet "Korath Raid" 5000
-	attributes TAGhuman TAGcore TAGfringe
 	object
 		sprite star/g0-old
 		period 10
@@ -9027,7 +8899,6 @@ system Eber
 	fleet "Small Militia" 4000
 	fleet "Large Militia" 5000
 	fleet "Small Southern Pirates" 2000
-	attributes TAGhuman TAGdirtbelt
 	object
 		sprite star/k5-old
 		period 10
@@ -9093,7 +8964,6 @@ system Eblumab
 	fleet "Small Saryd" 1500
 	fleet "Large Saryd" 5000
 	fleet Heliarch 1000
-	attributes TAGcoalition TAGarach
 	object
 		sprite star/k5
 		period 10
@@ -9152,7 +9022,6 @@ system Edusa
 	fleet "Small Remnant" 2400
 	fleet "Remnant Transport" 2400
 	fleet "Korath Ember Waste Raid" 40000
-	attributes TAGemberwaste TAGwormhole TAGstellarphenomena
 	object
 		sprite star/giant
 		period 10
@@ -9190,7 +9059,6 @@ system Egeria
 	asteroids "small rock" 1 8
 	minables iron 20 4
 	minables lead 28 5
-	attributes TAGemberwaste
 	object
 		sprite planet/gas9
 		distance 1326
@@ -9240,7 +9108,6 @@ system "Ehma Ti"
 	fleet "Small Unfettered" 500
 	fleet "Large Unfettered" 500
 	fleet "Unfettered Raid" 2500
-	attributes TAGhai
 	object
 		sprite star/k0
 		period 10
@@ -9312,7 +9179,6 @@ system Ek'kek'ru
 	fleet "Wanderer Freight" 500
 	fleet "Wanderer Drones" 400
 	fleet "Wanderer Defense" 6000
-	attributes TAGwanderer
 	object
 		sprite star/m0
 		period 10
@@ -9375,7 +9241,6 @@ system Ekuarik
 	fleet "Small Saryd" 800
 	fleet "Large Saryd" 1600
 	fleet Heliarch 200
-	attributes TAGcoalition
 	object
 		sprite star/g5
 		period 10
@@ -9556,7 +9421,6 @@ system Elnath
 	fleet "Large Republic" 20000
 	fleet "Small Northern Pirates" 5000
 	fleet "Large Northern Pirates" 18000
-	attributes TAGhuman TAGnorth
 	object
 		sprite star/f5
 		period 10
@@ -9620,7 +9484,6 @@ system Eltanin
 	fleet "Large Southern Merchants" 3000
 	fleet "Small Southern Pirates" 4000
 	fleet Quarg 10000
-	attributes TAGhuman TAGdirtbelt
 	object
 		sprite star/k0
 		period 10
@@ -9676,7 +9539,6 @@ system Eneremprukt
 	fleet "Large Kor Mereti" 2000
 	fleet "Small Kor Sestor" 1600
 	fleet "Large Kor Sestor" 2400
-	attributes TAGkorath TAGautomata
 	object
 		sprite star/k0
 		period 10
@@ -9735,7 +9597,6 @@ system Enif
 	fleet "Small Southern Merchants" 1000
 	fleet "Large Southern Merchants" 4000
 	fleet Quarg 600
-	attributes TAGhuman TAGsouth TAGringworld
 	object
 		sprite star/g5
 		period 10
@@ -9826,7 +9687,6 @@ system "Epsilon Leonis"
 	fleet "Large Deep Security" 6000
 	fleet "Large Deep Merchants" 2500
 	fleet "Republic Logistics" 6000
-	attributes TAGhuman TAGdeep
 	object
 		sprite star/g0
 		distance 25.8286
@@ -9897,7 +9757,6 @@ system Es'sprak'ai
 	fleet "Wanderer Freight" 800
 	fleet "Wanderer Drones" 4000
 	fleet "Wanderer Defense" 2000
-	attributes TAGwanderer
 	object
 		sprite star/k0
 		period 10
@@ -9960,7 +9819,6 @@ system Eshkoshtar
 	fleet "Large Kor Mereti" 1600
 	fleet "Large Kor Sestor" 3600
 	fleet "Kor Mereti Miners" 3000
-	attributes TAGkorath TAGautomata
 	object
 		sprite star/k0
 		distance 47.9992
@@ -10029,7 +9887,6 @@ system Esix
 	trade Plastic 358
 	fleet Ka'het 3600
 	fleet "Ka'het Aggressive" 10500
-	attributes TAGemberwaste TAGgraveyard TAGwormhole TAGstellarphenomena
 	object
 		sprite star/b5
 		period 10
@@ -10096,7 +9953,6 @@ system Eteron
 	fleet "Large Republic" 4000
 	fleet "Small Northern Pirates" 1000
 	fleet "Human Miners" 2000
-	attributes TAGhuman TAGnearearth
 	object
 		sprite star/m4
 		period 10
@@ -10203,7 +10059,6 @@ system "Fah Root"
 	fleet "Large Human Merchants (Hai)" 25000
 	fleet "Hai Surveillance" 3000
 	fleet Quarg 2000
-	attributes TAGhai TAGfringe
 	object
 		sprite star/k0
 		period 10
@@ -10272,7 +10127,6 @@ system "Fah Soom"
 	fleet "Large Human Merchants (Hai)" 9000
 	fleet "Hai Surveillance" 4000
 	fleet Quarg 1000
-	attributes TAGhai
 	object
 		sprite star/k5
 		period 10
@@ -10333,7 +10187,6 @@ system Fala
 	fleet "Small Northern Pirates" 2000
 	fleet "Large Northern Pirates" 4000
 	fleet "Human Miners" 2000
-	attributes TAGhuman TAGdirtbelt
 	object
 		sprite star/g5-old
 		period 10
@@ -10386,7 +10239,6 @@ system "Fallen Leaf"
 	fleet "Small Saryd" 600
 	fleet "Large Saryd" 1600
 	fleet Heliarch 1800
-	attributes TAGcoalition TAGsaryd
 	object
 		sprite star/m0
 		period 10
@@ -10442,7 +10294,6 @@ system "Far Horizon"
 	fleet "Small Saryd" 600
 	fleet "Large Saryd" 1600
 	fleet Heliarch 1800
-	attributes TAGcoalition TAGsaryd
 	object
 		sprite star/m0
 		period 10
@@ -10501,7 +10352,6 @@ system Farbutero
 	fleet "Large Quarg" 2000
 	fleet "Small Kor Mereti" 9400
 	fleet "Large Kor Mereti" 5000
-	attributes TAGkorath TAGautomata
 	object
 		sprite star/g5
 		period 10
@@ -10570,7 +10420,6 @@ system Farinus
 	fleet "Small Remnant" 10000
 	fleet "Remnant Transport" 10000
 	fleet "Korath Ember Waste Raid" 40000
-	attributes TAGemberwaste
 	object
 		sprite star/k5-old
 		distance 36.894
@@ -10647,7 +10496,6 @@ system Faronektu
 	fleet "Large Kor Mereti" 2000
 	fleet "Large Kor Sestor" 3000
 	fleet "Kor Mereti Miners" 2000
-	attributes TAGkorath TAGautomata
 	object
 		sprite star/g0
 		period 10
@@ -10710,7 +10558,6 @@ system Fasitopfar
 	trade Medical 772
 	trade Metal 433
 	trade Plastic 481
-	attributes TAGarchon TAGkorath TAGisolated TAGnova TAGstellarphenomena
 	object
 		sprite star/nova
 		period 1000
@@ -10754,7 +10601,6 @@ system Fearis
 	trade Plastic 339
 	fleet Ka'het 2900
 	fleet "Ka'het Aggressive" 9100
-	attributes TAGemberwaste TAGgraveyard TAGwormhole TAGstellarphenomena
 	object
 		sprite star/k0-old
 		period 10
@@ -10823,7 +10669,6 @@ system "Fell Omen"
 	fleet "Small Saryd" 800
 	fleet "Large Saryd" 1800
 	fleet Heliarch 400
-	attributes TAGcoalition TAGsaryd
 	object
 		sprite star/k5
 		period 10
@@ -10897,7 +10742,6 @@ system Feraticus
 	trade Plastic 405
 	fleet Ka'het 3150
 	fleet "Ka'het Aggressive" 8500
-	attributes TAGemberwaste TAGgraveyard
 	object
 		sprite planet/browndwarf-l-rouge
 		period 10
@@ -10955,7 +10799,6 @@ system Fereti
 	trade Plastic 426
 	fleet "Ka'het Core" 2900
 	fleet "Builders Drone" 2050
-	attributes TAGemberwaste TAGgraveyard
 	object
 		sprite star/a0
 		period 10
@@ -11013,7 +10856,6 @@ system Feroteri
 	fleet "Large Quarg" 3000
 	fleet "Small Kor Mereti" 12000
 	fleet "Large Kor Mereti" 6400
-	attributes TAGkorath TAGautomata
 	object
 		sprite star/a0
 		distance 9.18418
@@ -11097,7 +10939,6 @@ system Ferukistek
 	fleet "Large Kor Mereti" 2400
 	fleet "Small Kor Sestor" 4000
 	fleet "Large Kor Sestor" 6000
-	attributes TAGkorath TAGautomata
 	object
 		sprite star/k0
 		period 10
@@ -11151,7 +10992,6 @@ system Fingol
 	fleet "Large Republic" 3000
 	fleet "Small Northern Pirates" 2000
 	fleet "Human Miners" 3000
-	attributes TAGhuman TAGnearearth TAGfringe
 	object
 		sprite star/m4
 		period 10
@@ -11212,7 +11052,6 @@ system Flugbu
 	fleet "Small Saryd" 1000
 	fleet "Large Saryd" 3000
 	fleet Heliarch 500
-	attributes TAGcoalition TAGarach
 	object
 		sprite star/k5
 		period 10
@@ -11275,7 +11114,6 @@ system Fomalhaut
 	fleet "Small Syndicate" 5000
 	fleet "Large Syndicate" 10000
 	fleet "Republic Logistics" 3300
-	attributes TAGhuman TAGnearearth
 	object
 		sprite star/k0
 		period 10
@@ -11339,7 +11177,6 @@ system Fornarep
 	fleet "Large Quarg" 2000
 	fleet "Small Kor Mereti" 9000
 	fleet "Large Kor Mereti" 5800
-	attributes TAGkorath TAGautomata
 	object
 		sprite star/m0
 		period 10
@@ -11408,7 +11245,6 @@ system "Four Pillars"
 	fleet "Small Saryd" 700
 	fleet "Large Saryd" 2000
 	fleet Heliarch 2400
-	attributes TAGcoalition TAGsaryd
 	object
 		sprite star/k0
 		period 10
@@ -11458,7 +11294,6 @@ system Furmeliki
 	trade Metal 346
 	trade Plastic 313
 	fleet "Large Quarg" 1000
-	attributes TAGkorath TAGefreti
 	object
 		sprite star/k0
 		period 10
@@ -11528,7 +11363,6 @@ system Gacrux
 	fleet "Small Southern Pirates" 1000
 	fleet "Large Southern Pirates" 3000
 	fleet "Small Republic" 15000
-	attributes TAGhuman TAGdirtbelt
 	object
 		sprite star/k5
 		distance 32.6953
@@ -11597,7 +11431,6 @@ system "Gamma Cassiopeiae"
 	fleet "Large Core Pirates" 2000
 	fleet "Large Syndicate" 5000
 	fleet "Human Miners" 2000
-	attributes TAGhuman TAGcore TAGfringe
 	object
 		sprite star/k0-old
 		period 10
@@ -11657,7 +11490,6 @@ system "Gamma Corvi"
 	fleet "Large Militia" 2000
 	fleet "Small Southern Pirates" 10000
 	fleet "Human Miners" 5000
-	attributes TAGcoalition TAGrim
 	object
 		sprite star/g0
 		distance 39.0165
@@ -11720,7 +11552,6 @@ system Gerenus
 	trade Plastic 349
 	fleet Ka'het 3400
 	fleet "Ka'het Aggressive" 11000
-	attributes TAGemberwaste TAGgraveyard
 	object
 		sprite star/giant
 		period 8.42267
@@ -11778,7 +11609,6 @@ system Gienah
 	fleet "Small Core Pirates" 500
 	fleet "Large Core Pirates" 800
 	fleet "Large Syndicate" 5000
-	attributes TAGhuman TAGcore
 	object
 		sprite star/k5-old
 		distance 31.893
@@ -11844,7 +11674,6 @@ system Giribea
 	trade Plastic 488
 	fleet "Ka'het Core" 2850
 	fleet "Builders Drone" 2100
-	attributes TAGemberwaste TAGgraveyard
 	object
 		sprite star/g0-old
 		distance 46.9208
@@ -11912,7 +11741,6 @@ system Girtab
 	fleet "Large Southern Merchants" 1700
 	fleet "Small Southern Pirates" 2000
 	fleet "Large Southern Pirates" 3000
-	attributes TAGhuman TAGsouth
 	object
 		sprite star/g0
 		period 10
@@ -11982,7 +11810,6 @@ system Glubatub
 	fleet "Small Saryd" 1400
 	fleet "Large Saryd" 4000
 	fleet Heliarch 500
-	attributes TAGcoalition TAGarach
 	object
 		sprite star/m4
 		period 10
@@ -12058,7 +11885,6 @@ system Gomeisa
 	fleet "Large Deep Security" 4000
 	fleet "Large Deep Merchants" 5000
 	fleet "Republic Logistics" 5000
-	attributes TAGhuman TAGdeep
 	object
 		sprite star/k0
 		distance 55.5
@@ -12126,7 +11952,6 @@ system "Good Omen"
 	fleet "Small Saryd" 700
 	fleet "Large Saryd" 2400
 	fleet Heliarch 2000
-	attributes TAGcoalition TAGsaryd
 	object
 		sprite star/f5
 		period 10
@@ -12188,7 +12013,6 @@ system Gorvi
 	fleet "Large Northern Pirates" 1000
 	fleet "Large Republic" 4000
 	fleet "Small Northern Merchants" 8000
-	attributes TAGhuman TAGnorth TAGfringe
 	object
 		sprite star/wr
 		period 100
@@ -12295,7 +12119,6 @@ system Graffias
 	fleet "Large Southern Merchants" 4000
 	fleet "Small Southern Pirates" 5000
 	fleet "Human Miners" 2000
-	attributes TAGhuman TAGsouth
 	object
 		sprite star/k0
 		distance 59.5
@@ -12364,7 +12187,6 @@ system Gupta
 	fleet "Small Saryd" 1100
 	fleet "Large Saryd" 2500
 	fleet Heliarch 800
-	attributes TAGcoalition TAGarach
 	object
 		sprite star/k0
 		distance 46.2043
@@ -12422,7 +12244,6 @@ system Hadar
 	fleet "Large Militia" 1500
 	fleet "Small Southern Pirates" 4000
 	fleet "Large Southern Pirates" 9000
-	attributes TAGhuman TAGrim
 	object
 		sprite star/k0
 		period 10
@@ -12481,7 +12302,6 @@ system Hamal
 	fleet "Small Core Pirates" 3000
 	fleet "Large Core Pirates" 8000
 	fleet "Small Syndicate" 4000
-	attributes TAGhuman TAGcore
 	object
 		sprite star/g0
 		period 10
@@ -12530,7 +12350,6 @@ system Han
 	fleet "Large Southern Pirates" 5000
 	fleet "Small Militia" 4000
 	fleet "Large Militia" 10000
-	attributes TAGhuman TAGsouth
 	object
 		sprite star/g5
 		distance 47.4335
@@ -12599,7 +12418,6 @@ system Hassaleh
 	fleet "Large Northern Pirates" 20000
 	fleet "Large Republic" 20000
 	fleet "Human Miners" 2000
-	attributes TAGhuman TAGnorth
 	object
 		sprite star/k0
 		distance 36.1558
@@ -12656,7 +12474,6 @@ system Hatysa
 	fleet "Small Northern Pirates" 600
 	fleet "Large Northern Pirates" 1000
 	fleet "Large Republic" 15000
-	attributes TAGhuman TAGnorth
 	object
 		sprite star/k0
 		distance 13.6124
@@ -12720,7 +12537,6 @@ system "Heia Due"
 	fleet "Small Human Merchants (Hai)" 2000
 	fleet "Large Human Merchants (Hai)" 5000
 	fleet "Hai Surveillance" 2000
-	attributes TAGhai
 	object
 		sprite star/g0
 		distance 13.2222
@@ -12785,7 +12601,6 @@ system Hesselpost
 	trade Metal 536
 	trade Plastic 281
 	fleet "Large Quarg" 1000
-	attributes TAGkorath TAGefreti TAGfringe
 	object
 		sprite star/k0
 		period 10
@@ -12851,7 +12666,6 @@ system "Hevru Hai"
 	fleet "Small Human Merchants (Hai)" 9000
 	fleet "Large Human Merchants (Hai)" 15000
 	fleet Quarg 600
-	attributes TAGhai TAGringworld
 	object
 		sprite star/g5
 		period 10
@@ -12971,7 +12785,6 @@ system "Hi Yahr"
 	trade Plastic 372
 	fleet "Small Unfettered" 500
 	fleet "Large Unfettered" 500
-	attributes TAGhai
 	object
 		sprite star/g5
 		period 10
@@ -13030,7 +12843,6 @@ system Hintar
 	fleet "Small Southern Merchants" 1000
 	fleet "Small Militia" 5000
 	fleet "Small Southern Pirates" 2000
-	attributes TAGhuman TAGdirtbelt TAGfringe
 	object
 		sprite star/g5
 		period 10
@@ -13086,7 +12898,6 @@ system Holeb
 	fleet "Large Southern Merchants" 3000
 	fleet "Small Southern Pirates" 5000
 	fleet "Small Militia" 5000
-	attributes TAGhuman TAGdirtbelt
 	object
 		sprite star/f5-old
 		period 10
@@ -13144,7 +12955,6 @@ system Homeward
 	fleet "Small Saryd" 600
 	fleet "Large Saryd" 1200
 	fleet Heliarch 200
-	attributes TAGcoalition TAGsaryd
 	object
 		sprite star/k5
 		period 10
@@ -13193,7 +13003,6 @@ system Host
 	trade Medical 772
 	trade Metal 589
 	trade Plastic 526
-	attributes TAGisolated
 	object
 		sprite star/k0
 		period 10
@@ -13259,7 +13068,6 @@ system Hunter
 	fleet "Small Saryd" 600
 	fleet "Large Saryd" 1200
 	fleet Heliarch 900
-	attributes TAGcoalition TAGsaryd
 	object
 		sprite star/k5
 		period 10
@@ -13565,7 +13373,6 @@ system Ik'kara'ka
 	fleet "Wanderer Freight" 600
 	fleet "Wanderer Drones" 700
 	fleet "Wanderer Defense" 600
-	attributes TAGwanderer
 	object
 		sprite star/g5
 		period 10
@@ -13627,7 +13434,6 @@ system Ildaria
 	fleet "Large Militia" 6000
 	fleet "Small Southern Pirates" 1000
 	fleet "Large Southern Pirates" 2000
-	attributes TAGhuman TAGrim TAGwolf-rayet TAGstellarphenomena TAGfringe
 	object
 		sprite star/wr
 		period 10
@@ -13683,7 +13489,6 @@ system "Imo Dep"
 	fleet "Small Human Merchants (Hai)" 10000
 	fleet "Large Human Merchants (Hai)" 14000
 	fleet "Hai Surveillance" 3000
-	attributes TAGhai
 	object
 		sprite star/f5
 		period 10
@@ -13786,7 +13591,6 @@ system Insitor
 	trade Medical 717
 	trade Metal 383
 	trade Plastic 385
-	attributes TAGemberwaste TAGwormhole TAGstellarphenomena
 	object
 		sprite star/m0
 		distance 43.8496
@@ -13854,7 +13658,6 @@ system "Io Lowe"
 	fleet "Small Human Merchants (Hai)" 4000
 	fleet "Large Human Merchants (Hai)" 7000
 	fleet "Hai Surveillance" 5000
-	attributes TAGhai
 	object
 		sprite star/m8
 		period 10
@@ -13914,7 +13717,6 @@ system "Io Mann"
 	fleet "Small Human Merchants (Hai)" 3000
 	fleet "Large Human Merchants (Hai)" 6000
 	fleet "Hai Surveillance" 3000
-	attributes TAGhai
 	object
 		sprite star/k0
 		distance 54
@@ -13978,7 +13780,6 @@ system Ipsing
 	trade Plastic 416
 	fleet "Small Southern Merchants" 2000
 	fleet "Small Southern Pirates" 3000
-	attributes TAGhuman TAGdirtbelt TAGfringe
 	object
 		sprite star/g0-old
 		distance 21.7143
@@ -14145,7 +13946,6 @@ system Iyech'yek
 	fleet "Wanderer Freight" 600
 	fleet "Wanderer Drones" 2000
 	fleet "Wanderer Defense" 5000
-	attributes TAGwanderer
 	object
 		sprite star/m0
 		period 10
@@ -14200,7 +14000,6 @@ system Izar
 	fleet "Large Southern Merchants" 1800
 	fleet "Small Militia" 800
 	fleet "Large Militia" 1200
-	attributes TAGhuman TAGrim
 	object
 		sprite star/g0
 		distance 15.6511
@@ -14264,7 +14063,6 @@ system Ka'ch'chrai
 	fleet "Wanderer Freight" 300
 	fleet "Wanderer Drones" 1000
 	fleet "Wanderer Defense" 1000
-	attributes TAGwanderer
 	object
 		sprite star/k5
 		period 10
@@ -14321,7 +14119,6 @@ system Ka'pru
 	fleet "Wanderer Freight" 1500
 	fleet "Wanderer Drones" 800
 	fleet "Wanderer Defense" 5000
-	attributes TAGwanderer
 	object
 		sprite star/g0
 		distance 29.4144
@@ -14394,7 +14191,6 @@ system Kaliptari
 	fleet "Large Quarg" 3000
 	fleet "Small Kor Mereti" 10000
 	fleet "Large Kor Mereti" 4800
-	attributes TAGkorath TAGautomata
 	object
 		sprite star/m0
 		period 10
@@ -14461,7 +14257,6 @@ system "Kappa Centauri"
 	fleet "Large Southern Merchants" 3000
 	fleet "Small Southern Pirates" 2000
 	fleet "Small Militia" 2000
-	attributes TAGhuman TAGsouth
 	object
 		sprite star/g0
 		distance 10.2222
@@ -14531,7 +14326,6 @@ system Kashikt
 	fleet Quarg 1000
 	fleet "Large Quarg" 2000
 	fleet "Kor Efret Home" 1000
-	attributes TAGkorath TAGefreti
 	object
 		sprite star/f5
 		period 10
@@ -14592,7 +14386,6 @@ system Kasikfar
 	trade Medical 437
 	trade Metal 288
 	trade Plastic 320
-	attributes TAGarchon TAGisolated TAGkorath TAGnova TAGstellarphenomena
 	object
 		sprite star/nova
 		period 1000
@@ -14640,7 +14433,6 @@ system "Kaus Australis"
 	fleet Quarg 10000
 	fleet "Small Southern Pirates" 4000
 	fleet "Large Southern Pirates" 8000
-	attributes TAGhuman TAGdirtbelt
 	object
 		sprite star/k5
 		period 10
@@ -14689,7 +14481,6 @@ system "Kaus Borealis"
 	fleet "Large Southern Merchants" 3000
 	fleet "Small Militia" 8000
 	fleet "Small Southern Pirates" 5000
-	attributes TAGhuman TAGdirtbelt
 	object
 		sprite star/k0
 		distance 20.4571
@@ -14814,7 +14605,6 @@ system "Ki War Ek"
 	fleet "Small Saryd" 800
 	fleet "Large Saryd" 1500
 	fleet Heliarch 150
-	attributes TAGcoalition TAGringworld
 	object
 		sprite star/g5
 		period 10
@@ -15028,7 +14818,6 @@ system Kiro'ku
 	fleet "Wanderer Freight" 800
 	fleet "Wanderer Drones" 3000
 	fleet "Wanderer Defense" 7000
-	attributes TAGwanderer
 	object
 		sprite star/g5
 		distance 50.3456
@@ -15104,7 +14893,6 @@ system Kiru'kichi
 	fleet "Wanderer Freight" 800
 	fleet "Wanderer Drones" 300
 	fleet "Wanderer Defense" 2000
-	attributes TAGwanderer
 	object
 		sprite star/f5
 		distance 53.7102
@@ -15212,7 +15000,6 @@ system Kochab
 	fleet "Large Southern Merchants" 6000
 	fleet "Small Southern Pirates" 5000
 	fleet "Small Militia" 6000
-	attributes TAGhuman TAGrim
 	object
 		sprite star/k5
 		period 10
@@ -15255,7 +15042,6 @@ system "Kor Ak'Mari"
 	trade Metal 217
 	trade Plastic 524
 	fleet "Korath Raid" 2800
-	attributes TAGkorath TAGexiles TAGisolated TAGwolf-rayet TAGstellarphenomena
 	object
 		sprite star/wr
 		period 100
@@ -15313,7 +15099,6 @@ system "Kor En'lakfar"
 	trade Plastic 488
 	fleet "Korath Raid" 600
 	fleet "Korath Home" 1800
-	attributes TAGkorath TAGexiles
 	object
 		sprite star/g0
 		period 10
@@ -15375,7 +15160,6 @@ system "Kor Fel'tar"
 	trade Plastic 478
 	fleet "Korath Raid" 1600
 	fleet "Korath Home" 900
-	attributes TAGkorath TAGexiles
 	object
 		sprite star/k0
 		period 10
@@ -15440,7 +15224,6 @@ system "Kor Men"
 	trade Plastic 497
 	fleet "Korath Raid" 1300
 	fleet "Korath Home" 600
-	attributes TAGkorath TAGexiles
 	object
 		sprite star/f5-old
 		distance 33.3868
@@ -15501,7 +15284,6 @@ system "Kor Nor'peli"
 	trade Plastic 423
 	fleet "Korath Raid" 1000
 	fleet "Korath Home" 500
-	attributes TAGkorath TAGexiles
 	object
 		sprite star/k0-old
 		distance 25.4857
@@ -15568,7 +15350,6 @@ system "Kor Tar'bei"
 	trade Plastic 402
 	fleet "Korath Raid" 1200
 	fleet "Korath Home" 600
-	attributes TAGkorath TAGexiles
 	object
 		sprite star/m0
 		period 10
@@ -15619,7 +15400,6 @@ system "Kor Zena'i"
 	trade Plastic 381
 	fleet "Korath Raid" 800
 	fleet "Korath Home" 1100
-	attributes TAGkorath TAGexiles
 	object
 		sprite star/g5-old
 		distance 8.94444
@@ -15684,7 +15464,6 @@ system Kornephoros
 	fleet "Small Militia" 2000
 	fleet "Large Militia" 4000
 	fleet "Human Miners" 3000
-	attributes TAGhuman TAGsouth
 	object
 		sprite star/k0
 		distance 57.5
@@ -15754,7 +15533,6 @@ system Korsmanath
 	trade Plastic 440
 	fleet "Large Quarg" 3000
 	fleet "Small Kor Mereti" 8000
-	attributes TAGkorath TAGautomata TAGfringe
 	object
 		sprite star/k0
 		period 10
@@ -15821,7 +15599,6 @@ system Kraz
 	fleet "Large Southern Merchants" 2000
 	fleet "Small Militia" 800
 	fleet "Large Militia" 1200
-	attributes TAGhuman TAGrim
 	object
 		sprite star/g0
 		period 10
@@ -15937,7 +15714,6 @@ system Kugel
 	fleet "Small Syndicate" 8000
 	fleet "Large Core Pirates" 4000
 	fleet "Small Core Pirates" 4000
-	attributes TAGhuman TAGcore TAGfringe
 	object
 		sprite star/g5
 		period 10
@@ -16005,7 +15781,6 @@ system Kursa
 	fleet "Large Northern Pirates" 8000
 	fleet "Small Republic" 5000
 	fleet "Large Republic" 8000
-	attributes TAGhuman TAGparadise
 	object
 		sprite star/k5
 		distance 27.5934
@@ -16127,7 +15902,6 @@ system Lesath
 	fleet "Small Southern Pirates" 2000
 	fleet "Large Southern Pirates" 4000
 	fleet "Small Militia" 5000
-	attributes TAGhuman TAGsouth
 	object
 		sprite star/f5
 		period 10
@@ -16185,7 +15959,6 @@ system Levana
 	trade Metal 407
 	trade Plastic 222
 	fleet "Korath Ember Waste Raid" 10000
-	attributes TAGemberwaste
 	object
 		sprite star/giant
 		distance 17.197
@@ -16252,7 +16025,6 @@ system Limen
 	fleet "Small Southern Pirates" 1000
 	fleet "Large Southern Pirates" 2000
 	fleet "Human Miners" 1000
-	attributes TAGhuman TAGdirtbelt TAGfringe
 	object
 		sprite star/f5
 		period 10
@@ -16305,7 +16077,6 @@ system Lire
 	trade Plastic 411
 	fleet Ka'het 2850
 	fleet "Ka'het Aggressive" 9300
-	attributes TAGemberwaste TAGgraveyard
 	object
 		sprite star/g0-old
 		period 10
@@ -16371,7 +16142,6 @@ system Lolami
 	fleet "Small Northern Pirates" 2000
 	fleet "Large Northern Pirates" 4000
 	fleet "Human Miners" 3000
-	attributes TAGhuman TAGdirtbelt TAGfringe
 	object
 		sprite star/g0
 		distance 11
@@ -16440,7 +16210,6 @@ system "Lom Tahr"
 	fleet "Large Human Merchants (Hai)" 9000
 	fleet "Hai Surveillance" 3000
 	fleet Quarg 4000
-	attributes TAGhai
 	object
 		sprite star/f0
 		period 10
@@ -16512,7 +16281,6 @@ system "Lone Cloud"
 	fleet "Small Saryd" 800
 	fleet "Large Saryd" 2500
 	fleet Heliarch 3000
-	attributes TAGcoalition TAGsaryd
 	object
 		sprite star/m4
 		period 10
@@ -16560,7 +16328,6 @@ system Lucina
 	trade Metal 524
 	trade Plastic 410
 	fleet "Korath Ember Waste Raid" 20000
-	attributes TAGemberwaste TAGfringe
 	object
 		sprite star/m0
 		period 10
@@ -16619,7 +16386,6 @@ system Lurata
 	fleet Quarg 7000
 	fleet "Small Militia" 9000
 	fleet "Large Southern Pirates" 4000
-	attributes TAGhuman TAGsouth
 	object
 		sprite star/k0
 		period 10
@@ -16677,7 +16443,6 @@ system Makferuti
 	trade Plastic 267
 	fleet "Small Kor Sestor" 1200
 	fleet "Large Kor Sestor" 5000
-	attributes TAGkorath TAGautomata
 	object
 		sprite star/k0
 		distance 18.2409
@@ -16762,7 +16527,6 @@ system Markab
 	fleet "Large Syndicate" 800
 	fleet "Human Miners" 3000
 	fleet "Republic Logistics" 4000
-	attributes TAGhuman TAGcore
 	object
 		sprite star/g5
 		period 10
@@ -16843,7 +16607,6 @@ system Markeb
 	fleet "Large Deep Security" 8000
 	fleet "Large Deep Merchants" 4000
 	fleet "Large Northern Pirates" 5000
-	attributes TAGhuman TAGdeep
 	object
 		sprite star/k0
 		period 10
@@ -16901,7 +16664,6 @@ system Matar
 	fleet "Large Core Pirates" 4000
 	fleet "Small Syndicate" 3000
 	fleet "Large Syndicate" 6000
-	attributes TAGhuman TAGcore
 	object
 		sprite star/k0
 		period 10
@@ -16963,7 +16725,6 @@ system Mebla
 	fleet "Small Saryd" 1000
 	fleet "Large Saryd" 2400
 	fleet Heliarch 350
-	attributes TAGcoalition TAGarach
 	object
 		sprite star/k0
 		period 10
@@ -17018,7 +16779,6 @@ system Meblumem
 	fleet "Small Saryd" 1200
 	fleet "Large Saryd" 2800
 	fleet Heliarch 400
-	attributes TAGcoalition TAGarach
 	object
 		sprite star/f5
 		distance 28.2943
@@ -17086,7 +16846,6 @@ system Mebsuta
 	fleet "Small Northern Pirates" 4000
 	fleet "Large Northern Pirates" 8000
 	fleet "Small Republic" 12000
-	attributes TAGhuman TAGnorth
 	object
 		sprite star/k0
 		distance 37.1157
@@ -17160,7 +16919,6 @@ system Meftarkata
 	trade Metal 484
 	trade Plastic 334
 	fleet "Large Quarg" 1000
-	attributes TAGkorath
 	object
 		sprite star/f5
 		distance 21.8839
@@ -17224,7 +16982,6 @@ system "Mei Yohn"
 	fleet "Small Human Merchants (Hai)" 7000
 	fleet "Large Human Merchants (Hai)" 10000
 	fleet "Hai Surveillance" 5000
-	attributes TAGhai
 	object
 		sprite star/k5
 		period 10
@@ -17294,7 +17051,6 @@ system Mekislepti
 	fleet "Large Kor Mereti" 3000
 	fleet "Large Kor Sestor" 8000
 	fleet "Kor Mereti Miners" 2000
-	attributes TAGkorath TAGautomata
 	object
 		sprite star/g0
 		distance 38.4897
@@ -17354,7 +17110,6 @@ system Men
 	fleet "Large Southern Pirates" 600
 	fleet "Small Northern Pirates" 2000
 	fleet "Large Northern Pirates" 4000
-	attributes TAGhuman TAGsouth
 	object
 		sprite star/k5-old
 		period 10
@@ -17424,7 +17179,6 @@ system Menkalinan
 	fleet "Small Republic" 800
 	fleet "Large Republic" 2000
 	fleet "Republic Logistics" 2000
-	attributes TAGhuman TAGparadise
 	object
 		sprite star/f5-old
 		distance 58.5
@@ -17493,7 +17247,6 @@ system Menkar
 	fleet "Large Syndicate" 2000
 	fleet "Large Core Pirates" 4000
 	fleet "Human Miners" 2000
-	attributes TAGhuman TAGcore
 	object
 		sprite star/k0
 		period 10
@@ -17554,7 +17307,6 @@ system Menkent
 	fleet "Large Southern Merchants" 1500
 	fleet "Small Republic" 3000
 	fleet "Human Miners" 2000
-	attributes TAGhuman TAGdirtbelt
 	object
 		sprite star/f5
 		distance 27.7778
@@ -17627,7 +17379,6 @@ system Merak
 	fleet "Large Northern Merchants" 1500
 	fleet "Small Republic" 2000
 	fleet "Large Republic" 4000
-	attributes TAGhuman TAGnearearth
 	object
 		sprite star/g5
 		distance 40.2658
@@ -17680,7 +17431,6 @@ system Mesuket
 	trade Plastic 366
 	fleet "Large Kor Mereti" 600
 	fleet "Large Kor Sestor" 600
-	attributes TAGkorath TAGautomata TAGwarzone
 	object
 		sprite star/k5-old
 		period 10
@@ -17755,7 +17505,6 @@ system Miaplacidus
 	fleet "Paradise Merchants" 900
 	fleet "Small Republic" 1500
 	fleet "Large Republic" 3000
-	attributes TAGhuman TAGparadise
 	object
 		sprite star/k0
 		period 10
@@ -17837,7 +17586,6 @@ system Miblulub
 	fleet "Small Saryd" 1500
 	fleet "Large Saryd" 5000
 	fleet Heliarch 300
-	attributes TAGcoalition TAGarach
 	object
 		sprite star/g0
 		period 10
@@ -17912,7 +17660,6 @@ system Mimosa
 	fleet "Small Militia" 2500
 	fleet "Large Militia" 6000
 	fleet "Large Southern Pirates" 8000
-	attributes TAGhuman TAGrim
 	object
 		sprite star/k5
 		period 10
@@ -17964,7 +17711,6 @@ system Minkar
 	fleet "Small Militia" 1500
 	fleet "Large Militia" 2000
 	fleet "Large Southern Pirates" 12000
-	attributes TAGhuman TAGrim
 	object
 		sprite star/k0-old
 		distance 33.5961
@@ -18032,7 +17778,6 @@ system Mintaka
 	fleet "Large Republic" 5000
 	fleet "Small Northern Merchants" 4000
 	fleet "Human Miners" 2000
-	attributes TAGhuman TAGnorth
 	object
 		sprite star/k0
 		distance 34.4496
@@ -18097,7 +17842,6 @@ system Mirach
 	fleet "Small Syndicate" 3000
 	fleet "Large Syndicate" 5000
 	fleet "Human Miners" 3000
-	attributes TAGhuman TAGcore
 	object
 		sprite star/m0
 		distance 21.1004
@@ -18163,7 +17907,6 @@ system Mirfak
 	fleet "Large Core Merchants" 700
 	fleet "Small Syndicate" 1000
 	fleet "Large Syndicate" 1800
-	attributes TAGhuman TAGcore
 	object
 		sprite star/k5
 		period 10
@@ -18221,7 +17964,6 @@ system Mirzam
 	fleet "Large Republic" 4000
 	fleet "Small Northern Pirates" 5000
 	fleet "Large Northern Pirates" 8000
-	attributes TAGhuman TAGnorth
 	object
 		sprite star/g0
 		period 10
@@ -18325,7 +18067,6 @@ system Mizar
 	fleet "Small Southern Merchants" 1000
 	fleet "Large Southern Merchants" 3500
 	fleet "Small Southern Pirates" 6000
-	attributes TAGhuman TAGdirtbelt
 	object
 		sprite star/g0-old
 		period 10
@@ -18387,7 +18128,6 @@ system Moktar
 	fleet "Large Syndicate" 4000
 	fleet "Small Core Pirates" 2000
 	fleet "Small Northern Pirates" 3000
-	attributes TAGhuman TAGcore
 	object
 		sprite star/k5
 		distance 29.0769
@@ -18454,7 +18194,6 @@ system Mora
 	fleet "Large Southern Pirates" 3000
 	fleet "Small Republic" 20000
 	fleet "Human Miners" 2000
-	attributes TAGhuman TAGdirtbelt
 	object
 		sprite star/k5
 		period 10
@@ -18505,7 +18244,6 @@ system Muhlifain
 	fleet "Small Southern Merchants" 1000
 	fleet "Large Southern Merchants" 3500
 	fleet "Small Southern Pirates" 6000
-	attributes TAGhuman TAGdirtbelt
 	object
 		sprite star/k0
 		period 10
@@ -18557,7 +18295,6 @@ system Muphrid
 	fleet "Large Southern Merchants" 3500
 	fleet "Small Southern Pirates" 6000
 	fleet "Small Republic" 5000
-	attributes TAGhuman TAGnearearth
 	object
 		sprite star/g5-old
 		distance 21.8366
@@ -18621,7 +18358,6 @@ system Naos
 	fleet "Large Deep Security" 5000
 	fleet "Large Deep Merchants" 2800
 	fleet "Human Miners" 2000
-	attributes TAGhuman TAGdeep
 	object
 		sprite star/g5
 		period 10
@@ -18691,7 +18427,6 @@ system Naper
 	fleet "Small Militia" 5000
 	fleet "Small Southern Pirates" 1000
 	fleet "Human Miners" 3000
-	attributes TAGhuman TAGdirtbelt
 	object
 		sprite star/f5
 		period 10
@@ -18754,7 +18489,6 @@ system Nenia
 	trade Metal 265
 	trade Plastic 465
 	fleet "Void Sprites" 500
-	attributes TAGemberwaste "void sprites" TAGarchon
 	object
 		sprite star/f5-old
 		distance 31.5171
@@ -18835,7 +18569,6 @@ system Nihal
 	fleet "Small Republic" 4000
 	fleet "Large Republic" 7000
 	fleet "Human Miners" 2000
-	attributes TAGhuman TAGnorth
 	object
 		sprite star/k5
 		distance 43.1257
@@ -18904,7 +18637,6 @@ system Nocte
 	fleet "Large Republic" 7000
 	fleet "Small Northern Pirates" 2500
 	fleet "Human Miners" 1600
-	attributes TAGhuman TAGnearearth TAGfringe
 	object
 		sprite star/m4
 		period 10
@@ -18964,7 +18696,6 @@ system Nona
 	trade Plastic 379
 	fleet Ka'het 3700
 	fleet "Ka'het Aggressive" 11400
-	attributes TAGemberwaste TAGgraveyard
 	object
 		sprite star/g0-old
 		period 10
@@ -19022,7 +18753,6 @@ system Nunki
 	fleet "Large Southern Pirates" 2000
 	fleet "Small Southern Merchants" 1600
 	fleet "Small Militia" 2000
-	attributes TAGhuman TAGsouth
 	object
 		sprite star/m0
 		period 10
@@ -19093,7 +18823,6 @@ system Oblate
 	fleet "Small Core Pirates" 600
 	fleet "Large Core Pirates" 1000
 	fleet "Large Syndicate" 3000
-	attributes TAGhuman TAGcore
 	object
 		sprite star/giant
 		period 10
@@ -19151,7 +18880,6 @@ system Orbona
 	fleet "Small Southern Pirates" 1200
 	fleet "Large Southern Pirates" 3200
 	fleet "Human Miners" 1500
-	attributes TAGhuman TAGdirtbelt TAGfringe
 	object
 		sprite star/giant
 		distance 20.2539
@@ -19220,7 +18948,6 @@ system Orvala
 	fleet "Small Southern Merchants" 3000
 	fleet "Small Southern Pirates" 1000
 	fleet "Large Southern Pirates" 3000
-	attributes TAGhuman TAGdirtbelt
 	object
 		sprite star/k0
 		distance 14.9297
@@ -19286,7 +19013,6 @@ system Ossipago
 	trade Medical 768
 	trade Metal 263
 	trade Plastic 505
-	attributes TAGemberwaste TAGwormhole TAGstellarphenomena
 	object
 		sprite star/f5-old
 		distance 11.9736
@@ -19390,7 +19116,6 @@ system Paeli
 	trade Plastic 462
 	fleet Ka'het 3500
 	fleet "Ka'het Aggressive" 9800
-	attributes TAGemberwaste TAGgraveyard TAGwormhole TAGstellarphenomena
 	object
 		sprite planet/browndwarf-t-rouge
 		period 10
@@ -19458,7 +19183,6 @@ system Pantica
 	fleet "Remnant Transport" 1400
 	fleet "Remnant Home Guard" 1300
 	fleet "Korath Ember Waste Raid" 40000
-	attributes TAGemberwaste
 	object
 		sprite star/k0-old
 		period 10
@@ -19509,7 +19233,6 @@ system Parca
 	trade Metal 531
 	trade Plastic 445
 	fleet "Korath Ember Waste Raid" 10000
-	attributes TAGemberwaste
 	object
 		sprite star/g5-old
 		distance 18.2961
@@ -19590,7 +19313,6 @@ system Peacock
 	fleet "Small Southern Pirates" 4000
 	fleet "Large Southern Pirates" 10000
 	fleet "Human Miners" 3000
-	attributes TAGhuman TAGdirtbelt
 	object
 		sprite star/m0
 		period 10
@@ -19666,7 +19388,6 @@ system Pelubta
 	fleet "Small Saryd" 1100
 	fleet "Large Saryd" 2500
 	fleet Heliarch 400
-	attributes TAGcoalition TAGarach
 	object
 		sprite star/b5
 		distance 10.9957
@@ -19736,7 +19457,6 @@ system Peragenor
 	fleet "Small Remnant" 7000
 	fleet "Remnant Transport" 7000
 	fleet "Korath Ember Waste Raid" 40000
-	attributes TAGemberwaste
 	object
 		sprite star/g0-old
 		period 10
@@ -19798,7 +19518,6 @@ system Peresedersi
 	trade Medical 584
 	trade Metal 293
 	trade Plastic 499
-	attributes TAGarchon TAGkorath TAGisolated TAGnova TAGstellarphenomena
 	object
 		sprite star/nova
 		period 1000
@@ -19843,7 +19562,6 @@ system Perfica
 	fleet "Small Remnant" 7500
 	fleet "Remnant Transport" 7500
 	fleet "Korath Ember Waste Raid" 30000
-	attributes TAGemberwaste
 	object
 		sprite planet/browndwarf-y-rouge
 		period 10
@@ -19901,7 +19619,6 @@ system Persian
 	fleet "Small Core Pirates" 600
 	fleet "Large Core Pirates" 2000
 	fleet "Human Miners" 3000
-	attributes TAGhuman TAGcore
 	object
 		sprite star/f5-old
 		distance 27.8124
@@ -19959,7 +19676,6 @@ system Persitar
 	trade Medical 456
 	trade Metal 540
 	trade Plastic 500
-	attributes TAGkorath TAGisolated TAGnova TAGstellarphenomena
 	object
 		sprite star/nova
 		period 1000
@@ -20007,7 +19723,6 @@ system Phact
 	fleet "Small Northern Pirates" 3000
 	fleet "Large Northern Pirates" 5000
 	fleet "Human Miners" 5000
-	attributes TAGhuman TAGnorth
 	object
 		sprite star/g5
 		distance 47.0119
@@ -20079,7 +19794,6 @@ system Phecda
 	fleet "Large Southern Merchants" 1000
 	fleet "Small Republic" 5000
 	fleet "Human Miners" 2000
-	attributes TAGhuman TAGdirtbelt
 	object
 		sprite star/k5
 		period 10
@@ -20131,7 +19845,6 @@ system Pherkad
 	fleet "Large Militia" 1200
 	fleet "Small Southern Pirates" 2000
 	fleet "Large Southern Pirates" 3000
-	attributes TAGhuman TAGsouth
 	object
 		sprite star/m4
 		period 10
@@ -20191,7 +19904,6 @@ system Phurad
 	fleet "Small Republic" 2000
 	fleet "Large Republic" 5000
 	fleet "Small Northern Pirates" 9000
-	attributes TAGhuman TAGparadise
 	object
 		sprite star/g0
 		period 10
@@ -20244,7 +19956,6 @@ system Pik'ro'iyak
 	fleet "Wanderer Freight" 500
 	fleet "Wanderer Drones" 3000
 	fleet "Wanderer Defense" 4000
-	attributes TAGwanderer
 	object
 		sprite star/m4
 		period 10
@@ -20300,7 +20011,6 @@ system Plort
 	fleet "Small Saryd" 1200
 	fleet "Large Saryd" 4000
 	fleet Heliarch 800
-	attributes TAGcoalition TAGarach
 	object
 		sprite star/m0
 		period 10
@@ -20408,7 +20118,6 @@ system Polerius
 	trade Plastic 503
 	fleet Ka'het 2900
 	fleet "Ka'het Aggressive" 9400
-	attributes TAGemberwaste TAGgraveyard
 	object
 		sprite star/g0
 		distance 33.9397
@@ -20477,7 +20186,6 @@ system Pollux
 	fleet "Small Republic" 1500
 	fleet "Large Republic" 4500
 	fleet "Republic Logistics" 4500
-	attributes TAGhuman TAGparadise
 	object
 		sprite star/g0
 		period 10
@@ -20535,7 +20243,6 @@ system Porrima
 	fleet "Large Southern Merchants" 3000
 	fleet "Small Republic" 8000
 	fleet "Small Southern Pirates" 6000
-	attributes TAGhuman TAGnearearth
 	object
 		sprite star/g5
 		distance 21.1382
@@ -20578,7 +20285,6 @@ system Postverta
 	asteroids "large rock" 4 3
 	asteroids "medium metal" 52 1
 	asteroids "medium rock" 4 2
-	attributes TAGemberwaste
 	object "Ssil Vida"
 		sprite planet/sheragi_postverta
 		distance 1408
@@ -20635,7 +20341,6 @@ system Prakacha'a
 	fleet "Wanderer Drones" 400
 	fleet "Wanderer Defense" 400
 	fleet "Unfettered Raid" 5000
-	attributes TAGwanderer
 	object
 		sprite star/g0
 		distance 32.5255
@@ -20715,7 +20420,6 @@ system Procyon
 	fleet "Small Republic" 1500
 	fleet "Large Republic" 3000
 	fleet "Republic Logistics" 1500
-	attributes TAGhuman TAGnearearth
 	object
 		sprite star/k0
 		period 10
@@ -20751,7 +20455,6 @@ system Prosa
 	asteroids "medium rock" 16 1
 	asteroids "small rock" 4 1
 	minables copper 5 2
-	attributes TAGemberwaste
 	object
 		sprite planet/cloud1
 		distance 311
@@ -20806,7 +20509,6 @@ system "Pug Iyik"
 	trade Plastic 409
 	fleet "Small Pug (Wanderer)" 600
 	fleet "Large Pug (Wanderer)" 1200
-	attributes TAGwanderer TAGisolated
 	object
 		sprite star/g5
 		period 10
@@ -20867,7 +20569,6 @@ system Quaru
 	fleet "Small Saryd" 700
 	fleet "Large Saryd" 1400
 	fleet Heliarch 100
-	attributes TAGcoalition TAGringworld
 	object
 		sprite star/g5
 		period 10
@@ -21150,7 +20851,6 @@ system Queri
 	trade Plastic 329
 	fleet Ka'het 4000
 	fleet "Ka'het Aggressive" 11000
-	attributes TAGemberwaste TAGgraveyard
 	object
 		sprite star/g5-old
 		period 10
@@ -21182,7 +20882,6 @@ system Rajak
 	trade Plastic 415
 	fleet "Small Northern Pirates" 4000
 	fleet "Large Northern Pirates" 10000
-	attributes TAGhuman TAGnorth
 	object
 		sprite star/m8
 		period 10
@@ -21255,7 +20954,6 @@ system Rasalhague
 	fleet "Large Southern Merchants" 2000
 	fleet "Small Southern Pirates" 4000
 	fleet "Large Southern Pirates" 8000
-	attributes TAGhuman TAGdirtbelt
 	object
 		sprite star/k0
 		period 10
@@ -21316,7 +21014,6 @@ system Rastaban
 	fleet "Large Southern Merchants" 1600
 	fleet "Small Southern Pirates" 3000
 	fleet "Large Southern Pirates" 5000
-	attributes TAGhuman TAGsouth
 	object
 		sprite star/g0
 		period 10
@@ -21374,7 +21071,6 @@ system "Rati Cal"
 	fleet "Small Human Merchants (Hai)" 8000
 	fleet "Large Human Merchants (Hai)" 11000
 	fleet "Hai Surveillance" 5000
-	attributes TAGhai
 	object
 		sprite star/k5
 		period 10
@@ -21425,7 +21121,6 @@ system Regor
 	fleet "Small Deep Merchants" 2400
 	fleet "Large Deep Security" 8000
 	fleet "Large Deep Merchants" 5000
-	attributes TAGhuman TAGdeep
 	object
 		sprite star/k0
 		period 10
@@ -21492,7 +21187,6 @@ system Regulus
 	fleet "Large Southern Pirates" 8000
 	fleet "Small Republic" 10000
 	fleet "Human Miners" 3000
-	attributes TAGhuman TAGnearearth TAGfringe
 	object
 		sprite star/b5
 		period 10
@@ -21559,7 +21253,6 @@ system Relifer
 	trade Plastic 355
 	fleet Ka'het 2750
 	fleet "Ka'het Aggressive" 8900
-	attributes TAGemberwaste TAGgraveyard TAGwormhole TAGstellarphenomena
 	object
 		sprite star/g0-old
 		period 10
@@ -21647,7 +21340,6 @@ system Remembrance
 	fleet "Small Saryd" 700
 	fleet "Large Saryd" 3000
 	fleet Heliarch 1200
-	attributes TAGcoalition TAGsaryd
 	object
 		sprite star/k0
 		period 10
@@ -21753,7 +21445,6 @@ system Rigel
 	fleet "Small Northern Pirates" 3000
 	fleet "Large Northern Pirates" 5000
 	fleet "Human Miners" 2000
-	attributes TAGhuman TAGnorth
 	object
 		sprite star/g0
 		period 10
@@ -21866,7 +21557,6 @@ system Ritilas
 	trade Plastic 363
 	fleet Ka'het 2700
 	fleet "Ka'het Aggressive" 9600
-	attributes TAGemberwaste TAGgraveyard TAGwormhole TAGstellarphenomena
 	object
 		sprite star/k0-old
 		period 10
@@ -21949,7 +21639,6 @@ system Ruchbah
 	fleet "Large Syndicate" 2000
 	fleet "Small Core Pirates" 2000
 	fleet "Large Core Pirates" 3000
-	attributes TAGhuman TAGcore
 	object
 		sprite star/f0
 		period 10
@@ -22018,7 +21707,6 @@ system Rutilicus
 	fleet "Large Southern Merchants" 2000
 	fleet "Small Militia" 6000
 	fleet "Human Miners" 3000
-	attributes TAGhuman TAGdirtbelt
 	object
 		sprite star/g5
 		period 10
@@ -22086,7 +21774,6 @@ system Sabik
 	fleet "Large Southern Merchants" 900
 	fleet "Small Militia" 1200
 	fleet "Large Militia" 2000
-	attributes TAGhuman TAGrim
 	object
 		sprite star/g5
 		period 10
@@ -22133,7 +21820,6 @@ system Sabriset
 	trade Metal 275
 	trade Plastic 441
 	fleet "Large Quarg" 4000
-	attributes TAGkorath TAGfringe
 	object
 		sprite star/g0
 		distance 35.1028
@@ -22188,7 +21874,6 @@ system Sadalmelik
 	fleet "Small Southern Merchants" 800
 	fleet "Large Southern Merchants" 1200
 	fleet Quarg 2000
-	attributes TAGhuman TAGsouth
 	object
 		sprite star/f5
 		period 10
@@ -22240,7 +21925,6 @@ system Sadalsuud
 	fleet "Small Southern Merchants" 900
 	fleet "Large Southern Merchants" 1500
 	fleet Quarg 1000
-	attributes TAGhuman TAGsouth
 	object
 		sprite star/g0
 		distance 26.9714
@@ -22309,7 +21993,6 @@ system Sadr
 	fleet "Small Southern Pirates" 5000
 	fleet "Large Southern Pirates" 9000
 	fleet "Human Miners" 2000
-	attributes TAGhuman TAGsouth TAGfringe
 	object
 		sprite star/a5
 		distance 5.86016
@@ -22351,7 +22034,6 @@ system "Sagittarius A*"
 	haze _menu/haze-full
 	link Dygit-jarobouillier-cot
 	link Ick-nearolu-kechink-xi
-	attributes TAGblackhole TAGstellarphenomena TAGisolated
 	object
 		sprite star/black-hole-core
 		period 1
@@ -22388,7 +22070,6 @@ system Saiph
 	fleet "Large Northern Pirates" 3000
 	fleet "Small Republic" 4000
 	fleet "Large Republic" 7000
-	attributes TAGhuman TAGnorth
 	object
 		sprite star/k5
 		period 10
@@ -22443,7 +22124,6 @@ system Salipastart
 	fleet "Large Kor Mereti" 1600
 	fleet "Large Kor Sestor" 3200
 	fleet "Kor Mereti Miners" 3000
-	attributes TAGkorath TAGautomata TAGwarzone
 	object
 		sprite star/k0
 		period 10
@@ -22500,7 +22180,6 @@ system Saquergen
 	trade Medical 452
 	trade Metal 276
 	trade Plastic 328
-	attributes TAGisolated TAGnova TAGstellarphenomena
 	object
 		sprite star/nova
 		period 1000
@@ -22533,7 +22212,6 @@ system Sargas
 	fleet "Large Southern Pirates" 4000
 	fleet "Small Militia" 4000
 	fleet "Large Militia" 7000
-	attributes TAGhuman TAGsouth
 	object
 		sprite star/k0
 		distance 53
@@ -22581,7 +22259,6 @@ system Sarin
 	fleet "Large Southern Merchants" 3000
 	fleet "Small Southern Pirates" 2000
 	fleet "Large Southern Pirates" 6000
-	attributes TAGhuman TAGdirtbelt
 	object
 		sprite star/g0
 		period 10
@@ -22635,7 +22312,6 @@ system Sayaiban
 	trade Metal 240
 	trade Plastic 531
 	fleet Nanobots 100
-	attributes TAGarchon TAGkorath !hazard TAGisolated
 	object
 		sprite star/f5-old
 		distance 19.1843
@@ -22694,7 +22370,6 @@ system Scheat
 	fleet "Republic Logistics" 4700
 	fleet "Small Core Pirates" 3000
 	fleet "Large Core Pirates" 5000
-	attributes TAGhuman TAGcore
 	object
 		sprite star/g5
 		period 10
@@ -22755,7 +22430,6 @@ system Schedar
 	fleet "Large Syndicate" 4000
 	fleet "Small Core Pirates" 2000
 	fleet "Large Core Pirates" 3000
-	attributes TAGhuman TAGcore
 	object
 		sprite star/g0
 		period 10
@@ -22820,7 +22494,6 @@ system Segesta
 	fleet "Small Remnant" 40000
 	fleet "Large Remnant" 40000
 	fleet "Korath Ember Waste Raid" 40000
-	attributes TAGemberwaste TAGwormhole TAGstellarphenomena
 	object
 		sprite star/k5-old
 		period 10
@@ -22887,7 +22560,6 @@ system Seginus
 	fleet "Large Southern Merchants" 2000
 	fleet "Small Militia" 3000
 	fleet "Small Southern Pirates" 5000
-	attributes TAGhuman TAGdirtbelt
 	object
 		sprite star/m4
 		period 10
@@ -22943,7 +22615,6 @@ system Seketra
 	trade Metal 327
 	trade Plastic 286
 	fleet "Large Quarg" 3000
-	attributes TAGkorath TAGfringe
 	object
 		sprite star/k5
 		period 10
@@ -23004,7 +22675,6 @@ system Sepetrosk
 	fleet "Small Kor Mereti" 1200
 	fleet "Large Kor Mereti" 4800
 	fleet "Kor Mereti Miners" 2000
-	attributes TAGkorath TAGautomata
 	object
 		sprite star/k0
 		period 10
@@ -23063,7 +22733,6 @@ system Sepriaptu
 	trade Metal 320
 	trade Plastic 449
 	fleet "Large Quarg" 4000
-	attributes TAGkorath TAGfringe
 	object
 		sprite star/f5
 		distance 16.1966
@@ -23111,7 +22780,6 @@ system Sevrelect
 	fleet Quarg 1000
 	fleet "Large Quarg" 3000
 	fleet "Kor Efret Home" 1000
-	attributes TAGkorath TAGefreti
 	object
 		sprite star/m0
 		period 10
@@ -23171,7 +22839,6 @@ system Shaula
 	fleet "Small Northern Pirates" 5000
 	fleet "Large Northern Pirates" 9000
 	fleet "Large Militia" 9000
-	attributes TAGhuman TAGsouth
 	object
 		sprite star/g5
 		period 10
@@ -23233,7 +22900,6 @@ system Sheratan
 	fleet "Small Core Pirates" 3000
 	fleet "Large Core Pirates" 5000
 	fleet "Korath Raid" 30000
-	attributes TAGhuman TAGcore
 	object
 		sprite star/f5
 		distance 21.0713
@@ -23298,7 +22964,6 @@ system Si'yak'ku
 	fleet "Wanderer Freight" 1300
 	fleet "Wanderer Drones" 700
 	fleet "Wanderer Defense" 9000
-	attributes TAGwanderer
 	object
 		sprite star/g0
 		distance 19.5395
@@ -23372,7 +23037,6 @@ system Sich'ka'ara
 	fleet "Wanderer Freight" 600
 	fleet "Wanderer Drones" 3000
 	fleet "Wanderer Defense" 2000
-	attributes TAGwanderer
 	object
 		sprite star/f5
 		period 10
@@ -23428,7 +23092,6 @@ system Silikatakfar
 	fleet "Large Kor Mereti" 1600
 	fleet "Small Kor Sestor" 1600
 	fleet "Large Kor Sestor" 2400
-	attributes TAGkorath TAGautomata
 	object
 		sprite star/k5
 		period 10
@@ -23491,7 +23154,6 @@ system "Silver Bell"
 	fleet "Small Saryd" 500
 	fleet "Large Saryd" 1000
 	fleet Heliarch 300
-	attributes TAGcoalition TAGsaryd
 	object
 		sprite star/g0
 		period 10
@@ -23556,7 +23218,6 @@ system "Silver String"
 	fleet "Small Saryd" 700
 	fleet "Large Saryd" 1500
 	fleet Heliarch 500
-	attributes TAGcoalition TAGsaryd
 	object
 		sprite star/g0
 		period 10
@@ -23624,7 +23285,6 @@ system Similisti
 	fleet "Small Kor Mereti" 600
 	fleet "Large Kor Sestor" 5400
 	fleet "Kor Mereti Miners" 1600
-	attributes TAGkorath TAGautomata
 	object
 		sprite star/g0
 		period 10
@@ -23690,7 +23350,6 @@ system Sirius
 	fleet "Small Republic" 1000
 	fleet "Large Republic" 2500
 	fleet "Republic Logistics" 2500
-	attributes TAGhuman TAGnearearth
 	object
 		sprite star/f5
 		distance 3.94301
@@ -23743,7 +23402,6 @@ system Skeruto
 	trade Metal 393
 	trade Plastic 333
 	fleet "Large Quarg" 2000
-	attributes TAGkorath
 	object
 		sprite star/m0
 		period 10
@@ -23796,7 +23454,6 @@ system Sko'karak
 	trade Metal 513
 	trade Plastic 458
 	fleet "Wanderer Defense" 4000
-	attributes TAGwanderer
 	object
 		sprite star/m0
 		period 10
@@ -23844,7 +23501,6 @@ system Sobarati
 	trade Plastic 267
 	fleet "Small Kor Sestor" 800
 	fleet "Large Kor Sestor" 4000
-	attributes TAGkorath TAGautomata
 	object
 		sprite star/a5
 		distance 4.57143
@@ -23922,7 +23578,6 @@ system Sol
 	fleet "Republic Logistics" 2000
 	fleet "Small Core Merchants" 1000
 	fleet "Large Core Merchants" 2000
-	attributes TAGhuman TAGnearearth
 	object
 		sprite star/g0
 		period 25.38
@@ -24006,7 +23661,6 @@ system "Sol Arach"
 	fleet "Small Saryd" 1000
 	fleet "Large Saryd" 2000
 	fleet Heliarch 500
-	attributes TAGcoalition TAGarach
 	object
 		sprite star/k0
 		period 10
@@ -24075,7 +23729,6 @@ system "Sol Kimek"
 	fleet "Small Saryd" 800
 	fleet "Large Saryd" 1600
 	fleet Heliarch 500
-	attributes TAGcoalition TAGkimek
 	object
 		sprite star/k5
 		period 10
@@ -24146,7 +23799,6 @@ system "Sol Saryd"
 	fleet "Small Saryd" 300
 	fleet "Large Saryd" 800
 	fleet Heliarch 900
-	attributes TAGcoalition TAGsaryd
 	object
 		sprite star/g0
 		distance 19.7171
@@ -24224,7 +23876,6 @@ system Solifar
 	trade Metal 285
 	trade Plastic 442
 	fleet "Large Quarg" 4000
-	attributes TAGkorath
 	object
 		sprite star/m0
 		period 10
@@ -24286,7 +23937,6 @@ system Sospi
 	fleet "Small Republic" 5000
 	fleet "Large Republic" 9000
 	fleet "Human Miners" 5000
-	attributes TAGhuman TAGnorth TAGfringe
 	object
 		sprite star/wr
 		period 100
@@ -24349,7 +23999,6 @@ system Speloog
 	fleet "Small Saryd" 800
 	fleet "Large Saryd" 1800
 	fleet Heliarch 200
-	attributes TAGcoalition TAGarach
 	object
 		sprite star/g5
 		period 10
@@ -24418,7 +24067,6 @@ system Spica
 	fleet "Large Militia" 4000
 	fleet "Small Southern Pirates" 6000
 	fleet "Large Southern Pirates" 10000
-	attributes TAGhuman TAGrim
 	object
 		sprite star/g5
 		period 10
@@ -24460,7 +24108,6 @@ system Statina
 	minables iron 5 6
 	minables silicon 11 5
 	minables titanium 10 4
-	attributes TAGemberwaste TAGwormhole TAGstellarphenomena
 	object
 		sprite planet/desert4
 		distance 111
@@ -24521,7 +24168,6 @@ system "Steep Roof"
 	fleet "Small Saryd" 700
 	fleet "Large Saryd" 1400
 	fleet Heliarch 1200
-	attributes TAGcoalition TAGsaryd
 	object
 		sprite star/g0
 		period 10
@@ -24586,7 +24232,6 @@ system Stercutus
 	fleet "Small Remnant" 20000
 	fleet "Large Remnant" 20000
 	fleet "Remnant Transport" 40000
-	attributes TAGemberwaste TAGwormhole TAGstellarphenomena
 	object
 		sprite star/g5-old
 		distance 31.1534
@@ -24657,7 +24302,6 @@ system Suhail
 	fleet "Small Deep Merchants" 3000
 	fleet "Large Deep Merchants" 7000
 	fleet "Large Northern Pirates" 9000
-	attributes TAGhuman TAGdeep
 	object
 		sprite star/f5
 		period 10
@@ -24709,7 +24353,6 @@ system Sumar
 	fleet "Small Northern Pirates" 2000
 	fleet "Large Northern Pirates" 6000
 	fleet "Large Republic" 30000
-	attributes TAGhuman TAGnorth
 	object
 		sprite star/f0
 		period 10
@@ -24775,7 +24418,6 @@ system Sumprast
 	fleet Quarg 1000
 	fleet "Large Quarg" 2500
 	fleet "Kor Efret Home" 1000
-	attributes TAGkorath TAGautomata
 	object
 		sprite star/k0
 		period 10
@@ -24845,7 +24487,6 @@ system Tais
 	fleet Quarg 15000
 	fleet "Small Southern Pirates" 3000
 	fleet "Large Southern Pirates" 7000
-	attributes TAGhuman TAGdirtbelt
 	object
 		sprite star/a5
 		period 10
@@ -24905,7 +24546,6 @@ system Talita
 	fleet "Large Republic" 4000
 	fleet "Republic Logistics" 4000
 	fleet "Human Miners" 3000
-	attributes TAGhuman TAGparadise
 	object
 		sprite star/g0
 		distance 42.8886
@@ -24968,7 +24608,6 @@ system "Tania Australis"
 	fleet "Small Republic" 3000
 	fleet "Small Northern Pirates" 4000
 	fleet "Large Northern Pirates" 9000
-	attributes TAGhuman TAGdirtbelt
 	object
 		sprite star/g0-old
 		period 10
@@ -25037,7 +24676,6 @@ system Tarazed
 	fleet "Large Southern Merchants" 1200
 	fleet Quarg 7000
 	fleet "Large Southern Pirates" 8000
-	attributes TAGhuman TAGsouth
 	object
 		sprite star/g0
 		distance 11
@@ -25103,7 +24741,6 @@ system Tebuteb
 	fleet "Small Saryd" 1600
 	fleet "Large Saryd" 6000
 	fleet Heliarch 250
-	attributes TAGcoalition TAGarach
 	object
 		sprite star/m0
 		distance 40.0549
@@ -25165,7 +24802,6 @@ system Tejat
 	fleet "Paradise Merchants" 1200
 	fleet "Small Republic" 2000
 	fleet "Large Republic" 2000
-	attributes TAGhuman TAGparadise
 	object
 		sprite star/g0
 		distance 7.1843
@@ -25240,7 +24876,6 @@ system Terminus
 	trade Plastic 402
 	fleet "Small Southern Pirates" 2000
 	fleet "Large Southern Pirates" 5000
-	attributes TAGwormhole TAGstellarphenomena TAGhuman TAGdirtbelt TAGfringe
 	object
 		sprite star/k5-old
 		period 10
@@ -25277,7 +24912,6 @@ system "Terra Incognita"
 	asteroids "small metal" 1 4.1472
 	asteroids "medium metal" 24 3.9744
 	asteroids "large metal" 11 4.2624
-	attributes TAGpleiades
 	object
 		sprite star/k0
 		period 10
@@ -25389,7 +25023,6 @@ system Torbab
 	fleet "Small Saryd" 800
 	fleet "Large Saryd" 2000
 	fleet Heliarch 250
-	attributes TAGcoalition TAGarach
 	object
 		sprite star/g0
 		distance 26.8689
@@ -25462,7 +25095,6 @@ system Tortor
 	fleet "Large Northern Pirates" 1000
 	fleet "Large Republic" 6000
 	fleet "Small Northern Merchants" 6000
-	attributes TAGhuman TAGnorth TAGfringe
 	object
 		sprite star/k0
 		period 10
@@ -25531,7 +25163,6 @@ system Turais
 	fleet "Small Southern Pirates" 3000
 	fleet "Large Southern Pirates" 7000
 	fleet "Human Miners" 2000
-	attributes TAGhuman TAGdirtbelt
 	object
 		sprite star/k5
 		period 10
@@ -25588,7 +25219,6 @@ system "Ula Mon"
 	fleet "Small Human Merchants (Hai)" 6000
 	fleet "Large Human Merchants (Hai)" 9000
 	fleet "Hai Surveillance" 3000
-	attributes TAGhai
 	object
 		sprite star/m0
 		distance 56.5
@@ -25656,7 +25286,6 @@ system "Ultima Thule"
 	trade Medical 732
 	trade Metal 417
 	trade Plastic 360
-	attributes TAGwormhole TAGstellarphenomena TAGnorth
 	object
 		sprite star/f0
 		period 10
@@ -25712,7 +25341,6 @@ system Umbral
 	fleet "Small Southern Merchants" 4000
 	fleet Quarg 15000
 	fleet "Large Southern Pirates" 6000
-	attributes TAGhuman TAGsouth TAGfringe
 	object
 		sprite star/k0-old
 		distance 31.3563
@@ -25788,7 +25416,6 @@ system Unagi
 	trade Plastic 364
 	fleet "Small Northern Pirates" 1500
 	fleet "Large Northern Pirates" 3000
-	attributes TAGhuman TAGnorth TAGfringe
 	object
 		sprite star/k5
 		period 10
@@ -25849,7 +25476,6 @@ system Unukalhai
 	fleet "Small Militia" 4000
 	fleet "Large Militia" 10000
 	fleet "Human Miners" 3000
-	attributes TAGhuman TAGrim
 	object
 		sprite star/g5
 		period 10
@@ -25908,7 +25534,6 @@ system "Uwa Fahn"
 	fleet "Small Human Merchants (Hai)" 11000
 	fleet "Large Human Merchants (Hai)" 16000
 	fleet "Hai Surveillance" 3000
-	attributes TAGhai
 	object
 		sprite star/m0
 		period 10
@@ -25951,7 +25576,6 @@ system Vaticanus
 	asteroids "small rock" 3 6
 	minables lead 16 13
 	minables tungsten 10 13
-	attributes TAGemberwaste
 	object
 		sprite planet/gas16
 		distance 1670
@@ -26017,7 +25641,6 @@ system Vega
 	fleet "Small Republic" 1600
 	fleet "Large Republic" 5000
 	fleet "Human Miners" 5000
-	attributes TAGhuman TAGnearearth
 	object
 		sprite star/g0
 		distance 23.3143
@@ -26168,7 +25791,6 @@ system Vindemiatrix
 	fleet "Large Southern Merchants" 3000
 	fleet "Small Southern Pirates" 2000
 	fleet "Large Southern Pirates" 4000
-	attributes TAGhuman TAGdirtbelt
 	object
 		sprite star/g0
 		period 10
@@ -26215,7 +25837,6 @@ system Volax
 	fleet "Large Northern Pirates" 3000
 	fleet "Small Republic" 5000
 	fleet "Large Republic" 9000
-	attributes TAGhuman TAGnorth
 	object
 		sprite star/f5
 		period 10
@@ -26276,7 +25897,6 @@ system "Wah Ki"
 	fleet "Large Unfettered" 800
 	fleet "Small Human Merchants (Hai)" 18000
 	fleet "Large Human Merchants (Hai)" 28000
-	attributes TAGhai TAGwarzone
 	object
 		sprite star/k5
 		period 10
@@ -26347,7 +25967,6 @@ system "Wah Oh"
 	fleet "Small Human Merchants (Hai)" 6000
 	fleet "Large Human Merchants (Hai)" 9000
 	fleet "Hai Surveillance" 5000
-	attributes TAGhai
 	object
 		sprite star/a0
 		period 10
@@ -26420,7 +26039,6 @@ system "Wah Yoot"
 	trade Plastic 472
 	fleet "Small Unfettered" 1000
 	fleet "Large Unfettered" 500
-	attributes TAGhai
 	object
 		sprite star/g0
 		period 10
@@ -26486,7 +26104,6 @@ system Waypoint
 	fleet "Large Human Merchants (Hai)" 18000
 	fleet "Hai Surveillance" 2000
 	fleet "Small Hai" 5000
-	attributes TAGwormhole TAGstellarphenomena TAGhai
 	object
 		sprite star/m8
 		period 10
@@ -26546,7 +26163,6 @@ system Wazn
 	fleet "Small Republic" 2500
 	fleet "Large Republic" 5000
 	fleet "Republic Logistics" 5000
-	attributes TAGhuman TAGparadise
 	object
 		sprite star/k5
 		distance 45.5327
@@ -26606,7 +26222,6 @@ system Wei
 	fleet "Small Southern Pirates" 4000
 	fleet "Small Militia" 3000
 	fleet "Large Militia" 5000
-	attributes TAGhuman TAGdirtbelt
 	object
 		sprite star/k0
 		period 10
@@ -26670,7 +26285,6 @@ system Wezen
 	fleet "Large Deep Security" 10000
 	fleet "Large Deep Merchants" 5000
 	fleet "Small Northern Pirates" 8000
-	attributes TAGhuman TAGdeep
 	object
 		sprite star/f0
 		distance 11.8889
@@ -26726,7 +26340,6 @@ system "World's End"
 	government Uninhabited
 	habitable 700
 	haze _menu/haze-blackbody
-	attributes TAGpleiades TAGringworld
 	object
 		sprite star/g5
 		period 10
@@ -26902,7 +26515,6 @@ system "Ya Hai"
 	fleet "Large Human Merchants (Hai)" 17000
 	fleet "Hai Surveillance" 3000
 	fleet Quarg 6000
-	attributes TAGhai
 	object
 		sprite star/k5
 		period 10
@@ -26975,7 +26587,6 @@ system "Yed Prior"
 	fleet "Small Militia" 3000
 	fleet "Large Militia" 5000
 	fleet "Human Miners" 1600
-	attributes TAGhuman TAGsouth
 	object
 		sprite star/k0
 		period 10
@@ -27033,7 +26644,6 @@ system Zaurak
 	fleet "Small Core Pirates" 2000
 	fleet "Large Core Pirates" 4000
 	fleet "Human Miners" 2000
-	attributes TAGhuman TAGcore
 	object
 		sprite star/g5
 		period 10
@@ -27086,7 +26696,6 @@ system "Zeta Aquilae"
 	fleet "Large Southern Merchants" 3000
 	fleet "Small Southern Pirates" 2000
 	fleet "Large Southern Pirates" 5000
-	attributes TAGhuman TAGdirtbelt
 	object
 		sprite star/g0
 		distance 22.6286
@@ -27160,7 +26769,6 @@ system "Zeta Centauri"
 	fleet "Large Militia" 2500
 	fleet "Small Southern Pirates" 3000
 	fleet "Large Southern Pirates" 5000
-	attributes TAGhuman TAGrim
 	object
 		sprite star/k0
 		period 10
@@ -27226,7 +26834,6 @@ system Zosma
 	fleet "Republic Logistics" 4000
 	fleet "Small Northern Pirates" 5000
 	fleet "Large Northern Pirates" 9000
-	attributes TAGhuman TAGdeep
 	object
 		sprite star/k0
 		period 10
@@ -27284,7 +26891,6 @@ system "Zuba Zub"
 	fleet "Small Human Merchants (Hai)" 10000
 	fleet "Large Human Merchants (Hai)" 18000
 	fleet "Hai Surveillance" 5000
-	attributes TAGhai
 	object
 		sprite star/k5
 		period 10
@@ -27352,7 +26958,6 @@ system Zubenelgenubi
 	fleet "Large Militia" 3000
 	fleet "Small Southern Pirates" 3000
 	fleet "Large Southern Pirates" 5000
-	attributes TAGhuman TAGrim
 	object
 		sprite star/g5
 		distance 32.8466
@@ -27423,7 +27028,6 @@ system Zubeneschamali
 	fleet "Small Southern Pirates" 2000
 	fleet "Large Southern Pirates" 3000
 	fleet "Human Miners" 2000
-	attributes TAGhuman TAGrim
 	object
 		sprite star/g5
 		distance 62
