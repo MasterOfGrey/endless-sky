@@ -5944,37 +5944,30 @@ system "Bore Fah"
 	object
 		sprite star/g5
 		period 10
-		attributes hai
 	object
 		sprite planet/ice3
 		distance 347.69
 		period 103.731
-		attributes hai
 		object
 			sprite planet/callisto-b
 			distance 150
 			period 17.5682
-			attributes hai
 	object Snowfeather
 		sprite planet/ice2
 		distance 678.69
 		period 282.896
-		attributes hai
 	object
 		sprite planet/gas13-b
 		distance 1704.93
 		period 1126.37
-		attributes hai
 		object
 			sprite planet/lava0-b
 			distance 285
 			period 13.5824
-			attributes hai
 		object
 			sprite planet/luna-b
 			distance 388
 			period 21.5754
-			attributes hai
 
 system "Bote Asu"
 	pos 8.87418 -572.768
@@ -6013,73 +6006,59 @@ system "Bote Asu"
 		sprite star/f0
 		distance 17.3605
 		period 7.70584
-		attributes hai
 	object
 		sprite star/k0-old
 		distance 84.6395
 		period 7.70584
 		offset 180
-		attributes hai
 	object
 		sprite planet/rock1
 		distance 242.889
 		period 28.316
-		attributes hai
 	object
 		sprite planet/rock16
 		distance 634.139
 		period 119.453
-		attributes hai
 		object
 			sprite planet/ice7
 			distance 173
 			period 31.0553
-			attributes hai
 	object
 		sprite planet/gas11
 		distance 1111.15
 		period 277.063
-		attributes hai
 	object
 		sprite planet/neptune
 		distance 2561.56
 		period 969.787
-		attributes hai
 		object
 			sprite planet/rock7-b
 			distance 212
 			period 15.3793
-			attributes hai
 		object
 			sprite planet/luna
 			distance 325
 			period 29.1916
-			attributes hai
 		object
 			sprite planet/rock17-b
 			distance 411
 			period 41.514
-			attributes hai
 	object
 		sprite planet/gas12-b
 		distance 4312.6
 		period 2118.5
-		attributes hai
 		object
 			sprite planet/rhea-b
 			distance 293
 			period 13.1731
-			attributes hai
 		object
 			sprite planet/lava0-b
 			distance 446
 			period 24.7393
-			attributes hai
 		object
 			sprite planet/rock14
 			distance 601
 			period 38.6987
-			attributes hai
 
 system "Bright Void"
 	pos -1059.59 605.051
