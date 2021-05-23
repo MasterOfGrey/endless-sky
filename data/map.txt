@@ -27638,7 +27638,7 @@ planet Ahr
 	outfitter "Coalition Advanced"
 
 planet Aksaray
-	attributes "requires: inaccessible" "moon" uninhabited
+	attributes "requires: inaccessible" moon uninhabited
 	landscape land/mountain26
 	description `At first glance, Aksaray appears to be a fairly generic moon formed from eons of dust and debris compressed into a tight ball by constant gravitational pressure. What is not commonplace is the presence of almost perfectly pyramidal piles of regolith scattered across the world. Querying an orbiting Remnant satellite suggests that these are believed to have been remote mining sites for mineral processing.`
 	description `	A brief consultation of your navigational computer's economic database, however, indicates that all the minerals present in this variant of regolith are very common across the galaxy and have an extremely low value.`
@@ -28027,7 +28027,7 @@ planet Canyon
 		fleet "Small Syndicate" 5
 
 planet Capitoline
-	attributes "requires: inaccessible" "lava" uninhabited
+	attributes "requires: inaccessible" lava uninhabited
 	landscape land/lava8
 	description `The harsh landscape of Capitoline is a demonstration of the forces of nature at work. Lava flows and eruptions are regularly seen, and seismic activity is a daily occurrence. As a result, the surface is of comparatively recent origin. Despite this, you can spot a small survey station in the middle of an old lava field. In response to your landing computer's query, the transponder issues a terse statement about the automated scientific station and a warning that its defense systems are active.`
 	description `	Heeding the warning, you land over the horizon from the station. Stepping out onto the surface, you can feel the rumble of the planet beneath you. Despite the ever-present seismic heaving, it feels like you can pick up a subtle pulse in the vibrations. The impression never goes away, but neither you nor your sensors can determine an actual pattern.`
@@ -28054,10 +28054,9 @@ planet "Ceaseless Toil"
 	"required reputation" 15
 
 planet Ceilia'sei
-	attributes ka'het
+	attributes ka'het uninhabited
 	landscape land/loc2
-	description `This station used to act as some sort of anti-missile platform. It is covered in a large number of defensive turrets capable of shooting down even the strongest of torpedoes. During the Ka'het invasion it must have been able to stop the incoming EMPs, but it had no way to defend itself against the Ravager Beams; the crew quarters were completely destroyed by the Ka'het, and the Builders soon lost control of all the station's defense systems.`
-	description `	Given the location of the station, it's likely that it was originally built to stop everything coming out of the wormhole rather than the Ka'het themselves.`
+	description `Apart from one large, solid module, very little of this space station remains intact: the cloud of debris surrounding the core makes it very hard to be docked with, and one side of it even appears to have been blown up. The other part, however, has suffered much less damage, and the surface bristles with dozens of well-maintained turrets.`
 
 planet Celeatis
 	attributes ka'het uninhabited
@@ -28069,11 +28068,6 @@ planet "Celestial Third"
 	landscape land/fields4
 	description `Celestial Third is the breadbasket of Kimek space. Most of its land mass is used for farming, augmented by seaweed farms and fisheries in the oceans and factories near the equator producing yeast and bacterial cultures as nutritional supplements. The first settlers came here more than thirteen thousand years ago, at a time when their home world had run out of arable land for farming and food was desperately needed.`
 	spaceport `The constant stream of freighters passing through this spaceport is a testament to how much food is needed to feed the densely populated Kimek worlds, in particular their homeworld in the neighboring star system. The city that hosts the spaceport has also become something of a tourist destination for those with adventurous culinary tastes; restaurants here serve recipes native to each of the Coalition species, along with some dishes that blend their three cuisines in unique and sometimes surprising ways.`
-
-planet Ceilia'sei
-	attributes ka'het uninhabited
-	landscape land/loc2
-	description `Apart from one large, solid module, very little of this space station remains intact: the cloud of debris surrounding the core makes it very hard to be docked with, and one side of it even appears to have been blown up. The other part, however, has suffered much less damage, and the surface bristles with dozens of well-maintained turrets.`
 
 planet "Charon Station"
 	attributes south station
@@ -29290,7 +29284,7 @@ planet "Laki Nemparu"
 	spaceport `All the Korath you encounter in the spaceport are wearing ventilator masks, and if you were staying here for longer you would probably do the same. The air leaves a metallic taste in your mouth, and your eyes feel dry and sting when the wind hits them. On the outskirts of the city, factory smokestacks are belching more pollution into the air; the Korath have either given up on preserving this planet, or simply have too great a need for the goods manufactured here to be willing to shut the factories down.`
 	outfitter "Korath Basics"
 
-planet "Letis'sei"
+planet Letis'sei
 	attributes ka'het uninhabited
 	landscape land/loc3
 	description `Letis'sei is an ancient station with cramped interiors and massive inaccessible sections. Completely unpressurized and lacking an internal atmosphere, it is hard to imagine what this station originally looked like. Nonetheless, three impressive cannon-like structures are still recognizable, floating outside the rest of the station. The ring that used to keep them together is destroyed, but they continue rotating around the main body in the circular formation that they were made to follow.`
@@ -30833,7 +30827,7 @@ planet Tinker
 		fleet "Large Syndicate" 7
 
 planet Topkapi
-	attributes "requires: inaccessible" "moon" uninhabited
+	attributes "requires: inaccessible" moon uninhabited
 	landscape land/mars1
 	description `Much like Aksaray, Topkapi is an old moon formed from the smashed remains of countless eons worth of stellar debris. The surface appears to be regularly bombarded by asteroids, although some of the craters show signs of being the site of rather large explosions. Your sensors pick up traces of materials most commonly found in Korath ships.`
 	description `	Topkapi does not appear to have any routine activity, although satellites in orbit indicate that the Remnant monitor it for activity and send ships to investigate asteroid or other impacts on a regular basis.`
@@ -31099,16 +31093,11 @@ planet "Varu Tev'kei"
 	bribe 0
 
 planet Vatican
-	attributes "requires: inaccessible" "lava" uninhabited
+	attributes "requires: inaccessible" lava uninhabited
 	landscape land/lava10
 	description `Vatican's propensity for constant renewal of the surface has resulted in a flourishing astrogeological academic program. While it has frequently been dismissed as a low priority for Remnant efforts, it has nonetheless received continued support from the defense prefects. Why they would be concerned with the geological formations of an uninhabited planet is unknown, but the research continues.`
 	government Uninhabited
 	security 0
-
-planet Veliante
-	attributes ka'het
-	landscape land/fog5
-	description `The world that suffered the heaviest damage during the invasion was probably Veliante. Here, one of the earliest attacks hit some sort of nuclear facility, starting a meltdown; the fallout quickly spread across most of the planet, leaving all Builder settlements uninhabitable. While most of the planet has returned to safe level of radiation, the areas around the ancient facility are still too irradiated to survive for long without some form of protective equipment.`
 
 planet Veliante
 	attributes ka'het uninhabited
