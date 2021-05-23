@@ -29293,11 +29293,10 @@ planet "Laki Nemparu"
 	spaceport `All the Korath you encounter in the spaceport are wearing ventilator masks, and if you were staying here for longer you would probably do the same. The air leaves a metallic taste in your mouth, and your eyes feel dry and sting when the wind hits them. On the outskirts of the city, factory smokestacks are belching more pollution into the air; the Korath have either given up on preserving this planet, or simply have too great a need for the goods manufactured here to be willing to shut the factories down.`
 	outfitter "Korath Basics"
 
-planet Letis'sei
-	attributes ka'het
+planet "Letis'sei"
+	attributes ka'het uninhabited
 	landscape land/loc3
-	description `Letis'sei was disabled long ago, but it seems the destruction it suffered was relatively small: with only a tiny fraction of the station designed to be inhabited, it didn't take much for the Ka'het to eliminate the crew. Today, all the air once inside the station is gone, and few of the original rooms can still be recognised.`
-	description `	Outside, three impressive, cannon-like structures slowly rotate around the living section. Each of them is more than twice as large as the crew quarters, and despite their age they still seem to be mostly intact.`
+	description `Letis'sei is an ancient station with cramped interiors and massive inaccessible sections. Completely unpressurized and lacking an internal atmosphere, it is hard to imagine what this station originally looked like. Nonetheless, three impressive cannon-like structures are still recognizable, floating outside the rest of the station. The ring that used to keep them together is destroyed, but they continue rotating around the main body in the circular formation that they were made to follow.`
 
 planet "Leviathan Station"
 	attributes deep station
@@ -29312,11 +29311,6 @@ planet "Leviathan Station"
 	tribute 1200
 		threshold 3500
 		fleet "Small Deep Security" 27
-
-planet "Letis'sei"
-	attributes ka'het uninhabited
-	landscape land/loc3
-	description `Letis'sei is an ancient station with cramped interiors and massive inaccessible sections. Completely unpressurized and lacking an internal atmosphere, it is hard to imagine what this station originally looked like. Nonetheless, three impressive cannon-like structures are still recognizable, floating outside the rest of the station. The ring that used to keep them together is destroyed, but they continue rotating around the main body in the circular formation that they were made to follow.`
 
 planet Lichen
 	attributes south farming frontier
