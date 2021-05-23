@@ -2105,6 +2105,7 @@ system Adhara
 system Aescolanus
 	pos -15 340
 	government Uninhabited
+	attributes "ember waste" "wormhole"
 	habitable 233.28
 	belt 1323
 	haze _menu/haze-red
@@ -2147,6 +2148,7 @@ system Aescolanus
 system Aki'il
 	pos -83 722
 	government Uninhabited
+	attributes "ember waste" "graveyard"
 	habitable 1505.92
 	asteroids "large metal" 47 5
 	asteroids "large rock" 2 10
@@ -4349,6 +4351,7 @@ system Antares
 system Antevorta
 	pos -36.1297 446.242
 	government Uninhabited
+	attributes "ember waste"
 	habitable 320
 	belt 1994
 	haze _menu/haze-red
@@ -4533,6 +4536,7 @@ system Arcturus
 system Arculus
 	pos 308.87 393.242
 	government Remnant
+	attributes "ember waste"
 	habitable 625
 	belt 1536
 	haze _menu/haze-red
@@ -5912,6 +5916,7 @@ system Boral
 system "Bore Fah"
 	pos 71.7761 -592.536
 	government Hai
+	attributes hai
 	habitable 625
 	belt 1823
 	link "Bote Asu"
@@ -5940,7 +5945,6 @@ system "Bore Fah"
 	fleet "Small Human Merchants (Hai)" 12000
 	fleet "Large Human Merchants (Hai)" 18000
 	fleet "Hai Surveillance" 5000
-	attributes hai
 	object
 		sprite star/g5
 		period 10
@@ -5972,6 +5976,7 @@ system "Bore Fah"
 system "Bote Asu"
 	pos 8.87418 -572.768
 	government Hai
+	attributes hai
 	habitable 2859.44
 	belt 1613
 	link "Bore Fah"
@@ -6001,7 +6006,6 @@ system "Bote Asu"
 	fleet "Small Human Merchants (Hai)" 8000
 	fleet "Large Human Merchants (Hai)" 12000
 	fleet "Hai Surveillance" 3000
-	attributes hai
 	object
 		sprite star/f0
 		distance 17.3605
@@ -6204,6 +6208,7 @@ system "Broken Bowl"
 system Caeculus
 	pos 162.87 343.242
 	government Uninhabited
+	attributes "ember waste"
 	habitable 320
 	belt 1797
 	haze _menu/haze-red
@@ -6518,6 +6523,7 @@ system Cardax
 system Cardea
 	pos -89.1297 417.242
 	government Uninhabited
+	attributes "ember waste" "wormhole"
 	habitable 851.84
 	belt 1725
 	haze _menu/haze-red
@@ -7180,6 +7186,7 @@ system Chy'chra
 system Cinxia
 	pos 265.87 415.242
 	government Remnant
+	attributes "ember waste"
 	habitable 425.92
 	belt 1713
 	haze _menu/haze-red
@@ -7235,6 +7242,7 @@ system Cinxia
 system Coluber
 	pos 162.504 207.389
 	government Uninhabited
+	attributes "ember waste" "wormhole"
 	habitable 659.2
 	belt 1590
 	haze _menu/haze-red
@@ -7354,6 +7362,7 @@ system Companion
 system Convector
 	pos -14.1297 379.242
 	government Uninhabited
+	attributes "ember waste"
 	habitable 4131.68
 	belt 1961
 	haze _menu/haze-red
@@ -7890,6 +7899,7 @@ system Debrugt
 system Delia
 	pos -41 757
 	government Uninhabited
+	attributes "ember waste" "graveyard"
 	habitable 486.68
 	haze _menu/haze-red
 	link Dixere
@@ -8376,6 +8386,7 @@ system Diphda
 system Dixere
 	pos 33 708
 	government Uninhabited
+	attributes "ember waste" "graveyard"
 	habitable 851.84
 	haze _menu/haze-red
 	link Delia
@@ -9111,6 +9122,7 @@ system Eblumab
 system Edusa
 	pos 273.87 347.242
 	government Uninhabited
+	attributes "ember waste" "wormhole"
 	habitable 2372.76
 	belt 1167
 	haze _menu/haze-red
@@ -9180,6 +9192,7 @@ system Egeria
 	object
 		sprite star/k5-old
 		distance 40
+		offset 180
 		period 19
 	object
 		sprite star/g0
@@ -9989,6 +10002,7 @@ system Eshkoshtar
 system Esix
 	pos 142 532
 	government Uninhabited
+	attributes "ember waste" "graveyard" "wormhole"
 	habitable 8640
 	haze _menu/haze-red
 	link Gerenus
@@ -10530,6 +10544,7 @@ system Farbutero
 system Farinus
 	pos 202.87 440.242
 	government Uninhabited
+	attributes "ember waste"
 	habitable 745.92
 	belt 1149
 	haze _menu/haze-red
@@ -10716,6 +10731,7 @@ system Fasitopfar
 system Fearis
 	pos -16 643
 	government Uninhabited
+	attributes "ember waste" "graveyard" "wormhole"
 	habitable 486.68
 	haze _menu/haze-red
 	link Feraticus
@@ -10854,6 +10870,7 @@ system "Fell Omen"
 system Feraticus
 	pos 58 630
 	government Uninhabited
+	attributes "ember waste" "graveyard"
 	habitable 320
 	haze _menu/haze-red
 	link Dixere
@@ -10917,6 +10934,7 @@ system Feraticus
 system Fereti
 	pos -39 600
 	government Uninhabited
+	attributes "ember waste" "graveyard"
 	habitable 486.68
 	haze _menu/haze-red
 	link Lire
@@ -11680,6 +11698,7 @@ system "Gamma Corvi"
 system Gerenus
 	pos 197 514
 	government Uninhabited
+	attributes "ember waste" "graveyard"
 	habitable 9065.92
 	haze _menu/haze-red
 	link Esix
@@ -11802,6 +11821,7 @@ system Gienah
 system Giribea
 	pos -6 674
 	government Uninhabited
+	attributes "ember waste" "graveyard"
 	habitable 1705
 	haze _menu/haze-red
 	link Delia
@@ -13753,6 +13773,7 @@ system Ink-learoumera-cehikli
 system Insitor
 	pos -28.1296 400.242
 	government Uninhabited
+	attributes "ember waste" "wormhole"
 	habitable 553.28
 	belt 1170
 	haze _menu/haze-red
@@ -16139,6 +16160,7 @@ system Lesath
 system Levana
 	pos 218.504 257.389
 	government Uninhabited
+	attributes "ember waste"
 	habitable 2798.68
 	belt 1202
 	haze _menu/haze-red
@@ -16261,6 +16283,7 @@ system Limen
 system Lire
 	pos -59 676
 	government Uninhabited
+	attributes "ember waste" "graveyard"
 	habitable 1080
 	haze _menu/haze-red
 	link Fearis
@@ -16513,6 +16536,7 @@ system "Lone Cloud"
 system Lucina
 	pos 186.504 186.389
 	government Uninhabited
+	attributes "ember waste"
 	habitable 320
 	belt 1466
 	haze _menu/haze-red
@@ -16973,11 +16997,12 @@ system Mebla
 system Meblumem
 	pos -722.587 616.051
 	government Coalition
+	attributes "arachi"
 	habitable 2201.68
 	belt 1794
-	link Gupta
-	link Pelubta
 	link "Sol Arach"
+	link Pelubta
+	link Gupta
 	asteroids "large metal" 1 2.376
 	trade Clothing 322
 	trade Electronics 758
@@ -17300,71 +17325,6 @@ system Mekislepti
 			sprite planet/station1k
 			distance 334.445
 			period 30.4733
-
-system Meblumem
-	pos -722.587 616.051
-	government Coalition
-	attributes "arachi"
-	habitable 2201.68
-	belt 1794
-	link "Sol Arach"
-	link Pelubta
-	link Gupta
-	asteroids "large metal" 1 2.376
-	trade Clothing 322
-	trade Electronics 758
-	trade Equipment 660
-	trade Food 259
-	trade "Heavy Metals" 843
-	trade Industrial 673
-	trade "Luxury Goods" 1468
-	trade Medical 765
-	trade Metal 432
-	trade Plastic 433
-	fleet "Small Arach" 400
-	fleet "Large Arach" 600
-	fleet "Small Kimek" 1200
-	fleet "Large Kimek" 2400
-	fleet "Small Saryd" 1200
-	fleet "Large Saryd" 2800
-	fleet Heliarch 400
-	object
-		sprite star/f5
-		distance 28.2943
-		period 12.3452
-	object
-		sprite star/k0
-		distance 99.7057
-		period 12.3452
-		offset 180
-	object
-		sprite planet/desert4
-		distance 521.254
-		period 101.451
-	object
-		sprite planet/desert5-b
-		distance 817.478
-		period 199.249
-	object
-		sprite planet/fog0
-		distance 1278.61
-		period 389.753
-		object
-			sprite planet/rock7
-			distance 176
-			period 17.2245
-	object
-		sprite planet/desert6
-		distance 1710.08
-		period 602.849
-	object "Corral of Meblumem"
-		sprite planet/forest1
-		distance 1975.08
-		period 748.274
-	object
-		sprite planet/gas4
-		distance 2986.38
-		period 1391.23
 
 system Men
 	pos -888 361
@@ -18768,6 +18728,7 @@ system Naper
 system Nenia
 	pos -39.1297 467.242
 	government Uninhabited
+	attributes "ember waste" "void sprites" "archon"
 	habitable 2340
 	belt 1343
 	haze _menu/haze-red
@@ -19305,6 +19266,7 @@ system Orvala
 system Ossipago
 	pos 6.87033 429.242
 	government Uninhabited
+	attributes "ember waste" "wormhole"
 	habitable 1948.28
 	belt 1803
 	haze _menu/haze-red
@@ -19383,7 +19345,6 @@ system "Over the Rainbow"
 	asteroids "small metal" 5 2.9887
 	asteroids "medium metal" 11 3.6556
 	asteroids "large metal" 7 2.0007
-	attributes pleiades
 	object "Pug Wormhole"
 		sprite planet/wormhole
 	object
@@ -19407,6 +19368,7 @@ system "Over the Rainbow"
 system Paeli
 	pos 129 497
 	government Uninhabited
+	attributes "ember waste" "graveyard" "wormhole"
 	habitable 425.92
 	haze _menu/haze-red
 	link Esix
@@ -19473,6 +19435,7 @@ system Paeli
 system Pantica
 	pos 303.87 445.242
 	government Remnant
+	attributes "ember waste"
 	habitable 486.68
 	belt 1203
 	haze _menu/haze-red
@@ -19529,6 +19492,7 @@ system Pantica
 system Parca
 	pos 141.464 176.664
 	government Uninhabited
+	attributes "ember waste"
 	habitable 760
 	belt 1315
 	haze _menu/haze-red
@@ -19864,6 +19828,7 @@ system Peresedersi
 system Perfica
 	pos 185.87 419.242
 	government Uninhabited
+	attributes "ember waste"
 	habitable 1080
 	belt 1160
 	haze _menu/haze-red
@@ -20430,6 +20395,7 @@ system Polaris
 system Polerius
 	pos 88 482
 	government Uninhabited
+	attributes "ember waste" "graveyard"
 	habitable 1505.92
 	haze _menu/haze-red
 	link Paeli
@@ -21185,6 +21151,7 @@ system Quaru
 system Queri
 	pos 69 518
 	government Uninhabited
+	attributes "ember waste" "graveyard"
 	habitable 135
 	haze _menu/haze-red
 	link Esix
@@ -21587,6 +21554,7 @@ system Regulus
 system Relifer
 	pos 19 603
 	government Uninhabited
+	attributes "ember waste" "graveyard" "wormhole"
 	habitable 625
 	haze _menu/haze-red
 	link Feraticus
@@ -21896,6 +21864,7 @@ system Rikt-pefaerilum
 system Ritilas
 	pos 11 523
 	government Uninhabited
+	attributes "ember waste" "graveyard" "wormhole"
 	habitable 135
 	haze _menu/haze-red
 	link Queri
@@ -22849,6 +22818,7 @@ system Schedar
 system Segesta
 	pos 111.87 294.242
 	government Uninhabited
+	attributes "ember waste" "wormhole"
 	habitable 425.92
 	belt 1120
 	haze _menu/haze-red
@@ -24620,6 +24590,7 @@ system "Steep Roof"
 system Stercutus
 	pos 140.87 320.242
 	government Uninhabited
+	attributes "ember waste" "wormhole"
 	habitable 945
 	belt 1492
 	haze _menu/haze-red
@@ -25325,7 +25296,6 @@ system "Terra Incognita"
 	pos 9921.5 7086.5
 	government Uninhabited
 	attributes "pleiades"
-	link "Over the Rainbow"
 	habitable 455.625
 	haze _menu/haze-blackbody
 	link "Over the Rainbow"
@@ -31122,6 +31092,8 @@ planet Viminal
 	bribe 0
 	tribute 3000
 		threshold 8000
+		fleet "Remnant Decoy Defense" 3
+		fleet "Light Remnant Defense" 8
 		fleet "Heavy Remnant Defense" 25
 
 planet Vinci
