@@ -156,6 +156,14 @@ void Outfit::Load(const DataNode &node)
 			++jumpInSounds[Audio::Get(child.Token(1))];
 		else if(child.Token(0) == "jump out sound" && child.Size() >= 2)
 			++jumpOutSounds[Audio::Get(child.Token(1))];
+		else if(child.Token(0) == "corridors" && child.Size() >= 2)
+			corridors[CategoryType::CORRIDORS] = 
+				make_pair(child.Token(1), child.size() > = 3 ? child.value(2) : 1);
+		else if(child.Token(0) == "floorlayout" && child.Size() >= 2)
+			floorlayout[CategoryType::FLOORLAYOUT] = 
+				make_pair(child.Token(1), child.size() > = 3 ? child.value(2) : 1);
+		else if(child.Token(0) == "ventilation" && child.Size() >= 2)
+			ventilation[CategoryType::VENTILATION] = child.Token(1);
 		else if(child.Token(0) == "flotsam sprite" && child.Size() >= 2)
 			flotsamSprite = SpriteSet::Get(child.Token(1));
 		else if(child.Token(0) == "thumbnail" && child.Size() >= 2)

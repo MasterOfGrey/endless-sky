@@ -38,3 +38,23 @@ category "outfit"
 	"Engines"
 	"Hand to Hand"
 	"Special"
+
+
+# Attributes of these categories affect boarding chances.	
+category "corridors"
+	"Tight" 1
+	"Narrow" 2
+	"Standard" 4
+	"Wide" 8
+	"Open" 16
+
+category "floorlayout"
+	# These values are divided by 10 when used.
+	"Twisted" 10
+	"Direct" 15
+	"Open-Plan" 20
+
+category "ventilation"
+	"Poor"
+	"Adequate"
+	"Good"
