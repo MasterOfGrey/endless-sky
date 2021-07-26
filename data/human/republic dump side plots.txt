@@ -101,7 +101,7 @@ mission "Electrons 1D"
 	npc accompany save
 		personality escort timid
 		fleet
-			names "republic" "capital"
+			names "republic capital"
 			variant
 				"Auxiliary (Cargo)" 3
 	on complete
@@ -288,7 +288,7 @@ mission "Electrons 2A"
 	npc accompany save
 		personality escort timid
 		fleet
-			names "republic" "capital"
+			names "republic capital"
 			variant
 				"Auxiliary (Cargo)" 2
 

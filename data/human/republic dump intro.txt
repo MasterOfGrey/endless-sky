@@ -11,7 +11,7 @@ mission "Joining the Navy"
 	to offer
 		has "event: war begins"
 		has "event: enlistment begins"
-		not "event: naval employment earned"
+#		not "event: naval employment earned"
 		has "enlistment announced: offered"
 		not "chosen sides"
 	on offer
@@ -43,7 +43,7 @@ mission "Joining the Navy"
 		set "chosen sides"
 		set "joined the Navy"
 		set "license: Navy"
-		event "naval employment earned"
+#		event "naval employment earned"
 		event "Navy Painted"
 		log "Was able to destroy the pirate ship and prove my worth to the Navy. The Navy has inducted me as an Ensign and given me a small salary."
 		conversation
@@ -113,7 +113,7 @@ mission "Navy Pirate Patrol 1"
 	on fail
 		dialog `You have failed an essential Navy mission. If you want to complete the story line, revert to the autosave or another earlier snapshot of the game.`
 	to offer
-		has "event: naval employment earned"
+#		has "event: naval employment earned"
 		has "Report to Danforth: done"
 	on offer
 		conversation
@@ -310,7 +310,8 @@ mission "Navy vs Pirate"
 			branch angry
 				has "ranulph's background"
 			apply
-				log "People" "Ranulph Hines" `A rather rude Republic Officer, Ranulph Hines has served in the Republic for several years.`
+#				log "People" "Ranulph Hines" `A rather rude Republic Officer, Ranulph Hines has served in the Republic for several years.`
+#logs don't work like this
 			`Danforth nods approvingly. "At ease," he commands, allowing your hand to drop back to your side. As you do so, your eyes briefly glance over to Hines' expression. The man is still clearly displeased by the whole ordeal, but for what reason, you don't know. Whatever the case, his glare is chilling, to say the least.`
 				goto end
 			label angry
@@ -385,7 +386,7 @@ mission "Geminus 1"
 		government "Republic"
 		personality escort timid
 		fleet
-			names "republic" "capital"
+			names "republic capital"
 			variant
 				"Auxiliary (Cargo)" 4
 
@@ -566,7 +567,7 @@ mission "Geminus 2A"
 		government "Republic"
 		personality escort timid
 		fleet
-			names "republic" "capital"
+			names "republic capital"
 			variant
 				"Auxiliary" 4
 
@@ -656,7 +657,7 @@ mission "Geminus 2B"
 		government "Republic"
 		personality escort timid
 		fleet
-			names "republic" "capital"
+			names "republic capital"
 			variant
 				"Auxiliary" 4
 
@@ -777,7 +778,7 @@ mission "Geminus 3A"
 		government "Republic"
 		personality escort timid
 		fleet
-			names "republic" "capital"
+			names "republic capital"
 			variant
 				"Auxiliary (Transport)" 4
 
@@ -845,7 +846,7 @@ mission "Geminus 3B"
 		government "Republic"
 		personality escort timid
 		fleet
-			names "republic" "capital"
+			names "republic capital"
 			variant
 				"Auxiliary (Transport)" 4
 
@@ -905,7 +906,7 @@ mission "Geminus 3C"
 		government "Republic"
 		personality escort timid
 		fleet
-			names "republic" "capital"
+			names "republic capital"
 			variant
 				"Auxiliary (Transport)" 4
 

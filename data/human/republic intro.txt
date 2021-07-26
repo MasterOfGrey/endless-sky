@@ -131,6 +131,7 @@ mission "Republic Bounty 2"
 		dialog `Commander Shah contacts you after you've landed. "The Republic thanks you for your assistance. <payment> have been credited to your account. I'll be in touch should I have need of you again."`
 		log "People" "Amelia Shah" "Amelia Shah is a Republic official assigned to keep an eye on the systems bordering the Free Worlds. She seems to be unaffiliated with the Navy."
 
+event "rep bounty cooldown"
 
 #		log "People" "Anton Kent" "Anton Kent is a Republic official assigned to keep an eye on the systems bordering the Free Worlds. He seems to be unaffiliated with the Navy."
 #Who dis?
