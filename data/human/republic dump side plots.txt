@@ -20,9 +20,9 @@ mission "Electrons 1A"
 			label place
 			`John replies, "Most assuredly, my friend. After all, we mustn't have the public knowing about a secret weapons facility!"`
 			label elevator
-			`You follow the scientists inside, where there is a well-lit elevator. John puts a code into a keypad, which opens the elevator doors. You walk in and it begins its descent. You all step into a sleek lab, filled with scientists. John leads you down a path to a sealed room. He motions to Peter, and they both pull out a card and they swipe them simultaneously. The door opens with a hiss and reveals a perfectly white room, and a table on which is seated a new weapon, which you guess is the electron beam. 
+			`You follow the scientists inside, where there is a well-lit elevator. John puts a code into a keypad, which opens the elevator doors. You walk in and it begins its descent. You all step into a sleek lab, filled with scientists. John leads you down a path to a sealed room. He motions to Peter, and they both pull out a card and they swipe them simultaneously. The door opens with a hiss and reveals a perfectly white room, and a table on which is seated a new weapon, which you guess is the electron beam. `
 			`John motions you over, saying, "Here it is! Twenty tons of pure destruction. But there is one problem. Because of increased pirate problems in Syndicate space, we are missing some crucial materials. We need you to get those materials before we can get this working. Your destination is Lodestone, in the Ankaa system. We have some fun for you when you get back," he says with a wink. You nod assent, even though you are still enamored by this elegant weapon, and John ushers you back to your ship.`
-				done
+				accept
 
 mission "Electrons 1B"
 	name "Weapons Development"
@@ -60,8 +60,8 @@ mission "Electrons 1C"
 	on complete
 		outfit "Secret Cargo" -21
 		payment 1500000
-        	conversation
-        		`<insert dialogue where you get thanked>`
+			conversation
+				`<insert dialogue where you get thanked>`
 
 ship "Bactrian" "Bactrian (cargo target)"
 	outfits
@@ -95,7 +95,7 @@ mission "Electrons 1D"
 	landing
 	description "Escort the Auxiliaries carrying the special cargo to Valhalla to assist in the development of the Electron Beam."
 	on fail
-		dialogue "You have lost one of your escorts. You should reload your save if you wish to continue the campaign."
+		dialog "You have lost one of your escorts. You should reload your save if you wish to continue the campaign."
 	to offer
 		has "Electrons 1C: done"
 	npc accompany save
@@ -135,7 +135,7 @@ event "e-beam delay 1"
 mission "Electrons 1E"
 	source
 		government Republic
-		not Valhalla
+#broken		not Valhalla
 	destination Valhalla
 	landing
 	name "Report to the weapons lab."
@@ -151,7 +151,7 @@ mission "Electrons 1E"
 	on complete
 		conversation
 			`You arrive on Valhalla and contact the control tower, which immediately responds with instructions to proceed to designated coordinates, ones that look quite familiar. You follow them to the site of John's lab, and as you land you receive another message telling you to proceed to the lab and meet John in his office. You do so, and soon find yourself being greeted by a familiar face. "Hello, <first>, it's good you came so quickly! I have some work for you to do, and as I recall, you like fighting. Lucky for you, your task will involve that! Please meet me in the spaceport lounge in four hours for your next assignment. I'll be waiting for you there, but for now I need to go sort out some business of my own. I'll see you then!"`
-				done
+				accept
 
 outfit "Electron Beam (Prototype)"
 	category "Guns"
@@ -208,7 +208,7 @@ mission "Electrons 1F"
 		has "Electrons 1E: done"
 	on offer
 		conversation
-			`You head back to the main planetary spaceport and to the spaceport lounge as you remember John saying, and sure enough, you see him there waiting. You go over to him, and he tells you what your talk is. "You are to travel to the <waypoint> system. There you will find a mule and a barb in orbit, and you are to disable them without destroying them. Then report back to me. Any questions?"
+			`You head back to the main planetary spaceport and to the spaceport lounge as you remember John saying, and sure enough, you see him there waiting. You go over to him, and he tells you what your talk is. "You are to travel to the <waypoint> system. There you will find a mule and a barb in orbit, and you are to disable them without destroying them. Then report back to me. Any questions?"`
 			choice
 				`"No questions."`
 			`"Alright, good. Go have fun!"`
@@ -223,19 +223,19 @@ mission "Electrons 1F"
 		event "e-beam delay 2" 8		
 		payment 1750000
 		conversation
-			`You arrive on Valhalla and proceed to the secure facility where John works, and he meets you outside of your ship. "Well, how was the fight, <first>?"
+			`You arrive on Valhalla and proceed to the secure facility where John works, and he meets you outside of your ship. "Well, how was the fight, <first>?"`
 			choice
 				`It was pretty hard, but I managed to pull through. Those were some pretty impressive weapons!"`
 					goto hard
-				`It was pretty easy, but they put up a good fight. Were those the Electron Beams?"
+				`It was pretty easy, but they put up a good fight. Were those the Electron Beams?"`
 					goto easy
 			label hard
 				`"Well, glad to have you back, and I'm glad they worked so well!`
 					goto end
 			label easy
-				`"Yes they were, and I'm glad you weren't harmed."
+				`"Yes they were, and I'm glad you weren't harmed."`
 			label end
-				`"Anyhow, give me a week or so to make the necessary alterations, and then I'll let you know to report back. Until then, you got some time to yourself and a reward of <payment> credits."
+				`"Anyhow, give me a week or so to make the necessary alterations, and then I'll let you know to report back. Until then, you got some time to yourself and a reward of <payment> credits."`
 					done
 
 event "e-beam delay 2"
@@ -243,7 +243,7 @@ event "e-beam delay 2"
 mission "Electrons 1G"
 	source
 		government Republic
-		not Valhalla
+#broken		not Valhalla
 	destination Valhalla
 	landing
 	name "Report to the weapons lab."
@@ -297,7 +297,7 @@ event "e-beam delay 3"
 mission "Electrons 2B"
 	source
 		government Republic
-		not Valhalla
+#broken		not Valhalla
 	destination Valhalla
 	landing
 	name "Report to the weapons lab."
@@ -362,7 +362,7 @@ mission "Electrons 2C"
 		has "Electrons 2B: done"
 	on offer
 		conversation
-			`Upon arriving on Valhalla, you hail the spaceport control tower as usual for your landing pad coordinates, but after sending them they also send a short message. It is from John: "Once again, we have a combat test for you. You are to travel to the <waypoint> system where you shall find another Mule in orbit. Please disable the mule and its fighter, as they have been equipped with out current prototypes and destroying them would lose years of progress."
+			`Upon arriving on Valhalla, you hail the spaceport control tower as usual for your landing pad coordinates, but after sending them they also send a short message. It is from John: "Once again, we have a combat test for you. You are to travel to the <waypoint> system where you shall find another Mule in orbit. Please disable the mule and its fighter, as they have been equipped with out current prototypes and destroying them would lose years of progress."`
 				accept
 	npc disable save
 		personality staying disables nemesis target
@@ -373,7 +373,7 @@ mission "Electrons 2C"
 	on complete
 		event "30-day-leave" 30
 		conversation
-			`You arrive on Valhalla and proceed to the secure facility where John works, and he meets you outside of your ship. "Well, how was the fight, <first>?"
+			`You arrive on Valhalla and proceed to the secure facility where John works, and he meets you outside of your ship. "Well, how was the fight, <first>?"`
 			choice
 				`"It was pretty fun, but in the end I disabled them and your precious weapons are safe."`
 					goto end
