@@ -158,13 +158,14 @@ void Outfit::Load(const DataNode &node)
 		else if(child.Token(0) == "jump out sound" && child.Size() >= 2)
 			++jumpOutSounds[Audio::Get(child.Token(1))];
 		else if(child.Token(0) == "corridors" && child.Size() >= 2)
-			corridors[CategoryType::CORRIDORS] = 
+			boardingParameters[CategoryType::CORRIDORS] =
 				make_pair(child.Token(1), child.Size() >= 3 ? child.Value(2) : 1);
 		else if(child.Token(0) == "floorlayout" && child.Size() >= 2)
-			floorlayout[CategoryType::FLOORLAYOUT] = 
+			boardingParameters[CategoryType::FLOORLAYOUT] =
 				make_pair(child.Token(1), child.Size() >= 3 ? child.Value(2) : 1);
 		else if(child.Token(0) == "ventilation" && child.Size() >= 2)
-			ventilation[CategoryType::VENTILATION] = child.Token(1);
+			boardingParameters[CategoryType::VENTILATION] =
+				make_pair(child.Token(1), child.Size() >= 3 ? child.Value(2) : 1);
 		else if(child.Token(0) == "flotsam sprite" && child.Size() >= 2)
 			flotsamSprite = SpriteSet::Get(child.Token(1));
 		else if(child.Token(0) == "thumbnail" && child.Size() >= 2)
@@ -508,7 +509,9 @@ const Sprite *Outfit::FlotsamSprite() const
 
 const std::pair<std::string, int> Outfit::H2hStuff(CategoryType category) const
 {
-    // idk look to how I did this with the NeighborDistance in System.
-    return std::map.find(category);
+	auto it=boardingParameters.find(category);
+    if(it != boardingParameters.end())
+		return it->second;
+    return make_pair("unknown",0);
 }
 

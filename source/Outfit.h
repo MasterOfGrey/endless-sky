@@ -39,13 +39,13 @@ class Outfit : public Weapon {
 public:
 	// These are all the possible category strings for outfits.
 	static const std::vector<std::string> CATEGORIES;
-	
+
 public:
 	// An "outfit" can be loaded from an "outfit" node or from a ship's
 	// "attributes" node.
 	void Load(const DataNode &node);
 	bool IsDefined() const;
-	
+
 	const std::string &Name() const;
 	void SetName(const std::string &name);
 	const std::string &PluralName() const;
@@ -57,11 +57,11 @@ public:
 	const std::vector<std::string> &Licenses() const;
 	// Get the image to display in the outfitter when buying this item.
 	const Sprite *Thumbnail() const;
-	
+
 	double Get(const char *attribute) const;
 	double Get(const std::string &attribute) const;
 	const Dictionary &Attributes() const;
-	
+
 	// Determine whether the given number of instances of the given outfit can
 	// be added to a ship with the attributes represented by this instance. If
 	// not, return the maximum number that can be added.
@@ -72,7 +72,7 @@ public:
 	// Modify this outfit's attributes. Note that this cannot be used to change
 	// special attributes, like cost and mass.
 	void Set(const char *attribute, double value);
-	
+
 	// Get this outfit's engine flare sprites, if any.
 	const std::vector<std::pair<Body, int>> &FlareSprites() const;
 	const std::vector<std::pair<Body, int>> &ReverseFlareSprites() const;
@@ -90,6 +90,7 @@ public:
 	const std::map<const Sound *, int> &JumpSounds() const;
 	const std::map<const Sound *, int> &JumpInSounds() const;
 	const std::map<const Sound *, int> &JumpOutSounds() const;
+	const std::pair<std::string, int> H2hStuff(CategoryType category) const;
 //	const std::map<CORRIDORS, std::pair<std::string, int>> CORRIDORS;
 //	const std::map<FLOORLAYOUT, std::pair<std::string, int>> floorlayout;
 //	const std::map<VENTILATION, std::string> ventilation;
@@ -127,9 +128,7 @@ private:
 	std::map<const Sound *, int> jumpSounds;
 	std::map<const Sound *, int> jumpInSounds;
 	std::map<const Sound *, int> jumpOutSounds;
-	std::map<CategoryType, std::pair<std::string, int>> corridors;
-	std::map<CategoryType, std::pair<std::string, int>> floorlayout;
-	std::map<CategoryType, std::string> ventilation;
+	std::map<CategoryType, std::pair<std::string, int>> boardingParameters;
 	const Sprite *flotsamSprite = nullptr;
 };
 
