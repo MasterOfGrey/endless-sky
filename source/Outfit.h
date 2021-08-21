@@ -14,7 +14,6 @@ PARTICULAR PURPOSE.  See the GNU General Public License for more details.
 #define OUTFIT_H_
 
 #include "Weapon.h"
-
 #include "Dictionary.h"
 
 #include <map>
@@ -27,7 +26,7 @@ class DataNode;
 class Effect;
 class Sound;
 class Sprite;
-
+enum class CategoryType;
 
 
 // Class representing an outfit that can be installed in a ship. A ship's
@@ -128,19 +127,12 @@ private:
 	std::map<const Sound *, int> jumpSounds;
 	std::map<const Sound *, int> jumpInSounds;
 	std::map<const Sound *, int> jumpOutSounds;
-	std::map<CORRIDORS, std::pair<std::string, int>> corridors_cat;
-	std::map<FLOORLAYOUT, std::pair<std::string, int>> floorlayout_cat;
-	std::map<VENTILATION, std::string> ventilation_cat;
+	std::map<CategoryType, std::pair<std::string, int>> corridors;
+	std::map<CategoryType, std::pair<std::string, int>> floorlayout;
+	std::map<CategoryType, std::string> ventilation;
 	const Sprite *flotsamSprite = nullptr;
 };
 
-// So for your example, h2hdefensesorsomething.Get(CategoryType::CORRIDORS) would return a pair (Tight, 1).
-
-const pair<string, int> &Outfit::H2hStuff(CategoryType category) const
-{
-    // idk look to how I did this with the NeighborDistance in System.
-    return map.find(category);
-}
 
 
 // These get called a lot, so inline them for speed.
