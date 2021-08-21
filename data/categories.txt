@@ -55,6 +55,7 @@ category "floorlayout"
 	"Open-Plan" 20
 
 category "ventilation"
-	"Poor"
-	"Adequate"
-	"Good"
+	# These values are divided by 10 when used.
+	"Poor" 5
+	"Adequate" 10
+	"Good" 15

@@ -90,6 +90,7 @@ public:
 	const std::map<const Sound *, int> &JumpSounds() const;
 	const std::map<const Sound *, int> &JumpInSounds() const;
 	const std::map<const Sound *, int> &JumpOutSounds() const;
+	const std::pair<std::string, int> H2hStuff(CategoryType category) const;
 //	std::map<CategoryType, std::pair<std::string, int>> corridors;
 //	std::map<CategoryType, std::pair<std::string, int>> floorlayout;
 //	std::map<CategoryType, std::string> ventilation;
@@ -128,9 +129,7 @@ private:
 	std::map<const Sound *, int> jumpSounds;
 	std::map<const Sound *, int> jumpInSounds;
 	std::map<const Sound *, int> jumpOutSounds;
-	std::map<CategoryType, std::pair<std::string, int>> corridors;
-	std::map<CategoryType, std::pair<std::string, int>> floorlayout;
-	std::map<CategoryType, std::string> ventilation;
+	std::map<CategoryType, std::pair<std::string, int>> boardingParameters;
 	const Sprite *flotsamSprite = nullptr;
 };
 
