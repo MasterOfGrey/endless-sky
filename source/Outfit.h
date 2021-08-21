@@ -90,9 +90,10 @@ public:
 	const std::map<const Sound *, int> &JumpSounds() const;
 	const std::map<const Sound *, int> &JumpInSounds() const;
 	const std::map<const Sound *, int> &JumpOutSounds() const;
-//	const std::map<CORRIDORS, std::pair<std::string, int>> CORRIDORS;
-//	const std::map<FLOORLAYOUT, std::pair<std::string, int>> floorlayout;
-//	const std::map<VENTILATION, std::string> ventilation;
+//	std::map<CategoryType, std::pair<std::string, int>> corridors;
+//	std::map<CategoryType, std::pair<std::string, int>> floorlayout;
+//	std::map<CategoryType, std::string> ventilation;
+//	Don't know if these are needed here or in private yet.
 	// Get the sprite this outfit uses when dumped into space.
 	const Sprite *FlotsamSprite() const;
 	
