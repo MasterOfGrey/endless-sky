@@ -15419,10 +15419,6 @@ system "Lom Tahr"
 		distance 170.795
 		period 18.3293
 		offset 149.808
-		object Iritoroost
-			sprite planet/stationh-ancient1
-			distance 240
-			period 17.5
 	object
 		sprite planet/uranus
 		distance 554.485
@@ -15451,10 +15447,10 @@ system "Lom Tahr"
 		distance 2759.78
 		period 1190.55
 		offset 21.8728
-		object
-			sprite planet/dust3-b
-			distance 191
-			period 14.0516
+		object Iritoroost
+			sprite planet/stationh-ancient1
+			distance 240
+			period 17.5
 
 system "Lone Cloud"
 	pos -1239.59 747.051
