@@ -25159,19 +25159,19 @@ system "Wah Oh"
 		object Ochrescoop
 			sprite planet/stationh-ancient2
 			distance 240
-			period 17.5
+			period 17.1522
 	object
 		sprite planet/gas11
-		distance 897.53
-		period 152.107
+		distance 1012.77
+		period 182.324
 		object
 			sprite planet/rock14
 			distance 282
 			period 15.6189
 	object
 		sprite planet/gas15
-		distance 1607.69
-		period 364.652
+		distance 1722.93
+		period 404.555
 		object
 			sprite planet/tethys
 			distance 212
