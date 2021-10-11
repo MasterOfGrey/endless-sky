@@ -7354,8 +7354,8 @@ system "Da Lest"
 		period 190.204
 	object
 		sprite planet/desert2-b
-		distance 676.46
-		period 393.413
+		distance 877.994
+		period 581.731
 		object Eldergrasp
 			sprite planet/stationh-ancient0
 			distance 240
