@@ -20334,10 +20334,6 @@ system "Rati Cal"
 		sprite planet/ice0-b
 		distance 393.64
 		period 52.2262
-		object Limejog
-			sprite planet/stationh-ancient1
-			distance 240
-			period 17.5
 	object Dustmaker
 		sprite planet/rock15
 		distance 741.05
@@ -20354,6 +20350,10 @@ system "Rati Cal"
 		sprite planet/gas5
 		distance 2194.1
 		period 1991.96
+		object Limejog
+			sprite planet/stationh-ancient1
+			distance 240
+			period 17.5
 
 system Regor
 	pos -702 -335
