@@ -24483,8 +24483,8 @@ system "Ula Mon"
 			period 17.5
 	object
 		sprite planet/rock6-b
-		distance 1370.41
-		period 802.132
+		distance 1777.63
+		period 1185.04
 		offset 325.062
 		object Ironfirth
 			sprite planet/stationh-ancient1
