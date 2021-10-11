@@ -13074,16 +13074,16 @@ system "Io Lowe"
 		period 56.15
 	object
 		sprite planet/gas11-b
-		distance 500.32
-		period 385.27
+		distance 787.151
+		period 760.291
 		object Greymoon
 			sprite planet/stationh-ancient2
-			distance 240
-			period 17.5
+			distance 380
+			period 31.6482
 	object
 		sprite planet/uranus-b
-		distance 1441.33
-		period 1883.81
+		distance 2110.67
+		period 3338.3
 		object
 			sprite planet/desert4-b
 			distance 241
