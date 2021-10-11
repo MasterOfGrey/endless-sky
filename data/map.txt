@@ -26001,8 +26001,8 @@ system "Zuba Zub"
 			period 29.1483
 	object
 		sprite planet/cloud5
-		distance 1458.86
-		period 1079.98
+		distance 1881.56
+		period 1581.88
 		object Redwatch
 			sprite planet/stationh-ancient0
 			distance 240
