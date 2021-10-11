@@ -7284,24 +7284,24 @@ system "Da Ent"
 			period 23.3253
 	object
 		sprite planet/desert10-b
-		distance 622.02
-		period 406.282
+		distance 894.39
+		period 700.506
 		object Violetwake
 			sprite planet/stationh-ancient0
 			distance 240
 			period 17.5
 	object
 		sprite planet/lava4
-		distance 1094.46
-		period 948.246
+		distance 1366.83
+		period 1323.41
 		object Darkrest
 			sprite planet/stationh-ancient1
 			distance 240
 			period 17.5
 	object
 		sprite planet/gas12
-		distance 1915.5
-		period 2195.56
+		distance 2187.87
+		period 2680.12
 		object
 			sprite planet/callisto
 			distance 302
