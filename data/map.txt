@@ -16136,10 +16136,6 @@ system "Mei Yohn"
 		sprite planet/cloud8-b
 		distance 228.21
 		period 66.8187
-		object Icemeet
-			sprite planet/stationh-ancient0
-			distance 240
-			period 17.5
 	object Darkmetal
 		sprite planet/rock1
 		distance 578.21
@@ -27853,14 +27849,6 @@ planet Icelake
 	shipyard "Hai Intermediate"
 	outfitter "Hai Advanced"
 	security 0.3
-
-planet Icemeet
-	attributes hai station uninhabited
-	landscape land/space6
-	description `This station was mothballed sometime in the last sixty thousand years. The docking area has an atmosphere, and a status panel indicates that the station's generators are functional but shut down, with standby mechanisms running on solar power alone.`
-	government Uninhabited
-	bribe 0
-	security 0
 
 planet Ingot
 	attributes "dirt belt" volcanic mining moon
