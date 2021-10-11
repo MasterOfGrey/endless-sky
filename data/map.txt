@@ -13157,14 +13157,10 @@ system "Io Mann"
 			sprite planet/oberon
 			distance 260
 			period 22.0677
-		object Lightstead
-			sprite planet/stationh-ancient1
-			distance 500
-			period 32.5
 	object
 		sprite planet/gas2
-		distance 1068.21
-		period 447.619
+		distance 1212.21
+		period 541.116
 		object Skyfarm
 			sprite planet/ice7
 			distance 182
@@ -13175,8 +13171,8 @@ system "Io Mann"
 			period 28.5
 	object
 		sprite planet/gas6-b
-		distance 2046.3
-		period 1186.8
+		distance 2190.3
+		period 1314.25
 		offset 360
 		object
 			sprite planet/rock3-b
@@ -28087,15 +28083,6 @@ planet Lichen
 		threshold 3000
 		fleet "Large Militia" 8
 
-planet Lightstead
-	attributes hai station uninhabited retirement
-	landscape land/space6
-	description `A visitor to this station will immediately notice that the gravity is lower than most planets by about a third. The reception area is lavish with several artworks and exotic plants. A well-groomed Hai receptionist informs you that, unless you have family at this respite facility, you will not be permitted to wander the station.`
-	spaceport `The spaceport is small but serviceable, featuring a luxuriously appointed Centipede parked in a berth, presumably for entertainment voyages. There is a small but fancy cafe, and a gift shop with gold watches, jewelry, wines and other pricey trinkets. This place must provide aged care services for only the very wealthy.`
-	government Hai
-	bribe 0.3
-	security 1
-
 planet Limejog
 	attributes hai station uninhabited
 	landscape land/space6
@@ -29588,12 +29575,13 @@ planet "Third Umber"
 	"required reputation" 15
 
 planet Thornlight
-	attributes hai station uninhabited
+	attributes hai station uninhabited retirement
 	landscape land/space6
-	description `This station was mothballed sometime in the last sixty thousand years. The docking area has an atmosphere, and a status panel indicates that the station's generators are functional but shut down, with standby mechanisms running on solar power alone.`
-	government Uninhabited
-	bribe 0
-	security 0
+	description `A visitor to this station will immediately notice that the gravity is lower than most planets by about a third. The reception area is lavish with several artworks and exotic plants. A well-groomed Hai receptionist informs you that, unless you have family at this respite facility, you will not be permitted to wander the station.`
+	spaceport `The spaceport is small but serviceable, featuring a luxuriously appointed Centipede parked in a berth, presumably for entertainment voyages. There is a small but fancy cafe, and a gift shop with gold watches, jewelry, wines and other pricey trinkets. This place must provide aged care services for only the very wealthy.`
+	government Hai
+	bribe 0.3
+	security 1
 
 planet Thrall
 	attributes paradise textiles
