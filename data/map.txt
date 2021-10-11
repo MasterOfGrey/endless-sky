@@ -26579,7 +26579,7 @@ planet "Blue Interior"
 	outfitter "Coalition Advanced"
 
 planet Bluerun
-	attributes station hai uninhabited
+	attributes hai station uninhabited
 	landscape land/space6
 	description `This station was mothballed sometime in the last sixty thousand years. The docking area has an atmosphere, and a status panel indicates that the station's generators are functional but shut down, with standby mechanisms running on solar power alone.`
 	government Uninhabited
@@ -26955,7 +26955,7 @@ planet Darkstone
 		fleet "Small Militia" 18
 
 planet Darkrest
-	attributes station hai uninhabited
+	attributes hai station uninhabited
 	landscape land/space6
 	description `This station was mothballed sometime in the last sixty thousand years. The docking area has an atmosphere, and a status panel indicates that the station's generators are functional but shut down, with standby mechanisms running on solar power alone.`
 	government Uninhabited
@@ -27137,7 +27137,7 @@ planet Echo
 	security 0.9
 
 planet Eldergrasp
-	attributes station uninhabited hai retirement
+	attributes hai station uninhabited retirement
 	landscape land/space6
 	description `A visitor to this station will immediately notice that the gravity is lower than most planets by about a third. There is a generously appointed reception area with an orderly on duty who informs you that this is a respite home for the elderly, and unless you have family here, you will not be permitted to wander the station.`
 	spaceport `The spaceport is virtually non-existent, with just a single cafeteria, a fuel pump for the desperate, and a dedicated loading area for loading and unloading the facility's regular deliveries. Despite its small size, everything is in excellent condition.`
@@ -27213,7 +27213,7 @@ planet "Esquiline"
 	government Uninhabited
 
 planet Everhope
-	attributes station hai
+	attributes hai station
 	landscape land/space6
 	description `This station consistently has a large number of Hai warships docked at it, and further investigation reveals that it serves as the principal supply of fuel for the Hai military, as well as the staging point for resupplying ships heading to defend Wah Ki from the Unfettered. A monument beyond the docking area entrance attests to its history performing a similar role during the Korath raids before that.`
 	spaceport `The spaceport is dominated by its function as a military station, though it still has a dual-level promenade like its civilian counterparts of Ochrescoop and Greymoon. Several areas are restricted, but there are also freely accessible pubs and eateries, as well as an impressive cinema and a warehousing section for trading goods. The flooring is textured to prevent slipping and appears to be fairly new, while the rest of the station has a polished but well-worn feel to it.`
@@ -27332,7 +27332,7 @@ planet "Fenrir Station"
 		fleet "Small Deep Security" 14
 
 planet Firefall
-	attributes station hai uninhabited
+	attributes hai station uninhabited
 	landscape land/space6
 	description `This station was mothballed sometime in the last sixty thousand years. The docking area has an atmosphere, and a status panel indicates that the station's generators are functional but shut down, with standby mechanisms running on solar power alone.`
 	government Uninhabited
@@ -27566,7 +27566,7 @@ planet Glory
 		fleet "Large Republic" 16
 
 planet Goldcrawl
-	attributes station uninhabited hai retirement
+	attributes hai station uninhabited retirement
 	landscape land/space6
 	description `A visitor to this station will immediately notice that the gravity is lower than most planets by about a third. There is reception area just beyond the docking bay with an extremely long desk and a receptionist who informs you that this is a respite home for the elderly, and unless you have family here, you will not be permitted to wander the station. There are different service functions at various kiosks along the desk, as well as a small sales counter with handicrafts made by the residents.`
 	spaceport `The spaceport is nonexistent. A trio of vending machines occupy the entranceway from the dedicated loading area for the facility's regular deliveries. The entire place has a somewhat tacky vibe to it, and its ventilation system doesn't quite cover up the antiseptic hospital smell familiar to anyone who has visited terrestrial aged care facilities.`
@@ -27590,7 +27590,7 @@ planet "Graveyard Wormhole (Stable)"
 	description ``
 
 planet Greymoon
-	attributes station hai
+	attributes hai station
 	landscape land/space6
 	description `This station is owned and operated by the Far Loo Bah fuel collection corporation. Their logo is emblazoned on nearly every possible surface and sign, indicating their sponsorship of all manner of services and features on the station. Interestingly, this includes a "History of Spaceflight" museum which takes up an entire wing of the facility. Naturally, the museum focuses very heavily on the Far Loo Bah corporation's role in that history.`
 	spaceport `The spaceport consists of a wide, two-level promenade encircling the interior of the station, with the docking access opening directly onto the mezzanine. The upper level is mostly devoted to amenities, light commercial businesses, a medical center, and a bank. The lower level has all of the real businesses: multiple manufacturers, which are supplied by the heavier elements filtered out from the supply of fuel stock from the planet below, have store frontage here. A virtual outfitter provides sale options for locally-manufactured outfits that can be installed on your ship without you ever leaving the comfort of the promenade.`
@@ -27629,7 +27629,7 @@ planet Greenrock
 		fleet "Large Northern Pirates" 13
 
 planet Greenview
-	attributes station hai
+	attributes hai station
 	landscape land/space6
 	description `Entering this station with your suit still on is an excellent way to fog up your faceplate. Although not strictly humid by the standards of a planet, the air nevertheless has a rich, moist, and faintly verdant quality atypical of a space station. The station is run by the Hei Low Io species preservation foundation, and each of its four branches features a different internal climate showcasing life from worlds beyond Hai space. An infographic proclaims it to be the largest collection in the galaxy of of rare organisms sourced from private collections, rebuilt from genetic samples, or rescued before being exterminated locally when they were deemed invasive on Hai worlds. It also mentions that certain exhibits have been improved in some cases with species recently acquired from human space through secret trade deals.`
 	description `	The central spire is still largely residential, with some nursery and laboratory facilities.`
@@ -27883,7 +27883,7 @@ planet Icelake
 	security 0.3
 
 planet Icemeet
-	attributes station hai uninhabited
+	attributes hai station uninhabited
 	landscape land/space6
 	description `This station was mothballed sometime in the last sixty thousand years. The docking area has an atmosphere, and a status panel indicates that the station's generators are functional but shut down, with standby mechanisms running on solar power alone.`
 	government Uninhabited
@@ -27891,7 +27891,7 @@ planet Icemeet
 	security 0
 
 planet Indigosprint
-	attributes station hai uninhabited
+	attributes hai station uninhabited
 	landscape land/space6
 	description `This station was mothballed sometime in the last sixty thousand years. The docking area has an atmosphere, and a status panel indicates that the station's generators are functional but shut down, with standby mechanisms running on solar power alone.`
 	government Uninhabited
@@ -27925,7 +27925,7 @@ planet "Into White"
 	"required reputation" 15
 
 planet Iritoroost
-	attributes station hai uninhabited
+	attributes hai station uninhabited
 	landscape land/space6
 	description `This station was mothballed sometime in the last sixty thousand years. The docking area has an atmosphere, and a status panel indicates that the station's generators are functional but shut down, with standby mechanisms running on solar power alone.`
 	government Uninhabited
@@ -27933,7 +27933,7 @@ planet Iritoroost
 	security 0
 
 planet Ironfirth
-	attributes station hai uninhabited
+	attributes hai station uninhabited
 	landscape land/space6
 	description `This station was mothballed sometime in the last sixty thousand years. The docking area has an atmosphere, and a status panel indicates that the station's generators are functional but shut down, with standby mechanisms running on solar power alone.`
 	government Uninhabited
@@ -28100,7 +28100,7 @@ planet Lichen
 		fleet "Large Militia" 8
 
 planet Lightstead
-	attributes station uninhabited hai retirement
+	attributes hai station uninhabited retirement
 	landscape land/space6
 	description `A visitor to this station will immediately notice that the gravity is lower than most planets by about a third. The reception area is lavish with several artworks and exotic plants. A well-groomed Hai receptionist informs you that, unless you have family at this respite facility, you will not be permitted to wander the station.`
 	spaceport `The spaceport is small but serviceable, featuring a luxuriously appointed Centipede parked in a berth, presumably for entertainment voyages. There is a small but fancy cafe, and a gift shop with gold watches, jewelry, wines and other pricey trinkets. This place must provide aged care services for only the very wealthy.`
@@ -28109,7 +28109,7 @@ planet Lightstead
 	security 1
 
 planet Limejog
-	attributes station hai uninhabited
+	attributes hai station uninhabited
 	landscape land/space6
 	description `This station was mothballed sometime in the last sixty thousand years. The docking area has an atmosphere, and a status panel indicates that the station's generators are functional but shut down, with standby mechanisms running on solar power alone.`
 	government Uninhabited
@@ -28193,7 +28193,7 @@ planet Mainsail
 		fleet "Small Republic" 57
 
 planet Mahoganybox
-	attributes station uninhabited hai retirement
+	attributes hai station uninhabited retirement
 	landscape land/space6
 	description `A visitor to this station will immediately notice that the gravity is lower than most planets by about a third. Leaving the docking bay brings one into an expansive room that can only be described as stately. A round reception desk greets you just inside, and is situated such that the occupants can face any direction that suits them and observe the room. A smiling Hai in a suit informs you that unless you have family at this respite facility, you will not be permitted to wander beyond this room. You are, however, welcome to visit with anyone who has come down or ask an orderly if you need to contact someone on business.`
 	spaceport `The spaceport here is scarcely worthy of the name and does not facilitate trading, but is well equipped to handle regular traffic bringing people to and from the station. This place appears to service the fit but retiring demographic, whose minds are as sharp as ever but benefit from fewer demanding pressures on their physical bodies.`
@@ -28714,7 +28714,7 @@ planet Oblivion
 		fleet "Large Militia" 8
 
 planet Ochrescoop
-	attributes station hai
+	attributes hai station
 	landscape land/space6
 	description `A massive plaque attached to a bulkhead in the promenade entry proudly indicates that station has been run by Yoot Ki Magnetic Fuel Harvesting for over 75,000 years. It seems that the powerful magnetic field of the gas giant below makes this station an ideal location for harvesting and re-harvesting the massive volume of fuel demanded by the Hai space industry. Despite its long history of operation, the station seems to be in an excellent state of repair.`
 	spaceport `The spaceport, which consists of a wide promenade running around the interior of the station, seems to be divided into two distinct areas: the lower level, which contains all manner of amenities, services, and food places, and the upper level, which hosts the official Yoot Ki sales center in addition to a suite of different facilities for various research institutes. As it turns out, the powerful magnetic field of the world below also has certain advantages for scientific experiments.`
@@ -28911,7 +28911,7 @@ planet Rand
 		fleet "Large Militia" 8
 
 planet Redwatch
-	attributes station hai uninhabited
+	attributes hai station uninhabited
 	landscape land/space6
 	description `This station was mothballed sometime in the last sixty thousand years. The docking area has an atmosphere, and a status panel indicates that the station's generators are functional but shut down, with standby mechanisms running on solar power alone.`
 	government Uninhabited
@@ -29073,7 +29073,7 @@ planet "Sandy Two"
 	outfitter "Coalition Advanced"
 
 planet Sandsnap
-	attributes station hai uninhabited
+	attributes hai station uninhabited
 	landscape land/space6
 	description `This station was mothballed sometime in the last sixty thousand years. The docking area has an atmosphere, and a status panel indicates that the station's generators are functional but shut down, with standby mechanisms running on solar power alone.`
 	government Uninhabited
@@ -29327,7 +29327,7 @@ planet Silver
 		fleet "Small Republic" 25
 
 planet Silverleap
-	attributes station hai uninhabited
+	attributes hai station uninhabited
 	landscape land/space6
 	description `This station was mothballed sometime in the last sixty thousand years. The docking area has an atmosphere, and a status panel indicates that the station's generators are functional but shut down, with standby mechanisms running on solar power alone.`
 	government Uninhabited
@@ -29571,7 +29571,7 @@ planet Sunracer
 		fleet "Large Syndicate" 10
 
 planet Swiftsong
-	attributes station hai "hai tourism"
+	attributes hai station "hai tourism"
 	landscape land/space6
 	description `Swiftsong Station is operated and maintained by the Imo Blep corporation as a giant convention center. Most Hai stations restrict access beyond the docking bay or the promenade to at least some degree, but Swiftsong is almost completely open.`
 	description `	Tens of thousands of Hai pass through on an almost daily basis as the continual churn of summits, forums, conventions, symposiums, productions, conferences, weddings, festivals, and the like roll on in an endless cavalcade of life. With Icelake below and Hai-home just one jump away, this station is a major cultural hub that even houses the head office of one of the biggest music labels in Hai space.`
@@ -29600,7 +29600,7 @@ planet "Third Umber"
 	"required reputation" 15
 
 planet Thornlight
-	attributes station hai uninhabited
+	attributes hai station uninhabited
 	landscape land/space6
 	description `This station was mothballed sometime in the last sixty thousand years. The docking area has an atmosphere, and a status panel indicates that the station's generators are functional but shut down, with standby mechanisms running on solar power alone.`
 	government Uninhabited
@@ -29996,7 +29996,7 @@ planet Vinci
 		fleet "Large Republic" 11
 
 planet Violetwake
-	attributes station hai uninhabited
+	attributes hai station uninhabited
 	landscape land/space6
 	description `This station was mothballed sometime in the last sixty thousand years. The docking area has an atmosphere, and a status panel indicates that the station's generators are functional but shut down, with standby mechanisms running on solar power alone.`
 	government Uninhabited
