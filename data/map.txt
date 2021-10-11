@@ -5802,10 +5802,6 @@ system "Bore Fah"
 		sprite planet/ice2
 		distance 678.69
 		period 282.896
-		object Silverleap
-			sprite planet/stationh-ancient0
-			distance 240
-			period 17.5
 	object
 		sprite planet/gas13-b
 		distance 1704.93
@@ -29260,14 +29256,6 @@ planet Silver
 	tribute 700
 		threshold 4000
 		fleet "Small Republic" 25
-
-planet Silverleap
-	attributes hai station uninhabited
-	landscape land/space6
-	description `This station was mothballed sometime in the last sixty thousand years. The docking area has an atmosphere, and a status panel indicates that the station's generators are functional but shut down, with standby mechanisms running on solar power alone.`
-	government Uninhabited
-	bribe 0
-	security 0
 
 planet Sinter
 	attributes "dirt belt" mining
