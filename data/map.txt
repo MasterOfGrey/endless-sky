@@ -9822,8 +9822,8 @@ system "Fah Soom"
 			period 17.3053
 	object
 		sprite planet/lava3
-		distance 884.21
-		period 509.6
+		distance 951.768
+		period 569.106
 		object Firefall
 			sprite planet/stationh-ancient1
 			distance 240
