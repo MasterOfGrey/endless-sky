@@ -8474,24 +8474,16 @@ system "Due Yoot"
 		sprite planet/cloud3
 		distance 204.76
 		period 76.7342
-		object Greenview
-			sprite planet/stationh-ancient1
-			distance 240
-			period 17.5
 	object
 		sprite planet/ganymede
 		distance 391.65
 		period 202.987
 	object
-		sprite planet/lava4-b
-		distance 643.34
-		period 427.348
-	object
 		sprite planet/mercury-b
 		distance 1042.35
 		period 881.336
-		object Indigosprint
-			sprite planet/stationh-ancient0
+		object Greenview
+			sprite planet/stationh-ancient1
 			distance 240
 			period 17.5
 	object
@@ -27867,14 +27859,6 @@ planet Icelake
 	security 0.3
 
 planet Icemeet
-	attributes hai station uninhabited
-	landscape land/space6
-	description `This station was mothballed sometime in the last sixty thousand years. The docking area has an atmosphere, and a status panel indicates that the station's generators are functional but shut down, with standby mechanisms running on solar power alone.`
-	government Uninhabited
-	bribe 0
-	security 0
-
-planet Indigosprint
 	attributes hai station uninhabited
 	landscape land/space6
 	description `This station was mothballed sometime in the last sixty thousand years. The docking area has an atmosphere, and a status panel indicates that the station's generators are functional but shut down, with standby mechanisms running on solar power alone.`
