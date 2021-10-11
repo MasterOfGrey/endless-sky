@@ -12237,12 +12237,8 @@ system "Heia Due"
 		period 14.8968
 	object
 		sprite planet/titan
-		distance 279.538
-		period 53.6331
-		object Coppermist
-			sprite planet/stationh-ancient0
-			distance 240
-			period 17.5
+		distance 224.778
+		period 38.6725
 	object
 		sprite planet/desert3
 		distance 637.538
@@ -26854,14 +26850,6 @@ planet "Cool Forest"
 	landscape land/myrabella0
 	description `Much of Cool Forest's land mass is covered by the sort of temperate woodlands that the Saryds prefer to build their residential neighborhoods in. The total population is over a billion, but living in small settlements so well integrated with the surrounding forest that from space only a few major cities are visible.`
 	spaceport `The spaceport here is a major city, with a continuous stream of cargo transports bringing goods manufactured on Cool Forest's sister planet, Diligent Hand. Here, some final assembly, testing, and repackaging is performed before those goods are shipped out to the rest of Saryd space and beyond.`
-
-planet Coppermist
-	attributes station hai uninhabited
-	landscape land/space6
-	description `This station was mothballed sometime in the last sixty thousand years. The docking area has an atmosphere, and a status panel indicates that the station's generators are functional but shut down, with standby mechanisms running on solar power alone.`
-	government Uninhabited
-	bribe 0
-	security 0
 
 planet Cornucopia
 	attributes south farming research frontier
