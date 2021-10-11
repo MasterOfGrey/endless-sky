@@ -5874,16 +5874,16 @@ system "Bote Asu"
 			period 31.0553
 	object
 		sprite planet/gas11
-		distance 1249.81
-		period 330.512
+		distance 1762.76
+		period 540.494
 		object Everhope
 			sprite planet/stationh-ancient2
-			distance 240
-			period 17.5
+			distance 380
+			period 31.6482
 	object
 		sprite planet/neptune
-		distance 2700.22
-		period 1049.59
+		distance 2928.28
+		period 1157.23
 		object
 			sprite planet/rock7-b
 			distance 212
@@ -5898,8 +5898,8 @@ system "Bote Asu"
 			period 41.514
 	object
 		sprite planet/gas12-b
-		distance 4451.26
-		period 2221.49
+		distance 4679.32
+		period 2337.62
 		object
 			sprite planet/rhea-b
 			distance 293
