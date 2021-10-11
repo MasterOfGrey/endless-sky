@@ -12940,14 +12940,6 @@ system "Imo Dep"
 		sprite planet/gas10-hot
 		distance 571.36
 		period 131.915
-		object
-			sprite planet/ice8-b
-			distance 271
-			period 14.714
-		object
-			sprite planet/rock14-b
-			distance 409
-			period 27.2812
 	object
 		sprite planet/rock19
 		distance 1157.36
