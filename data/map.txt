@@ -24790,16 +24790,16 @@ system "Uwa Fahn"
 		period 174.829
 	object
 		sprite planet/ice6-b
-		distance 616.77
-		period 342.507
+		distance 988.21
+		period 694.639
 		object Swiftsong
 			sprite planet/stationh-ancient0
 			distance 240
 			period 17.5
 	object
 		sprite planet/rock4
-		distance 1093.66
-		period 808.739
+		distance 1734.49
+		period 1615.26
 		object
 			sprite planet/dust3
 			distance 178
