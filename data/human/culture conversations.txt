@@ -57,15 +57,21 @@ mission "Gift Store Interaction"
 			`	You roll your eyes and put it back. Some experiences really are universal.`
 				decline
 			label buy
+			branch broke
+				credits < 10
 			action
-				payment -50
+				payment -10
 				outfit "Mug"
-			`	You purchase the mug on an impulse. At least you can ditch your other one with a chip in it.`
+			`	You purchase the mug on an impulse for just 10 credits. At least you can ditch your other one with a chip in it.`
+				decline
+			
+			label broke
+			`	You think about buying the mug, but when you turn it over and spot to 10 credit price tag, your heart drops. You could never afford such an expensive mug. You put it back and walk away while pondering your financial situation.`
 				decline
 
 outfit "Mug"
-	category "Special"
-	cost 50
+	category "Hand to Hand"
+	cost 10
 	thumbnail "outfit/unknown"
 	"capture attack" .1
 	"unplunderable" 1
