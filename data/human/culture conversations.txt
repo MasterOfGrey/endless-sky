@@ -8,42 +8,7 @@
 # WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
 # PARTICULAR PURPOSE.  See the GNU General Public License for more details.
 
-# "Missions" which add culture events to the spaceport.
-
-#mission "ZZCU cultural holiday template"
-#	minor
-#	source
-#		government "placeholder"
-#		attributes "placeholder"
-#		not attributes "station"
-#	to offer
-#		and
-#			month == placeholder
-#			day >= placeholder
-#			day <= placeholder
-#	on offer
-#		conversation
-#			`placeholder`
-#				decline
-			
-#mission "ZZCU cultural random template"
-#	minor
-#	source
-#		government "placeholder"
-#		attributes "placeholder"
-#		not attributes "station"
-#	to offer
-#		random < 1
-#	on offer
-#		conversation
-#			`placeholder`
-#				decline
-
-
-#      Republic with Syndicate Pairing      #
-# These are intended to fire twice intentionally to show commonalities between certain areas.
-
-mission "ZZCU Sad Gamblers -R"
+mission "Sad Gamblers - Republic"
 	minor
 	source
 		government "Republic"
@@ -57,7 +22,7 @@ mission "ZZCU Sad Gamblers -R"
 			`	It's difficult not to pity them as they immediately buy more tickets with the whole value.`
 				decline
 
-mission "ZZCU Sad Gamblers -S"
+mission "Sad Gamblers - Syndicate"
 	minor
 	source
 		government "Syndicate"
@@ -71,9 +36,8 @@ mission "ZZCU Sad Gamblers -S"
 				decline
 
 
-#               Republic Only               #
 
-mission "ZZCU Gift Store Interaction"
+mission "Gift Store Interaction"
 	minor
 	source
 		government "Republic"
@@ -95,11 +59,10 @@ mission "ZZCU Gift Store Interaction"
 			label buy
 			`	You purchase the mug on an impulse. At least you can ditch your other one with a chip in it.`
 				decline
-# If anyone wants to add receipt of an actual mug outfit feel free:
-# Amazinite: Let's give the player a mug outfit and take 50 credits from them by making this an invisible mission where on accept you get the outfit and lose the credits, then automatically fail the mission.
-# "Mug: Hand to hand outfit. +0.1 boarding attack. You can throw it in a pinch, you guess." - @Galaucus
 
-mission "ZZCU Trash Fire Crops"
+
+
+mission "Trash Fire Crops"
 	minor
 	source
 		government "Republic"
@@ -121,7 +84,8 @@ mission "ZZCU Trash Fire Crops"
 				decline
 
 
-mission "ZZCU Paradise Cleaner Incident"
+
+mission "Paradise Cleaner Incident"
 	minor
 	source
 		government "Republic"
@@ -137,15 +101,8 @@ mission "ZZCU Paradise Cleaner Incident"
 				decline
 
 
-#              Syndicate Only               #
 
-
-#             Free Worlds Only              #
-
-
-#          Independents and Other           #
-
-mission "ZZCU Tarazed Ship Christening"
+mission "Tarazed Ship Christening"
 	minor
 	source "Wayfarer"
 	to offer
