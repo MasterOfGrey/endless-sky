@@ -57,8 +57,19 @@ mission "Gift Store Interaction"
 			`	You roll your eyes and put it back. Some experiences really are universal.`
 				decline
 			label buy
+			action
+				payment -50
+				outfit "Mug"
 			`	You purchase the mug on an impulse. At least you can ditch your other one with a chip in it.`
 				decline
+
+outfit "Mug"
+	category "Special"
+	cost 50
+	thumbnail "outfit/unknown"
+	"capture attack" .1
+	"unplunderable" 1
+	description "You can throw it in a pinch, you guess."
 
 
 
