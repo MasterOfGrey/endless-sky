@@ -18,7 +18,7 @@ mission "Sad Gamblers - Republic"
 		random < 1
 	on offer
 		conversation
-			`Passing through the spaceport you see a sizable group of people waiting on a lottery draw. You hear a whoop of success, and your attention is drawn as one of them wins a moderate sum in a 12th division win. It's a day or two worth of standard pay.`
+			`Passing through the spaceport you see a sizable group of people waiting on a lottery draw. You hear a whoop of success, and your attention is drawn as one of them wins a moderate sum in a 12th division win. It's one or two day's worth of standard pay.`
 			`	It's difficult not to pity them as they immediately buy more tickets with the whole value.`
 				decline
 
@@ -31,7 +31,7 @@ mission "Sad Gamblers - Syndicate"
 		random < 1
 	on offer
 		conversation
-			`Passing through the spaceport you see a sizable group of people waiting on a lottery draw. You hear a whoop of success, and your attention is drawn as one of them wins a moderate sum in a 12th division win. It's a day or two worth of standard pay.`
+			`Passing through the spaceport you see a sizable group of people waiting on a lottery draw. You hear a whoop of success, and your attention is drawn as one of them wins a moderate sum in a 12th division win. It's one or two day's worth of standard pay.`
 			`	It's difficult not to pity them as they immediately buy more tickets with the whole value.`
 				decline
 
@@ -41,32 +41,33 @@ mission "Gift Store Interaction"
 	minor
 	source
 		government "Republic"
-		attributes "deep"
+		attributes "tourism"
 		not attributes "station"
 	to offer
 		random < 1
 	on offer
 		conversation
-			`As you wander the spaceport with a snack, waiting for your ship to be refueled, you pass a local souvenir shop and poke your head in to kill a little time. You see a decent looking mug with the text "<source>" printed underneath an attractive, stylized representation of the spaceport you are presently standing in and pick it up to see how it feels. The handle is solid, not too small for your fingers, and the lip of it looks like it would be comfortable to drink out of.`
-			`	Two young adults wander into the aisle just a couple of meters away. They're clearly from abroad judging by their conversation occurring in some local dialect which is neither local nor one you understand. They're cooing over an item they've found, but when one flips it over to look at the price tag, there is an immediate exchange of looks and expressions that does not require translation. The item ends up back on the shelf with a giggle and a head-shake.`
-			`	Curious, you turn over your own mug and see that it is indeed at least five times what you would expect to pay for a mug, even a good one. Still, it is certainly a novelty...`
+			`As you wander the spaceport with a snack, waiting for your ship to be refueled, you pass a local souvenir shop and poke your head in to kill a little time. You see a decent looking mug with the text "<origin>" printed underneath an attractive, stylized representation of the spaceport you are presently standing in and pick it up to see how it feels. The handle is solid, not too small for your fingers, and the lip of it looks like it would be comfortable to drink out of.`
+			`	Two young adults wander into the aisle just a couple of meters away. As they converse, you can't quite pin down where they're from given their accents, but they're clearly from abroad like yourself. They're cooing over an item they've found, but when one flips it over to look at the price tag, there is an immediate exchange of looks and expressions that suggests that the trinket is far more expensive than it should be. The item ends up back on the shelf with a giggle and a head-shake.`
+			branch broke
+				credits < 50
+			`	Curious, you turn over your own mug and see that it is indeed at least five times what you would expect to pay for a mug, even a good one: 50 credits. Still, it is certainly a novelty...`
 			choice
 				`	(Buy the mug.)`
 					goto buy
 				`	(Put it back.)`
 			`	You roll your eyes and put it back. Some experiences really are universal.`
 				decline
+			
 			label buy
-			branch broke
-				credits < 10
 			action
-				payment -10
+				payment -50
 				outfit "Mug"
-			`	You purchase the mug on an impulse for just 10 credits. At least you can ditch your other one with a chip in it.`
+			`	You purchase the mug on an impulse. At least you can ditch your other one with a chip in it.`
 				decline
 			
 			label broke
-			`	You think about buying the mug, but when you turn it over and spot to 10 credit price tag, your heart drops. You could never afford such an expensive mug. You put it back and walk away while pondering your financial situation.`
+			`	Curious, you turn over your own mug, and when you spot the 50 credit price tag your heart sinks. You could never afford such an expensive mug. You put it back and walk away while pondering your financial situation.`
 				decline
 
 outfit "Mug"
