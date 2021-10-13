@@ -72,7 +72,7 @@ mission "Gift Store Interaction"
 
 outfit "Mug"
 	category "Hand to Hand"
-	cost 10
+	cost 50
 	thumbnail "outfit/unknown"
 	"capture attack" .1
 	"unplunderable" 1
