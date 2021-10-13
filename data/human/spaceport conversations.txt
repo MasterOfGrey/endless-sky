@@ -124,7 +124,7 @@ mission "Tarazed Ship Christening"
 	source "Wayfarer"
 	to offer
 		random < 1
-		has "main plot complete"
+		has "main plot completed"
 	on offer
 		conversation
 			`As you walk past a number of ships and crew going about their work in the spaceport, a small gathering in front of a Shuttle catches your attention. A young woman wearing a rather cheesy pilot uniform is in the midst of a little group of people all celebrating together. As you pass by them, a man standing on the top of a ladder breaks a bottle of Champagne on the (clearly not new) ship's hull. A loud cheer erupts from the group, earning an embarrassed blush from the young woman.`
