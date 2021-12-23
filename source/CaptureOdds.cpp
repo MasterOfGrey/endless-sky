@@ -18,16 +18,62 @@ PARTICULAR PURPOSE.  See the GNU General Public License for more details.
 
 #include <algorithm>
 #include <functional>
+#include <cmath>
 
 using namespace std;
+
+namespace {
+	double CalculateOutfitPower(const Ship &ship, const Ship &fightingPlace, bool isDefender, double value, const Outfit *weapon)
+	{
+		double ventilatedVuln = weapon->Get("ventilation");
+		// The defenders choose wether to use suits, and to ventilate.
+		if((ventilatedVuln < 0. && isDefender) || (!isDefender && ventilatedVuln))
+			value *= ship.Attributes().Get("ventilation") * ventilatedVuln;
+		double narrowVuln = weapon->Get("corridors");
+		int corridor = fightingPlace.Attributes().Get("corridors");
+		if(narrowVuln)
+			value *= (sqrt(corridor ? corridor : max(1., fightingPlace.Attributes().Get("bunks") / 10.) + 
+				max(1., fightingPlace.Attributes().Get("cargo") / 25.)) * narrowVuln);
+		double designVuln = weapon->Get("design layout");
+		double layout = fightingPlace.Attributes().Get("design layout");
+		if(designVuln)
+		{
+			value *= (1.5 / (layout ? layout : 
+			fightingPlace.Attributes().Category() == "Transport" ? 2. : 
+			(fightingPlace.Attributes().Category() == "Light Freighter" || 
+			fightingPlace.Attributes().Category() == "Heavy Freighter") ? 1. : 1.5) * designVuln);
+		}
+		// These ones depend on security systems installed.
+		const vector<const std::string> names = {"combat environmental suit", "security alcove"};
+		for(auto i = 0; i < names.size(); ++i)
+		{
+			double vulnerability = weapon->Get(names[i]);
+			double shipAttribute = fightingPlace.Attributes().Get(names[i]);
+			value *= vulnerability * shipAttribute;
+		}
+		return max(0.1, value);
+	}
+}
 
 
 
 // Constructor.
 CaptureOdds::CaptureOdds(const Ship &attacker, const Ship &defender)
 {
-	powerA = Power(attacker, false);
-	powerD = Power(defender, true);
+	powerA = Power(attacker, defender, false);
+	powerD = Power(defender, attacker, true);
+	Calculate();
+}
+
+
+
+// Refreshes the lookup tables when a consumable item is used.
+void CaptureOdds::RefreshOdds(const Ship &attacker, const Ship &defender, bool isDefender)
+{
+	if(isDefender)
+		powerD = Power(defender, attacker, true);
+	else
+		powerA = Power(attacker, defender, false);
 	Calculate();
 }
 
@@ -107,6 +153,19 @@ double CaptureOdds::DefenderPower(int defendingCrew) const
 
 
 
+// We know the stronger weapon is the last used one.
+const Outfit *CaptureOdds::LastUsedWeapon(const Ship &ship, bool isDefender) const
+{
+	const string attribute = (isDefender ? "capture defense" : "capture attack");
+	const Outfit *best = nullptr;
+	for(const auto &it : ship.Outfits())
+		if((!best || it.first->Get(attribute) > best->Get(attribute)) && it.second > 0)
+			best = it.first;
+	return best;
+}
+
+
+
 // Generate the lookup tables.
 void CaptureOdds::Calculate()
 {
@@ -163,36 +222,50 @@ int CaptureOdds::Index(int attackingCrew, int defendingCrew) const
 
 // Generate a vector with the total power of the given ship's crew when any
 // number of them are left, either for attacking or for defending.
-vector<double> CaptureOdds::Power(const Ship &ship, bool isDefender)
+vector<double> CaptureOdds::Power(const Ship &ship, const Ship &other, bool isDefender)
 {
+	vector<double> consumable;
+	vector<double> defense;
 	vector<double> power;
 	if(!ship.Crew())
 		return power;
-	
+
 	// Check for any outfits that assist with attacking or defending:
 	const string attribute = (isDefender ? "capture defense" : "capture attack");
 	const double crewPower = (isDefender ?
 		ship.GetGovernment()->CrewDefense() : ship.GetGovernment()->CrewAttack());
-	
+
 	// Each crew member can wield one weapon. They use the most powerful ones
 	// that can be wielded by the remaining crew.
 	for(const auto &it : ship.Outfits())
 	{
 		double value = it.first->Get(attribute);
 		if(value > 0. && it.second > 0)
-			power.insert(power.end(), it.second, value);
+		{
+			value = CalculateOutfitPower(ship, other, value, isDefender, it.first);
+			if(it.first->Attributes().Get("consumable"))
+				consumable.insert(consumable.end(), it.second, value);
+			else if(it.first->Attributes().Get("defense"))
+				defense.insert(defense.end(), it.second, value);
+			else
+				power.insert(power.end(), it.second, value);
+		}
 	}
 	// Use the best weapons first.
+	sort(consumable.begin(), consumable.end(), greater<double>());
+	sort(defense.begin(), defense.end(), greater<double>());
 	sort(power.begin(), power.end(), greater<double>());
 	
 	// Resize the vector to have exactly one entry per crew member.
+	consumable.resize(ship.Crew(), 0.);
+	defense.resize(ship.Crew(), 0.);
 	power.resize(ship.Crew(), 0.);
-	
+
 	// Calculate partial sums. That is, power[N - 1] should be your total crew
 	// power when you have N crew left.
-	power.front() += crewPower;
+	power.front() += crewPower + defense.front() + consumable.front();
 	for(unsigned i = 1; i < power.size(); ++i)
-		power[i] += power[i - 1] + crewPower;
+		power[i] += power[i - 1] + crewPower + defense[i - 1] + consumable[i - 1];
 	
 	return power;
 }

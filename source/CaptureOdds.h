@@ -15,6 +15,7 @@ PARTICULAR PURPOSE.  See the GNU General Public License for more details.
 
 #include <vector>
 
+class Outfit;
 class Ship;
 
 
@@ -29,6 +30,8 @@ class Ship;
 // is attacking or defending; defending crew get a +1 power bonus.
 class CaptureOdds {
 public:
+	// Refreshes the lookup tables when a consumable item is used.
+	void RefreshOdds(const Ship &attacker, const Ship &defender, bool isDefender);
 	// Calculate odds that the first given ship can capture the second, assuming
 	// the first ship always attacks and the second one always defends.
 	CaptureOdds(const Ship &attacker, const Ship &defender);
@@ -45,6 +48,8 @@ public:
 	// weapons) for each ship when they have the given number of crew remaining.
 	double AttackerPower(int attackingCrew) const;
 	double DefenderPower(int defendingCrew) const;
+	// Returns the name of the last used weapon.
+	const Outfit *LastUsedWeapon(const Ship &ship, bool isDefender) const;
 	
 	
 private:
@@ -55,8 +60,7 @@ private:
 	
 	// Calculate attack or defense power for each number of crew members up to
 	// the given ship's full complement.
-	static std::vector<double> Power(const Ship &ship, bool isDefender);
-	
+	static std::vector<double> Power(const Ship &ship, const Ship &other, bool isDefender);
 	
 private:
 	// Attacker and defender power lookup tables.

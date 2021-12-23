@@ -73,7 +73,22 @@ namespace {
 		{"shield fuel multiplier", -1.},
 		{"shield heat multiplier", -1.}
 	};
-	
+	// For maps, the last element is the default one returned when searching and not finding.
+	const std::map<std::string, int> corridors = 
+	{
+		{"tight", 1}, {"narrow", 2}, {"wide", 8}, {"open", 16}, {"standart", 4}
+	};
+
+	const std::map<std::string, double> layout = 
+	{
+		{"twisted", 1.}, {"open-plan", 2.}, {"direct", 1.5}
+	};
+
+	const std::map<std::string, double> ventilation =
+	{
+		{"poor", .5}, {"good", 2.}, {"adequate", 1.}
+	};
+
 	void AddFlareSprites(vector<pair<Body, int>> &thisFlares, const pair<Body, int> &it, int count)
 	{
 		auto oit = find_if(thisFlares.begin(), thisFlares.end(),
@@ -201,6 +216,12 @@ void Outfit::Load(const DataNode &node)
 			// Jump range must be positive.
 			attributes[child.Token(0)] = max(0., child.Value(1));
 		}
+		else if(child.Token(0) == "corridors")
+			attributes[child.Token(0)] = corridors.find(child.Token(1))->second;
+		else if(child.Token(0) == "design layout")
+			attributes[child.Token(0)] = layout.find(child.Token(1))->second;
+		else if(child.Token(0) == "ventilation capacity")
+			attributes[child.Token(0)] = ventilation.find(child.Token(1))->second;
 		else if(child.Size() >= 2)
 			attributes[child.Token(0)] = child.Value(1);
 		else
