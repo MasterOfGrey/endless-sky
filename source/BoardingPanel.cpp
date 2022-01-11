@@ -74,6 +74,7 @@ BoardingPanel::BoardingPanel(PlayerInfo &player, const shared_ptr<Ship> &victim)
 	// The escape key should close this panel rather than bringing up the main menu.
 	SetInterruptible(false);
 	
+	crewRep = GameData::PlayerGovernment();
 	// Figure out how much the victim's commodities are worth in the current
 	// system and add them to the list of plunder.
 	const System &system = *player.GetSystem();
@@ -118,6 +119,9 @@ BoardingPanel::BoardingPanel(PlayerInfo &player, const shared_ptr<Ship> &victim)
 	// Some "ships" do not represent something the player could actually pilot.
 	if(!victim->IsCapturable())
 		messages.emplace_back("This is not a ship that you can capture.");
+	
+	if(you->Crew() <= you->RequiredCrew())
+		messages.emplace_back("You need to hire crew to capture a ship.");
 	
 	// Sort the plunder by price per ton.
 	sort(plunder.begin(), plunder.end());
@@ -171,7 +175,7 @@ void BoardingPanel::Draw()
 		info.SetCondition("can take");
 	if(CanCapture())
 		info.SetCondition("can capture");
-	if(CanAttack() && (you->Crew() > 1 || !victim->RequiredCrew()))
+	if(CanAttack() && (you->Crew() > you->RequiredCrew() || !victim->RequiredCrew()))
 		info.SetCondition("can attack");
 	if(CanAttack())
 		info.SetCondition("can defend");
@@ -200,13 +204,13 @@ void BoardingPanel::Draw()
 			Round(defenseOdds.AttackerPower(truncvCrew)));
 		info.SetString("enemy defense",
 			Round(attackOdds.DefenderPower(truncvCrew)));
-	}//crew and vcrew only modified localy ?
+	}
 	if(victim && victim->IsCapturable() && !victim->IsYours())
 	{
 		// If you haven't initiated capture yet, show the self destruct odds in
 		// the attack odds. It's illogical for you to have access to that info,
 		// but not knowing what your true odds are is annoying.
-		double odds = attackOdds.Odds(crew, vCrew);
+		double odds = attackOdds.Odds(crew - you->RequiredCrew(), vCrew);
 		if(!isCapturing)
 			odds *= (1. - victim->Attributes().Get("self destruct"));
 		info.SetString("attack odds",
@@ -214,7 +218,7 @@ void BoardingPanel::Draw()
 		info.SetString("attack casualties",
 			Round(attackOdds.AttackerCasualties(truncCrew, truncvCrew) * max(1., crew / 25.)));
 		info.SetString("defense odds",
-			Round(100. * (1. - defenseOdds.Odds(vCrew, crew))) + "%");
+			Round(100. * (1. - defenseOdds.Odds(vCrew - victim->RequiredCrew(), crew))) + "%");
 		info.SetString("defense casualties",
 			Round(defenseOdds.DefenderCasualties(truncvCrew, truncCrew) * max(1., crew / 25.)));
 		int corridor = victim->Attributes().Get("corridors");
@@ -225,16 +229,13 @@ void BoardingPanel::Draw()
 			(victim->Attributes().Category() == "Light Freighter" || 
 			victim->Attributes().Category() == "Heavy Freighter") ? 1. : 1.5);
 		info.SetString("fighting space", to_string(combatWidth));
-		info.SetString("your ventilation capacity", Round(ventilation ? ventilation : 1.));
-		ventilation = you->Attributes().Get("ventilation");
-		info.SetString("enemy ventilation capacity", Round(ventilation ? ventilation : 1.));
 	}
 	
 	const Interface *boarding = GameData::Interfaces().Get("boarding");
 	boarding->Draw(info, this);
 	
 	// Draw the status messages from hand to hand combat.
-	Point messagePos(50., 95.);
+	Point messagePos(50., 80.);
 	for(const string &message : messages)
 	{
 		font.Draw(message, messagePos, bright);
@@ -341,7 +342,11 @@ bool BoardingPanel::KeyDown(SDL_Keycode key, Uint16 mod, const Command &command,
 		// to your ship in peace. That is to allow the player to "cancel" if
 		// they did not really mean to try to capture the ship.
 		bool youAttack = (key == 'a' && (yourStartCrew > 1 || !victim->RequiredCrew()));
-		bool enemyAttacks = defenseOdds.Odds(enemyStartCrew, yourStartCrew) > .5;
+		// Civilian ships should never attack you.
+		bool isCivilian = (victim->Attributes().Category() == "Transport" || 
+						victim->Attributes().Category() == "Light Freighter" || 
+						victim->Attributes().Category() == "Heavy Freighter");
+		bool enemyAttacks = isCivilian ? false : defenseOdds.Odds(enemyStartCrew - victim->RequiredCrew(), yourStartCrew) > .5;
 		if(isFirstCaptureAction && !youAttack)
 			enemyAttacks = false;
 		isFirstCaptureAction = false;
@@ -361,70 +366,88 @@ bool BoardingPanel::KeyDown(SDL_Keycode key, Uint16 mod, const Command &command,
 			
 			// There are as many rounds of combat as there is space on the ship to fight,
 			// and then we multiply it a bit so it does not take ages.
-			for(int round = 0; round < combatWidth * max(1, yourStartCrew / 25); ++round)
+			for(int round = 0; round < combatWidth * max(1, yourStartCrew / 50); ++round)
 			{
-				int yourCrew = Truncation(you->Crew(), combatWidth);
-				int enemyCrew = Truncation(victim->Crew(), combatWidth);
+				int yourCrew = Truncation(you->Crew() - you->RequiredCrew(), combatWidth);
+				int yourDefendingCrew = Truncation(you->Crew(), combatWidth);
+				int enemyCrew = Truncation(victim->Crew() - victim->RequiredCrew(), combatWidth);
+				int enemyDefendingCrew = Truncation(victim->Crew(), combatWidth);
 				
 				if(!yourCrew || !enemyCrew)
 					break;
 				
 				// Your chance of winning this round is equal to the ratio of
 				// your power to the enemy's power.
-				double yourPower = (defenseOdds.DefenderPower(yourCrew) + 
-					attackOdds.AttackerPower(yourCrew) * (youAttack ? -1. : 1.) / 5.);
-				double enemyPower = (attackOdds.DefenderPower(enemyCrew) +
-					defenseOdds.AttackerPower(enemyCrew) * (enemyAttacks ? -1 : 1.) / 5.);
+				double yourPower = 
+					(youAttack ? defenseOdds.DefenderPower(yourDefendingCrew) : defenseOdds.DefenderPower(yourCrew)
+					+ attackOdds.AttackerPower(yourCrew) * (youAttack ? -1. : 1.));
+				double enemyPower = 
+					(enemyAttacks ? attackOdds.DefenderPower(enemyDefendingCrew) : attackOdds.DefenderPower(enemyCrew)
+					+ defenseOdds.AttackerPower(enemyCrew) * (enemyAttacks ? -1 : 1.));
 				
 				double total = yourPower + enemyPower;
 				if(!total)
 					break;
 				
+				const Outfit* last = nullptr;
 				if(Random::Real() * total >= yourPower)
 				{
-					const Outfit* last = nullptr;
 					if(enemyAttacks)
 					{
-						last = attackOdds.LastUsedWeapon(*victim, false);
+						last = defenseOdds.LastUsedWeapon(*you, true, "defense");
 						if(last && last->Attributes().Get("consumable"))
-						{
-							victim->AddOutfit(last, -1);
-							attackOdds.RefreshOdds(*you, *victim, false);
-						}
-						last = defenseOdds.LastUsedWeapon(*you, true);
-						if(last && last->Attributes().Get("consumable") && last->Attributes().Get("defense"))
 						{
 							you->AddOutfit(last, -1);
 							defenseOdds.RefreshOdds(*victim, *you, true);
 						}
+						crewRep->AddReputation(-(last->Attributes().Get("illegal") != 0) * .5);
+
+						last = defenseOdds.LastUsedWeapon(*you, true, "");
+						if(last)
+							crewRep->AddReputation(-(last->Attributes().Get("illegal") != 0) * .5);
+						
+						last = attackOdds.LastUsedWeapon(*victim, false, "consumable");
+						if(last)
+						{
+							victim->AddOutfit(last, -1);
+							attackOdds.RefreshOdds(*you, *victim, false);
+						}
 					}
+					crewRep->AddReputation(-2);
 					you->AddCrew(-1);
 				}
 				else
 				{
-					const Outfit* last = nullptr;
 					if(youAttack)
 					{
-						last = attackOdds.LastUsedWeapon(*you, false);
+						// get all 3 last used weapons instead, with a new string attribute saying what we are looking for
+						last = defenseOdds.LastUsedWeapon(*victim, true, "defense");
 						if(last && last->Attributes().Get("consumable"))
-						{
-							you->AddOutfit(last, -1);
-							defenseOdds.RefreshOdds(*victim, *you, false);
-						}
-						last = defenseOdds.LastUsedWeapon(*victim, true);
-						if(last && last->Attributes().Get("consumable") && last->Attributes().Get("defense"))
 						{
 							victim->AddOutfit(last, -1);
 							attackOdds.RefreshOdds(*you, *victim, true);
 						}
+						last = attackOdds.LastUsedWeapon(*you, false, "consumable");
+						if(last)
+						{
+							you->AddOutfit(last, -1);
+							defenseOdds.RefreshOdds(*victim, *you, false);
+						}
+						crewRep->AddReputation(-(last->Attributes().Get("illegal") != 0) * .5);
+						
+						last = attackOdds.LastUsedWeapon(*you, false, "");
+						if(last)
+							crewRep->AddReputation(-(last->Attributes().Get("illegal") != 0) * .5);
 					}
+					crewRep->AddReputation(1.5);
 					victim->AddCrew(-1);
 				}
 			}
-			
+			int crew = you->Crew();
+			int vCrew = victim->Crew();
 			// Report how many casualties each side suffered.
-			int yourCasualties = yourStartCrew - you->Crew();
-			int enemyCasualties = enemyStartCrew - victim->Crew();
+			int yourCasualties = yourStartCrew - crew;
+			int enemyCasualties = enemyStartCrew - vCrew;
 			if(yourCasualties && enemyCasualties)
 				messages.back() += "You lose " + to_string(yourCasualties)
 					+ " crew; they lose " + to_string(enemyCasualties) + ".";
@@ -433,8 +456,23 @@ bool BoardingPanel::KeyDown(SDL_Keycode key, Uint16 mod, const Command &command,
 			else if(enemyCasualties)
 				messages.back() += "They lose " + to_string(enemyCasualties) + " crew.";
 			
+			// If you have place for the enemy crew, they may consider surrendering.
+			if(vCrew && you->Attributes().Get("bunks") - crew - vCrew > 0)
+			{
+				//double extraReputationCost = -GameData::PlayerGovernment()->Reputation() / 1000;
+				//extraReputationCost = max(1, extraReputationCost);
+				if((attackOdds.AttackerPower(crew) / defenseOdds.DefenderPower(vCrew)) * 100 - 70 + isCivilian * 20 > Random::Int(100))
+				{
+					messages.push_back("Considering their hopeless situation, the " + to_string(vCrew));
+					messages.push_back("members left of the enemy crew join you.");
+					you->AddCrew(vCrew);
+					crewRep->AddReputation(vCrew);
+					victim->AddCrew(-vCrew);
+				}
+			}
+			
 			// Check if either ship has been captured.
-			if(!you->Crew())
+			if(!crew)
 			{
 				messages.push_back("You have been killed. Your ship is lost.");
 				you->WasCaptured(victim);
@@ -467,7 +505,7 @@ bool BoardingPanel::KeyDown(SDL_Keycode key, Uint16 mod, const Command &command,
 		GetUI()->Push(new ShipInfoPanel(player));
 	
 	// Trim the list of status messages.
-	while(messages.size() > 3)
+	while(messages.size() > 4)
 		messages.erase(messages.begin());
 	
 	return true;
@@ -554,7 +592,7 @@ bool BoardingPanel::CanCapture() const
 	if(!victim->IsCapturable())
 		return false;
 	
-	return (!victim->RequiredCrew() || you->Crew() > 1);
+	return (!victim->RequiredCrew() || you->Crew() > you->RequiredCrew());
 }
 
 
