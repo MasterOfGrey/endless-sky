@@ -58,57 +58,61 @@ mission "Event: Pug Media Coverage"
 		has "event: pug media coverage"
 	on offer
 		event "hai secret leaks" 10 15
-		log "Minor People" "Maduena Kabiru" `A senator from Bounty in the Delta Velorum system. He is somewhat paranoid and insistent upon the Navy taking great steps to better explore the galaxy beyond human space to search for possible threats.`
+		log "Minor People" "Maduena Kabiru" `A representative from Bounty in the Delta Velorum system. He is somewhat paranoid and insistent upon the Navy taking great steps to better explore the galaxy beyond human space to search for possible threats.`
 		conversation
-			`As you walk through the spaceport, you can't help but notice that coverage on the events of the Pug invasion still continues to dominate headlines, even though it's been weeks now.`
-			`	Looking around, you see that experts and officials have given way to talking heads and theorists. Some of them are saying what you yourself suspect: that the Pug invasion was a ploy to cause humanity to band together, learn to resolve differences without conflict, and ensure the sorts of extremism that lead to the events precipitating the war would not be tolerated.`
-			`	Others...`
-			`	You sigh deeply as you watch some paranoid fringe-world politician, one Senator Maduena Kabiru from Bounty, demand that the edges of human space be better understood, that threats and even potential threats must clearly exist beyond what is already known, and that it is the responsibility of the government to find out and inform the people. While one could definitely argue in favor of his point, it feels rather cheap coming from a senator whose system is a mere two jumps from a brand new Navy base.`
-			`	In this very public space you spot a couple of people who seem to hesitantly recognize you, presumably from other coverage. As such, your thoughts, you keep to yourself.`
+			`As you walk through the spaceport, coverage of the Pug invasion continues to dominate the media. Watching some of it, you see that experts and officials have given way to talking heads and theorists. Their views range widely. Some say the Pug invasion having been a ploy to cause humanity to band together, learn to resolve differences without conflict, and ensure the sorts of extremism that lead to the events precipitating the civil war would not be tolerated.`
+			`	Others, such as Maduena Kabiru, a parliamentary representative from the frontier world Bounty, demand that the edges of human space be better understood. That threats and even potential threats must clearly exist beyond what is already known, and that it is the responsibility of the government to find out and inform the people.`
 				decline
 
 event "hai secret leaks"
 
 
 conversation "hai reveal free worlds news"
-	`You are relaxing within the spaceport while your ship refuels after conducting a spot of business. On the view-screen is some talk show that you haven't previously encountered, but apparently seems to be quite a popular one out of Tarazed.`
-	`	A young and fresh-faced man who looks incredibly ill at ease has just been brought out as a surprise guest by the host Jonathon Camembert.`
-	`	"So now in our surprise segment, let me introduce you to Ronald Campbell. He once crewed on one of these big trade ships, but after seeing what he saw, he just had to come forward!"`
-	`	The host stresses the word 'had' so much his voice squeaks, but the audience's attention has certainly been gained.`
-	`	"But first, let's take a look at a clip."`
-	`	You raise your eyebrows with surprise. Actual verifiable footage of an unknown alien conflict seems improbable, to say the least.`
+	`You are relaxing in the spaceport while your ship is refueled. On the nearest display screen is a talk show that you haven't previously encountered, but apparently seems to be quite a popular one out of Tarazed.`
+	`	A young, fresh-faced man who looks incredibly ill at ease has just been brought out as a surprise guest by the host, Jonathon Camembert.`
+	`	"Now, in our surprise segment, let me introduce you to Ronald Campbell. He once crewed on one of these big trade ships, but after seeing what he saw, he just had to come forward!"`
+	`	The host stresses the word 'had' so much his voice squeaks, but he certainly seems to have gained the audience's attention; you note several people around you seem to be more focused on the show than they were before.`
+	`	"But, before we hear from him, we'd like to share a short video clip he's brought us with you!"`
 	branch "hai knowledge"
 		has "First Contact: Hai: offered"
-	`	They show a short video featuring alien ships, not Pug, or Quarg, but something else. They are engaged in combat with each other. They fire weapons quite unlike anything produced in human space.`
-	`	When it's finished the young man, who is very well presented but is clearly anxious about being here, is encouraged to talk about where he got the footage. As he speaks he has a bit of a paranoid manner to him that is plain to see even through a screen, talking at length about an ongoing conflict that threatens to spill over and drag all of humanity back to war: a war waged by an alien species known as the 'Hai'.`
-	`	This is, of course, ridiculous... the idea that there's a directly accessible alien race, in a war, that has also somehow been kept a secret... to call it far-fetched would be an understatement. Nevertheless, maybe it would be good to go investigate this for yourself. You listen in to collect the relevant details for future reference.`
-	`	It's difficult to be sure where you should start looking, but it seems that these 'Hai' are meant to be northward, and the biggest hub at that end of the known galaxy is Sunracer. Seems like that would be a good place to start.`
+	# TODO: add a log entry here.
+	# It would be nice if we could mention the possibility that these are the Korath ships the Syndicate CEO told us about, but we have no way of knowing if hte player has encountered a Korath ship.
+	`	They show a short video featuring ships, alien ships. Not Pug, not Quarg, something else. They are engaged in combat with each other, firing weapons quite unlike anything produced in human space.`
+	`	When it is finished, the young man, who is very well presented but is clearly anxious about being here, is encouraged to talk about where he got the footage. As he speaks he has a bit of a paranoid manner to him that is plain to see even through a screen. He talks at length about an ongoing conflict that threatens to spill over and drag all of humanity back to war: a war waged by an alien species known as the 'Hai'.`
+	# TODO: this commentary should come from other characters, not the narrator. I'd rather it just not exist.
+	#`	This is, of course, ridiculous... the idea that there's a directly accessible alien race, in a war, that has also somehow been kept a secret... to call it far-fetched would be an understatement. Nevertheless, maybe it would be good to go investigate this for yourself. You listen in to collect the relevant details for future reference.`
+	#`	It's difficult to be sure where you should start looking, but it seems that these 'Hai' are meant to be northward, and the biggest hub at that end of the known galaxy is Sunracer. Seems like that would be a good place to start.`
+	`	As the show continues, the specific details are light but you are able to learn that these 'Hai' are supposedly northward. The biggest hub in that direction is Sunracer. Seems like that might be a good place to start investigating this.`
 		accept
 	label "hai knowledge"
-	`	They show a short video of alien ships, Hai ships, engaged in combat with each other.`
-	`	When it is finished, the young man, who is very well presented but is clearly anxious about being here, is encouraged to talk about where he got the footage. As he speaks he has a bit of a paranoid manner to him that is plain to see even through a screen, talking at length about an ongoing conflict that threatens to spill over and drag all of humanity back to war: a war waged by an alien species known as the 'Hai'.`
+	# TODO: add a log entry here.
+	`	They show a short video of alien ships, Hai ships, engaged in combat with each other. When it is finished, the young man, who is very well presented but is clearly anxious about being here, is encouraged to talk about where he got the footage. As he speaks he has a bit of a paranoid manner to him that is plain to see even through a screen. He talks at length about an ongoing conflict that threatens to spill over and drag all of humanity back to war: a war waged by an alien species known as the 'Hai'.`
 	`	It might be time to go visit your Hai friends again.`
 		accept
 
 
 conversation "hai reveal republic or syndicate news"
-	`You are relaxing at the spaceport while your ship refuels when a breaking news broadcast comes on; it's not urgent enough to actually interrupt scheduled content, but urgent enough to fill the first ad break.`
+	`You are relaxing at the spaceport while your ship is refueled when a breaking news broadcast begins on one of the spaceport display screens; it's not urgent enough to actually interrupt scheduled content, but urgent enough to fill the first ad break.`
 	`	The severe-looking anchorwoman bores down the camera with an expression that demands attention.`
 	`	"An ex-crewman employed by an itinerant trader has come forward to media in the Free Worlds about hostile aliens just beyond our borders. He claims to have brought video proof of an ongoing conflict that threatens to spill over and drag all of humanity back to war. Stay tuned for our full segment at six."`
-	`	You raise your eyebrows with surprise. Actual verifiable footage of an unknown alien conflict seems improbable, to say the least.`
-	`	That such news should come out so soon after the Pug smacks of a hoax. A quick glance at the clock shows you only have ten minutes to wait, so you stick around for the full segment out of curiosity.`
-	`	Right on schedule the news returns with the severe anchorwoman. It turns out that the crewman in question had been picked up by a minor media outlet on Tarazed. He had apparently traveled many weeks before deciding to seek the media in order to avoid being shut down by Republic Intelligence if he contacted them elsewhere. The man is fairly young, and very well presented, though he has a bit of the paranoid about him that is plain to see even through a screen.`
+	`	You only have to wait 10 minutes for the promised segment to begin, and by the time it does, the number of people watching the various screens in the area has gone from a handful of passers by to a sizeable crowd.`
+	`	Right on schedule the news returns with the same severe anchorwoman. It turns out that the crewman in question had been picked up by a minor media outlet on Tarazed. Apparently, having traveled many weeks before deciding to seek the media in order to avoid being shut down by Republic Intelligence if he contacted them elsewhere. The man is fairly young, and very well presented, though he has a bit of the paranoid about him that is plain to see even through a screen.`
 	branch "hai knowledge"
 		has "First Contact: Hai: offered"
-	`	They show a short video featuring alien ships, not Pug, or Quarg, but something else. They are engaged in combat with each other. They fire weapons quite unlike anything produced in human space.`
+	# TODO: add a log here.
+	`	They show a short video featuring ships, alien ships. Not Pug, not Quarg, but something else. They are engaged in combat with each other, firing weapons quite unlike anything produced in human space.`
 	`	It is only after this that the anchorwoman reveals that, while this was initially treated as a hoax, one of their own reporters posed a timely question to a well-respected trader and caused quite the stir when he slipped up and confirmed the existence of the aliens known as 'Hai'.`
-	`	This is, of course, ridiculous... the idea that there's a directly accessible alien race, in a war, that has also somehow been kept a secret... to call it far-fetched would be an understatement. Nevertheless, maybe it would be good to go investigate this for yourself. You listen in to collect the relevant details for future reference.`
-	`	It's difficult to be sure where you should start looking, but it seems that these 'Hai' are meant to be northward, and the biggest hub at that end of the known galaxy is Sunracer. Seems like that would be a good place to start.`
-		accept	
+	# TODO: as above, this should ceom from other characters, not the narrator.
+	#`	This is, of course, ridiculous... the idea that there's a directly accessible alien race, in a war, that has also somehow been kept a secret... to call it far-fetched would be an understatement. Nevertheless, maybe it would be good to go investigate this for yourself. You listen in to collect the relevant details for future reference.`
+	#`	It's difficult to be sure where you should start looking, but it seems that these 'Hai' are meant to be northward, and the biggest hub at that end of the known galaxy is Sunracer. Seems like that would be a good place to start.`
+	# TODO: this doesn't really work if we are north of Sunracer.
+	`	As the report continues, the specific details are light but you are able to learn that these 'Hai' are supposedly northward. The biggest hub in that direction is Sunracer. Seems like that might be a good place to start investigating this.`
+		accept
 	label "hai knowledge"
-	`	A clip of alien space ships in combat with weapons quite unlike anything produced in human space is shown, and you recognize Shield Beetles hammering away at each other.`
+	# TODO: add a log entry here.
+	`	A clip of alien ships in combat with each other is shown; you recognize the Shield Beetles hammering away at each other.`
 	`	It is only after this that the anchorwoman reveals that, while this was initially treated as a hoax, one of their own reporters posed a timely question to a well-respected trader and caused quite the stir when he slipped up and confirmed the existence of the aliens known as 'Hai'.`
-	`	You suspect it might be time to go visit your Hai friends again.`
+	`	It might be time to go visit your Hai friends again.`
 		accept
 
 
