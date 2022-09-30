@@ -13,16 +13,16 @@
 
 ########################################################################
 
-mission "Hai Secret Leaker Begins"
+mission "Hai Reveal: Secret Leaker Begins"
 	landing
 	invisible
 	to offer
 		has "main plot completed"
 	on offer
-		event "pug media coverage" 20 30
+		event "hai reveal: pug media coverage" 20 30
 		fail
 
-event "pug media coverage"
+event "hai reveal: pug media coverage"
 
 
 
@@ -30,7 +30,7 @@ mission "Hai Reveal: Reputation Reset"
 	landing
 	invisible
 	to offer
-		has "event: pug media coverage"
+		has "event: hai reveal: pug media coverage"
 	on offer
 		# Sync reputations for aliases of governments:
 		"reputation: Deep Security that won't enter wormhole" = "reputation: Deep Security"
@@ -49,15 +49,15 @@ mission "Hai Reveal: Reputation Reset"
 
 
 
-mission "Event: Pug Media Coverage"
+mission "Hai Reveal: Pug Media Coverage"
 	landing
 	source
 		government "Republic" "Syndicate" "Free Worlds"
 		attributes "spaceport"
 	to offer
-		has "event: pug media coverage"
+		has "event: hai reveal: pug media coverage"
 	on offer
-		event "hai secret leaks" 10 15
+		event "hai reveal: secret leaks" 10 15
 		log "Minor People" "Maduena Kabiru" `A senator from Bounty in the Delta Velorum system. He is somewhat paranoid and insistent upon the Navy taking great steps to better explore the galaxy beyond human space to search for possible threats.`
 		conversation
 			`As you walk through the spaceport, you can't help but notice that coverage on the events of the Pug invasion still continues to dominate headlines, even though it's been weeks now.`
@@ -67,7 +67,7 @@ mission "Event: Pug Media Coverage"
 			`	In this very public space you spot a couple of people who seem to hesitantly recognize you, presumably from other coverage. As such, your thoughts, you keep to yourself.`
 				decline
 
-event "hai secret leaks"
+event "hai reveal: secret leaks"
 
 
 
@@ -156,7 +156,8 @@ conversation "What is going on in Hai space? (Met the Unfettered.)"
 # Symbols RS=Republic or Syndicate FW = Free Worlds
 # H=met Hai, U=met Unfettered
 
-mission "ZZ Event Hai Secret Leaks: RSHU"
+mission "Hai Reveal: Secret Leaks: RSHU"
+	minor
 	landing
 	name "Visit the Hai"
 	description "It seems like events may be taking away the Hai's valued secrecy. Go see if things are okay. Visit <stopovers> and maybe see if you can render assistance on <destination>."
@@ -167,12 +168,12 @@ mission "ZZ Event Hai Secret Leaks: RSHU"
 	destination "Hai-home"
 	clearance
 	to offer
-		has "event: hai secret leaks"
+		has "event: hai reveal: secret leaks"
 		has "First Contact: Hai: offered"
 		has "First Contact: Unfettered: offered"
 		not "asked to investigate hai leak"
 	on offer
-		event "pirates investigate leaks"
+		event "hai reveal: pirates investigate leaks"
 		set "asked to investigate hai leak"
 		event "news: hai video clip published"
 		conversation "hai reveal republic or syndicate news"
@@ -182,7 +183,8 @@ mission "ZZ Event Hai Secret Leaks: RSHU"
 		conversation "What is going on in Hai space? (Met the Unfettered.)"
 
 
-mission "ZZ Event Hai Secret Leaks: FWHU"
+mission "Hai Reveal: Secret Leaks: FWHU"
+	minor
 	landing
 	name "Visit the Hai"
 	description "It seems like events may be taking away the Hai's valued secrecy. Go see if things are okay. Visit <stopovers> and maybe see if you can render assistance on <destination>."
@@ -193,12 +195,12 @@ mission "ZZ Event Hai Secret Leaks: FWHU"
 	destination "Hai-home"
 	clearance
 	to offer
-		has "event: hai secret leaks"
+		has "event: hai reveal: secret leaks"
 		has "First Contact: Hai: offered"
 		has "First Contact: Unfettered: offered"
 		not "asked to investigate hai leak"
 	on offer
-		event "pirates investigate leaks"
+		event "hai reveal: pirates investigate leaks"
 		set "asked to investigate hai leak"
 		event "news: hai video clip published"
 		conversation "hai reveal free worlds news"
@@ -208,7 +210,8 @@ mission "ZZ Event Hai Secret Leaks: FWHU"
 		conversation "What is going on in Hai space? (Met the Unfettered.)"
 
 
-mission "ZZ Event Hai Secret Leaks: RSH"
+mission "Hai Reveal: Secret Leaks: RSH"
+	minor
 	landing
 	name "Visit the Hai on Allhome"
 	description "It seems like events may be taking away the Hai's valued secrecy, best see if things are ok."
@@ -217,12 +220,12 @@ mission "ZZ Event Hai Secret Leaks: RSH"
 		attributes "spaceport"
 	destination "Allhome"
 	to offer
-		has "event: hai secret leaks"
+		has "event: hai reveal: secret leaks"
 		has "First Contact: Hai: offered"
 		not "First Contact: Unfettered: offered"
 		not "asked to investigate hai leak"
 	on offer
-		event "pirates investigate leaks"
+		event "hai reveal: pirates investigate leaks"
 		event "news: hai video clip published"
 		set "asked to investigate hai leak"
 		conversation "hai reveal republic or syndicate news"
@@ -230,7 +233,8 @@ mission "ZZ Event Hai Secret Leaks: RSH"
 		conversation "What is going on in Hai space? (Have not met Unfettered.)"
 
 
-mission "ZZ Event Hai Secret Leaks: FWH"
+mission "Hai Reveal: Secret Leaks: FWH"
+	minor
 	landing
 	name "Visit the Hai on Allhome"
 	description "It seems like events may be taking away the Hai's valued secrecy, best see if things are ok."
@@ -239,12 +243,12 @@ mission "ZZ Event Hai Secret Leaks: FWH"
 		attributes "spaceport"
 	destination "Allhome"
 	to offer
-		has "event: hai secret leaks"
+		has "event: hai reveal: secret leaks"
 		has "First Contact: Hai: offered"
 		not "First Contact: Unfettered: offered"
 		not "asked to investigate hai leak"
 	on offer
-		event "pirates investigate leaks"
+		event "hai reveal: pirates investigate leaks"
 		event "news: hai video clip published"
 		set "asked to investigate hai leak"
 		conversation "hai reveal free worlds news"
@@ -252,7 +256,8 @@ mission "ZZ Event Hai Secret Leaks: FWH"
 		conversation "What is going on in Hai space? (Have not met Unfettered.)"
 
 
-mission "ZZ Event Hai Secret Leaks: RS"
+mission "Hai Reveal: Secret Leaks: RS"
+	minor
 	landing
 	name "Investigate the Hai"
 	description "A secret and violent alien race that traders have known about for ages? Preposterous; go find out what's really going on."
@@ -261,17 +266,18 @@ mission "ZZ Event Hai Secret Leaks: RS"
 		attributes "spaceport"
 	destination "Sunracer"
 	to offer
-		has "event: hai secret leaks"
+		has "event: hai reveal: secret leaks"
 		not "First Contact: Hai: offered"
 		not "asked to investigate hai leak"
 	on offer
-		event "pirates investigate leaks"
+		event "hai reveal: pirates investigate leaks"
 		event "news: hai video clip published"
 		set "asked to investigate hai leak"
 		set "didn't know about hai"
 		conversation "hai reveal republic or syndicate news"
 
-mission "ZZ Event Hai Secret Leaks: FW"
+mission "Hai Reveal: Secret Leaks: FW"
+	minor
 	landing
 	name "Investigate the Hai"
 	description "A secret and violent alien race waging war just outside of human space? Preposterous; go find out what's really going on."
@@ -280,18 +286,18 @@ mission "ZZ Event Hai Secret Leaks: FW"
 		attributes "spaceport"
 	destination "Sunracer"
 	to offer
-		has "event: hai secret leaks"
+		has "event: hai reveal: secret leaks"
 		not "First Contact: Hai: offered"
 		not "asked to investigate hai leak"
 	on offer
-		event "pirates investigate leaks"
+		event "hai reveal: pirates investigate leaks"
 		event "news: hai video clip published"
 		set "asked to investigate hai leak"
 		set "didn't know about hai"
 		conversation "hai reveal free worlds news"
 
 
-event "pirates investigate leaks"
+event "hai reveal: pirates investigate leaks"
 	system "Waypoint"
 		government "Pirate"
 		add fleet "Marauder fleet IX" 2000
@@ -299,7 +305,7 @@ event "pirates investigate leaks"
 
 
 
-mission "Trader Directions to Hai Space"
+mission "Hai Reveal: Trader Directions to Hai Space"
 	landing
 	name "Investigate the Hai"
 	description "Follow the coordinates given to you by Captain Casey and meet the Hai."
@@ -308,8 +314,8 @@ mission "Trader Directions to Hai Space"
 	destination "Wormhole Alpha"
 	to offer
 		or
-			has "ZZ Event Hai Secret Leaks: RS: done"
-			has "ZZ Event Hai Secret Leaks: FW: done"
+			has "Hai Reveal: Secret Leaks: RS: done"
+			has "Hai Reveal: Secret Leaks: FW: done"
 	on offer
 		conversation
 			`Arriving at the only place you can think of where you feel sure you can find out more information, you find that <origin>, like most places, is abuzz with the recent news. Avoiding the many large, cheap, and boisterous establishments that service the many crews and workers of the Megaparsec corporate machinery here, you make your way to one of the marginally more up-market places, cunningly marketed as a merchant-only dive.`
@@ -353,7 +359,7 @@ mission "Trader Directions to Hai Space"
 
 #This branch is if you have met the Hai but not the Unfettered
 	#Goto Stop 3 Wah Yoot (Darkcloak) and pick up at Tour 4 mission.
-mission "Hai Witness Unfettered [1]"
+mission "Hai Reveal: Witness Unfettered [1]"
 	name "Witness the Unfettered"
 	description "It turns out this conflict has some truth to it. Go see where it's happening."
 	landing
@@ -361,8 +367,8 @@ mission "Hai Witness Unfettered [1]"
 	destination "Darkcloak"
 	to offer
 		or
-			has "ZZ Event Hai Secret Leaks: RSH: done"
-			has "ZZ Event Hai Secret Leaks: FWH: done"
+			has "Hai Reveal: Secret Leaks: RSH: done"
+			has "Hai Reveal: Secret Leaks: FWH: done"
 
 
 
@@ -370,14 +376,14 @@ mission "Hai Witness Unfettered [1]"
 # It must happen after the first contact mission.
 	#Goto Stop 1 Imo Dep (Stonebreak)
 	#This follows immediately after the First Contact text - no other convo is required.
-mission "ZZ Hai Tour [1] Stonebreak"
+mission "Hai Reveal: Tour [1] Stonebreak"
 	landing
 	name "Visit <planet>"
 	description "Go to <destination> and learn more about the Hai's worlds."
 	source "Allhome"
 	destination "Stonebreak"
 	to offer
-		has "Trader Directions to Hai Space: done"
+		has "Hai Reveal: Trader Directions to Hai Space: done"
 	on offer
 		conversation
 			`As you are leaving the merchant and the Hai, the Hai calls out as an afterthought, "By the way Captain, if you really want to see what the Hai are like, you should go visit Stonebreak."`
@@ -386,14 +392,14 @@ mission "ZZ Hai Tour [1] Stonebreak"
 					accept
 
 	#Goto Stop 2 Alta Hai (Alta Hai Ringworld)
-mission "Hai Tour [2] Alta Hai"
+mission "Hai Reveal: Tour [2] Alta Hai"
 	landing
 	name "Visit the ringworld on <planet>"
 	description "Go to <destination> and learn more about the Hai's worlds."
 	source "Stonebreak"
 	destination "Alta Hai"
 	to offer
-		has "ZZ Hai Tour [1] Stonebreak: done"
+		has "Hai Reveal: Tour [1] Stonebreak: done"
 	on offer
 		conversation
 			`This star system has an unusual number of metallic asteroids, which you noticed the Hai harvesting for the raw materials before you landed. Stonebreak itself is home to incredibly large cities: massive, clearly planned communities built in concentric rings, where housing space and community buildings alternate with zones of factories and shipyards.`
@@ -404,14 +410,14 @@ mission "Hai Tour [2] Alta Hai"
 				accept
 
 	#Goto Stop 3 Wah Yoot (Darkcloak) - must happen after Quarg first contact
-mission "ZZ Hai Tour [3] Meet Unfettered"
+mission "Hai Reveal: Tour [3] Meet Unfettered"
 	landing
 	name "Meet the Rebels on <planet>"
 	description "Go to <destination> and learn more about the Hai's conflict."
 	source "Alta Hai"
 	destination "Darkcloak"
 	to offer
-		has "Hai Tour [2] Alta Hai: done"
+		has "Hai Reveal: Tour [2] Alta Hai: done"
 	on offer
 		conversation
 			`This is a complete Quarg ringworld, the product of millennia of construction effort which has consumed every other stellar object in this system in order to provide the raw materials. The inner edge of the ring is filled with solar panels, hydroponic gardens, living quarters, and sunlit common spaces. The outer edge contains hangars and docks for ships while housing storage facilities for cargo.`
@@ -424,7 +430,7 @@ mission "ZZ Hai Tour [3] Meet Unfettered"
 	
 	#Goto Stop 4 Wah Ki (Cloudfire)
 	# Must happen before unfettered first contact
-mission "00 Hai Tour [4] Cloudfire"
+mission "00 Hai Reveal: Tour [4] Cloudfire"
 	landing
 	name "Find out about the Rebels on Cloudfire"
 	description "Go to Cloudfire and compare the Hai's side of the conflict."
@@ -432,8 +438,8 @@ mission "00 Hai Tour [4] Cloudfire"
 	destination "Cloudfire"
 	to offer
 		or
-			has "Hai Witness Unfettered [1]: done"
-			has "ZZ Hai Tour [3] Meet Unfettered: done"
+			has "Hai Reveal: Witness Unfettered [1]: done"
+			has "Hai Reveal: Tour [3] Meet Unfettered: done"
 	on offer
 		conversation
 			`You had to bribe your way through just to land without being blown up. These Unfettered Hai do not seem friendly, but it's time to find out what they're about.`
@@ -447,7 +453,7 @@ mission "00 Hai Tour [4] Cloudfire"
 
 
 # Both tours merge here
-mission "Hai Tour [5] Tour Ends"
+mission "Hai Reveal: Tour [5] Tour Ends"
 	landing
 	name "Head directly to Hai-home"
 	description "Go to Hai-home and meet whoever wants to speak with you."
@@ -455,11 +461,11 @@ mission "Hai Tour [5] Tour Ends"
 	destination "Hai-home"
 	clearance
 	to offer
-		has "00 Hai Tour [4] Cloudfire: done"
+		has "00 Hai Reveal: Tour [4] Cloudfire: done"
 	on offer
 		conversation
 			branch "skipped tours"
-				has "Hai Witness Unfettered [1]"
+				has "Hai Reveal: Witness Unfettered [1]"
 			`After looking around Cloudfire for some time, you stop in the spaceport for a moment to absorb everything you've seen. A screen is playing through news on the wall nearby, and your ears suddenly perk up at the word "marauder".`
 			`	"Yesterday, a marauder terrorized the inhabitants of Allhome. They arrived by posing as a trader to investigate rumors currently circulating in human space about our existence. Hai security failed to identify the danger, and the individual snuck his ship in and landed at the spaceport without any opposition. Then his crew kidnapped nearly four dozen Hai and hijacked a Geocoris before making off with their spoils."`
 				goto "that's awful"
@@ -488,8 +494,8 @@ mission "Hai Tour [5] Tour Ends"
 
 
 #All prior branches merge here.
-	
-mission "Hai Leaks Response 1"
+
+mission "Hai Reveal: Leaks Response 1"
 	landing
 	name "Hai message to <planet>"
 	description "Take the diplomatic ID from the box from Sayari to <destination>."
@@ -497,12 +503,11 @@ mission "Hai Leaks Response 1"
 	destination "Earth"
 	to offer
 		or
-			has "Hai Tour [5] Tour Ends: done"
-			has "ZZ Event Hai Secret Leaks: RSHU: done"
-			has "ZZ Event Hai Secret Leaks: FWHU: done"
+			has "Hai Reveal: Tour [5] Tour Ends: done"
+			has "Hai Reveal: Secret Leaks: RSHU: done"
+			has "Hai Reveal: Secret Leaks: FWHU: done"
 	on offer
 		log "People" "Sayari" `Ambassador Sayari, a Hai, served as their envoy to the human government a century ago (although no public records of this exist in human space). Her experience has placed her in charge of coordinating the Hai response to the crisis of their continued secrecy.`
-		
 		conversation
 			`As you arrive on Hai-home, you find that a reasonable security detachment is waiting at your designated landing berth.`
 			branch rudeawakening
@@ -543,7 +548,7 @@ mission "Hai Leaks Response 1"
 
 
 
-mission "Hai Leaks Response 2"
+mission "Hai Reveal: Leaks Response 2"
 	landing
 	name "Collect Representatives"
 	description "Collect human government representatives from <stopovers> and take them to <destination>."
@@ -554,10 +559,10 @@ mission "Hai Leaks Response 2"
 	blocked "You have a mission here for the Hai, but you need four bunks free."
 	clearance
 	to offer
-		has "Hai Leaks Response 1: done"
+		has "Hai Reveal: Leaks Response 1: done"
 	passengers 4
 	on offer
-		event "pirates respond to leaks"
+		event "hai reveal: pirates respond to leaks"
 		log "People" "Xilin Yang" `Deputy Minister Yang works in the Foreign Affairs department of the Republic government. He is a pleasant and astute man. Handling the Hai secrecy crisis has become his job while the majority of the foreign ministry remains engaged with the fallout from the Free Worlds and recent peace.`
 		conversation
 			`On approach to the spaceport on Earth, you request to speak to an official of significant standing on diplomatic business. Thanks to your renown from the Pug war, you are able to shortcut objections stemming from you yourself not being a diplomat. The diplomatic ID from the box Sayari gave you, when presented, also seems to trigger some sort of classified override, fast-tracking the process from the quoted "two to three business days" to "2 hours after landing."`
@@ -595,7 +600,7 @@ mission "Hai Leaks Response 2"
 	on complete
 		log `Brought human diplomatic representatives from each human faction to Hai-home to address the crisis. Something drastic needs to be done to keep the secret from entirely bursting, but they know how long they will have to work with. Asked to rout pirates hoping to benefit from the chaos while they work on a solution.`
 
-event "pirates respond to leaks"
+event "hai reveal: pirates respond to leaks"
 	#Add pirate spawns to Waypoint and Heia Due
 	system "Waypoint"
 		government "Pirate"
@@ -613,12 +618,12 @@ event "pirates respond to leaks"
 		
 	
 #If a republic/syndicate campaign gets added this text will need variants.
-mission "Hai Leaks Response 2A"
+mission "Hai Reveal: Leaks Response 2A"
 	landing
 	invisible
 	source Deep
 	to offer
-		has "Hai Leaks Response 2: active"
+		has "Hai Reveal: Leaks Response 2: active"
 	on offer
 		log "People" "Alondo Gruyere" `Alondo is working to develop the diplomatic corps for the Free Worlds. Due to a lack of serious appointed positions (with the few already existing occupied as ambassadors to the Republic), he is looking after the Free Worlds' interests as a diplomat to the Hai.`
 		conversation
@@ -632,24 +637,24 @@ mission "Hai Leaks Response 2A"
 			`	Fortunately, after an hour and a couple of drinks, the embarrassment is long-forgotten when you return to your ship.`
 				decline
 	
-mission "Hai Leaks Response 2B"
+mission "Hai Reveal: Leaks Response 2B"
 	landing
 	source
 		government "Republic" "Syndicate" "Free Worlds"
 		not planet "Deep" "Foundry"
 	to offer
-		has "Hai Leaks Response 2: active"
+		has "Hai Reveal: Leaks Response 2: active"
 	on offer
 		conversation
 			`While refueling on <origin>, you see that the media circus is continuing unabated. Apparently, pirates are renewing attacks on trade lanes in the north, utilizing some of the strange weapons observed in the recorded clip of Hai ships fighting each other. Goodness knows how they got their hands on them, but it can't be good news.`
 				decline
 
-mission "Hai Leaks Response 2C"
+mission "Hai Reveal: Leaks Response 2C"
 	landing
 	invisible
 	source Foundry
 	to offer
-		has "Hai Leaks Response 2: active"
+		has "Hai Reveal: Leaks Response 2: active"
 	on offer
 		log "People" "Terry Adrianopoulos" `Terry Adrianopoulos is the secretary of Samuel Remington, or at least that's how he puts it. Remington mentioned an internal political situation within the Syndicate while glancing at Terry, so there may be something larger at play with her presence. Hopefully it doesn't conflict with resolving the situation with the Hai.`
 		conversation
@@ -676,14 +681,14 @@ mission "Hai Leaks Response 2C"
 
 #This gets picked up silently on Hai-home when landing for response 2 - leads to go kill pirates mission with chat on Allhome.
 #No longer gets picked up silently due to write-read order style preferences - but may need to be moved back to Response 2 or have multiple versions of this mission when other campaigns exist.
-mission "Hai Leaks Response 3"
+mission "Hai Reveal: Leaks Response 3"
+	landing
 	name "Meet with Security Forces on Allhome"
 	description "Meet with the Security Forces on <destination> to fight pirates."
-	landing
 	source "Hai-home"
 	destination "Allhome"
 	to offer
-		has "Hai Leaks Response 2: done"
+		has "Hai Reveal: Leaks Response 2: done"
 	on offer
 		conversation
 			`You are directed to an official landing pad on your return to Hai-home, and it is not long before you are introducing your entourage to Sayari. Alondo in particular seems excited to be here and seems to have a knack for charming Sayari with polite and insightful, if rather simple, questions throughout the diplomatic niceties.`
@@ -711,16 +716,16 @@ mission "Hai Leaks Response 3"
 
 
 #Go kill pirates mission with chat on Allhome.
-mission "Hai Leaks Response 4"
-	name "Defeat the Black Lich"
-	description "Defeat Black Lich's Marauder Leviathan at <waypoints>, then return to <origin>."
+mission "Hai Reveal: Leaks Response 4"
 	autosave
 	landing
+	name "Defeat the Black Lich"
+	description "Defeat Black Lich's Marauder Leviathan at <waypoints>, then return to <origin>."
 	source "Allhome"
 	waypoint "Waypoint"
 	destination "Allhome"
 	to offer
-		has "Hai Leaks Response 3: done"
+		has "Hai Reveal: Leaks Response 3: done"
 	on offer
 		conversation
 			`When you land on Allhome, you are greeted by the Hai Captain of the local forces. You're not an expert at judging Hai ages, but he appears to be a little younger than expected.`
@@ -756,17 +761,17 @@ mission "Hai Leaks Response 4"
 		ship "Marauder Leviathan (Weapons)" "Black Lich"
 	to complete
 		or
-			has "00 Hai Leaks Response 4B: declined"
-			has "Hai Leaks Response 4A: failed"
+			has "00 Hai Reveal: Leaks Response 4B: declined"
+			has "Hai Reveal: Leaks Response 4A: failed"
 	on complete
 		payment 1000000
-		event "waypoint pirates vanquished"
-		event "hai ladybug available"
+		event "hai reveal: waypoint pirates vanquished"
+		event "hai reveal: ladybug available"
 		log `Defeated the "Black Lich". They had managed to kidnap a number of Hai straight off the planet with a combination of trickery and speed. Rewarded well.`
 		conversation
 			`When you return, the Hai Captain thanks you profusely. "The Allhome government has authorized a reward of <payment> for helping to route the pirate problem," he explains while handing you the credits.`
 			branch "saved geocoris"
-				has "00 Hai Leaks Response 4B: declined"
+				has "00 Hai Reveal: Leaks Response 4B: declined"
 			`	He sighs deeply. "It is a shame though that the kidnapped Hai could not be saved, but the other Hai captains tell me it was a mess out there."`
 			`	In an oddly human gesture that feels very deliberate, he places one of his furry hands comfortingly on your shoulder, "I'm sure you did all you could."`
 				goto end
@@ -776,14 +781,14 @@ mission "Hai Leaks Response 4"
 			label end
 			`	"In any event, let's hope a more permanent solution can be devised soon. In the meantime, the local dealers have decided to start selling the Ladybugs again. I hear it's something about a spike in interest among the humans here, so feel free to have a look at them. I shouldn't get too distracted though, I'm sure they'll be waiting for you back on Hai-home."`
 			branch "saved geocoris2"
-				has "00 Hai Leaks Response 4B: declined"
+				has "00 Hai Reveal: Leaks Response 4B: declined"
 			`	With a final nod of thanks, he departs to attend to his business: leaving you free to go about your own.`
 				decline
 			label "saved geocoris2"
 			`	With a final nod of thanks, he departs to attend to his business: leaving you free to wander the spaceport for a couple of hours until they release your new ship.`
 				decline			
 	
-event "waypoint pirates vanquished"
+event "hai reveal: waypoint pirates vanquished"
 	#Update pirate and anti-pirate spawns in Waypoint and Heia Due
 	system "Waypoint"
 		government "Hai"
@@ -797,7 +802,7 @@ event "waypoint pirates vanquished"
 		remove fleet "Large Northern Pirates"
 		remove fleet "Large Core Pirates"
 
-event "hai ladybug available"
+event "hai reveal: ladybug available"
 	shipyard "Hai Intermediate"
 		"Ladybug"
 	shipyard "Hai Advanced"
@@ -807,15 +812,15 @@ event "hai ladybug available"
 # It is impossible to implement a "capture and return npc" mission. 
 # Once the ship is captured, the NPC is gone and the mission is failed.
 # The NPC has an outfit used to determine if you managed to get it back safely.
-mission "Hai Leaks Response 4A"
+mission "Hai Reveal: Leaks Response 4A"
+	landing
 	name "Recover the Geocoris"
 	description "Recover the stolen Geocoris supporting the pirates in Waypoint, and return to Allhome. (You will need to swap the Geocoris to your flagship, and depart and land again in order to progress the missions properly.)"
-	landing
 	source "Allhome"
 	waypoint "Waypoint"
 	destination "Allhome"
 	to offer
-		has "Hai Leaks Response 3: done"
+		has "Hai Reveal: Leaks Response 3: done"
 	npc capture
 		government "Pirate"
 		personality staying marked mute
@@ -829,19 +834,19 @@ mission "Hai Leaks Response 4A"
 
 # Must be able to resolve earlier than the rest in this set.
 #The Geodesic Geocoris may become available to purchase specially later on.
-mission "00 Hai Leaks Response 4B"
+mission "00 Hai Reveal: Leaks Response 4B"
 	landing
 	source "Allhome"
 	on offer
 		require "Failed Control System"
 		log `Successfully rescued the kidnapped Hai and reclaimed the Geocoris. Something is different about it.`
-		event "returned geocoris" 365
+		event "hai reveal: returned geocoris" 365
 		conversation
 			`You have successfully rescued the kidnapped Hai and reclaimed the Geocoris. Something is different about it...`
 				decline
 
-event "returned geocoris"
-		
+event "hai reveal: returned geocoris"
+
 ship "Geodesic Geocoris"
 	sprite "ship/geodesic geocoris"
 	thumbnail "thumbnail/geodesic geocoris"
@@ -860,7 +865,7 @@ ship "Geodesic Geocoris"
 		"outfit space" 555
 		"weapon capacity" 250
 		"engine capacity" 134
-		"energy capacity" 5200
+		"energy capacity" 10400
 		"shield generation" 6.0
 		"shield energy" 8.8
 		"hull repair rate" 0.8
@@ -876,9 +881,9 @@ ship "Geodesic Geocoris"
 		"Quad Blaster Turret" 2
 		"Pulse Turret" 2
 		
-		"Quantum Keystone"
 		"Boulder Reactor" 2
 		"Liquid Helium Cooler"
+		"Quantum Keystone"
 		"Security Station" 2
 		"Pulse Rifle" 30
 
@@ -887,15 +892,15 @@ ship "Geodesic Geocoris"
 		"AR120 Reverse Thruster" 2
 		Hyperdrive
 
+	engine -95 41.5 0.9
+	engine 95 41.5 0.9
+	engine 1 154.5 0.9
 	turret 0 -82.5 "Pulse Turret"
 	turret -95 -17 "Chameleon Anti-Missile"
 	turret 95 -17 "Chameleon Anti-Missile"
 	turret -29 3 "Quad Blaster Turret"
 	turret 29 3 "Quad Blaster Turret"
 	turret 0 91.5 "Pulse Turret"
-	engine -95 41.5 0.9
-	engine 95 41.5 0.9
-	engine 1 154.5 0.9
 	leak "leak" 40 50
 	leak "flame" 40 80
 	leak "big leak" 70 30
@@ -911,28 +916,29 @@ ship "Geodesic Geocoris" "Geodesic Geocoris (Phylactery)"
 	outfits
 		"Electron Turret" 3
 		"Chameleon Anti-Missile" 2
-		"AR120 Reverse Thruster" 2
 		"Boulder Reactor"
 		"Hai Ravine Batteries"
 		"Outfits Expansion"
 		"Large Heat Shunt"
 		"Quantum Keystone"
 		"Pulse Rifle" 14
+		"Failed Control System"
 		`"Benga" Atomic Thruster`
 		`"Bufaer" Atomic Steering`
+		"AR120 Reverse Thruster" 2
 		"Jump Drive"
 		Hyperdrive
-		"Failed Control System"
+	turret "Electron Turret"
 	turret "Electron Turret"
 	turret "Electron Turret"
 	turret "Chameleon Anti-Missile"
 	turret "Chameleon Anti-Missile"
-	turret "Electron Turret"
+	turret
 	description "This modified Geocoris has identical cargo capacity, but is the result of an alien technology being merged with a hybrid Human-Hai operating system. It has additional shield emitters in a geodesic pattern over its main cargo wings, and some kind of integrated system core which seems to have something of a life of its own. As such, some systems are built-in and unable to be removed. Nevertheless it is significantly more survivable than a traditional Geocoris and at least as useful."
 
 
 
-mission "Hai Leaks Response 5"
+mission "Hai Reveal: Leaks Response 5"
 	landing
 	name "Talk to Hai authorities on <planet>"
 	description "Meet Hai authorities on <destination>."
@@ -940,32 +946,57 @@ mission "Hai Leaks Response 5"
 	clearance
 	destination "Hai-home"
 	to offer
-		has "Hai Leaks Response 4: done"
+		has "Hai Reveal: Leaks Response 4: done"
 	on complete
-		event "allhome reinforced" 1
+		event "hai reveal: allhome reinforced" 1
 		conversation
 			`When you return to Hai-home, you are greeted with a call from Sayari, who looks relieved to see you. "Captain <last>, thank you for your assistance to our security forces. They appreciated it greatly, and we should have them properly reinforced in a day or two. A few things have happened but you haven't missed anything important yet."`
 			`	She smiles and says, "Your diplomatic colleagues are still working on their solutions, so I don't think there's anything for you to do right at this moment. Whenever you're ready though, if you re-land at the secure port we can get you up to speed with our next steps in a day or two. I have no doubt that there'll be things for you to do by then, so you should be ready when you return."`
 
-event "allhome reinforced"
+event "hai reveal: allhome reinforced"
 	system "Heia Due"
 		add fleet "Anti-Pirate Hai (No Wormhole Travel)" 600
 
 
 
+event "hai reveal: secret mountaintop"
+	# Ensure Mountaintop exists so the next mission can trigger
+	system "Ultima Thule"
+		government "Uninhabited"
+		add fleet "Anti-Pirate Hai (Wormhole Travel)" 2000
+		add object
+			distance 4208.63
+			period 2158.5
+			object Mountaintop
+				sprite "effect/flotsam yottrite"
+				distance 315
+				period 31.1964
+	system "Rajak"
+		add fleet "Anti-Pirate Hai (Wormhole Travel)" 1000
+
+
+
+planet Mountaintop
+	government "Unknown"
+	# Placeholder description; you can't actually land.
+	description `This tiny asteroid has a space hazard warning transmitter, of a type typically used to mark construction sites. Perhaps someone intends to build a space station here?`
+	"required reputation" 1000
+	bribe 0
+
+
+
 # This non-landing mission allows you to take the game-play pause and go do other stuff if you need before getting too deeply involved in the story.
-mission "Hai Leaks Response 6"
+mission "Hai Reveal: Leaks Response 6"
+	autosave
 	name "Investigate rumors of kidnapped Hai"
 	description "Sayari's friend thinks someone with legal protection is kidnapping Hai. Check spaceports in nearby parts of human space for evidence of a Hai trafficking operation."
-	autosave
 	source "Hai-home"
 	clearance
 	to offer
-		has "Hai Leaks Response 5: done"
+		has "Hai Reveal: Leaks Response 5: done"
 	on offer
-		event "secret mountaintop"
-		event "role-play fleet deception"
-		event "slightly lost" 10
+		event "hai reveal: secret mountaintop"
+		event "hai reveal: slightly lost" 10
 		# Hai like you a lot now, and as a result, you have permanent access to Hai-home:
 		"reputation: Hai" >?= 100
 		log `The working solution to the secrecy crisis for now is to have the Hai post a number of ships on the other side of the wormhole to play-act for the cover story that they're making a big budget movie to target fans of the popular franchise 'Our Fuzzy Paradise'. The presence of Hai who won't take off their costumes has been attributed to a 'fan community' that have been hired on as a focus group to be there as part of the production. Despite all this, it is only a short-term solution. Asked by Sayari to look into a rumor about more kidnapped Hai. She does not consider it to be a particularly likely scenario, but her contacts insist.`
@@ -1012,7 +1043,7 @@ mission "Hai Leaks Response 6"
 			label dothings
 			`	"You are well-known, and must be canny to have got where you are. A Hai in trouble might recognize you, or you might perceive them when others would not. It would be in the interests of both our people to be sure that there is no such issue. Would you look for me? For both our sakes?"`
 			branch aboutthat
-				"hai slave prereq" >= 1
+				"hai reveal: slave prereq" >= 1
 			choice
 				`	"Sure, I can have a look around."`
 			`	She gives you a little smile and nods. "If you come across someone and have difficulty getting them to trust you, try telling them 'Luf e ow, vai, luf e eh'."`
@@ -1032,32 +1063,25 @@ mission "Hai Leaks Response 6"
 	on visit
 		dialog "You have returned to Hai-home but haven't found anything actionable you can tell Sayari. There's still time to look for evidence."
 	to complete
-		"hai slave prereq" >= 3
-		has "Hai Rescue: Gipeep: offered"
+		"hai reveal: slave prereq" >= 3
+		has "Hai Reveal: Rescue: Gipeep: offered"
 	on complete
 		log `You found proof of more kidnapped Hai and something that seems out of place. Sayari's fears appear to have been justified...`
 
 
 
-mission "Hai Leaks Response 7"
+mission "Hai Reveal: Leaks Response 7"
 	landing
 	invisible
 	source
 		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent" "Hai"
 		not attributes "uninhabited"
 	to offer
-		has "Hai Leaks Response 6: active"
-		"hai slave prereq" >= 3
+		has "Hai Reveal: Leaks Response 6: active"
+		"hai reveal: slave prereq" >= 3
 	on offer
 		conversation
 			`You think you have enough evidence of kidnapped Hai to be sure of the bad news you bring. There may be other Hai you could still save, but you should go tell Sayari soon to see how to proceed.`
 				decline
 
-event "slightly lost"
-
-event "role-play fleet deception"
-	system "Ultima Thule"
-		add fleet "Anti-Pirate Hai (Wormhole Travel)" 2000
-	system "Rajak"
-		add fleet "Anti-Pirate Hai (Wormhole Travel)" 1000
-		
+event "hai reveal: slightly lost"

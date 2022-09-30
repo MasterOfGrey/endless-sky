@@ -15,54 +15,11 @@
 
 # You facilitate the supervised construction of a station to act as a base for the cover (and also as a checkpoint to hide access to Hai space).
 
-event "secret mountaintop"
-	# Ensure Mountaintop exists so the next mission can trigger
-	system "Ultima Thule"
-		government "Uninhabited"
-		object
-			sprite star/f0
-			period 10
-		object
-			sprite planet/desert5
-			distance 200
-			period 22.3607
-		object
-			sprite planet/europa-b
-			distance 403.41
-			period 64.056
-		object
-			sprite planet/desert7-b
-			distance 824.9
-			period 187.302
-		object
-			sprite planet/gas1
-			distance 1706.99
-			period 557.553
-			object
-				sprite planet/ice8-b
-				distance 216
-				period 11.1964
-		object "Wormhole Alpha"
-			sprite planet/wormhole
-			distance 4208.63
-			period 2158.5
-			object Mountaintop
-				sprite "effect/flotsam yottrite"
-				distance 315
-				period 31.1964
-	planet Mountaintop
-		government "Unknown"
-		# Placeholder description; you can't actually land.
-		description `This tiny asteroid has a space hazard warning transmitter, of a type typically used to mark construction sites. Perhaps someone intends to build a space station here?`
-		"required reputation" 1000
-		bribe 0
-
-
-mission "Hai Building Mountaintop [1] Construction Fleet"
-	name "Escort construction fleet to Ultima Thule"
-	description "Meet a construction fleet at <stopovers> and escort them to to <destination> to prevent a confrontation."
+mission "Hai Reveal: Building Mountaintop [1] Construction Fleet"
 	autosave
 	landing
+	name "Escort construction fleet to Ultima Thule"
+	description "Meet a construction fleet at <stopovers> and escort them to to <destination> to prevent a confrontation."
 	source "Hai-home"
 	stopover "Makerplace"
 	destination "Mountaintop"
@@ -106,7 +63,7 @@ mission "Hai Building Mountaintop [1] Construction Fleet"
 			`	Following Sayari, you pass beyond a security checkpoint where Xilin is prevented from following you. Sayari speaks with another Hai doing administrative work for a moment before gesturing you towards a private antechamber.`
 			`	"We shouldn't have to wait very long, but while we're alone," she says, glancing at the door as if faintly nervous for a second, "did you find anything on your investigation?"`
 			branch foundcat
-				has "Hai Rescue: Gipeep: done"
+				has "Hai Reveal: Rescue: Gipeep: done"
 			choice
 				`	"Yes, I found several Hai that had been kidnapped."`
 					goto kidnapped
@@ -121,7 +78,7 @@ mission "Hai Building Mountaintop [1] Construction Fleet"
 			label kidnapped
 			`	Sayari looks crestfallen as you list off the Hai that you found, but as you finish describing the situations she frowns contemplatively. "That seems to be more Hai, and more easily found than I would have expected. It would seem that the problem may be larger than we've previously thought possible... but was that it? Was there nothing unusual?"`
 			branch foundcat2
-				has "Hai Rescue: Gipeep: done"
+				has "Hai Reveal: Rescue: Gipeep: done"
 			choice
 				`	"I found something out of place on Maelstrom."`
 					goto maelstrom
@@ -185,24 +142,24 @@ mission "Hai Building Mountaintop [1] Construction Fleet"
 	on defer
 		"Building Mountaintop Deferred" ++
 	on accept
-		event "role-play station before construction"
+		event "hai reveal: role-play station before construction"
 		log `The diplomats have elected to double down on the movie production angle, with the costumed community "focus group", citing its success. This requires a station to be built; however, the Hai are unwilling to trust a human government to see the inner workings of a station under construction in the wake of the civil war, and the Republic will not allow a station to be built on their side unsupervised. Agreed to fulfill the role of supervisor after being asked by the diplomats and completing some sort of test by the Hai Elders involving some odd questions.`
 	on stopover
 		dialog `A fleet of eight Geocoris is waiting to accompany you when you arrive, with just the final items being loaded as you come in to land. They will follow you to the site where the new station will be built.`
 	to complete
-		has "Hai Building Mountaintop [1a] Construction Escorts: done"
+		has "Hai Reveal: Building Mountaintop [1a] Construction Escorts: done"
 	on complete
-		event "role-play station after construction"
+		event "hai reveal: role-play station after construction"
 
 
-mission "Hai Building Mountaintop [1a] Construction Escorts"
+mission "Hai Reveal: Building Mountaintop [1a] Construction Escorts"
 	landing
 	invisible
 	source "Makerplace"
 	destination "Mountaintop"
 	clearance
 	to offer
-		has "Hai Building Mountaintop [1] Construction Fleet: active"
+		has "Hai Reveal: Building Mountaintop [1] Construction Fleet: active"
 	on visit
 		dialog `You have arrived without all eight of the Geocoris you are escorting from <origin> to <destination>. You must take off and wait for them to finish this mission.`
 	npc accompany save
@@ -218,7 +175,7 @@ mission "Hai Building Mountaintop [1a] Construction Escorts"
 		ship Geocoris "Eek lo Pok"
 
 
-mission "Hai Building Mountaintop [1b] Return"
+mission "Hai Reveal: Building Mountaintop [1b] Return"
 	landing
 	name "Return to <planet>"
 	description `The Hai have another job for you at <destination>.`
@@ -226,7 +183,7 @@ mission "Hai Building Mountaintop [1b] Return"
 	destination "Hai-home"
 	clearance
 	to offer
-		has "Hai Building Mountaintop [1a] Construction Escorts: done"
+		has "Hai Reveal: Building Mountaintop [1a] Construction Escorts: done"
 	on offer
 		conversation
 			`On arrival, you see one of the Geocoris deploy a steel ring around itself. Space-based cranes unfold and set about removing the three outer sections of the Geocoris and moving them to the ring. After they finish with the first, they progressively dismantle the other seven Geocoris you escorted. Within a few hours, there is a makeshift station with eight Geocoris' power generators and a sizable amount of storage and habitat space. The construction workers begin unpacking the contents of the Geocoris' storage pods, checking construction seals, engaging principle life support systems, and erecting a massive holoprojector.`
@@ -235,7 +192,16 @@ mission "Hai Building Mountaintop [1b] Return"
 				accept
 
 
-event "role-play station before construction"
+event "hai reveal: role-play station before construction"
+	planet Mountaintop
+		government "Hai"
+		attributes uninhabited
+		landscape land/station0
+		description `There's a construction site rapidly assembling a station from Hai Geocoris orbiting this wormhole.`
+		"required reputation" -10
+		security 0.2
+
+event "hai reveal: role-play station after construction"
 	system "Ultima Thule"
 		object
 			sprite star/f0
@@ -264,45 +230,7 @@ event "role-play station before construction"
 			sprite planet/wormhole
 			distance 4208.63
 			period 2158.5
-			object Mountaintop
-				sprite "effect/flotsam yottrite"
-				distance 315
-				period 31.1964
-	planet Mountaintop
-		government "Hai"
-		attributes uninhabited
-		landscape land/station0
-		description `There's a construction site rapidly assembling a station from Hai Geocoris orbiting this wormhole.`
-		"required reputation" -10
-		security 0.2
-
-event "role-play station after construction"
-	system "Ultima Thule"
 		object
-			sprite star/f0
-			period 10
-		object
-			sprite planet/desert5
-			distance 200
-			period 22.3607
-		object
-			sprite planet/europa-b
-			distance 403.41
-			period 64.056
-		object
-			sprite planet/desert7-b
-			distance 824.9
-			period 187.302
-		object
-			sprite planet/gas1
-			distance 1706.99
-			period 557.553
-			object
-				sprite planet/ice8-b
-				distance 216
-				period 11.1964
-		object "Wormhole Alpha"
-			sprite planet/wormhole
 			distance 4208.63
 			period 2158.5
 			object Mountaintop
@@ -318,7 +246,7 @@ event "role-play station after construction"
 
 
 
-mission "Hai Building Mountaintop [2] Recruits"
+mission "Hai Reveal: Building Mountaintop [2] Recruits"
 	name "Encourage recruits for Mountaintop"
 	description "Now that the station is going ahead, the Hai need to recruit people to be actors in this movie production. Someone needs to sell it to them, and apparently that someone is you."
 	landing
@@ -346,7 +274,7 @@ mission "Hai Building Mountaintop [2] Recruits"
 	on visit
 		dialog `You have arrived at the Mountaintop construction site, but it isn't finished or staffed yet.`
 	to offer
-		has "Hai Building Mountaintop [1b] Return: done"
+		has "Hai Reveal: Building Mountaintop [1b] Return: done"
 	on offer
 		conversation
 			`At Hai-home, you are directed to a now familiar government hangar. Sayari, Xilin, and Alondo all send you greeting pings, but are busy at the time of your landing. To your surprise though, Terry is banging on your airlock before too long.`
@@ -394,7 +322,7 @@ mission "Hai Building Mountaintop [2] Recruits"
 		dialog `You finally dock at <planet>, your tedious tour complete. Shortly after, you receive a ping informing you that <payment> has been deposited into your account. Terry must've set it up to happen automatically.`
 
 
-mission "ZZ Hai Building Mountaintop [2a] Sales Job"
+mission "ZZ Hai Reveal: Building Mountaintop [2a] Sales Job"
 	landing
 	invisible
 	source 
@@ -403,7 +331,7 @@ mission "ZZ Hai Building Mountaintop [2a] Sales Job"
 		not planet "Darkwaste"
 		government "Hai"
 	to offer
-		has "Hai Building Mountaintop [2] Recruits: active"
+		has "Hai Reveal: Building Mountaintop [2] Recruits: active"
 	on offer
 		"hai dog and pony" ++
 		conversation
@@ -442,11 +370,11 @@ mission "ZZ Hai Building Mountaintop [2a] Sales Job"
 
 
 
-mission "Hai Building Mountaintop [3] Furnishings"
-	name "Retrieve human furnishings."
-	description "The volunteers are so numerous that the Hai need outside help transporting furnishings for their quarters to the new station."
+mission "Hai Reveal: Building Mountaintop [3] Furnishings"
 	autosave
 	landing
+	name "Retrieve human furnishings."
+	description "The volunteers are so numerous that the Hai need outside help transporting furnishings for their quarters to the new station."
 	source "Mountaintop"
 	stopover "Prime"
 	destination "Mountaintop"
@@ -454,7 +382,7 @@ mission "Hai Building Mountaintop [3] Furnishings"
 	on visit
 		dialog `You have arrived at the Mountaintop construction site, but it isn't finished or staffed yet.`
 	to offer
-		has "Hai Building Mountaintop [2] Recruits: done"
+		has "Hai Reveal: Building Mountaintop [2] Recruits: done"
 	cargo "human furnishings" 200
 	blocked `A message left for you by Sayari reads, "<first>, we need your help and you're going to need 200 tons of cargo space for this." You should return here after freeing up <capacity>.`
 	on offer
@@ -466,13 +394,13 @@ mission "Hai Building Mountaintop [3] Furnishings"
 	on stopover
 		dialog `You have the furnishings the Hai ordered. It's time to return them to <destination>.`
 	on complete
-		event "role-play station active" 12
+		event "hai reveal: role-play station active" 12
 		event "news: hai video clip debunked"
 		log `Of all the hilariously mundane things that could trip up a deception, it turned out to be Hai-made furniture. Acquired a large shipment of human-made furniture from Prime in order to complete the station.`
 		conversation
 			`By the time you return, you are shocked to notice that the station seems to be rapidly approaching a completed state. Some four thousand people have already arrived, though some are still on board ships docked at the station. Once you register your delivery amidst the station chaos, it's only a few minutes later that you get a "thank you" message from Sayari. She strongly recommends that you hang around Hai space for the time being while events are ongoing, with a cryptic "P.S. You may get a message from a friend of mine soon."`
 
-event "role-play station active"
+event "hai reveal: role-play station active"
 	system "Ultima Thule"
 		government "Neutral"
 		object
@@ -502,6 +430,9 @@ event "role-play station active"
 			sprite planet/wormhole-syndicate-ad
 				"frame rate" 1
 				"random start frame"
+			distance 4208.63
+			period 2158.5
+		object
 			distance 4208.63
 			period 2158.5
 			object Mountaintop

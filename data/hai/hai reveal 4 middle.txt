@@ -16,7 +16,7 @@
 # Part 4: Search Korath and human space for the missing researchers
 
 #Timer trigger runs off Reveal 2 events, and ensures a minimum time between events if you do Reveal 3 events very quickly.
-mission "Hai Rescue [A00] Darkwaste Timer"
+mission "Hai Reveal: Rescue [A00] Darkwaste Timer"
 	landing
 	invisible
 	source
@@ -25,9 +25,9 @@ mission "Hai Rescue [A00] Darkwaste Timer"
 		not planet Darkwaste
 	destination Darkwaste
 	to offer
-		"hai slave prereq" >= 3
+		"hai reveal: slave prereq" >= 3
 		"combat rating" > 3000
-		has "Hai Leaks Response 6: done"
+		has "Hai Reveal: Leaks Response 6: done"
 	on offer
 		event "hai rescue: teeneep message" 20 30
 		fail
@@ -36,7 +36,7 @@ mission "Hai Rescue [A00] Darkwaste Timer"
 event "hai rescue: teeneep message"
 
 
-mission "Hai Rescue [A01] Visit Darkwaste"
+mission "Hai Reveal: Rescue [A01] Visit Darkwaste"
 	landing
 	name "Meet Teeneep"
 	description "Fly to <destination> to visit the Hai you rescued."
@@ -47,7 +47,7 @@ mission "Hai Rescue [A01] Visit Darkwaste"
 	destination Darkwaste
 	to offer
 		has "event: hai rescue: teeneep message"
-		has "Hai Building Mountaintop [3] Furnishings: done"
+		has "Hai Reveal: Building Mountaintop [3] Furnishings: done"
 #		or
 #			has "Pirate Troubles [4]: done"
 #			has "Pirate Troubles [4]: declined"
@@ -58,14 +58,14 @@ mission "Hai Rescue [A01] Visit Darkwaste"
 
 
 
-mission "Hai Rescue [A02] Symbol Identification"
+mission "Hai Reveal: Rescue [A02] Symbol Identification"
 	landing
 	name "Symbol Identification"
 	description "Fly to <destination> to ask the Quarg about the microtransceivers."
 	source Darkwaste
 	destination Hai-home
 	to offer
-		has "Hai Rescue [A01] Visit Darkwaste: done"
+		has "Hai Reveal: Rescue [A01] Visit Darkwaste: done"
 	on offer
 		log "People" "Teeneep Goot'r" `Teeneep is an activist and social leader among the Hai who heads an organization with hundreds of employees and many sponsors. She's used her extensive resources to search for answers about kidnapped specialists.`
 		log `Many Hai and humans have gone missing over the past few decades. Many of the ones who have subsequently been rescued have had mild cadmium poisoning from some technology not of human or Hai origin. Teeneep, a Hai social leader, is using her network of information-gatherers to find out what's going on. Heading to the Quarg south of Hai space to begin the search.`
@@ -110,7 +110,7 @@ mission "Hai Rescue [A02] Symbol Identification"
 			`	"No known technology of human or Hai origin exhausts anything which could create this effect. There are some microbots used in Hai medicine that are used to seal off ruptures causing internal bleeding, and their dispenser canisters have residual cadmium dust in them as residue, but that's the only thing we even bring onto a ship that uses it, and those are self-contained for disposal and the molecular bonding doesn't match anyway. There are some materials involved have properties unlike anything either of us make, which suggests this is coming from another race's technology."`
 			`	They share a glance with Teeneep, "We have our suspicions but they're not conclusive yet."`
 			branch questions
-				not "00 Hai Leaks Response 4B: declined"
+				not "00 Hai Reveal: Leaks Response 4B: declined"
 			`	"We did; however, get a hold of the scan results from the Geocoris you rescued. Interestingly, the self-repair systems it has appear to use a technology which could be responsible for something like this, and we suspect they came from the same place."`
 				goto questions
 			label patterns
@@ -134,7 +134,7 @@ mission "Hai Rescue [A02] Symbol Identification"
 				goto questions
 			label help
 			branch gipeep
-				has "Hai Rescue: Gipeep: done"
+				has "Hai Reveal: Rescue: Gipeep: done"
 			`	Teeneep smiles and gestures for you to follow as she walks over to a desk where an elderly Hai is conversing with another, younger, Hai. "Wayou, sorry to interrupt you. Could you please show Captain <last> the symbol?"`
 			`	Wayou taps on the controls for a moment and brings up a symbol that looks like an angry cat in a circle. Teeneep asks, "Have you seen this before?"`
 			choice
@@ -171,16 +171,16 @@ mission "Hai Rescue [A02] Symbol Identification"
 
 
 # Eventually needs a whole conversation variant for each main campaign. Potentially needs whole different goals. (To be a, b and c versions.)
-mission "Hai Rescue [A03a] Symbol Identification"
+mission "Hai Reveal: Rescue [A03a] Symbol Identification"
 	autosave
 	landing
 	name "Symbol Identification"
 	description "Check out the worlds near Allhome and make sure the Hai seem normal."
 	source "Hai-home"
 	to offer
-		has "Hai Rescue [A02] Symbol Identification: done"
+		has "Hai Reveal: Rescue [A02] Symbol Identification: done"
 	on offer
-		event "alondo symbol timer" 12
+		event "hai reveal: alondo symbol timer" 12
 		log `Been asked to check out the Hai spaceports in various systems near the wormhole, just to check nothing unexpected is happening.`
 		conversation
 			`You make what is beginning to feel like a standard request to land at the secure spaceport and disembark with relevant copies of files on a data stick in hand. It doesn't take long to track down Alondo, though you do end up having to wait for nearly half an hour while he finishes up some kind of meeting with a Hai official of some kind. When he's finished he waves you into the room gestures for you to take a seat, though the seat in question is clearly designed to be ergonomic for a Hai which makes for a rather strange experience for a human.`
@@ -189,27 +189,28 @@ mission "Hai Rescue [A03a] Symbol Identification"
 			`	He shrugs. "Plus, they say they're ok, but it'd be nice for someone else on our side to check on them still. It will probably be a couple of weeks till I can track someone down for you. So, go check on that for me, and I'll let you know."`
 				accept
 	to complete
-		has "event: alondo symbol timer"
+		has "event: hai reveal: alondo symbol timer"
 		
-event "alondo symbol timer"
+event "hai reveal: alondo symbol timer"
 
 
-mission "Hai Rescue [A03a1]"
+
+mission "Hai Reveal: Rescue [A03a1]"
 	minor
 	invisible
 	source
 		government "Republic" "Syndicate" "Hai" "Free Worlds" "Independent"
 		attributes "spaceport"
 	to offer
-		has "event: alondo symbol timer"
+		has "event: hai reveal: alondo symbol timer"
 		has "Pirate Troubles [0]: done"
 	on offer
-		fail "Hai Rescue [A03a] Symbol Identification"
+		fail "Hai Reveal: Rescue [A03a] Symbol Identification"
 		# This presumably does nothing if it's already failed.
 		dialog `A message from Alondo informs you that he has a tenuous lead he can give you when you're not busy.`
 
 
-mission "Hai Rescue [A03a2]"
+mission "Hai Reveal: Rescue [A03a2]"
 	minor
 	invisible
 	source
@@ -218,7 +219,7 @@ mission "Hai Rescue [A03a2]"
 	to offer
 		has "Pirate Troubles [0]: done"
 	on offer
-		fail "Hai Rescue [A03a] Symbol Identification"
+		fail "Hai Reveal: Rescue [A03a] Symbol Identification"
 
 
 
@@ -230,11 +231,11 @@ mission "Pirate Troubles [0]"
 		government "Hai"
 		not planet "Allhome"
 	to offer
-		has "Hai Rescue [A03a] Symbol Identification: offered"
+		has "Hai Reveal: Rescue [A03a] Symbol Identification: offered"
 		# Now integrated into the plot, previous conditions temporarily kept for posterity.
 		# has "First Contact: Unfettered: offered"
 		# or
-		#	has "event: pirates respond to leaks"
+		#	has "event: hai reveal: pirates respond to leaks"
 		#	and
 		#		"combat rating" > 1100
 		#		random < 10
@@ -658,7 +659,7 @@ mission "Pirate Troubles [4]"
 
 
 
-mission "Hai Rescue [A04] Report to Teeneep"
+mission "Hai Reveal: Rescue [A04] Report to Teeneep"
 	landing
 	name "Report to Teeneep"
 	description `Tell Teeneep about the experience with Scar's Legion.`
@@ -673,7 +674,7 @@ mission "Hai Rescue [A04] Report to Teeneep"
 
 
 
-mission "Hai Rescue [A05] Take Teeneep to Hai-home"
+mission "Hai Reveal: Rescue [A05] Take Teeneep to Hai-home"
 	landing
 	name "Return to Hai-home"
 	description `Take Teeneep to Hai-home.`
@@ -682,7 +683,7 @@ mission "Hai Rescue [A05] Take Teeneep to Hai-home"
 	passengers 1
 	blocked `It's probably not advisable to bring so many unnecessary people to a secret location on Darkwaste, you should return when your spare bunks are unoccupied.`
 	to offer
-		has "Hai Rescue [A04] Report to Teeneep: done"
+		has "Hai Reveal: Rescue [A04] Report to Teeneep: done"
 	on visit
 		dialog `Teeneep is on another ship not yet in the system, take off and wait for the ship to arrive in order to continue.`
 	on offer
@@ -758,7 +759,7 @@ mission "Hai Rescue [A05] Take Teeneep to Hai-home"
 
 
 # Eventually needs a whole conversation variant for each main campaign. This time with similar goals. (To be a, b and c versions.)
-mission "Hai Rescue [A06a] The Calm"
+mission "Hai Reveal: Rescue [A06a] The Calm"
 	landing
 	name "Preparation & Investigation"
 	description `Stop by <destination> on your way to following up the lead from Alondo.`
@@ -767,7 +768,7 @@ mission "Hai Rescue [A06a] The Calm"
 	cargo "hyperspace relays" 8
 	blocked `When you advise Alondo of your return he requests you ensure you have at least 8 tonnes of cargo space available.`
 	to offer
-		has "Hai Rescue [A05] Take Teeneep to Hai-home: done"
+		has "Hai Reveal: Rescue [A05] Take Teeneep to Hai-home: done"
 	on offer
 		conversation
 			`As soon as you disembark Teeneep slips off through an entirely different security checkpoint. She definitely shows them some sort of ID but you're some distance away by that point. A quick inquiry confirms that Alondo is actually around this time and you send him a message to alert him that you're heading his way.`
@@ -828,7 +829,7 @@ mission "Hai Rescue [A06a] The Calm"
 		
 		
 		
-mission "Hai Rescue [A07] Deliver the Relays"
+mission "Hai Reveal: Rescue [A07] Deliver the Relays"
 	autosave
 	landing
 	name "Preparation & Investigation"
@@ -841,7 +842,7 @@ mission "Hai Rescue [A07] Deliver the Relays"
 	destination Earth
 	cargo "hyperspace relays" 8
 	to offer
-		has "Hai Rescue [A06a] The Calm: done"
+		has "Hai Reveal: Rescue [A06a] The Calm: done"
 	on offer
 		conversation
 			`<Check up on mountaintop, have Terry tell you all about how well it's going with David Cohen's directing. Learn about her background as COO - explains her competency>`
@@ -861,7 +862,7 @@ mission "Hai Rescue [A07] Deliver the Relays"
 
 
 
-mission "Hai Rescue [A08] Symbol Identification"
+mission "Hai Reveal: Rescue [A08] Symbol Identification"
 	landing
 	name "Preparation & Investigation"
 	description "Return to <destination> with Batu Cegeen and your new information."
@@ -869,7 +870,7 @@ mission "Hai Rescue [A08] Symbol Identification"
 	destination Hai-home
 	passengers 1
 	to offer
-		has "Hai Rescue [A07] Deliver the Relays: offered"
+		has "Hai Reveal: Rescue [A07] Deliver the Relays: offered"
 	on visit
 		dialog `Batu is on another ship not yet in the system, take off and wait for the ship to arrive in order to continue.`
 	on offer
@@ -923,7 +924,7 @@ mission "Hai Rescue [A08] Symbol Identification"
 
 
 
-mission "Hai Rescue [A09] History of Appeasement"
+mission "Hai Reveal: Rescue [A09] History of Appeasement"
 	landing
 	name "Demanding Satisfaction"
 	description "Take Teeneep to <destination> to treat with the Unfettered."
@@ -931,7 +932,7 @@ mission "Hai Rescue [A09] History of Appeasement"
 	destination Darkcloak
 	passengers 1
 	to offer
-		has "Hai Rescue [A08] Symbol Identification: done"
+		has "Hai Reveal: Rescue [A08] Symbol Identification: done"
 	on visit
 		dialog `Teeneep is on another ship not yet in the system, take off and wait for the ship to arrive in order to continue.`
 	on offer
@@ -945,7 +946,7 @@ mission "Hai Rescue [A09] History of Appeasement"
 
 
 
-mission "Hai Rescue [A10] Demanding Satisfaction"
+mission "Hai Reveal: Rescue [A10] Demanding Satisfaction"
 	landing
 	name "Demanding Satisfaction"
 	description "Fly to <destination> and deliver Teeneep and her ultimatum to the Elders."
@@ -953,7 +954,7 @@ mission "Hai Rescue [A10] Demanding Satisfaction"
 	destination "Hai-home"
 	passengers 1
 	to offer
-		has "Hai Rescue [A09] History of Appeasement: done"
+		has "Hai Reveal: Rescue [A09] History of Appeasement: done"
 	on offer
 		log `Traveled to Unfettered Hai space with Teeneep and convinced them to throw their support behind her.`
 # Rework this to deal with Teeneep justifying her trueness (not just political opportunism), presenting the history of behavior to the Unfettered and requesting they support her in forcing the Elders into taking action. 
@@ -999,7 +1000,7 @@ mission "Hai Rescue [A10] Demanding Satisfaction"
 
 
 
-mission "Hai Rescue [A11] Sound the Alarm"
+mission "Hai Reveal: Rescue [A11] Sound the Alarm"
 	landing
 	name "Sound the Alarm"
 	description "Reach <destination> and deliver a warning."
@@ -1007,9 +1008,9 @@ mission "Hai Rescue [A11] Sound the Alarm"
 	destination "Mountaintop"
 	passengers 1
 	to offer
-		has "Hai Rescue [A10] Demanding Satisfaction: done"
+		has "Hai Reveal: Rescue [A10] Demanding Satisfaction: done"
 	on offer
-		event "hai and human ships at wormhole"
+		event "hai reveal: hai and human ships at wormhole"
 #		log ``
 		conversation
 			`Teeneep confronts the Elders again, tells them about the offer that the Unfettered provide. "If you don't do it, they will." Once again, the Elders remain passive and decline taking action. Insist that the Unfettered wouldn't dare move.`
@@ -1017,7 +1018,7 @@ mission "Hai Rescue [A11] Sound the Alarm"
 			`Sayari finds you and slips you a warning that the winds of change have picked up and all communication in or out of Hai space will be cut off the instant the election is announced formally. You tell Alondo, he directs you to fly to Mountaintop with *all* possible haste.`
 			`Hai security forces close the border and you have to run the gauntlet. However, the favor you have accrued at multiple levels of Hai society stays the hand of retribution.`
 
-event "hai and human ships at wormhole"
+event "hai reveal: hai and human ships at wormhole"
 	system "Waypoint"
 		remove fleet "Anti-Pirate Hai (Wormhole Travel)"
 		add fleet "Hai Wormhole Guards" 400
@@ -1037,12 +1038,12 @@ event "hai and human ships at wormhole"
 
 
 # Ensure there are some impressive fleets at each system.
-mission "Hai Rescue [A11-A] Permanent Fleets"
-	invisible
+mission "Hai Reveal: Rescue [A11-A] Permanent Fleets"
 	landing
+	invisible
 	source "Hai-home"
 	to offer
-		has "Hai Rescue [A10] Demanding Satisfaction: done"
+		has "Hai Reveal: Rescue [A10] Demanding Satisfaction: done"
 	to complete
 		never
 	npc
@@ -1057,12 +1058,12 @@ mission "Hai Rescue [A11-A] Permanent Fleets"
 		fleet "Hai Wormhole Guards" 40
 
 #These are separated because they leave at a different time.
-mission "Hai Rescue [A11-B] Permanent Fleets"
-	invisible
+mission "Hai Reveal: Rescue [A11-B] Permanent Fleets"
 	landing
+	invisible
 	source "Hai-home"
 	to offer
-		has "Hai Rescue [A10] Demanding Satisfaction: done"
+		has "Hai Reveal: Rescue [A10] Demanding Satisfaction: done"
 	to complete
 		never
 	npc
@@ -1077,7 +1078,7 @@ mission "Hai Rescue [A11-B] Permanent Fleets"
 
 
 
-mission "Hai Rescue [A12] Into the Lion's Den"
+mission "Hai Reveal: Rescue [A12] Into the Lion's Den"
 	landing
 	name "Into the Lion's Den"
 	description "Travel back to <destination> and ensure the diplomats are safe."
@@ -1085,7 +1086,7 @@ mission "Hai Rescue [A12] Into the Lion's Den"
 	destination "Hai-home"
 	passengers 1
 	to offer
-		has "Hai Rescue [A11] Sound the Alarm: done"
+		has "Hai Reveal: Rescue [A11] Sound the Alarm: done"
 	on offer
 #		log ``
 		conversation
@@ -1096,7 +1097,7 @@ mission "Hai Rescue [A12] Into the Lion's Den"
 
 
 
-mission "Hai Rescue [A13] A New Elder"
+mission "Hai Reveal: Rescue [A13] A New Elder"
 	landing
 	name "A New Elder"
 	description "Travel with Teeneep and the diplomatic corps to <stopover> and escort the Unfettered to <destination>."
@@ -1105,7 +1106,7 @@ mission "Hai Rescue [A13] A New Elder"
 	destination "Mountaintop"
 	passengers 1
 	to offer
-		has "Hai Rescue [A12] Into the Lion's Den: done"
+		has "Hai Reveal: Rescue [A12] Into the Lion's Den: done"
 	on offer
 #		log ``
 		conversation
@@ -1142,13 +1143,13 @@ mission "Hai Rescue [A13] A New Elder"
 		ship "Centipede (Teeneep)" "Teeneep's Ship"
 
 
-mission "Hai Rescue [A13-A] Unfettered Pickup"
-	invisible
+mission "Hai Reveal: Rescue [A13-A] Unfettered Pickup"
 	landing
+	invisible
 	source "Everhope"
 	destination "Mountaintop"
 	to offer
-		has "Hai Rescue [A13] A New Elder: active"
+		has "Hai Reveal: Rescue [A13] A New Elder: active"
 	npc
 		government "Hai (Friendly Unfettered)"
 		system "Ultima Thule"
@@ -1162,24 +1163,24 @@ ship "Centipede" "Centipede (Teeneep)"
 	add attributes
 		"required crew" 50
 	outfits
-		"Catalytic Ramscoop"
-		"Scram Drive"
 		"Chameleon Anti-Missile" 3
-		"Quantum Keystone"
-		"Outfits Expansion"
-		`"Biroo" Atomic Steering`
+		"Boulder Reactor"
+		"Hai Chasm Batteries" 2
 		"Hai Diamond Regenerator"
 		"Hai Williwaw Cooling" 2
-		"Hai Chasm Batteries" 2
-		"Boulder Reactor"
+		"Catalytic Ramscoop"
+		"Quantum Keystone"
+		"Outfits Expansion"
 		Brig
 		"Fuel Pod" 3
-		"A370 Atomic Thruster"
 		"Pulse Rifle" 131
+		"A370 Atomic Thruster"
+		`"Biroo" Atomic Steering`
+		"Scram Drive"
 
 
 
-mission "Hai Rescue [A14] A Time of Trouble"
+mission "Hai Reveal: Rescue [A14] A Time of Trouble"
 	landing
 	name "A Time of Trouble"
 	description "Escort innocent civilians to <destination>, safely away from the 'Pirate Menace'."
@@ -1187,7 +1188,7 @@ mission "Hai Rescue [A14] A Time of Trouble"
 	destination "Sunracer"
 	passengers 1
 	to offer
-		has "Hai Rescue [A13] A New Elder: done"
+		has "Hai Reveal: Rescue [A13] A New Elder: done"
 	on offer
 #		log ``
 		conversation

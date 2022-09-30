@@ -13,6 +13,63 @@
 
 ########################################################################
 
+system "Al Hurr"
+	hidden
+	pos -432 -491
+	government "Pirate"
+	belt 1312
+	trade "Clothing" 201
+	trade "Electronics" 658
+	trade "Equipment" 484
+	trade "Food" 280
+	trade "Heavy Metals" 850
+	trade "Industrial" 621
+	trade "Luxury Goods" 1134
+	trade "Medical" 582
+	trade "Metal" 339
+	trade "Plastic" 353
+	object
+		sprite star/f5
+		period 10
+	object
+		sprite planet/rock15
+		distance 382
+		period 52.6472
+	object
+		sprite planet/rock6
+		distance 686
+		period 77.7827
+	object Aspiration
+		sprite planet/ice8-b
+		distance 980
+		period 98.6622
+	object
+		sprite planet/dust6
+		distance 1299
+		period 119.0528
+	object
+		sprite planet/gas1
+		distance 1706.99
+		period 557.553
+		object
+			sprite planet/dust1
+			distance 216
+			period 11.1964
+planet Aspiration
+	attributes pirate
+	landscape land/sea17-harro
+	description `The world of Aspiration appears to be a mild, habitable world, but one currently in an advanced ice age now slowly retreating. The equatorial region of the planet is warm and comfortable, a cool temperate at the present time. The native biosphere seems to be mostly grasses and something resembling pine trees. In a few thousand years, it might look similar to Earth before it was paved over. For now, it's a sparse world with a single major town built on a promontory, overlooking a wide river mouth which carries runoff from continental scale glaciers to the sea.`
+	spaceport `The spaceport on Aspiration is a spaceport in the same way that an airport at a regional town is an airport. It has the most minimal facilities to handle a ship landing without disturbance to the nearby town, and that is it. There are no shops or stalls. Aspiration is not on any trade routes and it does not expect visitors. A lone freighter is parked up permanently on the outskirts.`
+	"required reputation" 100
+
+
+
+event "hai reveal: lofty goals"
+	system "Al Hurr"
+		remove hidden
+
+
+
 mission "Hai Reveal [D01] Cleanup"
 	landing
 	name "Hai Diplomacy"
@@ -22,10 +79,10 @@ mission "Hai Reveal [D01] Cleanup"
 	passengers 4
 	blocked "You need <bunks> passenger spaces to transport Xilin, Alondo, Sayari and Teeneep."
 	to offer
-		has "Hai Rescue [C08] Freedom: done"
+		has "Hai Reveal: Rescue [C08] Freedom: done"
 	on offer
-		event "mountaintop ascendant"
-		fail "Hai Rescue [C07A] Devil-Hide Fleet"
+		event "hai reveal: mountaintop ascendant"
+		fail "Hai Reveal: Rescue [C07A] Devil-Hide Fleet"
 		log `Returned the Hai to their own space to bring an end to the missing Hai saga. All that remains is to work out what to do about the leak and the cover story, so thin as to provide no modesty to its wearers.`
 		
 		log `Teeneep and General Choot'k, prominent leaders of the Hai and Unfettered, kissed in a romantic goodbye. They spoke of a future peaceful unification of the Hai.`
@@ -66,7 +123,7 @@ mission "Hai Reveal [D01] Cleanup"
 			`	You look from Xilin to Sayari and do your best to look like this isn't totally ruining the lovely breakfast you just had.`
 
 				
-event "mountaintop ascendant"
+event "hai reveal: mountaintop ascendant"
 	system "Ultima Thule"
 		object
 			sprite star/f0
@@ -93,6 +150,9 @@ event "mountaintop ascendant"
 				period 11.1964
 		object "Wormhole Alpha"
 			sprite planet/wormhole
+			distance 4208.63
+			period 2158.5
+		object
 			distance 4208.63
 			period 2158.5
 			object Mountaintop
@@ -170,7 +230,7 @@ mission "Hai Reveal [D03] Cleanup"
 	to offer
 		has "Hai Reveal [D02] Cleanup: done"
 	on offer
-		event "lofty spawn"
+		#event "hai reveal: lofty spawn"
 		log `Recovered Hai after mysterious circumstances left them on Sunracer. Heading to Freedom to follow up on a hunch about this loose end. Will hopefully find answers there.`
 		conversation
 			`	When you return to Mountaintop, an all-Hai greeting party is waiting to provide aid and coordinate the safe return of those you've rescued from Sunracer. It appears to have avoided media attention, and the summit is progressing toward a resolution at an acceptable rate. It's been slow going: the Hai and human legal systems are so different that establishing common legal terms of reference has been a long-winded exercise.`
@@ -201,7 +261,7 @@ mission "Hai Reveal [D04] Cleanup"
 	on enter Almaaz
 		dialog `As you depart the planet, you notice a new system has appeared on your scanners to the southwest. You should adjust your destination accordingly.`
 	on offer
-		event "lofty goals"
+		event "hai reveal: lofty goals"
 		log `Confirmed the loose end is Terry. Discovered the existence of another system in the Far North only accessible via jump drive.`
 		conversation
 			`	When you land on Freedom, the spaceport is busy as ever, but as you go around asking if anyone has seen a woman matching Terry's description, people start acting unusually toward you. You wouldn't describe it as frosty: no one actually seems to know anything, and they remain as friendly and helpful as you'd expect a bunch of anarchists to be. Yet, the more you ask around, the more it seems that people are following you around and whispering to each other. You wonder just who Terry really is, and just how deeply involved she was. She seems to have been one step ahead all the way.`
@@ -238,104 +298,54 @@ mission "Hai Reveal [D04] Cleanup"
 	#She's acting as the gatekeeper, gambling that the one she chooses to let through will have compassion and understanding.
 	
 	
-event "lofty spawn"
+#event "hai reveal: lofty spawn"
 # Half-way between Milky Way and Pug galaxy:
-	system "Al Hurr"
-		pos 5000 3500
-		government "Uninhabited"
-		belt 1312
-		trade "Clothing" 201
-		trade "Electronics" 658
-		trade "Equipment" 484
-		trade "Food" 280
-		trade "Heavy Metals" 850
-		trade "Industrial" 621
-		trade "Luxury Goods" 1134
-		trade "Medical" 582
-		trade "Metal" 339
-		trade "Plastic" 353
-		object
-			sprite star/f5
-			period 10
-		object
-			sprite planet/rock15
-			distance 382
-			period 52.6472
-		object
-			sprite planet/rock6
-			distance 686
-			period 77.7827
-		object Aspiration
-			sprite planet/ice8-b
-			distance 980
-			period 98.6622
-		object
-			sprite planet/dust6
-			distance 1299
-			period 119.0528
-		object
-			sprite planet/gas1
-			distance 1706.99
-			period 557.553
-			object
-				sprite planet/dust1
-				distance 216
-				period 11.1964
-	planet Aspiration
-		landscape land/sea17-harro
-		description `The world of Aspiration appears to be a mild, habitable world, but one currently in an advanced ice age now slowly retreating. The equatorial region of the planet is warm and comfortable, a cool temperate at the present time. The native biosphere seems to be mostly grasses and something resembling pine trees. In a few thousand years, it might look similar to Earth before it was paved over. For now, it's a sparse world with a single major town built on a promontory, overlooking a wide river mouth which carries runoff from continental scale glaciers to the sea.`
-		spaceport `The spaceport on Aspiration is a spaceport in the same way that an airport at a regional town is an airport. It has the most minimal facilities to handle a ship landing without disturbance to the nearby town, and that is it. There are no shops or stalls. Aspiration is not on any trade routes and it does not expect visitors. A lone freighter is parked up permanently on the outskirts.`
-		"required reputation" 100
-
-	
-event "lofty goals"
-	system "Al Hurr"
-		pos -432 -491
-		government "Pirate"
-		belt 1312
-		trade "Clothing" 201
-		trade "Electronics" 658
-		trade "Equipment" 484
-		trade "Food" 280
-		trade "Heavy Metals" 850
-		trade "Industrial" 621
-		trade "Luxury Goods" 1134
-		trade "Medical" 582
-		trade "Metal" 339
-		trade "Plastic" 353
-		object
-			sprite star/f5
-			period 10
-		object
-			sprite planet/rock15
-			distance 382
-			period 52.6472
-		object
-			sprite planet/rock6
-			distance 686
-			period 77.7827
-		object Aspiration
-			sprite planet/ice8-b
-			distance 980
-			period 98.6622
-		object
-			sprite planet/dust6
-			distance 1299
-			period 119.0528
-		object
-			sprite planet/gas1
-			distance 1706.99
-			period 557.553
-			object
-				sprite planet/dust1
-				distance 216
-				period 11.1964
-	planet Aspiration
-		attributes pirate
-		landscape land/sea17-harro
-		description `The world of Aspiration appears to be a mild, habitable world, but one currently in an advanced ice age now slowly retreating. The equatorial region of the planet is warm and comfortable, a cool temperate at the present time. The native biosphere seems to be mostly grasses and something resembling pine trees. In a few thousand years, it might look similar to Earth before it was paved over. For now, it's a sparse world with a single major town built on a promontory, overlooking a wide river mouth which carries runoff from continental scale glaciers to the sea.`
-		spaceport `The spaceport on Aspiration is a spaceport in the same way that an airport at a regional town is an airport. It has the most minimal facilities to handle a ship landing without disturbance to the nearby town, and that is it. There are no shops or stalls. Aspiration is not on any trade routes and it does not expect visitors. A lone freighter is parked up permanently on the outskirts.`
-		"required reputation" 100
+	#system "Al Hurr"
+	#	pos 5000 3500
+	#	government "Uninhabited"
+	#	belt 1312
+	#	trade "Clothing" 201
+	#	trade "Electronics" 658
+	#	trade "Equipment" 484
+	#	trade "Food" 280
+	#	trade "Heavy Metals" 850
+	#	trade "Industrial" 621
+	#	trade "Luxury Goods" 1134
+	#	trade "Medical" 582
+	#	trade "Metal" 339
+	#	trade "Plastic" 353
+	#	object
+	#		sprite star/f5
+	#		period 10
+	#	object
+	#		sprite planet/rock15
+	#		distance 382
+	#		period 52.6472
+	#	object
+	#		sprite planet/rock6
+	#		distance 686
+	#		period 77.7827
+	#	object Aspiration
+	#		sprite planet/ice8-b
+	#		distance 980
+	#		period 98.6622
+	#	object
+	#		sprite planet/dust6
+	#		distance 1299
+	#		period 119.0528
+	#	object
+	#		sprite planet/gas1
+	#		distance 1706.99
+	#		period 557.553
+	#		object
+	#			sprite planet/dust1
+	#			distance 216
+	#			period 11.1964
+	#planet Aspiration
+	#	landscape land/sea17-harro
+	#	description `The world of Aspiration appears to be a mild, habitable world, but one currently in an advanced ice age now slowly retreating. The equatorial region of the planet is warm and comfortable, a cool temperate at the present time. The native biosphere seems to be mostly grasses and something resembling pine trees. In a few thousand years, it might look similar to Earth before it was paved over. For now, it's a sparse world with a single major town built on a promontory, overlooking a wide river mouth which carries runoff from continental scale glaciers to the sea.`
+	#	spaceport `The spaceport on Aspiration is a spaceport in the same way that an airport at a regional town is an airport. It has the most minimal facilities to handle a ship landing without disturbance to the nearby town, and that is it. There are no shops or stalls. Aspiration is not on any trade routes and it does not expect visitors. A lone freighter is parked up permanently on the outskirts.`
+	#	"required reputation" 100
 
 
 mission "Hai Reveal [D05] Cleanup"

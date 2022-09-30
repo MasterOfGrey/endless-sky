@@ -11,7 +11,7 @@
 # You should have received a copy of the GNU General Public License along with
 # this program. If not, see <https://www.gnu.org/licenses/>.
 
-mission "Hai Rescue [B01] Information Blackout"
+mission "Hai Reveal: Rescue [B01] Information Blackout"
 	landing
 	invisible
 	name "Information Blackout"
@@ -19,9 +19,9 @@ mission "Hai Rescue [B01] Information Blackout"
 	source "Sunracer"
 	clearance
 	to offer
-		has "Hai Rescue [A14] A Time of Trouble: done"
+		has "Hai Reveal: Rescue [A14] A Time of Trouble: done"
 	on offer
-		event "hai and human ships at wormhole"
+		event "hai reveal: hai and human ships at wormhole"
 		conversation
 			`<Insert news item upon landing about The Navy moving a large fleet into the uninhabited region around Ultima Thule and blockades going up in Rigel, Nihal, Mirfak & Zaurak>`
 			`<you get contacted and told to visit the spaceport to meet with the captain of the Syndicate security detachment and get briefed.>`
@@ -29,12 +29,12 @@ mission "Hai Rescue [B01] Information Blackout"
 
 
 # Ensure there are some impressive fleets at each system.
-mission "Hai Rescue [B01-A] The Blockade Goes Up"
-	invisible
+mission "Hai Reveal: Rescue [B01-A] The Blockade Goes Up"
 	landing
+	invisible
 	source "Mountaintop"
 	to offer
-		has "Hai Rescue [A14] A Time of Trouble: offered"
+		has "Hai Reveal: Rescue [A14] A Time of Trouble: offered"
 	to complete
 		never
 	npc
@@ -83,7 +83,7 @@ mission "Hai Rescue [B01-A] The Blockade Goes Up"
 # The fight in this mission is very large, but it's also a complete roflstomp. The pirates are outnumbered 2-1, and out-gunned significantly worse than that.
 # You as the player have one job: make sure everyone jumps in together, and don't die. During the first campaign it was really important the fights were all balanced for you to be able to tip the balance.
 # THIS mission is designed to give you a spectacle. A little visual demonstration of what a real battle could potentially look and feel like with low stakes for you. It's a visual feast, not a challenge.
-mission "Hai Rescue [B02] Join the Fleet"
+mission "Hai Reveal: Rescue [B02] Join the Fleet"
 	name "Join the Fleet"
 	description "Join the fleet in <waypoint> and move on Stormhold."
 	source "Sunracer"
@@ -91,10 +91,10 @@ mission "Hai Rescue [B02] Join the Fleet"
 	destination "Stormhold"
 	clearance
 	to offer
-		has "Hai Rescue [B01] Information Blackout: offered"
+		has "Hai Reveal: Rescue [B01] Information Blackout: offered"
 	on offer
-		fail "Hai Rescue [B01] Information Blackout"
-		fail "Hai Rescue [A11-B] Permanent Fleets"
+		fail "Hai Reveal: Rescue [B01] Information Blackout"
+		fail "Hai Reveal: Rescue [A11-B] Permanent Fleets"
 		conversation
 			`<The Syndicate security captain hands you a pad with a secure validation sequence to confirm his briefing comes from the Navy, co-signed by Xilin.>`
 			`<The Republic has agreed to accompany the Hai to precisely one world which combined intelligence indicates as the most likely place for any kidnapped Hai to be, assuming they exist. At least two pirate groups there have been positively identified being involved in kidnappings or smugglings in the past.>`
@@ -148,9 +148,9 @@ mission "Hai Rescue [B02] Join the Fleet"
 	on enter "Oblate"
 		dialog `The next jump from here is to Alcyone. Make sure all ships are ready to jump all at once. The pirate and marauder lords of Stormhold have prepared for the invasion and are expected to be waiting. A disciplined arrival is essential.`
 	on complete
-		event "stormhold suppressed"
+		event "hai reveal: stormhold suppressed"
 
-event "stormhold suppressed"
+event "hai reveal: stormhold suppressed"
 	#Update pirate and anti-pirate spawns in Alcyone - Hai ships stay landed so they don't travel into Syndi space. Korath ships keep away.
 	system "Alcyone"
 		remove fleet "Small Core Pirates" # 400
@@ -159,12 +159,12 @@ event "stormhold suppressed"
 		add fleet "Human Wormhole Guards" 500
 
 
-mission "Hai Rescue [B02-A] The Blockade Goes Up"
-	invisible
+mission "Hai Reveal: Rescue [B02-A] The Blockade Goes Up"``
 	landing
+	invisible
 	source "Stormhold"
 	to offer
-		has "Hai Rescue [B02] Join the Fleet: done"
+		has "Hai Reveal: Rescue [B02] Join the Fleet: done"
 	to complete
 		never
 	npc
@@ -182,7 +182,7 @@ mission "Hai Rescue [B02-A] The Blockade Goes Up"
 
 
 
-mission "Hai Rescue [B03] Contact Giti"
+mission "Hai Reveal: Rescue [B03] Contact Giti"
 	landing
 	name "Contact Giti"
 	description "Go to <destination> to get a line of communication out to Giti."
@@ -190,7 +190,7 @@ mission "Hai Rescue [B03] Contact Giti"
 	destination "Canyon"
 	clearance
 	to offer
-		has "Hai Rescue [B02] Join the Fleet: done"
+		has "Hai Reveal: Rescue [B02] Join the Fleet: done"
 	on offer
 		conversation
 			`You mostly wait around at the primary spaceport while certain targeted raids are made on high-priority warlords, until General Choot'k, Teeneep, Sayari, Danforth, et al rock up to discuss.`
@@ -206,52 +206,40 @@ mission "Hai Rescue [B03] Contact Giti"
 # spoils of wars against Korath and Wanderers:
 ship "Shield Beetle" "Shield Beetle (Sunbeam Korath Jump)"
 	outfits
-		"Large Heat Shunt" 2
-		"Jump Drive"
-		"Systems Core (Large)"
-		"Quantum Keystone"
-		"Outfits Expansion" 3
-		"Boulder Reactor" 3
-		`"Bufaer" Atomic Steering`
 		Sunbeam 6
 		"Korath Warder"
+		"Boulder Reactor" 3
+		"Systems Core (Large)"
+		"Outfits Expansion" 3
+		"Large Heat Shunt" 2
 		"Small Heat Shunt"
-		"Thruster (Planetary Class)"
 		"Fuel Processor" 2
+		"Quantum Keystone"
+		"Thruster (Planetary Class)"
+		`"Bufaer" Atomic Steering`
+		"Jump Drive"
 
 # Unfettered flagship carrying the surviving human operatives
 ship "Shield Beetle" "Shield Beetle (Sunbeam Korath Jump Full)"
 	add attributes
 		"required crew" 43
 	outfits
-		"Large Heat Shunt" 2
-		"Jump Drive"
-		"Systems Core (Large)"
-		"Quantum Keystone"
-		"Outfits Expansion" 3
-		"Boulder Reactor" 3
-		`"Bufaer" Atomic Steering`
 		Sunbeam 6
 		"Korath Warder"
+		"Boulder Reactor" 3
+		"Systems Core (Large)"
+		"Outfits Expansion" 3
+		"Large Heat Shunt" 2
 		"Small Heat Shunt"
-		"Thruster (Planetary Class)"
 		"Fuel Processor" 2
+		"Quantum Keystone"
+		"Thruster (Planetary Class)"
+		`"Bufaer" Atomic Steering`
+		"Jump Drive"
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-mission "Hai Rescue [B02] Diplomacy: Syndicate"
+mission "Hai Reveal: Rescue [B02] Diplomacy: Syndicate"
 	landing
 	name "Missing Researchers"
 	description "Visit <waypoints>, then escort Teeneep's Centipede to <destination>. Payment is <payment>."
@@ -262,7 +250,7 @@ mission "Hai Rescue [B02] Diplomacy: Syndicate"
 	on visit
 		dialog `To finish this mission, you must visit <waypoints>, and then land with Teeneep's Centipede.`
 	to offer
-		has "Hai Rescue [B01] Election: done"
+		has "Hai Reveal: Rescue [B01] Election: done"
 	on enter "Waypoint"
 		dialog `There is a massive fleet of Hai ships here, and more coming in all the time. If this fleet were to enter human space, the Navy might be overrun.`
 	on enter "Ultima Thule"
@@ -288,7 +276,7 @@ mission "Hai Rescue [B02] Diplomacy: Syndicate"
 		personality timid escort
 		ship "Centipede (Teeneep)" "Teeneep's Ship"
 
-mission "Hai Rescue [B02B] Diplomacy: Syndicate (Retry)"
+mission "Hai Reveal: Rescue [B02B] Diplomacy: Syndicate (Retry)"
 	landing
 	name "Missing Researchers"
 	description "Visit <waypoints>, then escort Teeneep's Centipede to <destination>. Payment is <payment>."
@@ -298,10 +286,10 @@ mission "Hai Rescue [B02B] Diplomacy: Syndicate (Retry)"
 	destination "Sunracer"
 	repeat
 	to offer
-		has "Hai Rescue [B02] Diplomacy: Syndicate: declined"
-		not "Hai Rescue [B02B] Diplomacy: Syndicate (Retry): failed"
-		not "Hai Rescue [B02B] Diplomacy: Syndicate (Retry): done"
-		not "Hai Rescue [B02B] Diplomacy: Syndicate (Retry): active"
+		has "Hai Reveal: Rescue [B02] Diplomacy: Syndicate: declined"
+		not "Hai Reveal: Rescue [B02B] Diplomacy: Syndicate (Retry): failed"
+		not "Hai Reveal: Rescue [B02B] Diplomacy: Syndicate (Retry): done"
+		not "Hai Reveal: Rescue [B02B] Diplomacy: Syndicate (Retry): active"
 	on visit
 		dialog `To finish this mission, you must visit Waypoint and Ultima Thule, and then land with Teeneep's Centipede.`
 	on enter "Waypoint"
@@ -327,7 +315,7 @@ mission "Hai Rescue [B02B] Diplomacy: Syndicate (Retry)"
 		ship "Centipede (Teeneep)" "Teeneep's Ship"
 
 
-mission "Hai Rescue [B03] Diplomacy: Syndicate Internal Affairs"
+mission "Hai Reveal: Rescue [B03] Diplomacy: Syndicate Internal Affairs"
 	landing
 	name "Missing Researchers"
 	description "Escort Teeneep's Centipede to Parliament on <destination>. Payment is <payment>."
@@ -335,8 +323,8 @@ mission "Hai Rescue [B03] Diplomacy: Syndicate Internal Affairs"
 	destination "Earth"
 	to offer
 		or
-			has "Hai Rescue [B02] Diplomacy: Syndicate: done"
-			has "Hai Rescue [B02B] Diplomacy: Syndicate (Retry): done"
+			has "Hai Reveal: Rescue [B02] Diplomacy: Syndicate: done"
+			has "Hai Reveal: Rescue [B02B] Diplomacy: Syndicate (Retry): done"
 	on offer
 		log "People" "Stephen Moray" `Deputy Director Moray works for Syndicate Internal Affairs dealing with pirate-related matters. In addition to enforcing the law, he also smuggles slaves from pirate worlds into freedom in Syndicate space. He has promised to find out who is responsible for the kidnappings.`
 		conversation
@@ -361,7 +349,7 @@ mission "Hai Rescue [B03] Diplomacy: Syndicate Internal Affairs"
 		personality timid escort
 		ship "Centipede (Teeneep)" "Teeneep's Ship"
 
-mission "Hai Rescue [B04] Diplomacy: Treaty Negotiation"
+mission "Hai Reveal: Rescue [B04] Diplomacy: Treaty Negotiation"
 	landing
 	name "Missing Researchers"
 	description "Escort Teeneep's Centipede to Parliament on <destination>. Payment is <payment>."
@@ -370,7 +358,7 @@ mission "Hai Rescue [B04] Diplomacy: Treaty Negotiation"
 	on enter "Mirfak"
 		dialog `As you enter the system, authorities on <planet> ask you to land with Teeneep and meet a Syndicate representative immediately. They give you unusual landing coordinates, next to a warehouse.`
 	to offer
-		has "Hai Rescue [B03] Diplomacy: Syndicate Internal Affairs: done"
+		has "Hai Reveal: Rescue [B03] Diplomacy: Syndicate Internal Affairs: done"
 	on visit
 		dialog `You left Teeneep's ship behind. Depart and wait for it to arrive before landing again.`
 	on offer
@@ -437,12 +425,12 @@ mission "Hai Rescue [B04] Diplomacy: Treaty Negotiation"
 		personality timid escort
 		ship "Centipede (Teeneep)" "Teeneep's Ship"
 
-mission "Hai Rescue [B04Z] Guard"
+mission "Hai Reveal: Rescue [B04Z] Guard"
 	landing
 	invisible
 	source "Sunracer"
 	to offer
-		has "Hai Rescue [B04] Diplomacy: Treaty Negotiation: done"
+		has "Hai Reveal: Rescue [B04] Diplomacy: Treaty Negotiation: done"
 	npc kill
 		government "Pirate"
 		personality disables harvests plunders staying nemesis
@@ -452,7 +440,7 @@ mission "Hai Rescue [B04Z] Guard"
 			variant
 				"Palavret"
 
-mission "Hai Rescue [B05] Plant a Spy"
+mission "Hai Reveal: Rescue [B05] Plant a Spy"
 	name "Missing Researchers"
 	description "Plant the monitoring orb on <stopovers>, and then take Tutitot to <destination> to be kidnapped."
 	source "Sunracer"
@@ -463,7 +451,7 @@ mission "Hai Rescue [B05] Plant a Spy"
 	on visit
 		dialog `To finish this mission, you need to deposit the alien orb at <stopovers> and then deliver Tutitot to <destination>.`
 	to offer
-		has "Hai Rescue [B04] Diplomacy: Treaty Negotiation: done"
+		has "Hai Reveal: Rescue [B04] Diplomacy: Treaty Negotiation: done"
 	on enter "Devil-Hide"
 		dialog `You quickly notice a Korath Raider with pirate markings. Your last visit must have encouraged increased security.`
 	on offer
@@ -474,7 +462,7 @@ mission "Hai Rescue [B05] Plant a Spy"
 			`	Tutitot turns and walks toward your ship as if in a trance. Teeneep follows from a distance, watching the Hai's odd behavior. After a moment, she turns to you. "You will be paid well upon your return," says Teeneep. "Please hurry."`
 				accept
 	on complete
-		event "tutitot is ready" 18
+		event "hai reveal: tutitot is ready" 18
 		conversation
 			`Tutitot bids you farewell and walks to a nearby alley. You stay long enough to see a group of men grab him and drag him to a well-hidden ship. They depart, and it is probably time for you to do the same.`
 			`	Now you need to wait for the orb to "send you a feeling" so you know to return here. Tutitot said it would be two or three weeks.`
@@ -482,9 +470,9 @@ mission "Hai Rescue [B05] Plant a Spy"
 	on stopover
 		dialog `You don a protective space suit and leave your ship with the strange orb. As your suit starts to give warnings that it is beginning to register atmospheric drag, the orb flashes, and the blinking blue light swirls through it and into your gloved hand, causing a tingling sensation to run from your palm to up between your eyes. The now dark orb flies out of your hand to a distance of about fifty meters, hovers there for a few seconds, and then disappears. You can only surmise that it must have some sort of cloaking device. With the orb delivered, you jet quickly back to your ship before the gravity well can drag you down. It's time to take Tutitot to <destination> to be "kidnapped."`
 
-event "tutitot is ready"
+event "hai reveal: tutitot is ready"
 
-mission "Hai Rescue [B06] Tutitot Reports"
+mission "Hai Reveal: Rescue [B06] Tutitot Reports"
 	landing
 	name "Missing Researchers"
 	description "Land on <destination> to receive a report from Tutitot."
@@ -492,14 +480,14 @@ mission "Hai Rescue [B06] Tutitot Reports"
 		not attributes "uninhabited" "whispering void"
 	destination "Devil-Eye"
 	to offer
-		has "event: tutitot is ready"
+		has "event: hai reveal: tutitot is ready"
 	on offer
 		log `Felt a strange sensation, likely the alien orb telling me to return to Devil-Eye and contact Tutitot.`
 		conversation
 			`As soon as your ship touches ground, you feel a strange sensation. It's like a thousand voices are whispering in your mind. This must be a message from the strange orb, telling you it is time to check on Tutitot.`
 				accept
 
-mission "Hai Rescue [B07] Return"
+mission "Hai Reveal: Rescue [B07] Return"
 	landing
 	name "Missing Researchers"
 	description "Land on <destination> to receive report back to Teeneep. Payment is <payment>."
@@ -508,7 +496,7 @@ mission "Hai Rescue [B07] Return"
 	on enter "Mirfak"
 		dialog `As you enter the system, authorities on <planet> give you landing coordinates for a secret Syndicate base. They ask you to land as soon as possible.`
 	to offer
-		has "Hai Rescue [B06] Tutitot Reports: done"
+		has "Hai Reveal: Rescue [B06] Tutitot Reports: done"
 	on offer
 		conversation
 			`You land, and the mysterious orb appears in your cockpit, right in front of your face. You don't know how it entered your ship, but this is alien technology. If the Quarg do not understand it, you do not expect to understand it either.`
@@ -547,7 +535,7 @@ mission "Hai Rescue [B07] Return"
 	on complete
 		log `Heard back from Tutitot: Philosopher's Paradise is much older and larger than previously thought, and it's well-defended.`
 
-mission "Hai Rescue [B08] Re-Plan"
+mission "Hai Reveal: Rescue [B08] Re-Plan"
 	landing
 	name "Missing Researchers"
 	description "Escort Teeneep's ship to <destination>. Payment is <payment>."
@@ -555,7 +543,7 @@ mission "Hai Rescue [B08] Re-Plan"
 	destination "Darkcloak"
 	clearance `When you tell the Unfettered why you've arrived, they inform you that their leaders await Teeneep in their war room.`
 	to offer
-		has "Hai Rescue [B07] Return: done"
+		has "Hai Reveal: Rescue [B07] Return: done"
 	on visit
 		dialog `You forgot Teeneep's Centipede. Depart and wait for it to arrive in the system before landing again.`
 	on offer
@@ -573,7 +561,7 @@ mission "Hai Rescue [B08] Re-Plan"
 	on complete
 		payment 800000
 
-mission "Hai Rescue [C01] Bloody Love Blooms"
+mission "Hai Reveal: Rescue [C01] Bloody Love Blooms"
 	landing
 	name "Missing Researchers"
 	description "Fly to <stopovers> to talk to the Hai authorities and see what can be done to arrange the requested outfitting. Teeneep and the Unfettered ships will be waiting on <destination> when you finish."
@@ -581,7 +569,7 @@ mission "Hai Rescue [C01] Bloody Love Blooms"
 	stopover "Hai-home"
 	destination "Allhome"
 	to offer
-		has "Hai Rescue [B08] Re-Plan: done"
+		has "Hai Reveal: Rescue [B08] Re-Plan: done"
 	on offer
 		"reputation: Hai (Unfettered)" >?= 10
 		log `Traveled to Unfettered Hai space with Teeneep and convinced them to help liberate Philosopher's Paradise.`
@@ -637,14 +625,14 @@ mission "Hai Rescue [C01] Bloody Love Blooms"
 			`	"I'll sort out the approvals, and I'm sure the Marshal can figure out the logistics. Give me the details, and we'll have it all waiting for you on Prime by the time you arrive."`
 			`	As he seems eager to get that ball rolling, you thank him and leave to return to your ship.`
 
-mission "Hai Rescue [C02] Escort to Arms Purchase"
+mission "Hai Reveal: Rescue [C02] Escort to Arms Purchase"
 	landing
 	name "Missing Researchers"
 	description "Escort the Unfettered Hai Shield Beetles to <destination>. All must arrive intact. Payment is <payment>."
 	source "Allhome"
 	destination "Prime"
 	to offer
-		has "Hai Rescue [C01] Bloody Love Blooms: done"
+		has "Hai Reveal: Rescue [C01] Bloody Love Blooms: done"
 	on visit
 		dialog `To finish this mission, all eleven Unfettered Hai Shield Beetles must land with you.`
 	on enter Betelgeuse
@@ -673,27 +661,27 @@ mission "Hai Rescue [C02] Escort to Arms Purchase"
 			`As you come in to land, the local Republic officials inform you that the outfitters have emptied ten large bays so nobody notices the Hai on the ships. There are few planets with such a large excess capacity for capital ship outfitter bays; it's no wonder why Xilin picked <planet>.`
 
 
-mission "Hai Rescue [C03] Unfettered Escort"
+mission "Hai Reveal: Rescue [C03] Unfettered Escort"
 	landing
 	invisible
 	source "Prime"
 	destination "Foundry"
 	to offer
-		has "Hai Rescue [C02] Escort to Arms Purchase: done"
+		has "Hai Reveal: Rescue [C02] Escort to Arms Purchase: done"
 	on enter Almaaz
 		dialog `You receive a message once you are safely to the staging system of Almaaz: the Republic authorities are paying you <payment> for your assistance thus far. They imply that if you pull this off, further rewards may await.`
 		payment 600000
 
 # Special outfitting for the Philsopher's Paradise battle.
 
-mission "Hai Rescue [C04] Foundry"
+mission "Hai Reveal: Rescue [C04] Foundry"
 	landing
 	name "Missing Researchers"
 	description "Escort the combined fleet to <destination>. All Shield Beetles must arrive intact. Payment is <payment>."
 	source "Prime"
 	destination "Foundry"
 	to offer
-		has "Hai Rescue [C02] Escort to Arms Purchase: done"
+		has "Hai Reveal: Rescue [C02] Escort to Arms Purchase: done"
 	on visit
 		dialog `To finish this mission, all eleven Unfettered Hai Shield Beetles must land with you.`
 	on offer
@@ -730,14 +718,14 @@ mission "Hai Rescue [C04] Foundry"
 		payment 600000
 
 
-mission "Hai Rescue [C05] Operatives"
+mission "Hai Reveal: Rescue [C05] Operatives"
 	landing
 	name "Pick up Operatives"
 	description "Head to <destination> to pick up 200 operatives and their 70 tons of gear. Payment is <payment>."
 	source "Foundry"
 	destination "Valhalla"
 	to offer
-		has "Hai Rescue [C04] Foundry: done"
+		has "Hai Reveal: Rescue [C04] Foundry: done"
 	on offer
 		conversation
 			`Deputy Director Stephen Moray greets you as you exit your ship. "I have no doubt you and the Unfettered will handle the space battle, but we need some special operatives to storm the city. The Republic has rounded up the best troops in human space and has armed them with some special equipment. They're being very hush-hush about it, but I understand it is advanced gear Deep Sky has been developing.`
@@ -746,7 +734,7 @@ mission "Hai Rescue [C05] Operatives"
 	on complete
 		payment 600000
 
-mission "Hai Rescue [C06] Meet the Fleet"
+mission "Hai Reveal: Rescue [C06] Meet the Fleet"
 	landing
 	name "Rejoin the Fleet at <planet>"
 	description "Rejoin the Unfettered at <destination>. Payment is <payment>."
@@ -756,7 +744,7 @@ mission "Hai Rescue [C06] Meet the Fleet"
 	cargo "anti-pirate gear" 70
 	blocked "You don't have the room for all <bunks> operatives and their <tons> of equipment. Land here again once you have that much space."
 	to offer
-		has "Hai Rescue [C05] Operatives: done"
+		has "Hai Reveal: Rescue [C05] Operatives: done"
 	on visit
 		dialog `You've forgotten some of the operatives or their equipment; they're probably in your escorts. Wait for the escorts to arrive, and land again to finish this mission.`
 	on offer
@@ -768,25 +756,25 @@ mission "Hai Rescue [C06] Meet the Fleet"
 		payment 600000
 
 
-mission "Hai Rescue [C07A] Devil-Hide Fleet"
+mission "Hai Reveal: Rescue [C07A] Devil-Hide Fleet"
 	landing
 	invisible
 	source "Foundry"
 	destination "Hai-home"
 	to offer
-		has "Hai Rescue [C06] Meet the Fleet: done"
+		has "Hai Reveal: Rescue [C06] Meet the Fleet: done"
 # Workaround for bug #1938 is to introduce another bug the user is unlikely to
 # trigger. Visit Hai-home with this fleet and it vanishes.
 #	to complete
 #		has "Hai Reveal [D01] Cleanup: done"
 	to fail
 		or
-			has "Hai Rescue [C07] Devil-Hide Battle: failed"
-			has "Hai Rescue [C07] Devil-Hide Battle: declined"
+			has "Hai Reveal: Rescue [C07] Devil-Hide Battle: failed"
+			has "Hai Reveal: Rescue [C07] Devil-Hide Battle: declined"
 			has "Hai Reveal [D01] Cleanup: failed"
 			has "Hai Reveal [D01] Cleanup: declined"
-			has "Hai Rescue [C08] Freedom: failed"
-			has "Hai Rescue [C08] Freedom: declined"
+			has "Hai Reveal: Rescue [C08] Freedom: failed"
+			has "Hai Reveal: Rescue [C08] Freedom: declined"
 	npc
 		government "Hai (Friendly Unfettered)"
 		personality escort heroic
@@ -797,7 +785,7 @@ mission "Hai Rescue [C07A] Devil-Hide Fleet"
 			variant
 				"Shield Beetle (Plasma Blaster Jump)"
 
-mission "Hai Rescue [C07] Devil-Hide Battle"
+mission "Hai Reveal: Rescue [C07] Devil-Hide Battle"
 	landing
 	name "Missing Researchers"
 	description "Dominate <planet>. Land with the Unfettered Flagship and all 200 operatives."
@@ -807,15 +795,15 @@ mission "Hai Rescue [C07] Devil-Hide Battle"
 	destination "Philosopher's Paradise"
 	blocked "You need room for all <bunks> operatives and their <tons> of equipment."
 	to offer
-		has "Hai Rescue [C06] Meet the Fleet: done"
+		has "Hai Reveal: Rescue [C06] Meet the Fleet: done"
 	on offer
 		conversation
 			`General Choot'k meets you as you're preparing for the invasion. "I want to see you prove yourself in battle before I open the entrance to the Philosopher's Paradise. When we arrive at Devil-Hide, we'll first fight the defense fleet waiting for us. Then, you'll demand tribute from the city. They'll keep sending defense fleets until they resign to their fate and pay you daily tribute. We won't help you fight the tribute defense fleets, but we'll fight the pirates waiting for our arrival and any other pirates that show up."`
 				accept
 	on fail
-		fail "Hai Rescue [C07A] Devil-Hide Fleet"
+		fail "Hai Reveal: Rescue [C07A] Devil-Hide Fleet"
 	on decline
-		fail "Hai Rescue [C07A] Devil-Hide Fleet"
+		fail "Hai Reveal: Rescue [C07A] Devil-Hide Fleet"
 	on visit
 		conversation
 			`To complete this mission, you must land with all <bunks> operatives, their <tons> tons of gear, and General Choot'k's Shield Beetle.`
@@ -830,12 +818,12 @@ mission "Hai Rescue [C07] Devil-Hide Battle"
 				launch
 	on accept
 		event "Philosopher's Paradise can be dominated"
-	npc save accompany
+	npc accompany save
 		government "Hai (Friendly Unfettered)"
 		personality escort heroic
 		ship "Shield Beetle (Sunbeam Korath Jump)" "Unfettered Flagship"
 	on complete
-		fail "Hai Rescue [B04Z] Guard"
+		fail "Hai Reveal: Rescue [B04Z] Guard"
 		event "Liberated Philosopher's Paradise"
 	npc
 		government "Pirate (Devil-Run Gang)"
@@ -858,7 +846,7 @@ event "Philosopher's Paradise can be dominated"
 			threshold 3000
 			fleet "Devil-Run Warships" 5
 
-mission "Hai Rescue [C08] Freedom"
+mission "Hai Reveal: Rescue [C08] Freedom"
 	landing
 	name "Missing Researchers"
 	description "Escort General Choot'k's ship to <stopovers> and then <destination>. Payment is <payment>."
@@ -866,15 +854,15 @@ mission "Hai Rescue [C08] Freedom"
 	source "Philosopher's Paradise"
 	destination "Hai-home"
 	to offer
-		has "Hai Rescue [C07] Devil-Hide Battle: done"
+		has "Hai Reveal: Rescue [C07] Devil-Hide Battle: done"
 	on visit
 		dialog `To finish this mission, you need to wait for General Choot'k's ship to arrive and land again.`
 	on fail
-		fail "Hai Rescue [C07A] Devil-Hide Fleet"
+		fail "Hai Reveal: Rescue [C07A] Devil-Hide Fleet"
 	on decline
-		fail "Hai Rescue [C07A] Devil-Hide Fleet"
+		fail "Hai Reveal: Rescue [C07A] Devil-Hide Fleet"
 	on offer
-		fail "Hai Rescue [B04Z] Guard"
+		fail "Hai Reveal: Rescue [B04Z] Guard"
 		log `Factions` `Philosopher's Paradise` `Formerly a pirate stronghold, this city of scientists is a hundred twenty years old now. Korath, Hai, and Humans live peacefully, working side-by-side, and most have no desire to leave. They value their independence and have refused Republic membership. This city orbits a strange world that defies analysis in a region of space untouched by civilization. Quarg refuse to go here.`
 		log `Liberated Philosopher's Paradise.`
 		conversation
@@ -957,18 +945,18 @@ mission "Hai Rescue [C08] Freedom"
 				accept
 	on complete
 		payment 1000000
-		fail "Hai Rescue [B01-A] The Blockade Goes Up"
+		fail "Hai Reveal: Rescue [B01-A] The Blockade Goes Up"
 	npc save accompany
 		government "Hai (Friendly Unfettered)"
 		personality escort heroic
 		ship "Shield Beetle (Sunbeam Korath Jump Full)" "Unfettered Flagship"
 				
-mission "Hai Rescue [C08G] Philosopher Guard"
+mission "Hai Reveal: Rescue [C08G] Philosopher Guard"
 	landing
 	invisible
 	source "Philosopher's Paradise"
 	to offer
-		has "Hai Rescue [C07] Devil-Hide Battle: done"
+		has "Hai Reveal: Rescue [C07] Devil-Hide Battle: done"
 	npc kill
 		government "Philosophers"
 		personality heroic staying
@@ -1002,7 +990,7 @@ mission "Hai Rescue [C08G] Philosopher Guard"
 
 
 
-mission "Hai Rescue [A04] Tarazed Analysis"
+mission "Hai Reveal: Rescue [A04] Tarazed Analysis"
 	landing
 	name "Missing Researchers"
 	description `Find and board a ship that has microtransceivers. Your display will identify such ships as belonging to the "Smuggler" government. Try the uninhabited systems and pirate systems near Ultima Thule. Head to <destination> afterwards.`
@@ -1010,13 +998,13 @@ mission "Hai Rescue [A04] Tarazed Analysis"
 	destination Earth
 	clearance `Curious about your story, the authorities let you land.`
 	to offer
-		has "ZZ Hai Rescue [A03a] Symbol Identification: done"
+		has "ZZ Hai Reveal: Rescue [A03a] Symbol Identification: done"
 	to complete
-		has "Hai Rescue [A05] Boarded Smuggler: offered"
+		has "Hai Reveal: Rescue [A05] Boarded Smuggler: offered"
 	on visit
 		dialog `You have not yet boarded a ship to learn anything about the smugglers. You will need to do this to continue.`
 	on offer
-		event "devil-run smugglers visible"
+		event "hai reveal: devil-run smugglers visible"
 		log "People" "Goraz Zoltof" `Goraz is a communications researcher from Tarazed Shipyards. His wife went missing some time ago, and he hopes his research will lead to her rescue.`
 		log "Factions" "Smugglers" `Some pirate or merchant ships (identified by the computer as "Smuggler") carry slaves with special microtransceivers. They are probably carrying human or Hai researchers.`
 		log `Goraz Zoltof used the galactic network of television transmitters to scan for evidence of smuggling ships carrying kidnapping victims with microtransceivers. He detected hints of transmissions in the uninhabited space between the Far North and the Syndicate, and also near pirate systems.`
@@ -1058,7 +1046,7 @@ fleet "Smuggler (Hai Traffickers)"
 		# The Corvettes are infrequent because they're nearly impossible to catch and serve mostly to show that the smugglers are desperate to avoid capture.
 		"Corvette (Hai Trafficker)"
 
-event "devil-run smugglers visible"
+event "hai reveal: devil-run smugglers visible"
 	# Uninhabited systems near Hai space
 	system "Ultima Thule"
 		add fleet "Smuggler (Hai Traffickers)" 1000
@@ -1133,20 +1121,20 @@ event "devil-run smugglers visible"
 
 
 
-mission "Hai Rescue [A05] Boarded Smuggler"
+mission "Hai Reveal: Rescue [A05] Boarded Smuggler"
 	name "Missing Researchers"
 	description "You have the information Giti Gilani will need. It is time to visit her on <destination>."
 	boarding
 	destination Earth
 	to offer
-		has "Hai Rescue [A04] Tarazed Analysis: active"
+		has "Hai Reveal: Rescue [A04] Tarazed Analysis: active"
 	source
 		government "Smuggler (Hai Trafficker)"
 	on offer
 		conversation
 			`As you approach the airlock of the smuggler ship <origin>, the door opens and a Hai rushes through pointing a gun back towards a human in the ship. The human and Hai shoot at the same time, killing each other. In his death throes, the Hai manages to toss a keycard in your direction. It is damaged beyond usefulness, but you can see a pair of logos on it. One looks like an angry cat in a circle, and the other looks demonic.`
 			branch nogipeep
-				not "Hai Rescue: Gipeep: done"
+				not "Hai Reveal: Rescue: Gipeep: done"
 			`	The angry cat symbol startles you with a flash of recognition. You've seen this somewhere, else when you rescued a captured Hai from a shipping crate.`
 			label nogipeep
 			`	Soon after, you hear explosions in the ship and see an escape pod rapidly jet away. It seems the smugglers set the self-destruct and signaled for help. The pod has no microtransceiver transmissions, so it must be one of the smugglers. Apparently the smugglers care more about not being caught than about finishing their mission.`
@@ -1157,16 +1145,16 @@ mission "Hai Rescue [A05] Boarded Smuggler"
 		personality nemesis harvests plunders entering
 		fleet "pirate raid" 3
 
-mission "Hai Rescue [A06A] Smuggler Ambush"
+mission "Hai Reveal: Rescue [A06A] Smuggler Ambush"
 	# The second smuggler serves to show they don't always carry slaves
-	invisible
 	boarding
+	invisible
+	source
+		government "Smuggler (Hai Trafficker)"
 	destination Earth
 	deadline 1
 	to offer
-		has "Hai Rescue [A05] Boarded Smuggler: offered"
-	source
-		government "Smuggler (Hai Trafficker)"
+		has "Hai Reveal: Rescue [A05] Boarded Smuggler: offered"
 	on offer
 		conversation
 			`You scan this smuggling ship and notice none of the microtransceiver transmissions come from a lifeform. Instead, they all seem to come from a containment cell just behind the airlock. This vessel is probably looking to collect new victims, with microtransceivers ready for when they are brought on board.`
@@ -1177,18 +1165,18 @@ mission "Hai Rescue [A06A] Smuggler Ambush"
 		personality nemesis harvests plunders entering
 		fleet "pirate raid" 2
 
-mission "Hai Rescue [A06B] Smuggler Ambush"
+mission "Hai Reveal: Rescue [A06B] Smuggler Ambush"
 	# After the second smuggler, you get no more information, but the
 	# smugglers always blow up and call pirates.
+	boarding
 	invisible
 	repeat
-	boarding
+	source
+		government "Smuggler (Hai Trafficker)"
 	destination Earth
 	deadline 1
 	to offer
-		has "Hai Rescue [A06A] Smuggler Ambush: offered"
-	source
-		government "Smuggler (Hai Trafficker)"
+		has "Hai Reveal: Rescue [A06A] Smuggler Ambush: offered"
 	on offer
 		conversation
 			`As before, the smugglers set the self-destruct mechanism and escape without their prey, and your ship detects more incoming hostile vessels. You prepare for another wave.`
@@ -1197,12 +1185,8 @@ mission "Hai Rescue [A06B] Smuggler Ambush"
 		government "Pirate"
 		personality nemesis harvests plunders entering
 		fleet "pirate raid" 2
-
-
-
-
 # Used Up
-#mission "Hai Rescue [A08] Symbol Identification"
+#mission "Hai Reveal: Rescue [A08] Symbol Identification"
 #	landing
 #	name "Preparation & Investigation"
 #	description "Fly through the wormhole in the middle of Syndicate space, and return to Giti at <destination>."
@@ -1210,7 +1194,7 @@ mission "Hai Rescue [A06B] Smuggler Ambush"
 #	waypoint "Devil-Run"
 #	waypoint "Deep Space 7C"
 #	to offer
-#		has "Hai Rescue [A05] Boarded Smuggler: offered"
+#		has "Hai Reveal: Rescue [A05] Boarded Smuggler: offered"
 #	on visit
 #		dialog `You need to pass through the wormhole at Devil-Run before returning here.`
 #	on enter "Devil-Run"
@@ -1270,7 +1254,7 @@ mission "Hai Rescue [A06B] Smuggler Ambush"
 
 
 
-mission "Hai Rescue [A08] Scanner"
+mission "Hai Reveal: Rescue [A08] Scanner"
 	name "Missing Researchers"
 	description "Return to <destination> after scanning the Devil-Hide system. Payment is <payment>."
 	source "Earth"
@@ -1281,7 +1265,7 @@ mission "Hai Rescue [A08] Scanner"
 	on visit
 		dialog `Giti or her equipment are in one of your escorts. You need to wait for your escorts to arrive before landing again.`
 	to offer
-		has "Hai Rescue [A07] Logo Identification: done"
+		has "Hai Reveal: Rescue [A07] Logo Identification: done"
 	on offer
 		conversation
 			`Giti enters your ship after some Navy workers load scanning equipment. She's eager to see first-hand the intergalactic space she's only theorized about in the past.`
@@ -1304,14 +1288,14 @@ mission "Hai Rescue [A08] Scanner"
 		fleet "Devil-Run Warships" 2
 		personality nemesis harvests plunders disables
 
-mission "Hai Rescue [A09] Slaver Ships"
+mission "Hai Reveal: Rescue [A09] Slaver Ships"
 	landing
 	name "Missing Researchers"
 	description "Report back to Teeneep on <destination>. Payment is <payment>."
 	source "Earth"
 	destination "Darkwaste"
 	to offer
-		has "Hai Rescue [A08] Scanner: done"
+		has "Hai Reveal: Rescue [A08] Scanner: done"
 	on offer
 		conversation
 			`The Earth authorities give you an unusual landing vector that leads to a secret docking bay below ground in Argentina. You land, and a Navy cadet meets you at your ship with an urgent message: "Republic Intelligence and a Navy Marshal want to see you as soon as possible. They have news about your microtransceiver transmissions. Please follow me."`

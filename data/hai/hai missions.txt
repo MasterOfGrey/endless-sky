@@ -1135,7 +1135,7 @@ mission "Hiding in Plain Sight"
 		random < 30
 		has "First Contact: Hai: offered"
 		or
-			not "event: pirates respond to leaks"
+			not "event: hai reveal: pirates respond to leaks"
 			has "event: hai-human resolution announced"
 	on offer
 		conversation
