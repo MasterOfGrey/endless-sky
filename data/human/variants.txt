@@ -6,7 +6,10 @@
 #
 # Endless Sky is distributed in the hope that it will be useful, but WITHOUT ANY
 # WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
-# PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+# PARTICULAR PURPOSE. See the GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License along with
+# this program. If not, see <https://www.gnu.org/licenses/>.
 
 ship "Argosy" "Argosy (Blaster)"
 	outfits
@@ -190,6 +193,28 @@ ship "Bactrian" "Bactrian (Troop Jump)"
 		"Fragmentation Grenades" 247
 		"Quad Blaster Turret" 2
 		"Quantum Key Stone"
+
+
+# This variant uses outfits acquired in the post-war condition that were surplus or black market for diversity *after* the main campaign.
+ship "Bactrian" "Bactrian (Plasma Blaster Anti-Missile)"
+	outfits
+		"Heavy Anti-Missile Turret" 3
+		"Armageddon Core"
+		"LP036a Battery Pack"
+		"S-970 Regenerator"
+		"Liquid Helium Cooler" 2
+		Hyperdrive
+		"LP072a Battery Pack"
+		"Outfits Expansion" 5
+		"Liquid Nitrogen Cooler"
+		"Plasma Cannon" 4
+		"A520 Atomic Thruster"
+		"A255 Atomic Steering"
+		"A525 Atomic Steering"
+		"Fission Reactor"
+		"Quad Blaster Turret" 3
+		"Laser Rifle" 15
+
 
 
 ship "Barb" "Barb (Gatling)"
@@ -666,6 +691,25 @@ ship "Clipper" "Clipper (Speedy)"
 		"Hyperdrive"
 
 
+ship "Clipper" "Clipper (Hai Trafficker)"
+	outfits
+		"Pulse Rifle" 3
+		Brig
+		Supercapacitor 2
+		"Fuel Pod"
+		"A370 Atomic Thruster"
+		"A255 Atomic Steering"
+		Hyperdrive
+		"Hai Tracker Pod" 3
+		Ramscoop
+		"Hai Corundum Regenerator"
+		"Hai Chasm Batteries"
+		"Outfits Expansion" 3
+		"Liquid Nitrogen Cooler"
+		"Breeder Reactor"
+		"Security Station" 2
+
+
 
 ship "Container Transport" "Container Transport (Blaster)"
 	outfits
@@ -864,23 +908,25 @@ ship "Corvette" "Corvette (Hai Trafficker)"
 		"Security Station" 4
 
 
-ship "Clipper" "Clipper (Hai Trafficker)"
+# This variant uses outfits acquired in the post-war condition that were surplus or black market for diversity *after* the main campaign.
+ship "Corvette" "Corvette (Flamethrower Electron Anti-Missile)"
 	outfits
-		"Pulse Rifle" 3
-		Brig
-		Supercapacitor 2
-		"Fuel Pod"
-		"A370 Atomic Thruster"
-		"A255 Atomic Steering"
+		"Heavy Anti-Missile Turret" 2
+		"LP036a Battery Pack"
+		"S-970 Regenerator"
+		"Catalytic Ramscoop"
 		Hyperdrive
-		"Hai Tracker Pod" 3
-		Ramscoop
-		"Hai Corundum Regenerator"
-		"Hai Chasm Batteries"
-		"Outfits Expansion" 3
+		Supercapacitor
+		"Fuel Pod" 3
+		"Outfits Expansion" 2
 		"Liquid Nitrogen Cooler"
-		"Breeder Reactor"
-		"Security Station" 2
+		"A370 Atomic Thruster"
+		"A375 Atomic Steering"
+		Flamethrower 2
+		"Electron Beam" 2
+		"Laser Rifle" 3
+		"Water Coolant System"
+		"Fusion Reactor"
 
 
 
@@ -984,7 +1030,27 @@ ship "Cruiser" "Cruiser (Mark II)"
 	turret "Electron Turret"
 	turret "Electron Turret"
 	turret "Heavy Anti-Missile Turret"
-	
+
+
+# Used in the Hai Reveal campaign, Danforth pulls strings with the Free Worlds to get some cruisers equipped for deep-range deployment
+ship "Cruiser" "Cruiser (Plasma Anti-Missile)"
+	outfits
+		"Heavy Anti-Missile Turret" 3
+		"Armageddon Core"
+		"S-970 Regenerator"
+		"Liquid Helium Cooler" 2
+		"Catalytic Ramscoop"
+		Hyperdrive
+		Afterburner
+		"Outfits Expansion" 2
+		"Plasma Cannon" 6
+		"A520 Atomic Thruster"
+		"A525 Atomic Steering"
+		"Fragmentation Grenades" 20
+		"Fission Reactor"
+		"Laser Rifle" 20
+		"LP144a Battery Pack"
+
 
 
 ship "Dreadnought" "Dreadnought (Jump)"
@@ -1008,6 +1074,28 @@ ship "Dreadnought" "Dreadnought (Jump)"
 	turret "Heavy Anti-Missile Turret"
 	turret "Plasma Turret"
 	turret "Plasma Turret"
+
+
+# This variant uses outfits acquired in the post-war condition that were surplus or black market for diversity *after* the main campaign.
+ship "Dreadnought" "Dreadnought (Plasma Blaster Anti-Missile)"
+	outfits
+		"Heavy Anti-Missile Turret" 3
+		"Armageddon Core"
+		"S-970 Regenerator"
+		"Liquid Helium Cooler" 2
+		Hyperdrive
+		Afterburner
+		Supercapacitor
+		"Outfits Expansion" 2
+		"Plasma Cannon" 4
+		"A520 Atomic Thruster"
+		"A525 Atomic Steering"
+		"Breeder Reactor"
+		"Quad Blaster Turret" 2
+		"Laser Rifle" 25
+		"Water Coolant System"
+		"S-270 Regenerator" 2
+		"LP144a Battery Pack"
 
 
 
@@ -1286,6 +1374,26 @@ ship "Freighter" "Freighter (Secret Cargo)"
 	turret "Blaster Turret"
 	turret "Heavy Anti-Missile Turret"
 	turret "Blaster Turret"
+
+
+ship "Freighter" "Freighter (Hai Trafficker)"
+	outfits
+		"Pulse Rifle" 3
+		Brig
+		Supercapacitor 2
+		"Fuel Pod" 2
+		`"Biroo" Atomic Thruster`
+		"A255 Atomic Steering"
+		Hyperdrive
+		"Bullfrog Anti-Missile"
+		"Pulse Turret" 2
+		Ramscoop
+		"Hai Corundum Regenerator"
+		"Hai Chasm Batteries"
+		"Outfits Expansion" 5
+		"Liquid Nitrogen Cooler"
+		"Breeder Reactor"
+		"Security Station" 2
 
 
 
@@ -2089,6 +2197,25 @@ ship "Osprey" "Osprey (Missile)"
 	gun "Torpedo Launcher"
 
 
+# This variant uses outfits acquired in the post-war condition that were surplus or black market for diversity *after* the main campaign.
+ship "Osprey" "Osprey (Particle Anti-Missile)"
+	outfits
+		"Heavy Anti-Missile Turret"
+		"LP036a Battery Pack"
+		"S-970 Regenerator"
+		Hyperdrive
+		"LP072a Battery Pack"
+		Afterburner
+		"Outfits Expansion" 2
+		"Liquid Nitrogen Cooler"
+		"Particle Cannon" 4
+		"A370 Atomic Thruster"
+		"A375 Atomic Steering"
+		"Laser Rifle" 3
+		"Water Coolant System"
+		"Fusion Reactor"
+
+
 
 ship "Protector" "Protector (Laser)"
 	outfits
@@ -2138,6 +2265,20 @@ ship "Protector" "Protector (Proton)"
 	turret "Proton Turret"
 	turret "Proton Turret"
 	turret
+
+
+ship "Protector" "Protector (Quad Blaster)"
+	outfits
+		"Quad Blaster Turret" 8
+		"Fusion Reactor"
+		"LP288a Battery Pack"
+		"D94-YV Shield Generator"
+		"D67-TM Shield Generator"
+		"Liquid Nitrogen Cooler"
+		"Laser Rifle" 6
+		"X3700 Ion Thruster"
+		"X3200 Ion Steering"
+		"Hyperdrive"
 
 
 
@@ -2196,6 +2337,22 @@ ship "Rainmaker" "Rainmaker (Mark II)"
 	gun "Sidewinder Missile Launcher"
 	gun "Sidewinder Missile Launcher"
 	gun "Sidewinder Missile Launcher"
+
+
+ship "Rainmaker" "Rainmaker (Mark II Old Weapons)"
+	outfits
+		"Energy Blaster" 2
+		"Meteor Missile Launcher" 4
+		"Meteor Missile" 180
+		"Meteor Missile Box" 4
+		"Dwarf Core"
+		"Supercapacitor"
+		"Water Coolant System"
+		"D67-TM Shield Generator"
+		"Fuel Pod"
+		"A120 Atomic Thruster"
+		"A125 Atomic Steering"
+		"Hyperdrive"
 
 
 
@@ -2360,6 +2517,27 @@ ship "Splinter" "Splinter (Proton)"
 	turret "Proton Turret"
 	turret "Anti-Missile Turret"
 	turret "Proton Turret"
+
+
+# Used in the Hai Reveal campaign by a special Syndicate Security team. Should not be used before.
+ship "Splinter" "Splinter (Flamethrower Blaster)"
+	outfits
+		"Heavy Anti-Missile Turret"
+		"Catalytic Ramscoop"
+		Hyperdrive
+		"LP072a Battery Pack"
+		"Fuel Pod" 5
+		"Outfits Expansion" 3
+		"Liquid Nitrogen Cooler"
+		"A370 Atomic Thruster"
+		"A375 Atomic Steering"
+		Flamethrower 2
+		"Quad Blaster Turret" 2
+		"Cooling Ducts"
+		"Laser Rifle"
+		"Water Coolant System"
+		"S-270 Regenerator" 2
+		"Fusion Reactor"
 
 
 

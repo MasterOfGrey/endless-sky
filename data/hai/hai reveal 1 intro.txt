@@ -6,7 +6,10 @@
 #
 # Endless Sky is distributed in the hope that it will be useful, but WITHOUT ANY
 # WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
-# PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+# PARTICULAR PURPOSE. See the GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License along with
+# this program. If not, see <https://www.gnu.org/licenses/>.
 
 ########################################################################
 
@@ -22,11 +25,6 @@ mission "Hai Secret Leaker Begins"
 event "pug media coverage"
 
 
-event "hai ladybug available"
-	shipyard "Hai Intermediate"
-		"Ladybug"
-	shipyard "Hai Advanced"
-		"Ladybug"
 
 mission "Hai Reveal: Reputation Reset"
 	landing
@@ -49,6 +47,8 @@ mission "Hai Reveal: Reputation Reset"
 		"reputation: Pirate (Devil-Run Gang)" = -1000
 		fail
 
+
+
 mission "Event: Pug Media Coverage"
 	landing
 	source
@@ -65,6 +65,7 @@ mission "Event: Pug Media Coverage"
 				decline
 
 event "hai secret leaks"
+
 
 
 conversation "hai reveal free worlds news"
@@ -110,7 +111,7 @@ conversation "hai reveal republic or syndicate news"
 		accept
 	label "hai knowledge"
 	# TODO: add a log entry here.
-	`	A clip of alien ships in combat with each other is shown; you recognize the Shield Beetles hammering away at each other.`
+	`	A clip of alien spaceships in combat with weapons quite unlike anything produced in human space is shown, and you recognize Shield Beetles hammering away at each other.`
 	`	It is only after this that the anchorwoman reveals that, while this was initially treated as a hoax, one of their own reporters posed a timely question to a well-respected trader and caused quite the stir when he slipped up and confirmed the existence of the aliens known as 'Hai'.`
 	`	It might be time to go visit your Hai friends again.`
 		accept
@@ -137,20 +138,21 @@ conversation "What is going on in Hai space? (Met the Unfettered.)"
 		`	"Why does everyone seem so afraid?"`
 		`	"Why are you all wearing pink?"`
 			goto pink
-	`	She shakes her head and wrinkles her nose with a look of distaste. "Some marauder came here just yesterday, posing as a trader to investigate the rumors. We thought the Hai had means of keeping them out, but this one snuck in and landed at the spaceport without any opposition. Then his crew kidnapped nearly four dozen Hai and hijacked a Geocoris before making off with their spoils."`
-	`	She sighs deeply and says, "Everyone is just a bit shaken and distrustful at the moment."`
+	`	She shakes her head and wrinkles her nose with a look of distaste. "Some marauder came here just yesterday, posing as a trader to investigate the rumors. We thought the Hai had means of keeping them out, but this one snuck in and landed at the spaceport without any opposition. Then his crew kidnapped nearly four dozen Hai and hijacked a Geocoris before making off with their spoils. We're just, in shock I suppose. It's completely unprecedented for something like that to happen in broad daylight."`
+	`	She sighs deeply and says, "Naturally they've ramped up security, but everyone is just a bit shaken and distrustful at the moment."`
 	`	"Oh that's awful!" you say.`
-	`	She nods and forces a little bit of false cheer into her voice, "This is why we're all wearing pink, just a little show of local solidarity."`
+	`	She nods and forces a little bit of false cheer into her voice, "This is why we're all wearing pink, just a little show of local solidarity.`
 		goto main
 	label pink
-	`	A sad smile crosses her face and her expression goes sombre as she explains, "A pirate marauder snuck down onto the planet recently, stole a Geocoris, and kidnapped a number of Hai, probably into slavery. Everyone is a bit shaken up so the locals are wearing pink in solidarity, and so we're not mistaken for a security risk."`
+	`	A sad smile crosses her face and her expression goes sombre as she explains, "A pirate marauder snuck down onto the planet recently, stole a Geocoris, and kidnapped a number of Hai, probably into slavery. The Hai are in shock, it's just completely unprecedented for something like that to happen in broad daylight. Naturally they've ramped up security, but everyone is a bit shaken up so the locals are wearing pink in solidarity, and so we're not mistaken for a security risk.`
 	label main
-	`	"Unfortunately, it's taking a while for them to redistribute an appropriately resourced security force thanks to the Unfettered."`
+	`	"Unfortunately, it's taking a while for them to redistribute an appropriately resourced security force thanks to the Unfettered. So far they've only been able to recall those on leave and up their vigilance."`
 	`	Your conversation is interrupted suddenly by a small group of somewhat official-looking Hai.`
 	`	"Are you Captain <last>?" one of them asks you. "Don't worry, you're not in trouble or anything."`
 	`	You nod your affirmation.`
 	`	"Your reputation precedes you, Captain. If you have any stake in the current information crisis, please head directly to Hai-home. Someone would very much like to talk to you. As a person of note, you are presently being treated as an Envoy." They leave without waiting for your agreement. Then again, you did come here to see what was going on.`
 		decline
+
 
 
 # Six possibilities for origin and destination, which works around bug 1938 - but also has coherency advantages.
@@ -179,9 +181,10 @@ mission "ZZ Event Hai Secret Leaks: RSHU"
 		event "news: hai video clip published"
 		conversation "hai reveal republic or syndicate news"
 	on visit
-		dialog "You should visit Allhome, where the most humans are, first to see how things are going before you get more heavily involved."
+		dialog "You should first visit Allhome, where the most humans are, to see how things are going before you get more heavily involved."
 	on stopover
 		conversation "What is going on in Hai space? (Met the Unfettered.)"
+
 
 mission "ZZ Event Hai Secret Leaks: FWHU"
 	landing
@@ -204,7 +207,7 @@ mission "ZZ Event Hai Secret Leaks: FWHU"
 		event "news: hai video clip published"
 		conversation "hai reveal free worlds news"
 	on visit
-		dialog "You should visit Allhome, where the most humans are, first to see how things are going before you get more heavily involved."
+		dialog "You should first visit Allhome, where the most humans are, to see how things are going before you get more heavily involved."
 	on stopover
 		conversation "What is going on in Hai space? (Met the Unfettered.)"
 
@@ -229,6 +232,7 @@ mission "ZZ Event Hai Secret Leaks: RSH"
 		conversation "hai reveal republic or syndicate news"
 	on complete
 		conversation "What is going on in Hai space? (Have not met Unfettered.)"
+
 
 mission "ZZ Event Hai Secret Leaks: FWH"
 	landing
@@ -296,6 +300,7 @@ event "pirates investigate leaks"
 		government "Pirate"
 		add fleet "Marauder fleet IX" 2000
 		add fleet "Anti-Pirate Hai (No Wormhole Travel)" 700
+
 
 
 mission "Trader Directions to Hai Space"
@@ -397,7 +402,7 @@ mission "Hai Tour [2] Alta Hai"
 		conversation
 			`This star system has an unusual number of metallic asteroids, which you noticed the Hai harvesting for the raw materials before you landed. Stonebreak itself is home to incredibly large cities: massive, clearly planned communities built in concentric rings, where housing space and community buildings alternate with zones of factories and shipyards.`
 			`	From above, this city has almost perfect radial symmetry, a sure sign that it was planned and built as a single unit rather than expanding at random over time. Every single building in the city is a dull and slightly irregular gray color, all made from the same material which seems to be some metallic alloy, and the corners of each building are slightly beveled instead of meeting at right angles.`
-			`	Even the spaceport is symmetrical: a ring of hangars face outwards at evenly spaced intervals, and warehouses and living quarters dot the inside of the ring.`
+			`	Even the spaceport is symmetrical: a ring of hangars face outwards at evenly spaced intervals, while warehouses and living quarters dot the inside of the ring.`
 			`	While the layout is utilitarian, it looks to be an incredibly comfortable place to live; the Hai have clearly given their individual community spaces quite a lot of character and life.`
 			`	As you are wandering around and getting a feel for the place, you overhear someone talking about an apparently complete ringworld in Alta Hai. It definitely sounds like something you should check out and asking around quickly gets you some clear directions.`
 				accept
@@ -443,6 +448,8 @@ mission "00 Hai Tour [4] Cloudfire"
 			`	The spaceport has massive hangars and advanced repair facilities designed to accommodate the largest Hai warships. Where a fleet has just returned from a recent battle, the hangars are lit with flashes from robotic welders as damaged hull plates are swapped out for fresh ones and weakened joints are reinforced. The actual process of building these warships, however, takes place on the Hai homeworld, where the facilities will not be vulnerable to attack.`
 			`	It does not take long to realize that this conflict really is constant, even if the friendlier Hai on this side seem to be maintaining their defense without apparently taxing their civilization to any great extent.`
 
+
+
 # Both tours merge here
 mission "Hai Tour [5] Tour Ends"
 	landing
@@ -461,7 +468,7 @@ mission "Hai Tour [5] Tour Ends"
 			`	"Yesterday, a marauder terrorized the inhabitants of Allhome. They arrived by posing as a trader to investigate rumors currently circulating in human space about our existence. Hai security failed to identify the danger, and the individual snuck his ship in and landed at the spaceport without any opposition. Then his crew kidnapped nearly four dozen Hai and hijacked a Geocoris before making off with their spoils."`
 				goto "that's awful"
 			label "skipped tours"
-			`Soon after you land on <planet>, you notice a news broadcast on a nearby wall. "Yesterday, a marauder terrorized the inhabitants of Allhome. They arrived by posing as a trader to investigate rumors currently circulating in human space about our existence. Hai security failed to identify the danger, and the individual snuck his ship in and landed at the spaceport without any opposition. Then his crew kidnapped nearly four dozen Hai and hijacked a Geocoris before making off with their spoils."`
+			`Soon after you land on <planet>, you notice a news broadcast on a nearby wall. "Yesterday, a marauder terrorized the inhabitants of Allhome. They arrived by posing as a trader to investigate rumors currently circulating in human space about our existence. Hai security failed to identify the danger, and the individual snuck his ship in and landed at the spaceport without any opposition. Then his crew kidnapped nearly four dozen Hai and hijacked a Geocoris before making off with their spoils. This unprecedented raid in broad daylight has the security forces scrambling to redistribute appropriate resources to handle the threat, and all security personnel on leave have been reactivated until better support can be provided."`
 			label "that's awful"
 			`	At a table nearby you hear a Hai staff member exclaim, "Oh, that's awful!"`
 			`	The rumors must be spreading further by the day. There's no doubt even more problems than this marauder will follow.`
@@ -529,16 +536,17 @@ mission "Hai Leaks Response 1"
 			`	You give it a moment of thought.`
 			choice
 				`	"That seems practical."`
-				`	"I don't really have an option to refuse do I?"`
-			`	"Fantastic, you understand the situation," she says, though her tone is much more business like than the wording would imply. "In that case, if you could please take this to Earth and communicate with your various governments we can begin a dialogue on how best to deal with this current scenario."`
+				`	"I don't really have an option to refuse, do I?"`
+			`	"Fantastic, you understand the situation," she says, though her tone is much more businesslike than the wording would imply. "In that case, if you could please take this to Earth and communicate with your various governments we can begin a dialogue on how best to deal with this current scenario."`
 			`	She hands you an officially branded box containing what appears to be a diplomatic ID, which appears to both identify you in human standard and, from context, in Hai.`
 			choice
 				`	"Various? We only have two governments."`
 			`	"Oh," she says, "we've treated the Syndicate as a de facto government for many decades now; with the amount of influence they have it was the only prudent thing to do."`
 			`	You take the boxed item with you, and an escort awaits to return you to your ship. As the door behind you closes, you hear Sayari mutter to someone, "It really was much easier when they just had one government though. What a mess."`
 				accept
-	
-	
+
+
+
 mission "Hai Leaks Response 2"
 	landing
 	name "Collect Representatives"
@@ -547,11 +555,11 @@ mission "Hai Leaks Response 2"
 	stopover "Deep"
 	stopover "Foundry"
 	destination "Hai-home"
-	blocked "You have a mission here for the Hai, but you need three bunks free."
+	blocked "You have a mission here for the Hai, but you need four bunks free."
 	clearance
 	to offer
 		has "Hai Leaks Response 1: done"
-	passengers 3
+	passengers 4
 	on offer
 		event "pirates respond to leaks"
 		log "People" "Xilin Yang" `Deputy Minister Yang works in the Foreign Affairs department of the Republic government. He is a pleasant and astute man. Handling the Hai secrecy crisis has become his job while the majority of the foreign ministry remains engaged with the fallout from the Free Worlds and recent peace.`
@@ -574,24 +582,23 @@ mission "Hai Leaks Response 2"
 			`	You sit down opposite him and explain how the Hai have proposed that you be their official contact point for humanity on account of your fame from the war.`
 			`	He asks a few questions for clarity, and when you're done he requests you wait while he makes a call. He leaves the room for a long while, and at one point an aide comes in and offers you refreshments while deliberations continue elsewhere. Much to your surprise the fruity beverage is actually quite light and not too sweet, reminding you briefly that most of humanity's food styles originated here.`
 			`	Eventually Mr. Yang returns. "So sorry for that. I hope you were looked after suitably while you waited."`
-			`	Once you nod your assent, he continues, "Well, obviously the Republic knows about the Hai, but for the moment our official "line" is that the government does not trade in rumors. However, an appropriate response is clearly needed. Republic Intelligence briefed the Cabinet of the Free Worlds Senate just yesterday. They have demanded that they have a diplomatic representative along for any decisions. This is already standard practice for the Syndicate. If you are willing, I will come with you to meet two individuals known as Katya and Alastair on Deep and Foundry respectively. I believe you already know them?"`
+			`	Once you nod your assent, he continues, "Well, obviously the Republic knows about the Hai, but for the moment our official "line" is that the government does not trade in rumors. However, an appropriate response is clearly needed. Republic Intelligence briefed the Cabinet of the Free Worlds Senate just yesterday. They have demanded that they have a diplomatic representative along for any decisions. This is already standard practice for the Syndicate. If you are willing, I will come with you to meet two individuals known as Katya Reynolds and Samuel Remington on Deep and Foundry respectively. I believe you already know them?"`
 			choice
 				`	"Yes."`
-					goto conclude
-				`	"Alastair?"`
-			`	"Alastair Korban is the Syndicate CEO, naturally the CEO has some involvement here, but I trust that won't be a problem?"`
-			choice
-				`	"It should be fine."`
-			label conclude
-			`	"Excellent. The situation is progressing quickly and plans are still being made, so I am not entirely sure if it is they themselves who will be coming with us. Alastair is likely too busy to come personally, but we'll find out when we get there. In any case I think we should go to Deep first for speed, but you are the captain. Shall we be off?"`
+				`	"Samuel Remington?"`
+					goto sam
+			`	"Excellent," he says as he begins to gather stacks of papers, shoving them into a briefcase.`
+				goto end
+			label sam
+			`	"Remington is the Syndicate's head of public relations, and exactly the man we need in an event like this," he explains while gathering stacks of papers, shoving them into a briefcase.`
+			label end
+			`	"Now, the situation is progressing quickly and plans are still being made, so I am not entirely sure if it is they themselves who will be coming with us. Someone of Remington's caliber is likely too busy to come personally, but we'll find out when we get there. In any case I think we should go to Deep first for speed, but you are the captain. Shall we be off?"`
 				accept
 	on visit
 		dialog phrase "generic stopover on visit"
 	on complete
 		log `Brought human diplomatic representatives from each human faction to Hai-home to address the crisis. Something drastic needs to be done to keep the secret from entirely bursting, but they know how long they will have to work with. Asked to rout pirates hoping to benefit from the chaos while they work on a solution.`
 
-	
-	
 event "pirates respond to leaks"
 	#Add pirate spawns to Waypoint and Heia Due
 	system "Waypoint"
@@ -617,10 +624,10 @@ mission "Hai Leaks Response 2A"
 	to offer
 		has "Hai Leaks Response 2: active"
 	on offer
-		log "People" "Alondo Gruyere" `Alondo is working to develop the diplomatic corps for the Free Worlds. Due to a lack of serious appointed positions (with the few already existing occupied as ambassadors to the Republic), he is looking after the Free World's interests as a diplomat to the Hai.`
+		log "People" "Alondo Gruyere" `Alondo is working to develop the diplomatic corps for the Free Worlds. Due to a lack of serious appointed positions (with the few already existing occupied as ambassadors to the Republic), he is looking after the Free Worlds' interests as a diplomat to the Hai.`
 		conversation
 			`When you land on Deep, Katya is there waiting for you along with Alondo. "<first>! It's so good to see you again! When the Republic briefed the new Chancellor and his Cabinet on the Hai, he brought us in for advice. We thought to try and reach you, but of course you would somehow manage to be in the thick of it before we even knew what was going on."`
-			`	You hug them both in turn and return the greeting. "I thought it seemed odd when they said I was meeting you for this Katya, but it makes much more sense if you were just easier to get a hold of than Alondo here."`
+			`	You hug them both in turn and return the greeting. "I thought it seemed odd when they said I was meeting you for this, Katya, but it makes much more sense if you were just easier to get a hold of than Alondo here."`
 			`	"Oh it was always going to be Alondo," she says, "but there's never a bad excuse for traveling with an old friend, especially when you're meeting other friends too."`
 			`	"Do we have time for a drink before we leave?" asks Alondo.`
 			`	You look around at the busy spaceport and see the workers haven't even noticed your ship waiting for refueling yet.`
@@ -633,9 +640,7 @@ mission "Hai Leaks Response 2B"
 	landing
 	source
 		government "Republic" "Syndicate" "Free Worlds"
-		not planet
-			Deep
-			Foundry
+		not planet "Deep" "Foundry"
 	to offer
 		has "Hai Leaks Response 2: active"
 	on offer
@@ -650,19 +655,28 @@ mission "Hai Leaks Response 2C"
 	to offer
 		has "Hai Leaks Response 2: active"
 	on offer
-		log "People" "Terry Adrianopoulos" `Protege to the Syndicate CEO, Terry Adrianopoulos has been nominated by her mentor Alastair Korban to represent the Syndicate's interests in the crisis of the Hai's secrecy. She is a very capable woman who appears well equipped for climbing the corporate ladder.`
+		log "People" "Terry Adrianopoulos" `Terry Adrianopoulos is the secretary of Samuel Remington, or at least that's how he puts it. Remington mentioned an internal political situation within the Syndicate while glancing at Terry, so there may be something larger at play with her presence. Hopefully it doesn't conflict with resolving the situation with the Hai.`
 		conversation
-			`Approaching Foundry, you are hailed on a private encrypted channel and directed to a private hangar where you are greeted personally by Syndicate CEO Alastair Korban.`
-			`	He shakes your hand and smiles warmly. "Apologies, Captain <last>, do excuse the cloak and dagger, but in the current media climate you and I are both too well-known to be seen meeting without causing the rumor mill to grind out a new story."`
-			`	"Now, allow me to introduce you to my protege, Terry Adrianopolous. She will be accompanying you as the Syndicate representative."`
-			`	"Pleasure to meet you," she says with a broad smile. The young woman goes from calculating to gregarious in the blink of an eye as your attention shifts to her. She is pleasant and approachable, and very articulate, but from your brief glimpse beforehand you have no doubt she's cut from the sort of cloth that makes her future CEO material. You are surprised that a woman would have made it this far in the Syndicate, but if she has gotten this far, she must be very skilled at what she does.`
-			`	"By the way," says Alastair, pausing briefly as he turns to leave, "The Navy and my security forces are working jointly to get some of our message relays up in the Far North to link through Ultima Thule. The pirates are wont to destroy them whenever they find them, but we should be able to rely on at least basic communication to get through if you need it, rather than flying back and forth for literally every question. That's all."`
-			branch delayedretire
-				not "free worlds reconciliation"
-			`	He leans in close to you and says quietly, "I know I said I was retiring, but Terry convinced me to clean up my mess first. I am atoning for my failures. Do look after her; she's a very loyal colleague."`
-			label delayedretire
-			`	Alastair says goodbye and departs, leaving you with Terry.`
+			`Approaching Foundry, you are hailed and directed to a private hangar where you are greeted personally by Samuel Remington. His appearance is rather casual compared to what you would expect, wearing khakis and a collared tee as opposed to the typical suit and tie business attire that you see on Syndicate businessmen. It is certainly in contrast to a young woman standing behind him, who is wearing the usual business attire in this region.`
+			branch met
+				has "met remington"
+			action
+				log "People" "Samuel Remington" `Samuel Remington is the Syndicate's head of public relations. He is acting as the Syndicate's representative in helping to deal with the situation regarding the Hai.`
+			`	"Captain <last>, is it? I don't believe we've met before," he says while shaking your hand, perhaps a little too firmly. "I'm Samuel Remington, head of the Syndicate's PR department. You may have not heard of me before but I've sure you've heard of my work. I..." He stops himself. "You know what, nevermind. We're not here to make small talk. We have bigger things to worry about. I'm looking forward to working alongside you to handle this emerging crisis.`
+				goto next
+			
+			label met
+			action
+				log "People" "Samuel Remington" `Remington is being sent as the representative of the Syndicate to help deal with the situation regarding the Hai.`
+			`	"Captain <last>, is it? It's been a good while since we last met," he says while shaking your hand, perhaps a little too firmly. "You do remember me, right? I don't want this to be an awkward situation where only I..." He stops himself. "You know what, nevermind. We're not here to make small talk. We have bigger things to worry about. I'm looking forward to working alongside you to handle this emerging crisis.`
+			label next
+			`	"Now, allow me to introduce you to Terry," Remington says while gesturing to the woman behind him.`
+			`	"Terry Adrianopoulos. Pleasure to meet you," she says with a broad smile and a slight bow. The young woman goes from calculating to gregarious in the blink of an eye as your attention shifts to her. She seems at once pleasant and approachable while at the same time being slightly off-putting and uncanny. It's an eerie feeling.`
+			`	"Terry will be accompanying me as... well, let's call her my secretary," Remington says with a sly smile. Terry seems none too please to hear that, but doesn't correct him. "I have men who can hold the fort here while I'm gone, and I really do need to get some fresh air, so the two of us will be joining you. There is an internal political situation going on within the Syndicate that has been causing me quite the headache recently," he says. You think that he may have glanced at Terry as he said that, but you aren't sure if it was just incidental or indicative of something. "Nothing I can discuss in detail, unfortunately, what with all the NDAs involved, but something I'll certainly enjoy taking a break from.`
+			`	"Now, let's be on our way," he says. "The Hai won't save themselves with us standing here."`
 				decline
+
+
 
 #This gets picked up silently on Hai-home when landing for response 2 - leads to go kill pirates mission with chat on Allhome.
 #No longer gets picked up silently due to write-read order style preferences - but may need to be moved back to Response 2 or have multiple versions of this mission when other campaigns exist.
@@ -686,7 +700,7 @@ mission "Hai Leaks Response 3"
 			`	"Extra security forces are being called in, but we've been busier than usual in Wah Ki with our northern brethren."`
 			`	Mr. Yang pulls out a datapad. "Well then, I'm afraid I may have some bad news. May I?"`
 			`	He gestures to a display and then takes control when indicated. "One of the things I brought with me was Republic Intelligence's estimate of the effectiveness of various information containment measures."`
-			`	A series of charts are thrown up on the screen. You're not an expert at data analysis, but highlighted percentages ranging from 4% to 39% do not look promising. The final graphic is a map of stages of what is labeled as 'artifact penetration'. "Artifact penetration is the point at which a government cannot reasonably attempt to pretend something is anything but the truth, at least not while still holding to the claim of being a representative government," explains Mr. Yang.`
+			`	A series of charts are thrown up on the screen. You're not an expert at data analysis, but the highlighted percentages ranging from 4% to 39% do not look promising. The final graphic is a map of stages of what is labeled as 'artifact penetration'. "Artifact penetration is the point at which a government cannot reasonably attempt to pretend something is anything but the truth, at least not while still holding to the claim of being a representative government," explains Mr. Yang.`
 			`	He checks the date. "Our most optimistic estimates suggest the Republic will be forced to acknowledge the existence of the Hai within three months, or we would lose so much credibility as to compromise electoral stability. The actual time limit is probably sooner."`
 			choice
 				`	"Would that be so bad?"`
@@ -697,6 +711,7 @@ mission "Hai Leaks Response 3"
 				`	"I'll do what I can."`
 					accept
 #If a republic/syndicate campaign gets added this text will need variants.
+
 
 
 #Go kill pirates mission with chat on Allhome.
@@ -786,6 +801,13 @@ event "waypoint pirates vanquished"
 		remove fleet "Large Northern Pirates"
 		remove fleet "Large Core Pirates"
 
+event "hai ladybug available"
+	shipyard "Hai Intermediate"
+		"Ladybug"
+	shipyard "Hai Advanced"
+		"Ladybug"
+
+
 # It is impossible to implement a "capture and return npc" mission. 
 # Once the ship is captured, the NPC is gone and the mission is failed.
 # The NPC has an outfit used to determine if you managed to get it back safely.
@@ -807,6 +829,7 @@ mission "Hai Leaks Response 4A"
 #	on fail
 #		dialog `You have failed to recover the Geocoris. This is not critical, but does have long-term consequences. If you want the most complete ending, revert to the autosave or another earlier snapshot of the game.`
 #Too hand-holdy for present implementation and content.
+
 
 # Must be able to resolve earlier than the rest in this set.
 #The Geodesic Geocoris may become available to purchase specially later on.
@@ -911,6 +934,8 @@ ship "Geodesic Geocoris" "Geodesic Geocoris (Phylactery)"
 	turret "Electron Turret"
 	description "This modified Geocoris has identical cargo capacity, but is the result of an alien technology being merged with a hybrid Human-Hai operating system. It has additional shield emitters in a geodesic pattern over its main cargo wings, and some kind of integrated system core which seems to have something of a life of its own. As such, some systems are built-in and unable to be removed. Nevertheless it is significantly more survivable than a traditional Geocoris and at least as useful."
 
+
+
 mission "Hai Leaks Response 5"
 	landing
 	name "Talk to Hai authorities on <planet>"
@@ -920,16 +945,27 @@ mission "Hai Leaks Response 5"
 	destination "Hai-home"
 	to offer
 		has "Hai Leaks Response 4: done"
+	on complete
+		event "allhome reinforced" 1
+		conversation
+			`When you return to Hai-home, you are greeted with a call from Sayari, who looks relieved to see you. "Captain <last>, thank you for your assistance to our security forces. They appreciated it greatly, and we should have them properly reinforced in a day or two. A few things have happened but you haven't missed anything important yet."`
+			`	She smiles and says, "Your diplomatic colleagues are still working on their solutions, so I don't think there's anything for you to do right at this moment. Whenever you're ready though, if you re-land at the secure port we can get you up to speed with our next steps in a day or two. I have no doubt that there'll be things for you to do by then, so you should be ready when you return."`
 
+event "allhome reinforced"
+	system "Heia Due"
+		add fleet "Anti-Pirate Hai (No Wormhole Travel)" 600
+
+
+
+# This non-landing mission allows you to take the game-play pause and go do other stuff if you need before getting too deeply involved in the story.
 mission "Hai Leaks Response 6"
 	name "Investigate rumors of kidnapped Hai"
-	description "It's a statistical oddity, but Sayari's friend thinks someone is kidnapping Hai. Check spaceports in nearby parts of Hai and human space for evidence of a Hai trafficking operation."
+	description "Sayari's friend thinks someone with legal protection is kidnapping Hai. Check spaceports in nearby parts of human space for evidence of a Hai trafficking operation."
 	autosave
-	landing
 	source "Hai-home"
 	clearance
 	to offer
-		has "Hai Leaks Response 4: done"
+		has "Hai Leaks Response 5: done"
 	on offer
 		event "secret mountaintop"
 		event "role-play fleet deception"
@@ -938,7 +974,7 @@ mission "Hai Leaks Response 6"
 		"reputation: Hai" >?= 100
 		log `The working solution to the secrecy crisis for now is to have the Hai post a number of ships on the other side of the wormhole to play-act for the cover story that they're making a big budget movie to target fans of the popular franchise 'Our Fuzzy Paradise'. The presence of Hai who won't take off their costumes has been attributed to a 'fan community' that have been hired on as a focus group to be there as part of the production. Despite all this, it is only a short-term solution. Asked by Sayari to look into a rumor about more kidnapped Hai. She does not consider it to be a particularly likely scenario, but her contacts insist.`
 		conversation
-			`When you return to Hai-home, you are met by a group of relieved diplomats. Of all of them, Alondo seems to be the least tired and takes the time to let you know what's been going on. "Captain <last>! You've missed quite the palaver. Still, I doubt you lost much. We've spent four hours trying to explain to Sayari what a 'furry' is."`
+			`Arriving at the secure landing area on Hai-home, you are met by a group of relieved diplomats. Of all of them, Alondo seems to be the least tired and takes the time to let you know what's been going on. "Captain <last>! You've missed quite the palaver. Still, I doubt you lost much. We've spent four hours trying to explain to Sayari what a 'furry' is."`
 			choice
 				`	"What? That could've been entertaining."`
 				`	"Hmm. No, I probably didn't miss much."`
@@ -953,10 +989,10 @@ mission "Hai Leaks Response 6"
 			`	Alondo gives you a quizzical look. "Of course you are <last>."`
 			label about
 			`	He pulls out a hand tablet and shows you a title screen which doesn't automatically look familiar. As he talks he flicks through a series of reference images. "There's an older TV show franchise with a cult following called 'Our Fuzzy Paradise', which has had a few different reboots and iterations over the decades. In case you haven't guessed, it features a whole cast of anthropomorphic squirrels. Most recently we had a seven season series run subtitled 'Fellowship is Glamorous' which was one of the more successful ones.`
-			`	"The production of the very first series was entirely funded through a government grants program though, as a cover for any accidental leaks about the Hai. Xilin tells me that since then it's pretty much run itself. The idea here is that since the last one was so successful, someone has decided that it's worth the risk to make a big budget movie production out of it and to potentially use that to kick off a sort of tourist trap type theme park destination. We've found a Jollywood producer who's willing to be all wounded on TV about the spoiling of his 'big surprise' release, and we're passing off the footage as leaked promotional material. For the sake of the cover, we've also decided that this project has a 'fan community' that have been hired on as a focus group to support the production for consistency and accuracy."`
+			`	"The production of the very first series was entirely funded through a government grants program though, as a cover for any accidental leaks about the Hai. Xilin tells me that since then it's pretty much run itself. The idea here is that since the last one was so successful, someone has decided that it's worth the risk to make a big budget movie production out of it and to potentially use that to kick off a sort of tourist trap type theme park destination. We've found a Seerwood producer who's willing to be all wounded on TV about the spoiling of his 'big surprise' release, and we're passing off the footage as leaked promotional material. For the sake of the cover, we've also decided that this project has a 'fan community' that have been hired on as a focus group to support the production for consistency and accuracy."`
 			`	He chuckles tiredly. "That's where the uh, furry, explanation came into things. It also probably can't hold up as a cover indefinitely. Still, things have been going very well while you've been away!`
 			label next
-			`	"I hear you've been instrumental in driving off some opportunistic pirates and helping stem the information leak. Come on, I'll buy you a drink on the others' behalf."`
+			`	"I hear you were instrumental in driving off some opportunistic pirates and helping stem the information leak. Come on, I'll buy you a drink on the others' behalf."`
 			`	Some hours later, you leave the fancy cocktail bar Alondo took you to and begin making your way back to your ship to sleep. Your cabin by far seems to be the best place to not be bothered.`
 			`	Partway there, a hooded figure suddenly falls in step beside you.`
 			choice
@@ -967,27 +1003,45 @@ mission "Hai Leaks Response 6"
 			`	"I should not be coming to you with this, so you must promise to say nothing of it to anyone just yet," she says.`
 			choice
 				`	"Of course."`
-			`	"A very sweet friend of mine, who is much too enthusiastic and perhaps led by the vagaries of youth but nonetheless quite astute, keeps harping on to me about this theory of hers that a smuggling ring is kidnapping Hai and transporting them into human space."`
+			`	"A very sweet friend of mine, who is much too enthusiastic and perhaps led by the vagaries of youth but nonetheless quite astute, keeps harping on to me about this theory of hers that some kind of smuggling ring is kidnapping Hai and transporting them into human space with the quiet support of one of your legal entities."`
 			`	"Of course, a thorough investigation has occurred on our side, and no admissible evidence of such things has turned up, but..."`
 			`	"Well, you see we cannot investigate your space openly or easily. I have paid it little mind, written it off as one of her eccentricities, but things are very tense right now. The Council of Elders wants to maintain our secrecy, the human diplomats are willing to accommodate us, but we sense their governments grow tired of maintaining the fiction. We are well aware that human intelligence services are highly competent, and motivated by many different factors. It worries me that one of your factions may not be wholly honest, and may have knowledge they intend to use as ammunition if things don't work out well for them."`
 			`	You have not had much exposure to this elected "Council of Elders", but it seems they must hold some kind of final authority over decisions.`
 			choice
 				`	"But what should I do about it?"`
+					goto dothings
+				`	"Are Hai kidnappings common?"`
+			`	"They're not, well, it can be hard to tell sometimes, but no I wouldn't say they're common. There have been instances in the past though where occasional pirate groups have been caught either trying or succeeding. My understanding is that those were dealt with effectively." She gives an odd shrug that is distorted by the cloak.`
+			`	"Still, my friend is very bright, and she is insistent that there is something beneath the noise that cannot be accounted for by normal circumstances. There has been a spike in disappearances since the leak, and not necessarily on worlds where they could be expected to have got themselves into trouble. With recent events her words have begun to trouble me, especially after that raid on Allhome. Nothing like that has ever happened before," she says.`
+			label dothings
 			`	"You are well-known, and must be canny to have got where you are. A Hai in trouble might recognize you, or you might perceive them when others would not. It would be in the interests of both our people to be sure that there is no such issue. Would you look for me? For both our sakes?"`
-			branch "about that"
+			branch aboutthat
 				"hai slave prereq" >= 1
 			choice
 				`	"Sure, I can have a look around."`
-					accept	
-			label "about that"
-			`	"Well, about that," you say, "I think I might have already come across some evidence of this before."`
+			`	She gives you a little smile and nods. "If you come across someone and have difficulty getting them to trust you, try telling them 'Luf e ow, vai, luf e eh'."`
+				goto mean
+			label aboutthat
+			`	"Well, about that," you say, "I think I might have already come across some potential evidence of this before."`
 			`	Sayari's hood nearly slips off as she looks up at you with a horrified expression. "Surely not?!"`
 			`	You rush to reassure her. "Nothing concrete, of course. I can go and look to be sure."`
+			`	She gives you a very serious look and nods. "If you come across any others and have difficulty getting them to trust you, try telling them 'Luf e ow, vai, luf e eh'."`
+			label mean
+			choice
+				`	"Thankyou, I will."`
+					accept
+				`	"What does it mean?"`
+			`	She winks at you. "It would be much less effective if I told you."`
 				accept
+	on visit
+		dialog "You have returned to Hai-home but haven't found anything actionable you can tell Sayari. There's still time to look for evidence."
 	to complete
 		"hai slave prereq" >= 3
+		has "Hai Rescue: Gipeep: offered"
 	on complete
-		log `You found proof of more kidnapped Hai. Sayari's fears appear to have been entirely justified...`
+		log `You found proof of more kidnapped Hai and something that seems out of place. Sayari's fears appear to have been justified...`
+
+
 
 mission "Hai Leaks Response 7"
 	landing

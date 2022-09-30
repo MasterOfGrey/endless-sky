@@ -6,25 +6,30 @@
 #
 # Endless Sky is distributed in the hope that it will be useful, but WITHOUT ANY
 # WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
-# PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+# PARTICULAR PURPOSE. See the GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License along with
+# this program. If not, see <https://www.gnu.org/licenses/>.
 
 ########################################################################
 
-#Investigate a theorized smuggling route and rescue Hai. You have to do at least three of these missions.
+# Investigate a theorized smuggling route and rescue Hai. You have to do at least three of these missions.
 
-#NOTE: The Hai Leaks Response 6 and 7 missions will break if any of these missions have Hai-home as a destination.
+# NOTE: The Hai Leaks Response 6 and 7 missions will break if any of these missions have Hai-home as a destination.
 
-#Logic Register (don't delete)
-## Some subset of these are restricted so you can't pick up enough of them (total 3) to finish the quest at the same time as starting it.
+# Logic Register (don't delete)
+# # Some subset of these are restricted so you can't pick up enough of them (total 3) to finish the quest at the same time as starting it.
+# # Rescues which don't trigger on landing have hints which don't expire until you visit the spaceport at the rescue site so players don't lose them.
+# # (Note: The overarching mission description tells you to check spaceports.)
 #
 # Main Event:
-# #Gipeep
+# # Gipeep
 # - Minor People logs
 # - Cannot be discovered pre-story
-# - Includes information to support later progress (not critical)
+# - Includes information to support later progress (critical to at least encounter)
 #
 # Secondary Events:
-# #Yeertle Family and Oonem
+# # Yeertle Family and Oonem
 # - Minor People logs
 # - Can be discovered pre-story (foreshadowing)
 # - Potential for recurring appearances
@@ -35,7 +40,7 @@
 # - needs: not "event: hai-human treaty signed"
 # 
 # Filler Events:
-# #Prison RPers, Meroot & Lucy 
+# # Prison RPers, Meroot & Lucy 
 # - Only mission logs
 # - Cannot be discovered pre-story
 # - to offer
@@ -67,9 +72,11 @@ mission "Hai Rescue: Yeertle Hint"
 			`	Apparently, there is a man-beast on <planet>, and when the other captain laughs at the idea of a modern "werewolf," the first one is quick to clarify that it's more like a meter and a half tall "were-squirrel." There seems to be some confused discussion about the mythology of such beasts being revealed when caught staring at bright lights until a third captain, listening in the same as you, butts in to inform them that one of them stole that from a popular show a few years back.`
 			`	You stop listening on your final approach as the conversation descends into a good-natured argument. Nevertheless, it sounds like a lead on a possible stranded Hai that would be worth following up.`
 				accept
+	to complete
+		has "Hai Rescue: Yeertle Family: Offered"
+
 
 mission "Hai Rescue: Yeertle Family"
-	landing
 	name "Return the Yeertle family"
 	description "Transport the Yeertle family to <destination>. Payment is <payment>."
 	source Prime
@@ -86,10 +93,10 @@ mission "Hai Rescue: Yeertle Family"
 		conversation
 			branch nohint
 				not "Hai Rescue: Yeertle Hint: offered"
-			`Wandering around after dark you find yourself down an alley near the spaceport, huddled in an alcove against the drizzle while you keep an eye out for anything suspicious, apparently last rumored to be around here. After a while, a few dozen meters ahead, you see a short man with a strange necklace. As he walks past a power transfer unit, the man shimmers and you see faintly-visible, squirrel-like, features. It seems the necklace is a projector of a human hologram concealing a Hai. He is sticking to the shadows, trying to avoid being seen.`
+			`Wandering around after dark you find yourself down an alley near the spaceport, huddled in an alcove against the drizzle while you keep an eye out for anything suspicious, apparently last rumored to be around here. After a while, a few dozen meters ahead, you see a short man with a strange necklace. As he walks past a power transfer unit, the man shimmers and you see faintly-visible, squirrel-like features. It seems the necklace is a projector of a human hologram concealing a Hai. He is sticking to the shadows, trying to avoid being seen.`
 				goto start
 			label nohint
-			`Wandering around after dark you find yourself down an alley near the spaceport. The ongoing drizzle increases in intensity and you pause for a moment to huddle in an alcove for a while until it settles down. After a few moments, a few dozen meters ahead, you see a short man with a strange necklace. As he walks past a power transfer unit, the man shimmers and you see faintly-visible, squirrel-like, features. It seems the necklace is a projector of a human hologram concealing a Hai. He is sticking to the shadows, trying to avoid being seen.`
+			`Wandering around after dark you find yourself down an alley near the spaceport. The ongoing drizzle increases in intensity and you pause for a moment to huddle in an alcove for a while until it settles down. After a few moments, a few dozen meters ahead, you see a short man with a strange necklace. As he walks past a power transfer unit, the man shimmers and you see faintly-visible, squirrel-like features. It seems the necklace is a projector of a human hologram concealing a Hai. He is sticking to the shadows, trying to avoid being seen.`
 			label start
 			`	Do you want to talk to him?`
 			choice
@@ -140,7 +147,7 @@ mission "Hai Rescue: Yeertle Family"
 			label looking
 			`	The man's holographic expression doesn't change, but his body language shifts in a way that speaks of distress.`
 			`	"The Hai government... no. No they wouldn't. Let's just say that it's not entirely uncommon for Hai to willingly go missing. An occasional tour of duty with the military, a thrill-seeking adventure with the hopes of getting a reaction upon returning, or even... defection to our brethren. If the authorities tried to track down every single Hai who went missing as soon as they went missing, they'd spend their time chasing their tails fruitlessly.`
-			`	"Doubtlessly I'm on a register somewhere, with a timer counting down. Possible even it is that someone has been told to watch for if I show up on Darkcloak. Ultimately though, the authorities don't often look for missing persons, unless they're very wealthy, until at least four months have passed by. We have been gone for only two."`
+			`	"Doubtlessly I'm on a register somewhere, with a timer counting down. It is even possible that someone has been told to watch for if I show up on Darkcloak. Ultimately though, the authorities don't often look for missing persons, unless they're very wealthy, until at least four months have passed by. We have been gone for only two."`
 			choice
 				`	"Do you need a ride home to Hai space?"`
 					goto "ride offer"
@@ -154,7 +161,7 @@ mission "Hai Rescue: Yeertle Family"
 			`	You walk down a corridor to a stairway that leads to a brick wall. Duniip walks through the wall; apparently this is another of his holograms. You pass through and see a trio of energetic Hai children eating dinner with their mother.`
 			`	Duniip turns off his hologram and addresses his family. "I found us a pilot! They're going to take us all the way home."`
 			`	The whole family cheers and it turns out they were already packed to leave. Duniip explains they move regularly so they're not found. It takes them under two minutes to finish preparations and don their holoprojectors. Your walk back to the ship is largely uneventful until some men with strange scanners detect the Yeertle family. One man throws a small grenade with a green light on top. You recognize it as a low-level EMP device. All five holograms turn off, along with a nearby bank of lights, but by the time you stumble to a stop and identify the cause you're much closer to your ship than they are to you.`
-			`	In the sudden dimness surrounding your group, you quickly cross the remaining distance to your ship as hastily as possible before someone gets a good look at the Yeertle's. Looking back, you see the men were not following you; they were running to their own ships. Looks like they're planning to follow you into orbit.`
+			`	In the sudden dimness surrounding your group, you quickly cross the remaining distance to your ship as hastily as possible before someone gets a good look at the Yeertles. Looking back, you see the men were not following you; they were running to their own ships. Looks like they're planning to follow you into orbit.`
 				launch
 	on accept
 		dialog `It appears some unsavory types have followed you into orbit in pursuit of the Yeertle family. You could fight them, but they don't look equipped to make the journey back to Hai space successfully; so you could also probably outrun them if you prefer.`
@@ -170,6 +177,7 @@ mission "Hai Rescue: Yeertle Family"
 		government "Bounty Hunter that Won't Enter Hai Space"
 		personality plunders disables unconstrained
 		fleet "Small Core Pirates" 1
+
 
 
 mission "Hai Rescue: Oonem Hint"
@@ -195,9 +203,11 @@ mission "Hai Rescue: Oonem Hint"
 			`	You listen in carefully as the speaker relays that there's some kind of hunt going on there. All the ships are being searched before departure, and there's a lot of paranoid goons with weapons hot. A merchant has been killed on his own ship, while it was parked in the spaceport, and random people keep getting into firefights with a short, hooded, 'angel of death' in dark alleyways. So far, no one claims to know what's going on.`
 			`	It's really hard to say what this could be, but it might be worth checking out.`
 				accept
+	to complete
+		has "Hai Rescue: Ooonem: Offered"
+
 
 mission "Hai Rescue: Ooonem"
-	landing
 	name "Return Ooonem"
 	description "Transport the Hai you rescued to <destination>. Payment is <payment>."
 	source "Stormhold"
@@ -307,6 +317,7 @@ mission "Hai Rescue: Ooonem"
 		fleet "Small Core Pirates" 1
 
 
+
 mission "Hai Rescue: Prison RP Hint"
 	landing
 	name "Phantom Distress Calls"
@@ -330,6 +341,7 @@ mission "Hai Rescue: Prison RP Hint"
 			`	It seems a handful of merchants have all been picking up a very faint distress signal in the vicinity of <planet>, but every time they've gone to look for it, they've either experienced some kind of engine warning, or a large group of pirates has jumped into the system, and they've bugged out. Mysteriously the pirates don't seem to have been looking for or pursuing the merchants when they've appeared though.`
 			`	It seems like a long-shot, but you wonder if perhaps this might be a legitimate call for help, maybe from someone who can't risk broadcasting themselves too aggressively...`
 				accept
+
 
 mission "Hai Rescue: Prison Role-Players"
 	# You get to rescue the Hai from "First Contact: Hai"
@@ -413,9 +425,11 @@ mission "Hai Rescue: Meroot and Lucy Hint"
 		conversation
 			`As you come in to land at the spaceport, you listen to the usual chatter of captains coming and going. You don't hear anything specific to Hai, but when the punchline of a joke is "deep crevasses" on <planet>, it occurs to you that there would be the perfect place for both illicit activities and escapees to hide out under the radar for a long time. It's probably worth a look...`
 				accept
+	to complete
+		has "Hai Rescue: Meroot and Lucy: Offered"
+
 
 mission "Hai Rescue: Meroot and Lucy"
-	landing
 	name "Return Meroot and Lucy"
 	description "Transport the scientists you rescued to <destination>. Payment is <payment>."
 	source Canyon
@@ -429,7 +443,7 @@ mission "Hai Rescue: Meroot and Lucy"
 	on offer
 		"Hai Rescue: Meroot and Lucy (defer count)" ++
 		conversation
-			`As you walk through a major street, you notice a woman approach an alcove in the side of one building carrying some food. She looks around to see if she's being followed before entering the alcove and covering it with a sheet of steel. You only had a moment to observe, but through the gap you spotted something hiding inside the small alcove which might have had tufts of hair sticking out of the clothing across its body. It's probably a Hai.`
+			`As you walk through a major street, you notice a woman approach an alcove in the side of a building carrying some food. She looks around to see if she's being followed before entering the alcove and covering it with a sheet of steel. You only had a moment to observe, but through the gap you spotted something hiding inside the small alcove which might have had tufts of hair sticking out of the clothing across its body. It's probably a Hai.`
 			`	Do you want to investigate?`
 			choice
 				`	(Investigate.)`
@@ -445,14 +459,25 @@ mission "Hai Rescue: Meroot and Lucy"
 				`	"No, I was just walking by. Sorry to bother you."`
 					decline
 			label hiding
-			`	Her expression immediately takes on a shade of panic. "Please don't tell anyone! We were both kidnapped, but we managed to escape. Now we're hiding here, hoping the men don't find us again.`
-			`	"Actually, if you can give us a ride to <planet>, we can pay when we get there. You'll be followed though, so I hope you have a fast ship."`
-				goto "come in"
+			`	Her expression immediately takes on a shade of panic and you hear what sounds like something heavy being picked up in the background. "Please don't tell anyone! We were both kidnapped, but we managed to escape. Now we're hiding here, hoping those people don't find us again.`
+				goto trustcheck
+
 			label help
-			`	"Yes! Some men kidnapped my friend and I, but she got us out and we managed to escape. We've been hiding here, hoping they don't find us again. If you can fly us to <planet>, we can pay you when we arrive. I hope you have a fast ship; they'll probably chase us."`
-				goto "come in"
+			`	"Yes! Some men kidnapped my friend and I, but she got us out and we managed to escape. We've been hiding here, hoping they don't find us again."`
+			label trustcheck
+			`	In the background you hear someone hiss, "Lucy! What are you doing, we can't trust them!"`
+			choice
+				`	"Uh, luf e ow, vai, luf e eh?"`
+					goto "come in"
+				`	"No really, you can trust me, I promise!"`
+			`	Lucy's face goes pale and she seems frozen in shock, while in the background you can hear sounds of someone who is definitely rushing to do something, though you can't see what.`
+			choice
+				`	"No wait! Luf e ow, vai, luf e eh?"`
 			label "come in"
-			`	"Come in, and we'll talk about it."`
+			`	The person in the background stills. "What did you say?"`
+			`	You repeat the phrase.`
+			`	Somewhere out of sight you hear a string Hai words that sound very exasperated before they address Lucy again. "Let them in Lucy, they probably actually are here to help."`
+			`	The emphasis placed on the 'are' is thick, and it seems to snap Lucy out of her frozen state. "Oh, uh, yes alright. If you could fly us to <planet>, we can pay you when we arrive. You'll likely be followed though, so I hope you have a fast ship. I think you should probably come in, and we'll talk about it."`
 			choice
 				`	(Enter their alcove.)`
 				`	"No, I can't help you get home."`
@@ -478,7 +503,8 @@ mission "Hai Rescue: Meroot and Lucy"
 		personality plunders disables unconstrained
 		fleet "Large Core Pirates" 1
 		fleet "Small Core Pirates" 1
-			
+
+
 
 mission "Hai Rescue: Gipeep Hint"
 	landing
@@ -500,8 +526,9 @@ mission "Hai Rescue: Gipeep Hint"
 		random < 80
 	on offer
 		conversation
-			`As you come in to land at the spaceport, you listen to the usual chatter of captains coming and going. One guy is bragging particularly odiously about some lucrative transport jobs he'd picked up on <planet>. Of course, it could mean nothing, but it's also very suspicious for that particular world <planet> is not known for lucrative transport jobs and it could likely be contraband, or worse...`
+			`As you come in to land at the spaceport, you listen to the usual chatter of captains coming and going. One guy is bragging particularly odiously about some lucrative transport jobs he'd picked up on <planet>. Of course, it could mean nothing, but it's also very suspicious for that particular world. <planet> is not known for lucrative transport jobs and it could likely be contraband, or worse...`
 				accept
+
 
 mission "Hai Rescue: Gipeep"
 	landing
@@ -525,12 +552,12 @@ mission "Hai Rescue: Gipeep"
 				`	(Check it out.)`
 				`	(Leave.)`
 					decline
-			`	Surprisingly, when you arrive the warehouse is unattended, which is suspicious in and of itself. Poking around a little you walk by some cargo and hear loud thumping coming from a locked crate. A ring of keys is hanging nearby. Do you want to check it out?`
+			`	Surprisingly, when you arrive the warehouse is unattended, which is suspicious in and of itself. Poking around a little you walk by some cargo and hear loud thumping coming from a locked crate. A ring of keys is hanging nearby. Someone could appear at any moment and you could be in trouble. Do you want to check it out?`
 			choice
 				`	(Examine the crate.)`
 				`	(Leave.)`
 					decline
-			`	One key stands out, it has a symbol you don't recognize that looks like an angry cat in a circle. As you get closer to the thumping, the ordinary-looking crate starts to seem a little strange. At first glance it appears to be the sort of crate that is well-insulated against sound and temperature, but this one must have concealed breathing holes. You can still hear muffled thumping fairly clearly.`
+			`	One key stands out, it has a symbol you don't recognize that looks like an angry cat in a circle. As you get closer to the thumping, the ordinary-looking crate starts to seem a little strange. At first glance it appears to be the sort of crate that is well-insulated against sound and temperature, but this one must have concealed breathing holes. You can still hear muffled thumping fairly clearly, but outside you hear what sounds like a loading vehicle pull up, and you don't know what's in the crate.`
 			`	Do you want to try opening the crate?`
 			choice
 				`	(Open the crate.)`
@@ -549,16 +576,16 @@ mission "Hai Rescue: Gipeep"
 				`	"No. You'll have to find another pilot."`
 					decline
 			label accept
-			`	You can hear men approaching through the warehouse entry and you both run quickly in the other direction. Soon you hear shots fired, and see them hit a nearby wall. They passed quite close to your head.`
+			`	You can hear men approaching through the warehouse entry and the Hai quickly retrieves something from the crate before you both run quickly in the other direction. Soon you hear shots fired, and see them hit a nearby wall. They passed quite close to your head.`
 			`	Through luck and skill, the two of you make it to your ship and quickly launch. The escape seemed a little too easy though; they may have been taking pains to avoid hitting your new passenger.`
 			`	It appears ships are following you into orbit.`
 				launch
 	on complete
 		log `Rescued a Hai ship architect named Gipeep who was kidnapped near his home on <destination> and transported in a locked cargo crate. The crate's key had a marking on it like an angry cat in a circle.`
-		log "Minor People" "Gipeep" `A Hai of no stated profession who was actively rescued from his captors. His tenacity of spirit may have `
+		log "Minor People" "Gipeep Anl'ooh" `A Hai of no stated profession who was actively rescued from his captors. His tenacity of spirit may have `
 		payment 285000
 		"hai slave prereq" ++
-		dialog `The Hai, who has since introduced himself as Gipeep, thanks you for helping him finally finish his long walk home from the store. His grateful family give you <payment>. None of them know who kidnapped him or why.`
+		dialog `The Hai, who has since introduced himself as Gipeep Anl'ooh, thanks you for helping him finally finish his long walk home from the store. His grateful family give you <payment>. None of them know who kidnapped him or why.`
 	npc
 		government "Bounty Hunter that Won't Enter Hai Space"
 		personality plunders disables unconstrained
