@@ -377,8 +377,11 @@ mission "ZZ Hai Tour [1] Stonebreak"
 	source "Allhome"
 	destination "Stonebreak"
 	to offer
-		has "Trader Directions to Hai Space: done"
+		or
+			has "ZZ Event Hai Secret Leaks: RS: offered"
+			has "ZZ Event Hai Secret Leaks: RS: offered"
 	on offer
+		fail "Trader Directions to Hai Space"
 		conversation
 			`As you are leaving the merchant and the Hai, the Hai calls out as an afterthought, "By the way Captain, if you really want to see what the Hai are like, you should go visit Stonebreak."`
 			choice
