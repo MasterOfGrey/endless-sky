@@ -305,7 +305,6 @@ mission "Trader Directions to Hai Space"
 	description "Follow the coordinates given to you by Captain Casey and meet the Hai."
 	source "Sunracer"
 	waypoint "Ultima Thule"
-	destination "Sunracer"
 	to offer
 		or
 			has "ZZ Event Hai Secret Leaks: RS: done"
