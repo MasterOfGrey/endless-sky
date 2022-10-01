@@ -13,10 +13,10 @@
 
 ########################################################################
 
-# Part 4: Search Korath and human space for the missing researchers
+# Part 4: The crisis expands in scope.
 
 #Timer trigger runs off Reveal 2 events, and ensures a minimum time between events if you do Reveal 3 events very quickly.
-mission "Hai Reveal: Rescue [A00] Darkwaste Timer"
+mission "Hai Reveal [A00] Darkwaste Timer"
 	landing
 	invisible
 	source
@@ -36,7 +36,7 @@ mission "Hai Reveal: Rescue [A00] Darkwaste Timer"
 event "hai rescue: teeneep message"
 
 
-mission "Hai Reveal: Rescue [A01] Visit Darkwaste"
+mission "Hai Reveal [A01] Visit Darkwaste"
 	landing
 	name "Meet Teeneep"
 	description "Fly to <destination> to visit the Hai you rescued."
@@ -58,14 +58,14 @@ mission "Hai Reveal: Rescue [A01] Visit Darkwaste"
 
 
 
-mission "Hai Reveal: Rescue [A02] Symbol Identification"
+mission "Hai Reveal [A02] Symbol Identification"
 	landing
 	name "Symbol Identification"
 	description "Fly to <destination> to ask the Quarg about the microtransceivers."
 	source Darkwaste
 	destination Hai-home
 	to offer
-		has "Hai Reveal: Rescue [A01] Visit Darkwaste: done"
+		has "Hai Reveal [A01] Visit Darkwaste: done"
 	on offer
 		log "People" "Teeneep Goot'r" `Teeneep is an activist and social leader among the Hai who heads an organization with hundreds of employees and many sponsors. She's used her extensive resources to search for answers about kidnapped specialists.`
 		log `Many Hai and humans have gone missing over the past few decades. Many of the ones who have subsequently been rescued have had mild cadmium poisoning from some technology not of human or Hai origin. Teeneep, a Hai social leader, is using her network of information-gatherers to find out what's going on. Heading to the Quarg south of Hai space to begin the search.`
@@ -171,14 +171,14 @@ mission "Hai Reveal: Rescue [A02] Symbol Identification"
 
 
 # Eventually needs a whole conversation variant for each main campaign. Potentially needs whole different goals. (To be a, b and c versions.)
-mission "Hai Reveal: Rescue [A03a] Symbol Identification"
+mission "Hai Reveal [A03a] Symbol Identification"
 	autosave
 	landing
 	name "Symbol Identification"
 	description "Check out the worlds near Allhome and make sure the Hai seem normal."
 	source "Hai-home"
 	to offer
-		has "Hai Reveal: Rescue [A02] Symbol Identification: done"
+		has "Hai Reveal [A02] Symbol Identification: done"
 	on offer
 		event "hai reveal: alondo symbol timer" 12
 		log `Been asked to check out the Hai spaceports in various systems near the wormhole, just to check nothing unexpected is happening.`
@@ -194,8 +194,7 @@ mission "Hai Reveal: Rescue [A03a] Symbol Identification"
 event "hai reveal: alondo symbol timer"
 
 
-
-mission "Hai Reveal: Rescue [A03a1]"
+mission "Hai Reveal [A03a1]"
 	minor
 	invisible
 	source
@@ -205,12 +204,12 @@ mission "Hai Reveal: Rescue [A03a1]"
 		has "event: hai reveal: alondo symbol timer"
 		has "Pirate Troubles [0]: done"
 	on offer
-		fail "Hai Reveal: Rescue [A03a] Symbol Identification"
+		fail "Hai Reveal [A03a] Symbol Identification"
 		# This presumably does nothing if it's already failed.
 		dialog `A message from Alondo informs you that he has a tenuous lead he can give you when you're not busy.`
 
 
-mission "Hai Reveal: Rescue [A03a2]"
+mission "Hai Reveal [A03a2]"
 	minor
 	invisible
 	source
@@ -219,7 +218,7 @@ mission "Hai Reveal: Rescue [A03a2]"
 	to offer
 		has "Pirate Troubles [0]: done"
 	on offer
-		fail "Hai Reveal: Rescue [A03a] Symbol Identification"
+		fail "Hai Reveal [A03a] Symbol Identification"
 
 
 
@@ -231,7 +230,7 @@ mission "Pirate Troubles [0]"
 		government "Hai"
 		not planet "Allhome"
 	to offer
-		has "Hai Reveal: Rescue [A03a] Symbol Identification: offered"
+		has "Hai Reveal [A03a] Symbol Identification: offered"
 		# Now integrated into the plot, previous conditions temporarily kept for posterity.
 		# has "First Contact: Unfettered: offered"
 		# or
@@ -659,7 +658,7 @@ mission "Pirate Troubles [4]"
 
 
 
-mission "Hai Reveal: Rescue [A04] Report to Teeneep"
+mission "Hai Reveal [A04] Report to Teeneep"
 	landing
 	name "Report to Teeneep"
 	description `Tell Teeneep about the experience with Scar's Legion.`
@@ -674,7 +673,7 @@ mission "Hai Reveal: Rescue [A04] Report to Teeneep"
 
 
 
-mission "Hai Reveal: Rescue [A05] Take Teeneep to Hai-home"
+mission "Hai Reveal [A05] Take Teeneep to Hai-home"
 	landing
 	name "Return to Hai-home"
 	description `Take Teeneep to Hai-home.`
@@ -683,7 +682,7 @@ mission "Hai Reveal: Rescue [A05] Take Teeneep to Hai-home"
 	passengers 1
 	blocked `It's probably not advisable to bring so many unnecessary people to a secret location on Darkwaste, you should return when your spare bunks are unoccupied.`
 	to offer
-		has "Hai Reveal: Rescue [A04] Report to Teeneep: done"
+		has "Hai Reveal [A04] Report to Teeneep: done"
 	on visit
 		dialog `Teeneep is on another ship not yet in the system, take off and wait for the ship to arrive in order to continue.`
 	on offer
@@ -759,7 +758,7 @@ mission "Hai Reveal: Rescue [A05] Take Teeneep to Hai-home"
 
 
 # Eventually needs a whole conversation variant for each main campaign. This time with similar goals. (To be a, b and c versions.)
-mission "Hai Reveal: Rescue [A06a] The Calm"
+mission "Hai Reveal [A06a] The Calm"
 	landing
 	name "Preparation & Investigation"
 	description `Stop by <destination> on your way to following up the lead from Alondo.`
@@ -768,7 +767,7 @@ mission "Hai Reveal: Rescue [A06a] The Calm"
 	cargo "hyperspace relays" 8
 	blocked `When you advise Alondo of your return he requests you ensure you have at least 8 tonnes of cargo space available.`
 	to offer
-		has "Hai Reveal: Rescue [A05] Take Teeneep to Hai-home: done"
+		has "Hai Reveal [A05] Take Teeneep to Hai-home: done"
 	on offer
 		conversation
 			`As soon as you disembark Teeneep slips off through an entirely different security checkpoint. She definitely shows them some sort of ID but you're some distance away by that point. A quick inquiry confirms that Alondo is actually around this time and you send him a message to alert him that you're heading his way.`
@@ -802,7 +801,7 @@ mission "Hai Reveal: Rescue [A06a] The Calm"
 				`	"I thought even pirates wouldn't blow up relays?"`
 				`	"Why would they be doing that, don't they use them too?"`
 			label relays
-			`	Remingont nods. "Yes, well, this deep end of space has never had relays. No one out here has needed them; and for a long time the marauders have been using the communications darkness out this way to be able to get around and do their business with impunity. There are no worlds disconnected, so there's no benefit to them, only disadvantage because ships out this way can then call for help when they couldn't before. So the relays the Syndicate have been putting up have been getting destroyed, along with several of our security ships.`
+			`	Remington nods. "Yes, well, this deep end of space has never had relays. No one out here has needed them; and for a long time the marauders have been using the communications darkness out this way to be able to get around and do their business with impunity. There are no worlds disconnected, so there's no benefit to them, only disadvantage because ships out this way can then call for help when they couldn't before. So the relays the Syndicate have been putting up have been getting destroyed, along with several of our security ships.`
 			`	"This one that you see in front of you is different though." He makes eye contact with Alondo and very deliberately emphases the word as he continues, "WE have been working with the Hai to make some relays that look like they're human-made, but utilize some more advanced Hai technology to baffle any scanners attempting to identify their location within a system. These should allow us to make the communication links without having marauders come through and destroy them."`
 			`	He looks at you, "But of course, since they have Hai tech in them, they need to be delivered by someone human, trustworthy, and who's not likely to get blown up by a marauder. Which would be you."`
 			choice
@@ -829,11 +828,11 @@ mission "Hai Reveal: Rescue [A06a] The Calm"
 		
 		
 		
-mission "Hai Reveal: Rescue [A07] Deliver the Relays"
+mission "Hai Reveal [A07] Deliver the Relays"
 	autosave
 	landing
 	name "Preparation & Investigation"
-	description `Stop by <destination> on your way to following up the lead from Alondo.`
+	description `Stop by <destination> to pick up Batu Cegeen on your way to following up the lead from Alondo.`
 	source Mountaintop
 	waypoint Sumar
 	waypoint Cardax
@@ -842,14 +841,67 @@ mission "Hai Reveal: Rescue [A07] Deliver the Relays"
 	destination Earth
 	cargo "hyperspace relays" 8
 	to offer
-		has "Hai Reveal: Rescue [A06a] The Calm: done"
+		has "Hai Reveal [A06a] The Calm: done"
 	on offer
+		log "People" "Terry Adrianopoulos" `Terry Adrianopoulos is the secretary of Samuel Remington, or at least that's how he puts it. Remington mentioned an internal political situation within the Syndicate while glancing at Terry, so there may be something larger at play with her presence. Hopefully it doesn't conflict with resolving the situation with the Hai.`
+		log "People" "David Turner" `An entrepreneur with a sharp mind, he was drawn into the cover story in the instrumental role of providing the funding, at least officially, for the movie production. It was not clear if he expected to profit from it, or simply saw it as an incomparable experience.`
 		conversation
-			`<Check up on mountaintop, have Terry tell you all about how well it's going with David Cohen's directing. Learn about her background as COO - explains her competency>`
-			`<Meet Turner properly, hear about how well the movie is going with brief synopsis - also hear about the latency/black spot and tourist security reasons for needing relays in the target systems.>`
-			`	The station is working, and the cover is gaining traction. From what I hear they're even actually making the movie now, but this poses a `
-			`<call out the syndicate advertising over the wormhole (make sure it's happened by this point)>`
-			`<Describe the hypercomms relays with Hai features - borrow code from free world plot where you have to deposit it in a system while there are no pirates around>`
+			`Stopping in to <origin> it takes practically no time to find Terry. She seems to be in motion at almost all times, trailed by a plethora of people constantly bringing things to her attention and then scurrying away once they've received whatever answer they were seeking. Between seeing her and crossing the eighty or so meters to come face to face you see her put her thumbprint to at least three separate datapads; presumably approvals of some sort.`
+			`	"Ah, <last>, excellent," she says as you arrive. "Come with me."`
+			`	It turns out that the main concourse of this station, set up as it is for a movie production, is littered with small meeting rooms squeezed in between more significant operations. They'd probably be storage cupboards on a normal station, but at present pretty much everything and everyone on the station seems to be occupied and in use. One diligent attendant blocks the door as she closes it behind you both and you see the queue of people scatter through the door's glass window. No doubt they'd return as soon as she was available again.`
+			`	"This David Cohen character is an eccentric one, but things are progressing rapidly and smoothly so far. The station is working, and the cover is gaining traction. From what I hear they're even actually making the movie now. They've almost made enough progress that people could believe the movie has been a work in progress for long enough to justify all this."`
+			choice
+				`	"You certainly seem busy."`
+					goto busy
+				`	"Looks like it's thanks to you."`
+			`	She momentarily adopts a self-satisfied smile.`
+			label busy
+			`	"Yes well, this poses a few issues of its own with the increased demand on the relay bandwidth from here, but I wouldn't have my regular job if something like this was too much to stay on top of."`
+			choice 
+				`	"Your regular job?"`
+					goto regular
+				`	"Your job as a secretary?"`
+			`	She rolls her eyes shakes her head with a little huff. "Ridiculous that that's what they tried to have me doing. No, I mean the job I had right before the end of the war, and the job I still seem to be doing seventy percent of even while I'm here."`
+				goto card
+			label regular
+			`	"Yes, my regular job. Specifically the one I had before the end of the war, and before this farce they have me doing now while my successor tries and fails to be half as competent."`
+			label card
+			`	She pushes a button on the case of her datapad and it ejects a business card which she hands to you. Printed on the card, among other things, is the text, "Chief Operations Officer".`
+			`	"Of course," she says, taking the card back and neatly pushing it back into a slot in the case. "I'm not allowed to go around disseminating those cards right at the moment. At least not until this is over, the fool in my place has made a mess of things, and I can take back my position."`
+			`	She seems absolutely sure that that's exactly how things are going to turn out.`
+			`	"Now speaking of my second job, I believe you have some relays on your ship that will make that a great deal easier yes?" You confirm you have those relays on board.`
+			`	"Wonderful, the latency has been killing me lately. Right then, these are the updated coordinates for deployment." She flicks the relevant data files from her pad across to you. "Make sure those are loaded into the relays themselves, and then as long as you get them in roughly the right place they'll move to and maintain their own positions."`
+			`	She checks something on her pad and then stands up. "Now, come with me. I need to introduce you to someone in case you need each other and I'm busy."`
+			`	With astonishing speed she strides down the concourse, clearing a path between all manner of employees and visitors. This clear path perhaps being the only reason you are able to keep up. She calls out to a human dressed in a business suit who turns with evident surprise, sees you both, and approaches.`
+			`	"Captain <last>, one of the many heroes of humanity! I noticed you right away when I laid my eyes upon you. I'd like to personally thank you for what you've done."`
+			choice
+				`	"Glad to get some recognition for all the hard work I've done."`
+					goto boast
+				`	"Don't mention it. I just did what I could to help."`
+					goto downplay
+				`	"Can I help you, sir?"`
+			`	"I'm the one who should be using formal titles to address you, so please, Captain, don't call me sir.`
+				goto introduction
+			label boast
+			`	"A personality as big as yourself should be receiving praise and recognition wherever you go! People must really have no respect these days.`
+				goto introduction
+			label downplay
+			`	"No need to downplay yourself, Captain! You've done God's work in saving humanity from that alien scourge.`
+			label introduction
+			`	Terry looks between you, "Glad you know who this is David. The Captain here is doing a lot to help us out, so please, make yourself acquainted. Don't keep them too long though, they've a job to do when they leave here." With that, she gives the both of you a parting nod and strides back into the chaos. Almost immediately a swarm of people with datapads seem to materialize from nowhere and pursue her.`
+			`	The man grins and shakes his head as she departs. "Remarkable woman. Anyway, the name's David Joseph Turner, venture capitalist, entrepreneur, and famous Paradise Worlds businessman." Turner grabs a business card from his pocket and hands it to you. The card contains his contact information, an address on Martini, and makes sure to boast in golden letters his net worth of more than three billion credits.`
+			`	"You may not have heard of me, but I've sure as hell heard of you." Turner turns around and waves his arm across the crowd of people working away on the station concourse. "To be involved in funding and producing this movie though, what an adventure. You know I've paid for movies to be made, or at least partially invested in them, but I've never had to actually be there while it was happening. Quite remarkable."`
+			`<Turner takes a moment to enthuse about the movie and relay a brief synopsis to demonstrate how well the production is in fact going.>`
+			`	"Of course, there are the communication latency issues, and the dreadful matter of the black spot that is the route through Cardax. We really do need to get coverage of that properly if we're going to provide proper security to the tourists who seem intent on coming here now. Though, I hear that you might be working on that as we speak am I right?"`
+			choice
+				`	"Yes."`
+					goto yes
+				`	"It's on my way."`
+			`	Turner smiles with a little twinkle in his eye.`
+			label yes
+			`	"Of course, the famous Captain <last> always has their finger on the pulse. Being right where they need to be. Good thing we got the advertising out there up in time hey?" He taps his nose and gives a shockingly conspicuous wink.`
+			`"Anyway, give me your details too just in case I need them, and I'll let you get to your business. Good luck out there." He checks your details into his pad and gives you a firm handshake before hurrying off towards people moving a very large prop. 'No, no, they said they wanted that on stage five! Stage five!'.`
+			`	Time to drop off those relays and head to <destination>.`
 				accept
 	on enter Sumar
 		dialog `You fly to the coordinates given to deploy the relay and eject it from an airlock, making sure that there are no ships in range to see it happen. The relay gives you a confirmation ping when it's successfully activated.`
@@ -862,7 +914,7 @@ mission "Hai Reveal: Rescue [A07] Deliver the Relays"
 
 
 
-mission "Hai Reveal: Rescue [A08] Symbol Identification"
+mission "Hai Reveal [A08] Symbol Identification"
 	landing
 	name "Preparation & Investigation"
 	description "Return to <destination> with Batu Cegeen and your new information."
@@ -870,7 +922,7 @@ mission "Hai Reveal: Rescue [A08] Symbol Identification"
 	destination Hai-home
 	passengers 1
 	to offer
-		has "Hai Reveal: Rescue [A07] Deliver the Relays: offered"
+		has "Hai Reveal [A07] Deliver the Relays: offered"
 	on visit
 		dialog `Batu is on another ship not yet in the system, take off and wait for the ship to arrive in order to continue.`
 	on offer
@@ -924,7 +976,7 @@ mission "Hai Reveal: Rescue [A08] Symbol Identification"
 
 
 
-mission "Hai Reveal: Rescue [A09] History of Appeasement"
+mission "Hai Reveal [A09] History of Appeasement"
 	landing
 	name "Demanding Satisfaction"
 	description "Take Teeneep to <destination> to treat with the Unfettered."
@@ -932,13 +984,14 @@ mission "Hai Reveal: Rescue [A09] History of Appeasement"
 	destination Darkcloak
 	passengers 1
 	to offer
-		has "Hai Reveal: Rescue [A08] Symbol Identification: done"
+		has "Hai Reveal [A08] Symbol Identification: done"
 	on visit
 		dialog `Teeneep is on another ship not yet in the system, take off and wait for the ship to arrive in order to continue.`
 	on offer
 		"reputation: Hai (Unfettered)" >?= 10
 		conversation
-			`Come to find Teeneep and find her and Sayari arguing. Learn of the history of appeasement ("They've been doing this for decades!") and Teeneep's desire to take it public. "She will be censured from public life if she does not at least attempt to go through with normal resolution channels. She must confront the Elders directly."`
+			`You return to find Teeneep and Sayari arguing. Learn of the history of appeasement ("They've been doing this for decades!") and Teeneep's desire to take it public. "She will be censured from public life if she does not at least attempt to go through with normal resolution channels. She must confront the Elders directly."`
+			`As an aside, learn that the Elders have known of some Hai who have been captives on pirate vessels which have been destroyed by the Navy due to the risk to Navy personnel being too high to engage. This is the icing on the cake, not only appeasement of bottom-feeding humans, but also the tolerance of human governments knowingly doing nothing about it.`
 			`Go to the Elders, have the showdown, "We don't want to risk larger problems with humanity." "You're already risking larger issues with your current actions." Reuse the secrecy over safety line. (Sayari interprets while you spectate.)`
 			`Elders don't bend, take it to Xilin, Parliament won't act, Batu provides poignant commentary - has received instructive lessons as to what will or will not be accepted during this crisis (in general terms).`
 			`Teeneep won't wait for parliament to deliberate. Demands (over Sayari's objections) that you take her to the Unfettered. "They call themselves the True Hai, maybe it's time they demonstrated it."`
@@ -946,7 +999,7 @@ mission "Hai Reveal: Rescue [A09] History of Appeasement"
 
 
 
-mission "Hai Reveal: Rescue [A10] Demanding Satisfaction"
+mission "Hai Reveal [A10] Demanding Satisfaction"
 	landing
 	name "Demanding Satisfaction"
 	description "Fly to <destination> and deliver Teeneep and her ultimatum to the Elders."
@@ -954,26 +1007,23 @@ mission "Hai Reveal: Rescue [A10] Demanding Satisfaction"
 	destination "Hai-home"
 	passengers 1
 	to offer
-		has "Hai Reveal: Rescue [A09] History of Appeasement: done"
+		has "Hai Reveal [A09] History of Appeasement: done"
 	on offer
 		log `Traveled to Unfettered Hai space with Teeneep and convinced them to throw their support behind her.`
-# Rework this to deal with Teeneep justifying her trueness (not just political opportunism), presenting the history of behavior to the Unfettered and requesting they support her in forcing the Elders into taking action. 
-# "I know it is distasteful to consider this sort of show." <insert player confusion> "Neither True Hai nor Fettered truly desire to shed the blood of the other. Our disagreement is a protest, a lesson to be learned that we are learning but slowly. Perhaps it is time though that we demonstrate the seriousness of our resolve, especially if the Elders have become so mired as for it to have come to this."
-# Unfettered offer to help, but can't just waltz through Hai and human space without being blasted.
+		payment 100000
 		conversation
-			`Teeneep has prepared to meet the Unfettered in a somewhat surprising manner; she's wearing what looks like a fencing outfit. There are two swords on her back and several balanced knives on her belt. She's wearing a headband with a medallion on it that looks like an athletic medal.`
-			`	She pays you for the trip and explains, "These blades are not ceremonial. Leave your gun behind, or the Unfettered may think you're an assassin. Trust me, we'll be fine." You hand your gun to a nearby Unfettered and hope Teeneep understands the Unfettered Hai as much as she claims to.`
+			`Teeneep makes a request on your approach and then goes to prepare. You are subsequently directed to a restricted landing zone near their government complex. When she reappears Teeneep has prepared to meet the Unfettered in a somewhat surprising manner; she's wearing what looks like a fencing outfit. There are two swords on her back and several balanced knives on her belt. She's wearing a headband with a medallion on it that looks like an athletic medal.`
+			`	She pays you for the trip and explains, "These blades are not ceremonial. Bring your gun with you, but it behind when we reach the chambers, or the Unfettered may think you're an assassin. Trust me, we'll be fine.`
 			`	"Let's go," she says.`
 			choice
 				`	"What's your plan?"`
 				`	(Follow her.)`
 					goto follow
-			`	"To Unfettered Hai leadership, this meeting is all a political ploy. They know it's in their best interest to help us. It will raise public opinion towards them among the "Fettered" and likely lure more recruits to their side. But before they agree, I have to prove myself in front of their troops. If I don't, the public's perception will be that the Unfettered leaders helped a weak coward.`
-			`	"Why else do you think the Hai Elders would pick the one fencing champion among their number for this trip?"`
+			`	"To Unfettered Hai leadership, this meeting is all a political ploy. They know it's in their best interest to help us. It will raise public opinion towards them among the "Fettered" and likely lure more recruits to their side. But before they agree, I have to prove myself in front of their troops. If I don't, the public's perception will be that the Unfettered leaders helped a weak coward. Fortunately, dangerous sports have a tendency to open doors for you in Hai society. They're an essential hobby for anyone who hopes to have influence and I have kept up with mine reasonably well. It's been a couple decades since I won anything, but I was regional champion in fencing a number of times when I was really into it."`
 			label follow
-			`	Teeneep takes a step forward, pauses, then turns back to you. "Actually, there was something I wanted to make sure I explained before we meet the Unfettered leadership: I'm carrying real weapons for a reason. This meeting will probably seem violent, and that will probably make you think the Unfettered are a barbaric people. They're not; they 'play up' their violent nature. It's a hard concept to explain - we have Hai words for this that don't translate well into your language. That's the simplest way I can think to explain it without spending twenty minutes here, so it'll have to suffice."`
+			`	Teeneep goes to disembark, pauses, then turns back to you. "Actually, before we leave the ship there was something I wanted to make sure I explained before we meet the Unfettered leadership: I'm carrying real weapons for a reason. This meeting will probably seem violent, and that will probably make you think the Unfettered are a barbaric people. They're not; they 'play up' their violent nature. It's a hard concept to explain - we have Hai words for this that don't translate well into your language. That's the simplest way I can think to explain it without spending twenty minutes here, so it'll have to suffice."`
 			`	She glances around. "Besides, we're already close to running late. Let's get going."`
-			`	You pass through a hallway filled with battle trophies and enter a large room filled with uniformed Hai. You notice many of them have swords similar to Teeneep's, though they look more ceremonial than functional.`
+			`	You enter the complex and she speaks as you pass through a hallway filled with battle trophies. "I have requested this conversation happen in human standard. This will be to your benefit, it is only polite, but it is also to mine. To shy from a challenge is not befitting a True Hai, and for this matter I think your tongue may be more eloquent. I should have them at a disadvantage." A moment later you reach a guarded door; you hand your gun to an Unfettered guard and hope Teeneep understands the Unfettered Hai as much as she claims to. Beyond, you enter a large room filled with uniformed Hai. You notice many of them have swords similar to Teeneep's, though they look more ceremonial than functional.`
 			`	As Teeneep walks in, an Unfettered moves to block her path. From the extensive decorations on his uniform, it appears he's a high-ranking officer. "You're not welcome here, False Hai." He starts to push her away. In one motion, Teeneep spins around, unsheathes a sword, and swipes it across his arm, drawing blood. The Hai grunts, surprised, and steps aside to let Teeneep pass. She walks toward the gigantic leader of the Unfettered, whose face betrays his surprise and admiration.`
 			choice
 				`	(Walk in and join Teeneep.)`
@@ -981,26 +1031,37 @@ mission "Hai Reveal: Rescue [A10] Demanding Satisfaction"
 					goto watch
 			`	As you enter the room, a pair of Unfettered grab you. Teeneep draws a throwing knife, saying with intensity, "Let Captain <last> go. Now." The Unfettered let go immediately, and she nods for you to stay where you are, sheathing the knife.`
 			label watch
-			`	Teeneep explains to the leader, "Twenty thousand Hai have been enslaved by human pirates. They're concealed in a subterranean base that can only be reached with both a Jump Drive and a Quantum Keystone. Dozens of human capital ships and thousands of human pirates guard the Hai. We haven't enough Jump Drives to rescue them.`
-			# Note: Teeneep is using hyperbole; she knows most of the 20,000 Hai at Philosopher's Paradise were probably born there.
-			`	"You were once the protectors of all Hai. I ask you be so again. Free our people from slavery and kill their human slavers."`
-			`	The Unfettered leader responds, "Your people have outlawed and abandoned us. You give us insulting food donations with propaganda on them. You block our ships from returning to Hai-home. Why should we help you, a race of slothful cowards? Your people are an insult to all Hai."`
+			`	The leader's voice booms from where he sits at the other end of the room. "Come False Hai. You have entered here to make a case, have at it."`
+			`	Teeneep explains to the leader, "Five thousand Hai have been enslaved by human pirates, or vaporised when the human authorities have shot down their captors with no regard for the innocents on board. The Elders do not act. Will not act. They know, and do nothing. I have learned that they have known of some pirates who they felt were too much of a headache for decades, and that rather than hunt them down, they have paid them with technology. Our weapons and outfits. Paid them off to simply leave us alone, and not even to return any Hai they may have captured.`
+			`	"You were once the protectors of all Hai. I would honor that not out of political opportunism, but because our people need heroes and protectors that the Elders are not . So I stand here to ask you to be so again. Free our people from slavery and kill their human slavers."`
+			`	The Unfettered leader responds, "Your people have outlawed and abandoned us. You give us insulting food donations with propaganda on them. You block our ships from returning to Hai-home. Why should we help you, a race of slothful cowards? Your people are willingly blind and lost, an insult to all Hai."`
 			`	Teeneep suddenly takes three strides forward, closing the distance between her and the Unfettered leader in less than a second. You had forgotten how quick Hai are; few humans could do what she just did. "I challenge you for rule of the Unfettered military!"`
 			`	"You haven't the authority to do that," he responds, laughing.`
-			`	Teeneep draws a throwing knife and launches it. It zips through the air, passing within a hand's width of the Unfettered leader before embedding itself in the wall behind. "Fight me! Are you afraid to fight a woman half your size? Fight me, coward!" From her expression, you're unsure if she genuinely has that much faith in her abilities, or if this is a bluff.`
-			`	The Unfettered leader pauses, then smiles. "There is no need. Even on our planets, I've rarely met a Hai half as brave as you. You are a True Hai, and we protect our own. You have vouched for the value of the lives of these Hai, so we will send a fleet to rescue them. I will lead the attack myself."`
+			`	"Besides..." you see one of the other Unfettered to the right of the leader begin to step out. "You would ha..." Teeneep cuts the leader off as she draws a throwing knife and launches it. It zips through the air, and spears the shoulder of the Unfettered who began to move, embedding itself in the wall behind and pinning them in place.`
+			`	"I would have to what, defeat your right hand first?" She takes a step back and smirks at him. "Now, will you face a woman half your size?" From her expression, you're unsure if she genuinely has that much faith in her abilities, or if this is a bluff.`
+			`	The Unfettered leader pauses, then smiles. "There is no need. Even on our planets, I've rarely met a Hai half as brave as you. You have the courage to turn an act into action. You are a True Hai, and we protect our own. You have vouched for the value of the lives of these Hai, so I say now we are willing to send our fleets to their aid. I would come myself."`
 			`	She re-sheaths her swords and calls you over. "I have brought with me one of the greatest war heroes of the humans."`
 			choice
 				`	(Walk to her.)`
 			`	"Captain <first> <last> led great fleets during a civil war of the humans. I have seen <first>'s valor in battle while escorting my ship through pirate space. We will have the honor of fighting alongside this warrior of the humans."`
-			`	The Unfettered leader turns to you and says, "I look forward to seeing you fight. We cannot spare a large fleet though, so I will need your people to upgrade ten Shield Beetles to our specifications. We'll return your outfits after the battle." He motions to another officer, who hands him a data card. "These are the instructions."`
-			`	Teeneep turns to you. "Return to Hai-home and inform the Elders that an Unfettered fleet will arrive. We'll go ahead to <planet> so the outfitting can begin as soon as possible. When all is ready, meet us there."`
-			`	You return to your ship and prepare to leave.`
+			`	He looks at you appraisingly. "That is will, but there is a matter yet to be addressed. We cannot just waltz through Hai and human space without being blasted. How will you convince your Elders to allow us passage?"`
+			`	"They will not allow it," says Teeneep. "We must force them."`
+			`	A round of muttering breaks out around the room.`
+			`	"The threat of true war then..." In the ensuing silence you swear you could have heard a pin drop.`
+			`	Teeneep bows her head. "I know it is distasteful to consider this sort of show."`
+			`	The Unfettered leader considers her for a long moment before raising his head and slowly assessing the room, making eye contact with each of the others standing by.`
+			`	All bravado and bluster seems to be gone from him now as he finally speaks. "Five thousand Hai you say?"`
+			`	"At least," she says, lifting her head to lock eyes with him.`
+			`	With the weight of a proclamation he responds, "Then it shall be so."`
+			`	There is a moment where it seems as if something respectful is being observed and then, like a switch being flicked, the energy returns and the leader smiles at you as those around start jostling and making quiet remarks to each other.`
+			`	The Unfettered leader seems to sense your confusion. "Neither True Hai nor Fettered truly desire to shed the blood of the other. Our disagreement is a protest, a lesson to be learned that we are learning but slowly. Perhaps it is time though that we demonstrate the seriousness of our resolve, especially if the Elders have become so mired as for it to have come to this."`
+			`	He grins. "I look forward to seeing you fight, human. Now both of you, go. Do what you must."`
+			`	Teeneep turns and leads you out, making sure they return your weapon as you leave. "Now we must return to <destination> and address the Elders again. Hopefully they will now see reason."`
 				accept
 
 
 
-mission "Hai Reveal: Rescue [A11] Sound the Alarm"
+mission "Hai Reveal [A11] Sound the Alarm"
 	landing
 	name "Sound the Alarm"
 	description "Reach <destination> and deliver a warning."
@@ -1008,15 +1069,17 @@ mission "Hai Reveal: Rescue [A11] Sound the Alarm"
 	destination "Mountaintop"
 	passengers 1
 	to offer
-		has "Hai Reveal: Rescue [A10] Demanding Satisfaction: done"
+		has "Hai Reveal [A10] Demanding Satisfaction: done"
 	on offer
 		event "hai reveal: hai and human ships at wormhole"
 #		log ``
 		conversation
-			`Teeneep confronts the Elders again, tells them about the offer that the Unfettered provide. "If you don't do it, they will." Once again, the Elders remain passive and decline taking action. Insist that the Unfettered wouldn't dare move.`
-			`Teeneep goes public with the situation to Hai society, telling them of the failings of the Elders in keeping the Hai safe. Including the willingness of the Unfettered to make open bloody war to force this matter to a resolution. This is what causes the snap election that will lead to Teeneep becoming an elected Elder.`
-			`Sayari finds you and slips you a warning that the winds of change have picked up and all communication in or out of Hai space will be cut off the instant the election is announced formally. You tell Alondo, he directs you to fly to Mountaintop with *all* possible haste.`
-			`Hai security forces close the border and you have to run the gauntlet. However, the favor you have accrued at multiple levels of Hai society stays the hand of retribution.`
+			`<Teeneep confronts the Elders again, tells them about the offer that the Unfettered provide. "If you don't do it, they will." Once again, the Elders remain passive and decline taking action. Insist that the Unfettered wouldn't dare move.`
+			`<Teeneep goes public with the situation to Hai society, telling them of the failings of the Elders in keeping the Hai safe. Including the willingness of the Unfettered to make open bloody war to force this matter to a resolution. This is what causes the snap election that will lead to Teeneep becoming an elected Elder.`
+			`<Sayari finds you and slips you a warning that the winds of change have picked up and all communication in or out of Hai space will be cut off the instant the election is announced formally. You tell Alondo, he directs you to fly to Mountaintop with *all* possible haste.`
+			`<Hai security forces close the border and you have to run the gauntlet. However, the favor you have accrued at multiple levels of Hai society stays the hand of retribution.`
+	on enter "Waypoint"
+		dialog `As you enter Waypoint one of the Hai captains hails you. "Captain, we've orders to close the border to everyone but... We know you've been doing official business and we haven't been told to specifically block you. We also owe you one. You can go through, but don't try and bring anyone with you. We'll have no choice but to fire upon you and them if you do."`
 
 event "hai reveal: hai and human ships at wormhole"
 	system "Waypoint"
@@ -1038,12 +1101,13 @@ event "hai reveal: hai and human ships at wormhole"
 
 
 # Ensure there are some impressive fleets at each system.
-mission "Hai Reveal: Rescue [A11-A] Permanent Fleets"
+mission "Hai Reveal [A11-A] Permanent Fleets"
+	invisible
 	landing
 	invisible
 	source "Hai-home"
 	to offer
-		has "Hai Reveal: Rescue [A10] Demanding Satisfaction: done"
+		has "Hai Reveal [A10] Demanding Satisfaction: done"
 	to complete
 		never
 	npc
@@ -1058,12 +1122,13 @@ mission "Hai Reveal: Rescue [A11-A] Permanent Fleets"
 		fleet "Hai Wormhole Guards" 40
 
 #These are separated because they leave at a different time.
-mission "Hai Reveal: Rescue [A11-B] Permanent Fleets"
+mission "Hai Reveal [A11-B] Permanent Fleets"
+	invisible
 	landing
 	invisible
 	source "Hai-home"
 	to offer
-		has "Hai Reveal: Rescue [A10] Demanding Satisfaction: done"
+		has "Hai Reveal [A10] Demanding Satisfaction: done"
 	to complete
 		never
 	npc
@@ -1078,7 +1143,7 @@ mission "Hai Reveal: Rescue [A11-B] Permanent Fleets"
 
 
 
-mission "Hai Reveal: Rescue [A12] Into the Lion's Den"
+mission "Hai Reveal [A12] Into the Lion's Den"
 	landing
 	name "Into the Lion's Den"
 	description "Travel back to <destination> and ensure the diplomats are safe."
@@ -1086,7 +1151,7 @@ mission "Hai Reveal: Rescue [A12] Into the Lion's Den"
 	destination "Hai-home"
 	passengers 1
 	to offer
-		has "Hai Reveal: Rescue [A11] Sound the Alarm: done"
+		has "Hai Reveal [A11] Sound the Alarm: done"
 	on offer
 #		log ``
 		conversation
@@ -1097,7 +1162,7 @@ mission "Hai Reveal: Rescue [A12] Into the Lion's Den"
 
 
 
-mission "Hai Reveal: Rescue [A13] A New Elder"
+mission "Hai Reveal [A13] A New Elder"
 	landing
 	name "A New Elder"
 	description "Travel with Teeneep and the diplomatic corps to <stopover> and escort the Unfettered to <destination>."
@@ -1106,7 +1171,7 @@ mission "Hai Reveal: Rescue [A13] A New Elder"
 	destination "Mountaintop"
 	passengers 1
 	to offer
-		has "Hai Reveal: Rescue [A12] Into the Lion's Den: done"
+		has "Hai Reveal [A12] Into the Lion's Den: done"
 	on offer
 #		log ``
 		conversation
@@ -1143,13 +1208,14 @@ mission "Hai Reveal: Rescue [A13] A New Elder"
 		ship "Centipede (Teeneep)" "Teeneep's Ship"
 
 
-mission "Hai Reveal: Rescue [A13-A] Unfettered Pickup"
+mission "Hai Reveal [A13-A] Unfettered Pickup"
+	invisible
 	landing
 	invisible
 	source "Everhope"
 	destination "Mountaintop"
 	to offer
-		has "Hai Reveal: Rescue [A13] A New Elder: active"
+		has "Hai Reveal [A13] A New Elder: active"
 	npc
 		government "Hai (Friendly Unfettered)"
 		system "Ultima Thule"
@@ -1180,15 +1246,15 @@ ship "Centipede" "Centipede (Teeneep)"
 
 
 
-mission "Hai Reveal: Rescue [A14] A Time of Trouble"
+mission "Hai Reveal [A14] A Time of Trouble"
 	landing
 	name "A Time of Trouble"
 	description "Escort innocent civilians to <destination>, safely away from the 'Pirate Menace'."
 	source "Mountaintop"
 	destination "Sunracer"
-	passengers 1
+	passengers 2
 	to offer
-		has "Hai Reveal: Rescue [A13] A New Elder: done"
+		has "Hai Reveal [A13] A New Elder: done"
 	on offer
 #		log ``
 		conversation
@@ -1198,5 +1264,18 @@ mission "Hai Reveal: Rescue [A14] A Time of Trouble"
 			`	c) Parliament says they'll take care of it themselves, but the Hai say they've had enough of sitting around and want to be there to save their own people? The Hai imply that the Navy could end up killing the Hai involved in the process.`
 			`	d) Turner pulls Remington aside and points out how the Hai population is a vast new region to market to, but that won't be an option if war breaks out. Use this to get the Syndicate to leverage the Parliament to agree to the Hai's demands.`
 			`	e)  Under threat of using the (temporary) unification with the Unfettered, the Republic agrees to a limited cooperation which needs some planning. Parliament and Hai agree to a joint action to sweep various pirate worlds and liberate any Hai slaves.`
+			
+			`	It takes a short while, but after some doing they manage to set up a clear channel dedicated to this particular call and you are all gathered into a room with large wall-mounted displays. You knew it was coming, and yet you're still a little surprised to see before you the President of the Republic and the Chancellor of the Free Worlds in remarkable clarity and surprisingly low latency. The windows behind the Chancellor suggest they were awoken in the middle of the night for this, but you wouldn't guess it from looking at them.`
+			`	Teeneep begins, "I speak as the voice of the Hai and with the full authority of the Elder Council. Many of our people have been kidnapped over the past few decades, and they still largely reside under the servitude of various pirate factions that the Republic allows to continue. Even worse, your authorities have killed numerous Hai on slaver ships, without attempting rescue or even offering the opportunity to surrender. We demand the return of our people and an immediate end to the policy of letting slaves die or escape without attempting boarding and rescue."`
+			`	The President is the first to respond. "The problem of piracy in human space is a difficult one and cannot be solved overnight. The pirates are well-entrenched in their planets, and fighting them is a long and brutal struggle. With our navies distracted fighting one another, our recent war has left them stronger than ever."`
+			`	The Chancellor continues, "The Free Worlds has made great strides reducing piracy by befriending the peoples of the anarchist worlds. We're discussing similar approaches with the Republic. Perhaps in another few years, piracy will be entirely eliminated."`
+			`	"We have a counter-proposal," the President says. "We cannot afford to change that policy in totality, it would cost too many lives. However, we propose the following: The Free Worlds and Republic will establish a customs service on Mountaintop. Hai visiting human space will check in with us there. Our intelligence agencies will then track their movements in order to see to their safety as best we can. They'll also be given contacts on every human planet that they can go to for help. In the meantime, we will place extensive surveillance fleets at Ultima Thule to detect any unapproved Hai travel. We will do our best to disable and capture ships with kidnapped Hai, no matter the risk to Navy lives."`
+			`	"The Free Worlds will also extend our protection, of course," the Chancellor adds.`
+			`	Teeneep takes a moment to respond, "That sounds like an acceptable future state... I cannot sign that treaty yet though. My people won't be satisfied until the kidnapped Hai are returned."`
+			`	The President replies, "The Minister for Foreign Affairs has been keeping Cabinet apprised of the major details and proposals reported back by Deputy Minister Yang. Under the circumstances we believe it would be appropriate for us to attempt a joint effort to address your concerns. We agree to making this effort against one target, and to reassessing the situation afterwards depending upon what is discovered in that process. The Republic representatives there with you now will work with you to identify that target and plan the action accordingly."`
+			`	The smoothness with which this goes down gives you the sense that the main points of this were all provisionally agreed to already, with only a little wiggle room left to be settled in this conversation.`
+			`	Sayari steps up and whispers something to Teeneep who then seems to think for a moment before returning to the screens. "This pathway is acceptable."`
+			`	A number of people involved in the busywork of bureaucracy start slipping out of the room, doubtlessly to get a head start on certain preparations as Teeneep and the leaders on the screen conclude some formal thanks for continued cooperation and other matters of protocol. You are too visible to slip away though and have to wait.`
 			`f) The many civilians that have been living under this cover or being serviced by it are nervous about the massed Navy ships. They are sold a story about a "Pirate Menace" and you, as the famous war hero, get to escort them to safety and keep everyone's eyes away from what's happening here.`
-
+			`Terry and Turner come with you`
+				accept

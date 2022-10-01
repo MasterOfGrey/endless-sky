@@ -310,8 +310,8 @@ mission "Hai Reveal: Trader Directions to Hai Space"
 	name "Investigate the Hai"
 	description "Follow the coordinates given to you by Captain Casey and meet the Hai."
 	source "Sunracer"
-#	waypoint "Ultima Thule"
-	destination "Wormhole Alpha"
+	waypoint "Ultima Thule"
+	destination "Allhome"
 	to offer
 		or
 			has "Hai Reveal: Secret Leaks: RS: done"
