@@ -373,7 +373,7 @@ mission "ZZ Hai Reveal: Building Mountaintop [2a] Sales Job"
 mission "Hai Reveal: Building Mountaintop [3] Furnishings"
 	autosave
 	landing
-	name "Retrieve human furnishings."
+	name "Retrieve Human Furnishings"
 	description "The volunteers are so numerous that the Hai need outside help transporting furnishings for their quarters to the new station."
 	source "Mountaintop"
 	stopover "Prime"
