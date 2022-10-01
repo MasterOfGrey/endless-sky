@@ -1033,7 +1033,7 @@ mission "Hai Leaks Response 6"
 		dialog "You have returned to Hai-home but haven't found anything actionable you can tell Sayari. There's still time to look for evidence."
 	to complete
 		"hai slave prereq" >= 3
-		has "Hai Rescue: Gipeep: offered"
+		has "Hai Rescue: Gipeep: done"
 	on complete
 		log `You found proof of more kidnapped Hai and something that seems out of place. Sayari's fears appear to have been justified...`
 
@@ -1047,6 +1047,7 @@ mission "Hai Leaks Response 7"
 		not attributes "uninhabited"
 	to offer
 		has "Hai Leaks Response 6: active"
+		has "Hai Rescue: Gipeep: done"
 		"hai slave prereq" >= 3
 	on offer
 		conversation
