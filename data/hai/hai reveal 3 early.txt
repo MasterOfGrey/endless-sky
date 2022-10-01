@@ -25,7 +25,7 @@ mission "Hai Reveal: Building Mountaintop [1] Construction Fleet"
 	destination "Mountaintop"
 	clearance
 	to offer
-		has "Hai Leaks Response 6: done"
+		has "Hai Reveal: Leaks Response 6: done"
 	on offer
 		conversation
 			`When you return to Hai-home, you are directed to a government hangar where you are met by Xilin and Sayari, both looking very relieved.`
