@@ -15,49 +15,6 @@
 
 # You facilitate the supervised construction of a station to act as a base for the cover (and also as a checkpoint to hide access to Hai space).
 
-event "secret mountaintop"
-	# Ensure Mountaintop exists so the next mission can trigger
-	system "Ultima Thule"
-		government "Uninhabited"
-		object
-			sprite star/f0
-			period 10
-		object
-			sprite planet/desert5
-			distance 200
-			period 22.3607
-		object
-			sprite planet/europa-b
-			distance 403.41
-			period 64.056
-		object
-			sprite planet/desert7-b
-			distance 824.9
-			period 187.302
-		object
-			sprite planet/gas1
-			distance 1706.99
-			period 557.553
-			object
-				sprite planet/ice8-b
-				distance 216
-				period 11.1964
-		object "Wormhole Alpha"
-			sprite planet/wormhole
-			distance 4208.63
-			period 2158.5
-			object Mountaintop
-				sprite "effect/flotsam yottrite"
-				distance 315
-				period 31.1964
-	planet Mountaintop
-		government "Unknown"
-		# Placeholder description; you can't actually land.
-		description `This tiny asteroid has a space hazard warning transmitter, of a type typically used to mark construction sites. Perhaps someone intends to build a space station here?`
-		"required reputation" 1000
-		bribe 0
-
-
 mission "Hai Building Mountaintop [1] Construction Fleet"
 	name "Escort construction fleet to Ultima Thule"
 	description "Meet a construction fleet at <stopovers> and escort them to to <destination> to prevent a confrontation."
@@ -237,31 +194,10 @@ mission "Hai Building Mountaintop [1b] Return"
 
 event "role-play station before construction"
 	system "Ultima Thule"
-		object
-			sprite star/f0
-			period 10
-		object
-			sprite planet/desert5
-			distance 200
-			period 22.3607
-		object
-			sprite planet/europa-b
-			distance 403.41
-			period 64.056
-		object
-			sprite planet/desert7-b
-			distance 824.9
-			period 187.302
-		object
-			sprite planet/gas1
-			distance 1706.99
-			period 557.553
-			object
-				sprite planet/ice8-b
-				distance 216
-				period 11.1964
-		object "Wormhole Alpha"
-			sprite planet/wormhole
+		remove object
+			distance 4208.63
+			period 2158.5
+		add object
 			distance 4208.63
 			period 2158.5
 			object Mountaintop
@@ -278,31 +214,10 @@ event "role-play station before construction"
 
 event "role-play station after construction"
 	system "Ultima Thule"
-		object
-			sprite star/f0
-			period 10
-		object
-			sprite planet/desert5
-			distance 200
-			period 22.3607
-		object
-			sprite planet/europa-b
-			distance 403.41
-			period 64.056
-		object
-			sprite planet/desert7-b
-			distance 824.9
-			period 187.302
-		object
-			sprite planet/gas1
-			distance 1706.99
-			period 557.553
-			object
-				sprite planet/ice8-b
-				distance 216
-				period 11.1964
-		object "Wormhole Alpha"
-			sprite planet/wormhole
+		remove object
+			distance 4208.63
+			period 2158.5
+		add object
 			distance 4208.63
 			period 2158.5
 			object Mountaintop
@@ -310,11 +225,7 @@ event "role-play station after construction"
 				distance 315
 				period 31.1964
 	planet Mountaintop
-		government "Hai"
-		attributes uninhabited
-		landscape land/station0
 		description `This station is made of eight Geocoris ships dismantled and reassembled into a spherical structure with external storage and landing platforms. Hai workers are shuffling about the station, installing human amenities and vast holographic projection systems. Presently it looks much like a construction site, but it is rapidly approaching completion.`
-		security 0.2
 
 
 
@@ -475,30 +386,10 @@ mission "Hai Building Mountaintop [3] Furnishings"
 event "role-play station active"
 	system "Ultima Thule"
 		government "Neutral"
-		object
-			sprite star/f0
-			period 10
-		object
-			sprite planet/desert5
-			distance 200
-			period 22.3607
-		object
-			sprite planet/europa-b
-			distance 403.41
-			period 64.056
-		object
-			sprite planet/desert7-b
-			distance 824.9
-			period 187.302
-		object
-			sprite planet/gas1
-			distance 1706.99
-			period 557.553
-			object
-				sprite planet/ice8-b
-				distance 216
-				period 11.1964
-		object "Wormhole Alpha"
+		remove object
+			distance 4208.63
+			period 2158.5
+		add object
 			sprite planet/wormhole-syndicate-ad
 				"frame rate" 1
 				"random start frame"

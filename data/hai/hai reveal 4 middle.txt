@@ -415,22 +415,11 @@ mission "Pirate Troubles [2]"
 
 event "scar's hideout"
 	system "Danoa"
-		object
-			sprite star/m3
-			period 10
-		object
-			sprite planet/desert7-b
-			distance 168.64
-			period 75.3935
-		object
-			sprite planet/fog0-b
-			distance 693.93
-			period 629.313
-			object
-				sprite planet/mercury
-				distance 174
-				period 15.1961
-		object
+		remove object
+			sprite planet/gas6
+			distance 2069.42
+			period 3240.9
+		add object
 			sprite planet/gas6
 			distance 2069.42
 			period 3240.9
